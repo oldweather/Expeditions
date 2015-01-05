@@ -1,0 +1,655 @@
+Time		Position		Wind		Barometer corrected and reduced to 32° F. MSL and Gravity 45°	Temperature		Cloud			Weather		Sea Surface						Remarks 
+Day	Hour. 12 hrs. fast on GMT	Lat. S	Long.	Direction (True)	Force (0-12)		Dry Bulb	Wet Bulb	Kind		Amount (0-10)	Beaufort Notation*	Fog Intensity (0-5)	Waves		Swell		Sea Temperature	Colour	 
+									Upper	Lower										 
+		°    '	°    '			"Inches
+"	° F	° F						Direction from	Disturbance (0-10)	Direction from	Disturbance (0-10)	° F		 
+"NOVEMBER, 1910."																				 
+30	13.30	47 34	170 38 E	N	3-4	30.09	53.6		"A.-St., A.-Cu."	"St., St.-Cu."	8	o.c.		N	4	SSW	6			Afternoon. Wind commenced to ease at 15 h. In latter part of watch lower clouds rising into Alto. 
+	16.30			Nly	2	30.02	54.6	52.5	"Ci.-St., A.-St., A.-Cu."		6	b.c.		NNWly	3	Cross SSW Wly	6	50.8		 
+	20.3			NW	3-4	29.98	53.5	50.8		"St., St.-Cu."	10	o.c.		Wly	4	Confused WNWly	7	49.8		Overcast and squally with light rain till 22 h. Sky cleared and wind steadied before midnight. 
+	24.3			NW	5	29.92	52.5	50.0	Ci.	St.-Cu.	3	b.c.		Wly	5	SWly	7	51.0		 
+"DECEMBER, 1910."																				 
+1	4.30			NW	6	29.73	52.1	51.0	Ci.-St.	St.	10	o.m.	1	WNW	5			51.2		4.30 h. : Strong steady breeze with flying scud. Increased to 7 for about 10 minutes at 1 h. 
+	9.30			W	5-6	29.64	48.1	47.8		St. Nb.	10	"o.3r. 0.1d. c."		WSWly	5	Confused WSWly	6	47.6		a.m. Commenced to rain about 5 h. and continued through watch. Slight to moderate. 8 h. : Wind and sea commenced to moderate. Rain to drizzle. 
+	12.30	50 44	170 38 E	WSW	6	29.62	47.0	46.0		St.	10	0.ld.		SW	6	WSW	7	47.0		12.30 : Detached piece of kelp. Wind started increasing at 10 h. 
+	17.30			WSW	7-8	29.53	44.8	42.1		"St.-Cu., Cu."	8	c.		SW by W	6	SW by W	8			11 h. 30 m. : Wind to SSW for 15 minutes. 
+	21.30			WSW	9	29.56	43.5	41.0		"St., St.-Cu"	10	o.c.		SW	8	SW	20 ft. 8			p.m. : Wind and sea increasing after 14 h. ; by 15 h. blowing 7-S. 
+2	4.30			WSW	10							c.			8		8			Dogs : Wind and sea increasing gradually till force 9 at 19 h. 30 m. 
+	8.30			WSW	10							c.			8		8			"Wind from SW, force 10, till afternoon, when began to back gradually, and at 16 h. 30 m. perceptibly commenced to ease in" 
+	12.30	52 7	172 11 E	WSW	10							o.c.			8		8			"strength. Very high seas of 35 ft. (estimated). Sky generally overcast with St. Cu. clouds, but occasionally breaking. In dog" 
+	19.30			SSW	9	29.74	42.0	39.0		"St.-Cu.,Cu., St."	8	c.		Confused SSW	8	SSW	8			watches decided break of clouds. Ship lying-to all day. Wind easing all first watch. 
+3	4.30			SW	5-6	29.84	42.0	39.0		"St.-Cu.,Cu."	7	c.		Confused SW	25 to 30 ft 6	SSW	8			Middle : Wind still easing and sea decreasing. 
+	12.30	52 12	172 48 E	W	5-6	29.88	44.2	41.2		"St., St.-Cu."	10	o.c.		Confused SWly	6	SSWIy	8	45.2		Afternoon : Sun came out dimly for a little between 13 h. 30 m. 
+	16.30			WSW	5	29.85	44.1	41.8		"St., St.-Cu."	10	o.c.		SSW	6	S	15 ft. 8	45.1		and 14 h. 30 m. ; otherwise absolutely overcast. 
+	20.30			W	5	29.83	43.0	41.0		St.	10	o.c.		SW	5	SSW	7	45.0		 
+	24.30			W	5	29.83	43.0	41.0		St.	10	o.c.		SW	4	S	7	45.0		Midnight : Slight lightning flashes occasionally. 2 h. : Slight increase of wind after gusts and lulls. 4 h. : Increase steady to force 7. No scud. 5 h. : Passed floating kelp. 
+4	4			SW	7	29.73	43.0	41.1		St.	10	o.f.	1	SSW	6	SWly	7	45.0		 
+	9.30			W	6-7	29.72	42.5	41.0		St.	10	o.c.		SW	6	SSW	6	42.8		"Forenoon : Overcast all watch, though sun occasionally tried to break through ; slight drizzle for a few minutes at 11 h." 
+	12	54 31	178 50 E	W	6	29.74	42.8	41.5		St.	10	o.c.		SW	6	SSW	7	42.5		 
+	16			W	5	29.73	43.0	41.8		St.	10	o.c.		SW	6	Confused SSW	6	43.2		"Afternoon : Wind gradually easing at 14 h., SW, force 5. Wind shifted two points, 22 h. Swell decreasing." 
+	20			W	5	29.70	42.8	41.0		St.	10	o.c.		SW	6	SSW	18 ft. 8	42.5		 
+	24			WNW	5	29.66	43.0	42.0		"St. St."	10	o.c.		SW	5	SSW	6			"2 h. 20 m. : Wind increased to 6, with bank of St. ; falling about" 
+5	4			W	5	29.59	41.6	40.7	"-- A.-Cu."	"St. St."	9	o.m.		SW	6	SSW	7	40.0		"2.30 to 5, showing A.-Cu. clouds. 4 h. : Sky overcast but" 
+	8.30			WNW	5	29.58	41.8	41.2		"St., Nb."	10	o.d.		WSW	6	SW	8	40.0	453	clearing in patches from time to time. 5.20 : Passed drift kelp. Sky clearing in places ; 30 minutes' drizzle. Wind 
+	12	56 41	176 23 E	WNW	5	29.55	44.0	41.8		St.	10	o.c.		SWlyW	5	SWly	5	41.0		falling lighter. Forenoon : Sun made some attempts to break through ; occasional showers of slight drizzle. Afternoon : 
+	16			W	4-5	29.56	43.8	41.5		"St., St.-Cu"	8	c.		SW	5	SW	6	41.2		"Cleared very much at 12.15. By 13 h. St.-Cu. and A.-St., proportion 5. 15 h. : clouded over again. Occasional showers of drizzle. Dogs : Occasional showers of drizzle." 
+	20			WSW	4	29.68	42.0	39.5		St.-Cu.	5	b.c.		SW	6	SW	4	39.0		 
+	24			WSW	4	29.65	41.0	38.5		St.-Cu.	3	b.c.		SW	4	SW	4	40.0		 
+6	4	58 7 	177 22 E (1.30)	WSW	4	29.59	40.9	38.7	"A.-St., C i. -St."		10	o.c. 		Confused	 	SWly	5	40.0		Midnight : Clouds St. Cu. 8 to 9 ; cleared to 3 at 11.30. 1 h. : Sky partially clear with A. Cu. and Ci. St. about amount 5. 
+	9			ENE	1	29.54	39.4	38.2		"St., St.-Cu."	10	o.c.		 	2	Confused SWIy	5	41.0	429	Mottled Ci. to SSW. 4 b. : Upper clouds radiant point SSW. 
+	12	59 7 	177 51 E	E	1-2	29.49	39.0	38.8		St.	10	o.c.		 	2	SWly	5	41.2		"Breeze unsteady. 5 h. : Clouds St., St. Cu. and Nb. ; 10 minutes'" 
+	16			NE	2	29.46	38.8	38.8		"St., Nb."	10	o.c.2d.		 	2	Confused SWIy	5	39.7		rain (drizzle). Wind falling light. 7 h. : Rain (drizzle during watch). Forenoon : Occasional drizzle during watch. After  
+	20			NE	3-4	29.37	37.0	37.0		Nb.	10	o.4rm.		 	3	Confused SWIy	4	37.0		"noon : Drizzle off and on and settled down at 15 h., with slight fog. Dogs : Rain, drizzle to slight. Gradual increase of wind all watch till 19 h. Wind shifted NNE to NW 3 at 23.15." 
+	24			NNW	3	29.27	38.0	38.5		St.	10	o.r.		NE	2	SW	2	37.0		Fine steady rain. 
+7	4			NNWly	2	29.18	36.8	36.8		St.	10	o.d.f.	2	 	 	NNWIy	2	36.0		4 h. : Four hours d. Slow moving low St. seen overhead at intervals. Breeze 3 up till 2 h. 6 h. : Drizzle. Fog 2. Wind 
+	9			SSW	5	29.20	34.0	33.1		"St.-Cu., Cu."	10	o.c.		S	4	Sly	3	34.5	430	freshening W by S. 6.45 h. : Wind commenced to back fast and strengthened. Fog lifted. Drizzle stopped by 7.30. 
+	12	61 22	 179 56 W	WSW	6	29.30	35.0	33.5		"St.-Cu., Cu."	6	c.		Sly	4	Confused SIy	4	35.2		"Wind SWly, force 5. Forenoon : Wind gradually veering." 
+	16			WSW	5-6	29.37	32.5	30.8		St.-Cu.	10	o.c.		SW	4	SWly	4	31.9		At 8.30 sky broke and sun came out. Afternoon : Occasional 
+	20			WSW	5	29.43	32.0		A.-St.	St.-Cu.	8	c. 		SW	5	SW	4	32.5		"snow flurries. Very fine snow. 21 h. : Passing heavy Cu. Apparent snow squalls in distance. Wind squally, increasing slightly to 23 h." 
+	21			SW	6-7		31.5	29.5		St.-Cu.	7			 	 	 				 
+	24			SW	6	29.52	29.5	28.0	A.-Cu.	St.-Cu.	4	b.c.		SW	6	SW	5	32.0	 	 
+8	4			SSW	5	29.58	29.9		Ci.-St.	St.-Cu.	8	c.b.q.s.		Sly	4	SWly	5	29.8	 	2 h. : Snow squalls. Small fine snow with little wind. While under bank of Cu. St. wind force 7. At 2.30 breeze moderated 
+	8.30			SSW	5	29.75	32.0	31.0		"Cu., Cu.-St."	5	b.c.		S	5	Sly	4	30.6	454	to force 5 and backed two points to S. Afternoon : Wind gradually veered till SSW at 14 h. Slight snow for about half 
+	12	63 20	 177 22 W	SSW	5	29.86	31.9	30.5		Cu.	2	b.c.		S	5	S	4	31.5	 	an hour at 15 h. 20 h. : Two icebergs on port beam about 10 miles off. Wind hauling slowly. Clouded over at sunset. 
+	16.30			SW	4-5	29.94	30.0	27.0		Cu.	3	b.c.		S	4	S	4	30.7		Passing light snow squalls. 
+	20			SW	3-4	29.96	28.1	25.2		"St.-Cu., Cu."	4	b.c.		SSW	4	S	4	29.5	 	 
+	24			WSW	4	29.97	28.0			St.-Cu.	10	o.c.		SW	3	SW	2	29.5	 	 
+9	4			W	4	29.98	27.8	25.1	A.-St.	St.	7	b.c. 		SWly	3	 	0	30.1	 	2 h. : Slight S wind with heavy snow astern. 4 h. : Two icebergs. 
+	8			W	3	29.91	29.5	26.8	A.-St.	"St.-Cu., Cu."	6	b.c.		 	2	 	0	30.5	 	7 h. : Entered 'oose pack. 8 h. : Snow flurry for 15 minutes. 
+	12	65 81 	177 40 W	W	3	29.94	32.5	30.0	A.-St.	Cu.	6	b.c.		SW	2		0	30.5	 	Afternoon : Passing through loose pack. 
+	16	66 32 	178 85 W (17.24)	W	1-2	29.91	29.8	26.8	A.-Cu.	Cu.	7	b c. 		SWly	2		0	29.9	 	0 
+	20			NW	1-2	29.87	28.0	26.1	"A.-Cu., A. -St."	Cu.	6	b.c.		W	2		0	29.5	 	20 h. : Passing through loose pack. 
+	24		In Pack	Calm	0	29.81	27.0		A.-St.	"Cu., St.-Cu."	4	b.c.		 	0	  	0	29.0	 	 
+10	5.30			ENE	2	29.72	28.0		A.-Cu.	St.-Cu.	8	b.c.		 	0		0	29.5	 	"5.30: Pack loose, but stronger than yesterday." 
+	8.45			NE	2	29.66	27.0		A.-St.	"St, St.-Cu."	9	c.		 	0		0	29.2	455	8 h. : In pack. 
+	12	66 38 	178 47 W	ENE	2	29.64	28.0		A.-St.	St.	9	c.			0		0			 
+	16		 	 		 	 	 	 	 	 	 	 							 
+	20	66 50	178 51W (22.12)	ENE	1-2	29.70	32.5	30.8	A. St.	St.	9	c.	 		0		0	29.2		20 h. : In pack. 
+	24		 	ENE	2	29.71	26.5	 	A. St.	St.	9	c.	 		0		0	28.5		Midnight : In heavy pack. Overcast. Sun shining on horizon. 
+11	4		In pack	NNE	2	29.70	27.6	27.5	A.  St.	St.	10	o.c.	 		0		0	28.8		2.30 : Unable to proceed owing to heavy pack. 4 b. : Overcast. 
+	8.30		 	N	4	29.59	 	28.5	 	Nb.	10	2s.	 		0		0			Dark St. on horizon from N to WSW. 6.30 : Commenced  
+	12	66 55	178 51 W	NNW	4-5	29.52	 	32.8	 	Nb.	10	q.3s.	 		0		0			"snow (moderate) and wind increased. Forenoon : Soft snow and rain mixed. Noon : Wind increasing slightly. Afternoon : Moderate soft snow till 14.30, then ceased and lightened up." 
+	16		 	NW	4-5	29.43	34.2	33.9	 	St.	10	o.c.2 1/2s.	 		0		0	29.4	455 but deeper blue	15.50 : Light fog came down. 
+	20		 	WNW	4	29.46	31.0	31.0	 	St.	10	o.c.f.	 		0		0			 
+	24		 	WNW	5-4	29.47	30.0	30.0	 	St.	10	o.m.			0		0	28.5		Midnight : Overcast and misty. 
+12	4		 	N	4	29.50	28.5	28.5			 	f.	2-3					29.0		"Middle watch : Mist of first watch changed to drier fog. Considerable motion in ice, and ship drifting to SW. Sun visible." 
+	8		In pack	NW	3	29.51	32.8	32.5	 	St.	10	o.c.	 					29.4	455 but deeper blue	"through fog for 2 minutes at 3.45. Morning : No fog, though dull. Afternoon : Fog 2 settled down at 13.30. Dogs : Fog off and on most of the watch. 20.30 : Drizzle of rain sometimes" 
+	12	67 5	178 22 W	NW	3	29.51	35.0	34.0	St. Cu.	St.	10	o.c.	 					30.2		changing to snow. Snow at frequent intervals 20 h. 24 h. 
+	16		 	NW	3	29.54	33.5	32.8	 	St.	10	o.	 					29.5		 
+	20		 	NW	3-4	29.57	31.8	31.5	 	St.	10	o.f.	1					29.2		 
+	24		 	NW	 	29.58	31.0	30.0	 	St.	10	o.s.	2-3					29.0		 
+13	4.30		In pack	NW	2	29.63	31.0	31.0	A. St.	St.	10	o.c.	 					29.7		"4.30 : Very slight snow for five minutes. 5.45: Light snow falling, ceased at 6.20." 
+	9	67 30	177 58 W (9.30)	WNW	2	29.63	33.0	31.8	A. St.	St.	10	o.c.	 			v. slight	swell	30.0		 
+	12		 	W	2	29.62	32.8	31.0	"St., Ci.  Cu."	St.	7	b.c.	 			v. slight	swell			"Afternoon : Commenced to snow at 15 h., soft moderate. Snow ceased at 18 h." 
+	20		 	N	0-1	29.56	31.2	31.0	 	St. Nb.	 	o.c.3r.	 							"Light drizzle to 22 h., then cleared. Sky heavily overcast, except S and SE, where lighter. " 
+	24		 	S	1-0	29.51	32.0	32.0	 	St.	l0	o.1r.	 			slight				 
+14	4		In pack	Calm	0	29.48	30.6	30.0	A. St.	St.	10	c.o.	 					29.2		"4 h. : Clear atmosphere, with horizon visible. Sun nearly clearing. St. at times. Pack ice continually moving to noticeable extent." 
+	8.30			WSW	2	29.45	29.8	29.0	 	St. Cu.	5	b.c.	 			very	slight	29.2		"Afternoon : A slight swell setting in, which lasted until about 18 h. 19 h. : No motion in clouds." 
+	12	67 28	177 59 W	WSW	1	29.46	35.0	32.9	 	St.  Cu.	9	b.c.	 							 
+	20		 	WSW	1	29.51	29.8	29.0	 	St. Cu.	9	c.								"Very light snow 20 h. to 22 h. Sky cleared at 23 h., except on S.E. horizon." 
+	24		 	WNW	3-1	29.59	25.5	24.5	"Ci. St., Ci.  Cu."	St.	3	b.c.				slight				 
+15	4		In pack	SW	2-3	29.65	27.5	 	Ci.  St.	St.	6	c. b.								4 h. : Floes on the move slightly. Scud from S moving over fast. Clear sky till 2.30. 
+	8		 	S	3	29.73	25.8	24.5	"A. St., A. Cu."	"St.  Cu., St."	9	c.				very	slight			 
+	12	67 23	177 59 W	WSW	3	29.77	26.8	25.2	A. St.	St Cu.	10	c.								 
+	16			SW	2-3	29.82	27.8	25.8	A. St.	St. Cu.	10	o.c.								18 h. : Dropped calm. 
+	20			Calm	0	29.86	29.0	27.0	A.-St.	St.-Cu.	10	o.c.								 
+	24			B	1-2	29.88	26.5	25.5		St.	10	o.				?	2			Considerable movement in pack 
+16	4			ENE	2	29.84	27.0	26.1		St.	10	o.s.				Slight Nly		29.0		"4 h. : Dull and overcast. Slight snow commencing. 3.40 : Atmosphere clear. Dark snow-line N to SW. Morning, 8 h. : Wind" 
+	9		In pack	NE	4	29.75	29.8	28.8		"St., Nb."	10	o.4s.						30.0		"NNE, 3. Snow moderate. Slight snow. Forenoon : Snow soft and moderate. Noon : Wind increasing gradually. Afternoon :" 
+	12	67 23	177 59 W	NE	4-5	29.62	30.5	30.5		"St., Nb."	10	0.4s.								"Snow moderate to heavy, becoming very soft and turning into rain (moderate) by 14 h. 14 h. : Wind dropped to 2. 15 h. :" 
+	16			NNE	3	29.49	32.8	32.8		"St., Nb."	10	o.4sr.								Rain slight. Dogs : Wind backing slowly all the watch. Midnight : Wind dropped and weather cleared. 10 h. to 11 h. : 
+	20			NW	3	29.42	32.0	32.0		St.	10	o.f.	3					29.2		"Afterwards increased, with rain." 
+	24			WNW	3	29.32	32.5	32.5		St.	10	o.3r.	3							 
+17	4		In pack	WSW	4	29.23	32.5	32.2		St.	10	d.f.	2-3					27.3		4 h. : Wind steady in direction with fine drizzle on and off. Fog clearing occasionally for short periods. 5 h. : Wind. 5.10 : 
+	9			WNW	3-4	29.17	33.5	33.0		St.	10	o.e.4d.								"Commenced sleeting. 6 h. : Wind to SW, weather f. 1, wind fell to 3 at 6.20. 7 h. : Sleeting intermittently. Drizzle on and" 
+	12	67 24	177 34 W	WNW	3-4	29.13	34.8	34.8		St.	10	o.m.								"off during forenoon. Noon : Very fine snow commenced and continued intermittently during afternoon till 14.30, although" 
+	16			SW	4	29.11	31.5	31.5		St.	10	o.c.								sun managed to show through clouds most of the time. Wind gradually backing. Dogs : Slight swell causing movement in pack. 
+	20			SSW	2-3	29.25	29.0	27.8		"St., Nb."	10	o.c.								"4 h. : Very slight snow from 3.30. Ice conditions as before, but pack very open all round, there being leads in all directions and indications of clear water. Iceberg near ship drifting W to SW." 
+	24			S	3-2	29.34	28.0	27.5		St.	10	o.						29		 																				 
+18	4		In pack	S	1	29.38	28.0	27.6		St.	10	o.				Light N and S		29.1		 
+	8.30	67 24	177 34 W	NW	1	29.39	29.0	28.8		St.-Nb.	10	o.						29.8		"8.30: Commencing to drizzle, which became light snow at 9 h. and ceased entirely about 10 h. 16.40: Commenced to snow heavily. 17.15: Ceased snowing. Dogs : Snow showers about." 
+	12			NW	1-2	29.39	31.8	31.5		St.-Nb.	10	o.1/2d.ls.								20-21 h. : Heavy snow showers. 
+	16			WNW	1	29.36	31.8	31.5		St.-Nb.	10	o.						29.5		 
+	20			WNW	0-1	29.33	30.5	30.5		St.-Nb.	10	o.						29.2		 
+	24			SW	2-1	29.35	30.0	29.5		St.-Cu.	9									 
+19	4		In pack	SW	1-2	29.37	33.0	30.5		Cu.	8							29.6		"In pack. Morning : Light SSW1y breeze. St. and St.-Cu., amount 3." 
+	9			Calm	0	29.36	32.0	31.5		"Det. Cu., St."	2	b.						30.0		 
+	12	67 54	178 30 W	Calm	0	29.35	30.5	28.8		"Cu.-St., St."	8	c.						31.8		Fog bank 11 h. to 11.20 h. 
+	16			SE	0-1	29.33	24.2	23.6	A.-St.	St.	10	o.c.						29.8		 
+	20			SE	0-1	29.31	25.0	24.5		"Cu.-St., St."	10	o.c.						29.8		 
+	24			Var.	1	29.35	20.5	20.0	A.-Cu.	"Cu., St."	5	c.						29.5		 
+20	4		In pack	W	Lt. Airs	29.36	25.0	23.4		St.	10	o.						28.8		"Morning : Wind Sly. 5.30: Fog 1 increasing at times to 3 and not clearing off till 8 h. Cu.-St. (10). Sun generally showing through clouds. 10.30: Clouds dispersed, sun shining." 
+	9			SW	2	29.39	24.0	22.5		St.	10	o.c.2 1/2f.						29.2		 
+	12	68 40	179 28 W	WSW	2	29.37	33.5	31.5		St.	2	b.						30.0		 
+	16			W	4	29.39	30.5	30.0		AL-St.	2	b.								 
+	20			W	5-6	29.41	27.0	26.2	  	A. St.	1	b.								 
+	24			NW	6-5	29.41	23.5	23.0	Ci.Cu.	St.	3	b.c.						28.5		High clouds travelling from S to N ; low scud travelling fast ENE 
+21	4		In pack	W	5	29.38	27.3	27.0	A. St.	St.	10	o.c.						28.8		2.30 : Sky almost clear. Bank of A.-St. rising to SW. Scud moving from W with wind. 2.45 : Wind shifted to SW. Fresh 
+	9		  	SSW	5	29.40	29.0	27.2		Cu. St.	10	o.c.						29.8		  breeze. 4 h. : Sky became overcast with A.-St. and St. 4.30: Snow squall lasting 10 minutes (fine and powdery). 
+	12.45	68 35	179 11 W	SSW	4	29.40	30.5	29.5	  	Cu. St	5	o.c.						30.0		 
+	16			S	5	29.45	32.2	29.8		"St., St. Cu.  "	10	o.c.								 
+	20		"   "	WSW	4	29.44	27.8	27.8	"    "		0	b.								 
+	24		  	SW	5	29.44	26.0	25.0	  	  	0	b.								 
+22	4		In pack	SW	4-5	29.43	27.1	26.0	  	  	0	b.								 
+	9		  	SW	4-5	29.44	27.5	27.0		St. Cu.	6	b.c.								 
+	12	68 26	179 8 W	SW	4-5	29.45	29.0	27.8	  	St Cu.	2	b.								 
+	16		  	W	4-5	29.46	29.0	27.8	  	Cu. St.	1	b.								 
+	20			W	3	29.45	27.5	27.5	  	St. Cu.	  	c. 						29.5		"20 h. 45 m. : Wind dropped calm. Sky cleared, St.-Cu. (2) and wind dropped 21 h. to 22.30 h." 
+	24		  	SW	5	29.46	26.5	26.0	  	St.	10	o.c.						28.5		 
+23	4		In pack	WSW	4	29.47	24.0	22.9		St.	10	o.c.						29.1		"2.45: Breeze from WSW fell to force 2. 3 h. : Breeze came away from SSW, 4. 9 h. : Clouds and sky dark on NE horizon." 
+	9		  	WSW	3	29.49	26.5	25.5	  	St.	10	o.c.						29.5		 
+	12	68 34	179 3 W 	WSW	4	29.52	28.8	28.0		St.	10	o.c						29.0		 
+	16			WSW	3-4	29.45	28.8	28.0		St. Cu.	10	o.c						29.5		 
+	20			WSW	3	29.45	28.8	28.2		St. Cu.	10	o.c								 
+	24			WNW	3	29.4	29.2		"    "	St Cu.	10	o.c								 
+24	9		In pack	W	2	29.37	28.2	27.2	  	St.	10	o.c.						28.8		 
+	12	69 1	178 29 W	WSW	1-2	29.39	30.0	28.8	A. St.	St Cu.	10	o.c.								 
+	16		  	W	1-2	29.42	32.5	31.0	A. St.	"St.,Cu."	3	b.c.						30.5		"17 h. : Sky clouded over, and cleared at 18 h., when wind dropped." 
+	20		  	Calm	0	29.43	30.0	30.0	A. St.	"St. Cu., Cu."	9	o.c.								 
+	24		  	S	2-1	29.46	28.0	27.5	  	St.	10	o.						28.8		 
+25	4		In pack	Calm	0	29.45	26.9	26.0	A. St.	St.	9	o.c.						29.2		2 h. : SE airs fell to calm. Small quantity of blue sky to S.E. 
+	9		  	NE	4	29.44	27.8	26.2	 	St.	10	o.c.						29.8		4 h. : Blue sky and A.-St. low on horizon. St. overhead. 
+	12	69 5	178 30 W	ENE	2-3	29.43	28.5	27.5	 	St. Nb.	10	o.c.								 
+	16			E	4	29.40	28.5	28.0	  	Nb.	10	o.m.						30.0		16 h. : Very slight snow all afternoon. 17.30 : Snow commenced to fall more heavily. 
+	22		  	E	3	29.37	28.5	28.5	  	Nb.	10	o.m.								 
+	24			E	3	29.34	29.0	29.0		Nb.	10	s.	2					28.7		Midnight : Continuous light snow. 
+26	4		In pack	NE	3	29.33	30.0	29.9				4f.	2					29.0		"4 h. : Snow passing showers from time to time. 4.30 : Snow changed to drizzle, which continued off and on till 10 h., then" 
+	9			ENE	2	29.32	32.5	32.5		Nb.	10	o.						29.2		stopped. Noon : Wind varying about 2 points about NNE. 
+	12	69 9	178 13 W	ENE	2	29.32	32.8	32.8		St.	10	o.c.								 
+	16			ENE	4	29.31	32.0	32.0		St.	10	o.c.								 
+	20			ESE	3	29.31	32.0	32.0		St.	10	o.c.						30.0		"Passing snow showers, 20 h. to 22 h." 
+	24			E	5-6	29.31	31.0	31.0		St.	10	o.								Wind gusty and shifting to ENE. 
+27	4		In pack	SE	6	29.31	30.0	30.0			10	o.s.f.	1				Slight	28.8		4 h. : Wind increasing from eastward. Snow intermittently. Morning : Wind E by N increasing ; frequent snow squalls 
+	9			SE	5	29.35	30.0	30.0		Nb.	10	o.s.					Slight	29.8		"Forenoon : Slight continual snow, increasing at times to moderate. Afternoon : Slight continual snow till 13.30. Wind commenced to back immediately after noon, at 13 h. E by N." 
+	12			SSE	6	29.38	30.2	30.2		Nb.	10	o.4s.					Slight	29.5		 
+	16			SSE	6	29.38	30.2	30.2		St.	10	o.c.					Slight			 
+	20			SSE	6	29.42	29.2	29.0		St.	10	o.c.					Slight			 
+	24			SE	5	29.46	29.0	29.0		St.-Cu.	9	o.c.								 
+28	4		In pack	SE	4	29.48	27.9	27.2	"A.-St., Ci."		3	b.c.						28.7		1.30 : Wind fell to force 4. Scud from ; E. A.-St. from ENE. 
+	9			ESE	3-4	29.52	27.8	26.1	"A.-St., Ci.-St."		2	b.c.						30.1		"4 h. : Ci. to NW, "" mackerel backs "" to W. Clear and sunshine" 
+	12	69 17	179 42 W	ESE	2-3	29.51	29.9	28.8	"A.-St., Ci.-St."		2	b.c.								"for four hours. Morning : Wind ENE 4, Ci. clouds (3), St. to" 
+	17.45			ENE	2	29.49	28.8	27.8	A.-St.		1	b.							478	"W (3). 11 h. : Slight halo round sun, but only just discernible" 
+	20			ENE	2	29.46	28.0	27.8		St.-Cu.	1	b.								"over Ci.-St. clouds. 13 h. : Halo a little more distinct, approximately 21° 29' radius, showing faint red, yellow, white (from inner edge out) on portion immediately above sun. 18 h." 
+	24			N	3	29.45	26.5	26.5		St.	10	o.s.						29.0		 
+29	4		In pack	NNE		29.35	27.6					o.								A.-St. clouds very low on horizon only. 20.30 : Clouded over rapidly from N.E. (true) ; by 21 h. St.-Cu. (9). 23.45: Slight snow. 
+	9			ENE	3	29.26	29.8	29.8		Nb.	10	o.e.f.	1					29.2		"2.45: Fog 2 came over, lasting for about an hour, and thinning off towards 4 h. Glazed frost appeared on whiskers of ropes and rigging. Morning : Overcast, Fog 1 all watch. Noon :" 
+	12	70 1	179 34 E	NE	3	29.21	30.0			Nb.	10	o.s.f.	1					30.0		Very slight snow. 14 h. : Commenced snowing (slight to 
+	16			NE	3-4	29.07	29.8	29.8		Nb.	10	o.2s.3f.	1-2					29.8		"moderate), which continued during afternoon. Fog during most of afternoon, clearing at times. Dogs : Snow moderate" 
+	24			N	3	28.95	31.0	30.5		St.	10	o.2s.2f.	2							 
+30	4			NNE	4	28.82	31.3	31.0		St.	10	m.o.f.	2	NW	3	ESE	3			1 h. : Cleared pack ice. Slight ESEly swell. Fog cleared at 2.30. Morning : St. clouds (10). Swell from E (true). Misty. Strong 
+	8			NNE	3	28.80	33.0	33.0		St.	10	o.f.	1	SW	3	Nly	3			"ice blinks to N and NE (true). Forenoon : Snow slight to moderate, melting as it falls all watch. Fog (1-3) from 10 h." 
+	12	72 17	177 9 E	NNW	2	28.78	31.2	31.2		Nb.	10	o.4s.f.	2	"Confused ESE"		"Confused ESE"	3			 
+	16			S	4	28.76	31.5	31.5		Nb.	10	o.4s.4f.	3	ESE	3	ESE	3			"Afternoon : Calm from 13 to 14 h. when a light SE wind commenced. At 15.30 suddenly ran into wind SE by E, force 4, there being a clear line of waves (sea-horses) showing the wind ahead before the ship felt it. 20 h. to 24 h. : Wind and sea" 
+	20			SSW	4	28.77	30.2	30.2		Nb.	10	o.4s.4f.	3	ESE	4	ESE	4			increased slightly. Snow very slight to moderate. Flakes melting as they fall. From 12 to 15 h. : Sun was trying to come 
+	24			SSE	5	28.77	31.5	31.0		St.	10	o.2s.2f.	3	E by S	5	E by S	5			"out and showing dimly. Dogs, 16.30: Wind increased to force 5, sea and swell increasing." 
+31	4			S	6	28.73	30.1	29.7	A.-St.	St.	10	o.m.s.	1	ESE	4			31.1		"Passing showers of snow, in which wind increased slightly. Sky broken ; when clear, showing A.-St. and scud. Breeze strongest" 
+	9	72 57	174 55 E (10.18 h.)	S	6	28.76	31.0	31.0		Nb.	10	4s.4f.	1-3	ESE	3	ESE	3	31.2		"at 2.30 h., showing tendency to take off at 3.40. Morning : Snow slight to moderate and fog (1-3) all watch. 19 h. : Hove to" 
+	12	72 52	174 45 E	S	6	28.76	29.0	29.0		Nb.	10	4s.4f.	1-3	ESE	3	ESE	5	32.2		"under lee of island of pack ice for shelter. Afternoon : Wind varying from force 6 up to 8 in the squalls. Snow from very slight to heavy. Dogs : Snow at intervals, varying from very" 
+	16			S	6	28.84	29.5	28.0		St.-Cu.	10	o.4s.3f.	2	ESE	3	ENE	5	31.2		slight to moderate. 1st : Snow in squalls. Wind decreasing. 
+	20			S	6	28.92	29.9	28.0		St.-Cu.	10	o.2s.		ESE	3	ESE ENE	5 confused	31.2		 
+	24			SSW	6-4	28.99	28.0	26.5		St.	9	o.q.s.		ESE	2	NE	4	31.0		 
+"JANUARY, 1911."																				 
+1	4			SSW	3	28.98	28.0	27.3	A.-St.	St.	8	c.b.		SEly	2	E by N		30.7		4 h. : Wind gradually decreasing all four hours. Sky clearing to W. Coast line mountains remarkably clear after 2 h. 
+	8			WSW	3	28.92	30.5	29.0												"6 h. : Wind freed to S, force 4. Ely swell (6). Sky clearing and wind decreasing. 9 h. : ESEly swell much the greater of" 
+	12	73 5	174 11 E	WSW	3	29.03	32.0	30.9												the two. Afternoon : Mt. Sabine and other mountains visible 
+	16	73 43	174 10 E (19 h.)	WNW	2-3	29.01	35.0	33.0												110 miles away till 15 h. when extreme visibility ceased. Wind gradually easing all watch. 16.30 : Wind dropped calm. 
+	20			SSE	1	29.01	31.0	30.5												"18.30: Wind sprang up NE, force 1. 22 h. : Wind dropped calm. Slight NWly winds, then calm again." 
+	24			NNE	2	28.99	30.0	29.0												 
+2	4	74 25	174 1 E (4.15)	Calm	0	28.99	34.0	33.2	"A.-St., Ci."	St.	2	b.				ESE	3	31.8		4 h. : Calm with occasional light airs from eastwards. Ci.-St. to E. and A.-St. to NW slowly rising. 
+	9			S	1	28.98	33.8	31.5		"Cu., St."	3	b.c.			1	ESE	3	32.9		Morning : Clear. Light NEly breeze (0-1). St. clouds on horizon. Ely swell (4). 
+	12	75 10	173 40 E (13.11)	S	1	28.97	35.2	32.2		"Cu., St."	5	b.c.			1	ESE	3	33.9		 
+	16			N	1	28.96	33.2	29.0		"Cu., St."	5	b.c. 			1	ESE	3	33.6	353	 
+	20	75 55	172 31E (21h.30m.)	NE	1	28.96	31.5	29.8		"Cu., St."	5	b.c.			1	Slight	2	34.8		 
+	24			ENE	1	29.00	31.2	28.0		"Cu., St."	7	b.c.			1	Slight	2	33.2		 
+3	4	76 37	171 31 E (4.30)	ESE	3	28.98	30.8	29.7	 A.-Cu.	"Cu., St."	6	c.b.		Nly	3			32.9		4 h. : Land at 60 miles clearly distinguishable. Breeze unsteady in force. Colour of sea 234 and 240. 
+	9	77 0	170 35 E (8.29)	E	3	29.06	30.5	27.8		"Cu., St."	9	b.c. 		NWly	3			32.8	340	 
+	12	77 22	169 58 E	E	3	29.09	31.5	28.2		"Cu., St."	7	b.c.		NWly	3			32.9		 
+	16		13 h. 30 m. off Cape Crozier	E	3	29.01	32.0			"Cu., St."	5	b.c. 		NWly	3			32.2		17 h. : Proceeded for Cape Royds. 
+	20			SE	3	29.15	31.6	28.0		"Cu., St."		b.c.		N by W	3			32.5		20 h. : Halo. Faint sun. 
+	24			SSE	3	29.16	30.5	27.5		"Cu., St."	8	b.c.		NNE	1					23.10 : Iridescent clouds near the sun. 
+4	4			Calm	0															 
+	9			Calm	0	29.20	30.2	30.0	Ci.	Cu.	2	b.c. 						31.2		8.30 : Secured ship alongside floe off Cape Evans. 
+	12		Off Cape Evans	WNW	2	29.20			"Ci., Ci.-St."	Cu.	3	b.c. 								 
+	16			WNW	2	29.16	31.8	28.8	"Ci., Ci.-St."	Cu.	3	b.c.								 
+	20			NNE	1-2	29.09	30.0	27.5	"Ci., Ci.-St."	Cu.	4	b.c.								 
+	24			Calm	0				"Ci., Ci.-St."		3	b.c.								 
+5	4			Calm	0	28.99	27.0	25.7	Ci.		1	b.								 
+	8			Calm	0	28.98	32.0	31.5	"Ci., Ci.-St."	Cu.	1	b.						32.0		 
+	12		Off Cape Evans	WSW	Airs	28.96	32.8	28.8	"Ci., Ci.-St."	Cu.	1	b.								 
+	20			Calm	0	28.94	32.8	29.5	"Ci., Ci.-St."	Cu.	1	b.								 
+	24			Calm	0				Ci.	St.	2	b.c.								St. round Erebus. 
+6	4			Calm	0				Ci.		2	b.c.								4 h. : Low fog to seaward. Erebus smoke vertical. 
+	8			Calm	0	28.93	30.8	27.5	"Ci., Ci.-St."		4	b.c.						31.2		 
+	12		Off Cape Evans	Calm	0	28.96	31.4	29.0	"Ci. -Cu., Ci., A.-St."		9	b.c.								 
+	16			Calm	0	28.97			A.-St.		8	b.e.								16 h. : Sun shining through. 
+	20			Calm	0							b.c.								 
+7	8			NNW	1-2	29.10	30.5	28.8	"A.-St., Ci.-St."		9	b.c.		S	1			31.0		8 h. : Sun shining through. Cu. on mountains. 
+	13		Off Cape Evans	Calm	0	29.15	31.8	28.8	"A.-St., Ci.-St."		6	b.c.								"Noon : Sun shining through. Cu. On mountains. Wind force 1-2, commenced at 14 h." 
+	17			NNW	1-2	29.18			"A.-St., Ci.-St."		4	b.c.								 
+	18			NNW	1-2	29.19	37.0	33.0	Ci.-St.											 
+	21			Calm	0		34.8	30.9	"A.-St., Ci.-St., Ci."		3	b.c.								 
+8	8		Off Cape Evans	Calm	0	29.23	36.5	32.8			0	b.						31.4		"Cu. on mountains 8 h., noon, and 17 h." 
+	12			Calm	0	29.24	36.0	31.5	A.-St.		1	b.								 
+	16			NNW	3	29.23	33.8	31.0	"A.-Cu., A.-St."	Cu.	3	b.c.								 
+	20			NNW	3	29.21	30.8	28.2	"A.-Cu., A.-St."	Cu.	5	b.c.								 
+9	9		Off Cape Evans	W	1-2	29.22	30.9	29.9	A.-St.	Cu.-St.	9	b.c.						30.4		"5 h. : A uniform covering of A.-St. rising to A.-Cu. With a little St. below in places. Very little Cu. on mountains. Wind, force 1. 9 h. : Cu. on mountains." 
+	12			W	1	29.23	33.5		A.-St.	Cu.-St.	9	b.c.								 
+	13							33.0												 
+	16			Calm	0	29.23	34.8		"A.-St., A.-Cu."	Cu.-St.	8	b.c.								 
+	20			E	3	29.23	26.4	25.8	"A.-St., A.-Cu."	"Cu., Nb."	6	b.c.s.								18 h. to 18.30: Snow moderate. 
+10	8			W	1	29.19	29.8	29.8	A.-St.	"Cu., Nb."	9	b.c.						30.2		5 h. : Snow for 11 hours. 8 h. : Commenced to snow (moderate). 
+	13		Off Cape Evans	WNW	2	29.22				"St., Nb."	10	o.c.								"Forenoon : Snow intermittently up to moderate and wind increased about 10 h. to force 3., but eased later. Afternoon : Occasional snow showers. 20.30 : Wind to NW, force 1-2." 
+	17.30			WNW	2	29.22	32.9	30.5		"St., Nb."	10	o.c.								White fog over southern side of Erebus. 
+	20			WNW	1-2	29.23	31.8	30.0		"St., Cu., Nb., St.-Cu."	9	o.c.								 
+11	2.30			ESE	5		22.8			St.	10	o.c.q.								"2.30 : Wind been gradually rising in gusts till now, when fairly steady. No snow. 8 h. : Snow moderate to heavy. Noon : Snow moderate to heavy all forenoon. 16.30: Ceased snowing." 
+	8			SE	6	29.28	22.4	22.4		Nb.	10	o.c.s.q.			1			29.6		 
+	12		Off Cape Evans	SE	6	29.29	21.9	21.9		Nb.	10	o.c.4sq.			1					 
+	17			SE	5	29.27	23.0	22.5	A.-Cu.	St.-Cu.	9	o.c.s.q.			1					"17 h. : Broken to eastward, blue sky showing, weather clearing." 
+	20			SE	3-4	29.25	23.5	22.5	A.-Cu.	St.-Cu.	5	b.c.			1					"Wind easing all dog's watch and first. 23 h. : Wind, force 0-1." 
+12	8		Off Cape Evans	SE	1	29.15	23.2	23.2	"Ci., A.-St."		9	b.c.						29.2		8 h. : Cu. and St. on mountains. 
+	12			Calm	0	29.23	27.0	24.2	"Ci., A.-St."		9	b.c.								"Afternoon : Cu. and St on mountains. Wind gradually rising in puffs to force 3, direction N by W. 16 h. : Wind increased to force 5." 
+	17			SE	5	29.09	22.2	21.1	A.-St.	Cu.	3	b.c.								 
+	20			SE	5	29.06	24.9	23.5	A.-St.	Cu.	3	b.c.q.								 
+13	9		Off Cape Evans	SE	5	29.07	15.3	15.3	"Ci., A.-St."	Cu.	2	b.c.			1			29.0		9 h. : Cu. on Western Mountains. 
+	14			SE	5	29.07	18.5	18.0	A.-St.	Cu.	1	b.c.			1					14 h. : Cu. on Western Mountains. Erebus free from cloud all day. Afternoon : Very remarkable bank of cumuli behind Cape Barnes. 
+	16			SE	5	29.06	18.8	18.6	A.-St.	Cu.	1	b.c.			1					 
+	20			SE	5	29.08	18.9	18.9	A.-St.	Cu.	1	b.c.			1					 
+14	9		Off Cape Evans	ESE	3	29.16	19.9		A.-St.	Cu.	9	o c.			1			30.0		 
+	12			SE	2-3	29.16	22.4	21.2	"A.-Cu., A.-St."	Cu.	5	b.c.			1					 
+	16			SE	2	29.20	24.5	21.8	"A.-Cu., A.-St."	Cu.	5	b.c.			1					 
+	20			SE	2	29.18	23.8	22.8	"A.-Cu., A.-St."	Cu.	7	b.c.			1					"Midnight : Wind N by W, force 5-6." 
+15	9		Off Cape Evans	SE	Light Airs	29.23	26.9		A.-St.	Cu.	3	b.						30.0		Cu. on Western Mountains. 
+	12			SE	Light Airs	29.25	25.8	24.8	A.-St.	Cu.	3	b.c.								"Cu, on Western Mountains." 
+	16			SE	Light Airs	29.27	25.8	25.0	A.-St.	Cu.	3	b.c.								Cu. on Western Mountains. 
+	20			SE	2	29.28	26.2	25.4	A.-SC	Cu.	3	b.c.								Cu. on Western Mountains. 
+16	9		Off Cape Evans	NE	1-2	29.34	25.2	22.8	A.-St.		1	b.						31.4		9 h. : No Cu. on Western Mountains. 10 h. : Much mirage. 
+	12			NE	1	29.36	25.5	23.8	A.-St.		1									Noon : Very large amount of mirage. Little Cu. on Western Mountains. 23 h. : Calm with occasional light puffs from S. 
+	16			ESE	2	29.35	24.8	22.8	A.-St.	Cu.	4	b.c.								"A.-Cu., A.-St., Nb., and St.-Cu. Snowing to southward and behind Cape Barnes." 
+	20			SE	1	29.35	22.0		A.-St.	Cu.	6	b.c.								 
+17	8		Off Cape Evans	ESE	2	29.33	20.4	20.4		Nb.	10	o.s.						30.1		Snow moderate all middle watch and morning. Noon : Snow moderate all forenoon. Snow slight to moderate in afternoon and in dog watches. 17 h. : Ceased snowing. 21 h. : Wind commenced to decrease in strength. Midnight : A white smoky fog coming up from beyond Inaccessible Island. 
+	12			ESE	2-3	29.35	15.8	15.8		Nb.	10	o.4s.								 
+	16			ESE	4-5	29.33	17.8	17.0		Nb.	10	o.4s.			1					 
+	20			ESE	6	29.31	16.0	16.0		"Nb., St.-Cu."	8	c.ls.			1					 
+	24			ESE	3-4	29.33	12.0			Nb. St.-Cu.	8									 
+18	8		Off Cape Evans	SE	3	29.28	11.5	11.5		"Nb., St.-Cu."	9	c.			1			31.6		1 h. : Wind increasing again. 2 h. : Wind force 6. Middle watch : White smoky fog lifting and settling all watches. 8 h. : Mist round Inaccessible Island and appearing in patches on sea and round detached floes. Noon : Low snow-drift over Hut Point. 
+	14			E	2-3	29.30	19.0	19.0		"Nb., St. -Cu."	5	b.c.			1					Ship shifted berth to close with Cape Evans. 14 h. : Thick blackish mist round Cape Barnes. Mists on Western Mountains. 
+	16			SE	2	29.27	20.0	19.1		Nb.	10	o.3s.			1					Commenced to snow (moderate). 
+	20			NW	1	29.27	23.0	21.8		Nb. St.-Cu.	9	b.c.								 
+	24			Calm	0					"Nb., St.-Cu."	10	o.24s.								 
+19	8		Off Cape Evans	SE	2-3	29.26	18.5	18.0		"Nb., St."	9	b.c.s.			1			31.2		 
+	12			SE	2	29.27	20.8	20.0		Nb.	10	o.4s.			1					Forenoon : Slight snow. 
+	16			SE	3-4	29.28	20.8	20.0	A.-St.	"Nb., Cu."	6	b.c.2s.								Cu. on Western Mountains Noon and 16 h. 
+	20			SE	6	29.29	21.8	20.4	A.-St.	Cu.	6	b.c..								 
+20	8		Off Cape Evans	ESE	6	29.30	20.8	19.9	A.-St.	Cu.	3	b.c.								 
+	12			ESE	3	29.31	26.2	22.9	A.-St.	Cu.	2	b.c.								 
+	16			ESE	1	29.33			A.-St.	Cu.	1	b.c.								 
+	20			WNW	2	29.34			A.-St.	Cu.	1	b.c.						31.3		 
+21	4		Off Cape Evans	NNW	2															2 h. : Blowing with a clear sky. 
+	8			NNW	5	29.34	29.2	27.0	A.-St.		1	b.c.						32.5		 
+	12			NNW	5	29.37	30.0	26.9	A.-St.		1	b.c.			3					 
+	20			E	6	29.53	25	22.6	A.-St.	Cu.	5	b.c.								 
+22	8		Off Cape Evans	E	2	29.73	23.9	21.5		"Nb., Cu."	7	b.c.						32.5		8 h. : Very slight snow. 
+	12			ESE	3	29.72	24.4	22.2		"St., Cu."	8	b.c.								"15 h. : Wind S, force 3." 
+	16			NNW	3	29.71	27.2			Cu.	5	b.c.								 
+	20			NW	3	29.71	27.2	24.3		Cu.	5	b.c.								 
+	24			WNW	1	29.68	27.0		"A,-St."	St.-Cu. Cu.	6	b.c.								Midnight : Wind steadily decreasing all watch. Little cloud round 
+23	8		Off Cape Evans	E	1-0	29.59	25.1	23.5	A.-St.	"St., Cu."	3	b.c.						33.5		Western Mountains. Erebus completely covered with clouds. 
+	12			SSE	1	29.54	29.9	26.0		Cu.	3	b.c.								 
+	16			NNW	1	29.44				"Cu., St."	1	b.c.								 
+	20			N	2-3	29.42	27.0	23.5	A.-St.	Cu.	1	b.c.								 
+	24			NW	3-4	29.26	26.0	25.0	A.-St.	Cu.	5	b.c.								 
+24	4			NW	3-2	29.31	26.0	25.5	A.-Cu.	Cu.	3	b.c.								 
+	8		Off Cape Evans	ESE	2-3	29.25	25.8	24.2	A.-Cu.	Cu.	4	b.c.						33.2		Proceeded to Glacier Tongue. 
+	12		Glacier Tongue	SE	Light Airs	29.26	28.5	25.4		"Cu., St."	S	b.c.								 
+	20			E	2	29.32	21.0	22.5		"Cu., St."	8	b.c.								 
+25	8			E	2	29.48	23.0		A.-St.		1	b.						30.4		Cu. on mountains. 
+	12		Glacier Tongue	ESE	2	29.52	24.8			Cu.	1	b.								"16 h : Dry, 29.2 ; Wet, 26.0." 
+	20			Calm	0	29.49	29.2	26.0		Cu.	1	b.								 
+26	8			N	5	29.25	28.5	26.4			0	b.						30.4		8 h. : Ship partially sheltered by glacier ; real force of wind probably 6. 
+	12		Glacier Tongue	N	5	29.30	30.5				0	b. 								 
+	20			ESE	3	29.35	26.2	23.9			0	b.								Cu. on mountains. 
+27	8		Glacier Tongue	SSE	4-5	29.42	16.2	15.2	A.-St.	"St., Cu."	1	b.c. 						32.0		9 h. : Proceeded to Butter Point. 13.30 : At Butter Point. 18.30: Proceeded for Cape Evans. 22 h. : Started clouding over. Snow squalls to W by S (compass) over Mount Erebus. 
+	12			SE	4	29.44	21.8	19.2		"St., Cu."	1	b.c. 		W	3	W	3	29.5		 
+	20	16 h.	McMurdo Sound	S	4	29.44	23.0	21.8	"A.-St., Ci.-St., A. -Cu."	"Cu.-St., Cu."	2	b.c. 		NW	3	NW	3	29.5		 
+	24			ESE	4	29.47	22.8	20.6	"A.-St., A.-Cu."	"Nb., Cu.-St."										 
+28	4	5.30	Off Cape Royds	ENE	3	29.48	20.6	19.5	"Ci.-St., A.-Cu."	Cu.	7	b.c.		WNW	2					2.30: Off Cape Evans. 4.30: Considerable amount of Ci.-St. in striae appearing to radiate from SSE (magnetic) point of compass. 
+	8	8.30	 Proceeded for King Edward Land	SSE	4	29.50	25.5	23.8	A.-Cu.	Cu.	6	b.c.		N	3	NE	3	32.2		Remainder of clouds principally A.-Cu. 5.30: Off Cape Royds. 
+	12			S	4	29.49	26.0	23.8	"Ci.-St., A. -St."	Cu.	7	b.c.						31.0		"Noon : Heavy bank of Cu. to SW. 14.15: Wind shifted to SW, force 4. 16.30 : Wind eased to 1-2. Dogs : Occasional few flakes of snow." 
+	16			N	3	29.50	25.5	24.3	"Ci., A.-Cu."	"Cu., Nb."	9	o.c.s.		W	3	W	3	32.4		 
+	20			SSE	1	29.50	23.5		Ci.	"Cu., Nb."	6	b.c.s.			1			32.4		20 h. : Very light snow. 22 h. : Clouding over. Wind shifted to SW. Midnight : Slight NWly swell. Sea calm. 
+	24	21 h. 	Off Cape Crozier	NNE	Light Airs	29.44	22.0	20.8	Ci.	Cu.-St.	9	b.c.				NW	3	31.8		 
+29	4			NNE	2	29.49	24.5	22.5		Cu.-St.	10	o.				SW	2			2 h. : Wind shifted SW 2 to N 2. Slight snow flakes falling in morning. 9.15: Wind to NW. Light snowflakes falling during forenoon. 20 h. : Considerable mirage. 21 h. : Low smoky fog (2) apparently caused by wind off barrier striking warmer water. Temp. fell to 17.0. Rigging covered with hoar-frost. Midnight : Fog (2). Observed ice crystals in the AIR. 
+	8			SSE	1	29.52	23.5	22.0		"Cu.-St., Nb."	10	o.c.s.				SW	2	30.8		 
+	12			ENE	3	29.53	26.0	23.8		"Cu.-St., Nb."	10	o.c.s.		NNW	2	NNW	3	30.8		 
+	16	78 16	175 55 E (15.37 h.)	ENE	3	29.58	25.8	22.9	"A.-Cu., A.-St."	Cu.-St.	7	b c.		NW	3	NW	3	31.0		 
+	20	78 26	176 46 E (18.38)	ESE	3	29.64	23.8	21.5	A.-St.	"St., Cu."	2	b.c.		NW	3	NW	3	30.8		 														NW	4	NW	3	29.2		 
+	24			E	4	29.69	18.2	17.0	A.-St.	St.	2	b.c.f.	2	NNW	4	NNW	2	29.5		2.30: Fog cleared. 
+30	4	78 23	179 28 W  (3.23)	ESE	4	29.69	12.8	12.0	A.-St.	St.	4	b.c.f.s.	4	NW	3			30.0		 														NW	3	NW	3	29.7		 
+	8	78 24	178 18 W (7 h.)	SE	4	29.71	13.5		"A.-St., A.-Cu."	St.	9	c.		NW	3		3	29.5	405	"16.10 : Commenced snowing (moderate) easing to slight towards end of dog's watch. 20 h. : From 20 h. to 23 h. continuous fall of light snow, apparently drift snow from Barrier." 
+	12	78 24	176 54 W (12.10)	SE	5	29.73	23.0	22.0	"A.-St., A.-Cu."	"St., Cu."	7	b.c. 								 
+	16			SE	5	29.73	20.0	19.0	"A.-St., A.-Cu."	"St.-Cu., Nb."	10	o.c.								 
+	20	78 26	175 22 W (18.46)	ESE	5	29.72	20.0	19.2		"St., Nb."	10	o.c.4s.		NW	4	NW to NW of N	4	29.0		 
+	24			SE	4-5	29.77	22.0	21.0		St.	10	o.c.s.		Confused	4	NW	5	30.8		 
+31	4	78 33	173 54 W (2.10)	ESE	4	29.76	18.5	17.8		St.	10	o.		NNW	4	NW	3			"Uniform St. gradually getting lighter. 8 h. : Sun shining through clouds. Morning : Sun shining through clouds and very small portion of blue sky appearing. 15.40: Halo round sun ; 22°, not very light, colours from in to out, red, yellow, bluish white." 
+	8	78 32	172 14 W (7.12)	ESE	4	29.75	20.1	19.2	"A.-Cu., A.-St."	St.	10	o.		NNW	4	NW	3			16 h. : In Discovery Bay. Low Cu. on horizon over Barrier to northward. Sun shining through clouds. 
+	12	78 29	171 6 W	E	4	29.81	22.2	21.0	"A.-Cu., A.-St."	"Cu.-St., Cu., St."	10	o.		NNW	4	NNW	3			 
+	16	78 28	170 53 W (17.8)	E	4	29.79	18.9	17.9	A.-St.		10	o.			2		2			 
+	20	78 17	170 55 W (20.50)	ESE	4-5	29.78	22.8	21.8	"A.-St., Ci.-St., Ci."		4	b.c.		NNW	4	Cross NWlyN	4		405	 
+	24	78 13	170 18 W(22.47)	E	4	29.74	25.2	22.2	Ci.-St.		3	b.c.		NNW	4	NNW	4			 
+"FEBRUARY, 1911."																				 
+1	4			E	5	29.70	24.5	22.5	Nb.		0	b.		NNW	4	NNW	2			"Steady uniform breeze, slightly freshening." 
+	8	77 49	168 1 W (6.5)	ESE	5-6	29.60	25.5	24.0	A.-St.		1	b.c.		N by W	4	N by E	5			Low band of St. on SW horizon. Clear bright weather. 
+	12	77 38	166 17 W	ESE	5-6	29.53	25.0	23.8	A.-St.		1	b.c.		N by E	5	N by E	5			 
+	16			ESE	5-6	29.44	25.0	23.5	A.-St.		2	b.c.		N by E	5	N by E	5			 
+	20			SE	6	29.38	23.0	22.0		Det. Cu.	3	b.c.		NNE	6-7	NNE	4	29.0		 
+	24			SSE	7-8	29.24	21.0	19.2		Cu.-St.	3	b.c.		NE	6	NE	5	29.8		 
+2	4	76 55	161 19 W	S	6-7	29.10	20.8			Det. Cu.	1	b.		ENE	6	NEly	4			3.30: Wind veered to ENE. 4 h. : Cu. low on horizon. 
+	8	76 52	159 5 W (9.18)	S	5	29.00	23.0	22.4	A.-Cu.	Det. Cu.	1	b.		ENE	4	NWly	4	29.5		10 h. : Wind eased force 3-4. 
+	12	76 56	159 0 W	S	1-2	28.92			A.-Cu.	"Cu., Det. Cu."	2	b.				E by S	3	30.2	405	17.30: Considerable mirage. 
+	16	77 6	157 54 W (16.48)	SE	1	28.86	21.8	19.0	A.-Cu.	Det. Cu.	1	b. 			1			29.2	452	 
+	20	77 9	158 28 W (20.6)	S	2	28.78	16.9		A.-Cu.	St. det. St.-Cu.	1	b.			1	E	3	29.5	453	 
+	24			ESE	3	28.80	10.0	9.5			3	b.c.m.		NNE	2	SE by E	4	28.5		 
+3	4			Var.	0-3	28.80	10.5	10.0		St.-Cu.	9	o.f.						29.0		Wind sprang up from NNE at 23.15. Mist rising from sea. Heavy mirage. Wind varying from NW to SSE and from calm to force 3. 
+	8			SE	7	28.80		6.2		Nb.	10	o.f.		NE	5	NE	5	28.5		"Steamy fog of considerable density in places. 5 h. : Wind E by N, force 5, rising to 6-7 by 6 h. Low fog (2) caused by the cold wind off Barrier striking the water. 13 h. : Wind eased to force 6." 
+	12			SE	7	28.80		7.5		Nb.	10	o.f.		NE	5					14 to 16 : Snow moderate. Sun shining through. 17.30: 22° 
+	16	78 18	162 22 W (17.27)	SE	6	28.79		12.8		Nb.	10	o.2s.f.		NE	3			29.5		"Mock sun to right of sun, the only part of halo showing red, yellow, green, purple, and white. Altitude of sun 14° 40'." 
+	20	78 23	163 21W (20.28)	S	3-4	28.80		11.0	"Ci.-St., A.-St."	St.	4	b.c.		NE	2			29.8		18 h. : Sky clearing rapidly disclosing Ci.-Cu. and Ci.-St. above. 
+	24	78 36	163 47 W (23.45)	S	2-3	28.98	17.9													"Wind eased to 5, but stronger in gusts. Between 22 and 23 h.: Snow squall passed ahead of ship." 
+4	4			WNW	3	28.91	19.0	18.5		St.	9	c.				S	2			4 h : Fast to sea-ice in Bay of Whales. 
+	9.30			WNW	2	28.97	25.0	24.5		St.-Cu.	9	b.c.				S	2			 
+	12		Bay of Whales	WNW	2	29.00	20.8	20.5		St.-Cu.	9	b.c.						29.5		 
+	16			WNW	1-2	29.00	19.5	18.5		"St., St.-Cu."	8	b.c.						29.5	430	 
+	20			NNW	2-3	28.96	24.5	23.5		"St., St.-Cu."						SW	3	28.8		20 h. : At sea off Barrier. 
+5	4			WSW	3	28.93	15.5	15.5		St.	10	o.		SE	2	S	2			 
+	8	78 15	170 42 W (9.22)	SSW	2-3	28.87	17.5	17.5		"St., St.-Cu."	10	o.			2	E	3	29.8		8.15: Stronger gusts of wind off Barrier for about ten minutes. 
+	12	78 12	171 50 W (13.3)	SSW	1	28.86	21.0			"St., St.-Cu."	10	o.			2	Cross SE SSW	3	30.1		"9 h. : Wind NE, 2. 11 h. : Eased to 1. 18 h. : Wind SSE, force 4. 19.30: Wind eased to 2. 21 h. : Sky overcast. Light fall of snow. 23.15: Sky cleared." 
+	16			WSW		28.84	23.2	22.8		"St., St.-Cu."	10	o. 			2	SE	3	30.0		 
+	20			WNW	2	28.81	26.0	24.9		"St., St.-Cu."	10	o.			2	SE	3	30.8	430	 
+	24			NW	3-4	28.78	29.0	28.0	"Ci.-St., Cu."	"Cu.-St., Cu."	8	b.c.m.		S	4	SSE	5	30.1		 
+6	4			NW	4	28.78	28.8	28.2		Cu.-St.	10	o.c.sq.m.		S	5	S	4	31.0		Squalls of light snow from 3 to 4 h. 
+	8			NNE		28.82	29.0	28.5		Cu.-St.	10	o.c.s.b.			2	S	4	31.8		Occasional slight fall of snow during watch. 
+	12	77 52	172 4 W	NW	2-3	28.84	29.9			"St.-Cu., Cu."	9	o.c.			2	SW	4	31.1		"p.m. : Occasional slight fall of snow during watch. 14.45: Wind to W, force 1-2, and gradually round to NW. 19.30 : Commenced to drizzle. 20 h. : Very fine." 
+	16			E	1-2	28.87	31.5	29.0		"St.-Cu., Cu."	10	o.c.			2	SW	4	31.0		 
+	20			S	1-2	28.88	29.0	29.0		"St., St.-Cu."	10	o.c.r.			2	SW	4	31.0		 
+	24			SSW	4	28.92	28.0	27.8	Ci.-St.	"St., Nb."	9	o.c.m		E	4	SW	5	31.8		"Midnight : Ugly sky, breeze freshening." 
+7	4			SSW	5	28.93	28.5	28.0		St.	10	o		E by N	6	E by N	4	31.0		Wind increasing gradually. 
+	8			SSW	5-6	28.94	25.9	25.5		"St.-Cu.,Nb."	10	o.s.		E by N	5	E by N		31.1		Snow slight. 
+	12			SSW	6	29.00	25.0	24.5		St.-Cu.	10	o.c.		E by N	5	E by N		31.5		 
+	16	77 17	174 32 E (17.19)	SSW	5-6	28.93	22.5	22.5		St.-Cu.	10	o.c. 		E	5	E		31.6		 
+	20			SSW	5	29.02	21.5			St.-Cu.	10	o.c.		E	5	E		31.2	354	17 h. : Clouds breaking and showing low. A.-Cu. above. Lower clouds travelling at great speed before the wind. Locke drawing water to SW (true). Wind gradually backing from 22.30 h. on. Squalls frequent. 
+	24			S	5-6	29.08	20.8	20.8		St.-Cu.	10	o.c.q.		"NEly, E by N"	5	E by N		29.8		 
+8	4			SE	8	29.07	25.0	24.5		Ci.-Cu.	2	b.q.		NE	7	NE	5	30.0		"Wind shifted two points at 5 h., falling a little and then freshened to force 8. 5 h. : Wind eased to force 4. 7 h. : Wind to SW." 
+	8			N	2	29.09	32.2	30.5	Ci.	"St.-Cu., Cu."	1	b.c.		Confused	3	Confused	3	30.2	358	 
+	12		Off Cape Bird	S	2	29.09	33.0	31.8	"Ci., Ci.-St."	"St.-Cu., Cu,"	1	b.c.			1	SW	2	32.1		 
+	16			WNW	2	29.08	33.0		"Ci., Ci.-St."	"St.-Cu., Cu."	1	b.c.						32.2	453	20 h. : Off Cape Evans. 24 h. : Off Glacier Tongue. 
+9	4		Off Glacier Tongue	SSE	2	29.19	15.0	14.0	"A.-St., Ci."	Cu.	1	b.c.								 
+	9.15	8 h.	Off Cape Evans	ESE	4	29.24	15.2		"Ci., Ci.-St. A.-St."		3	b.c.								Great mirage all day. 
+	21	Noon	At Glacier Tongue	E	3	29.37	20.8		A.-St.	"St., Nb."	10	o.c.								20 h. : Very little A.-St. 21.30 : Commenced to snow (slight). 
+	24		Off Cape Royds	S	3	29.39	24.5	24.2	A.-St.	"St., Nb."	8	o.c.s.						32.2		Midnight : Mirage. Snow (moderate). 
+10	4			SSW	3	29.39	25.0	24.5		"St., Nb."	10	o.2s.								Snowing continuously (moderate). 
+	8			ENE	3	29.36	25.8	24.5		"St., Nb."	10	o.2s.		W	3	WNW	3	29.5		Snowing continuously (moderate). 11.30: Ceased snowing. 
+	12	76 31	166 31 E 	ENE	4	29.36	27.8	27.0	"A.-Cu., A.-St."	"St., Cu., St.-Cu."	8	o.c.		WNW	3	WNW	3	29.8		12.10: Wind dropped suddenly calm. 
+	16	76 1	166 47 E (17.58)	W	1	29.29	30.1	28.0		St.-Cu.	9	o.c.			1	Wly	3	29.8		16 h. : Lower clouds from W to SW. Light variable airs all afternoon. 
+	20			WNW	3-4	29.30	28.0	27.0		"Cu., St.-Cu."		b.c.				SE	3	30.1	335	21 h. : Wind set in a steady light breeze. Low scud drifting moderately. 
+	24			WNW	3	29.29	25.2	24.8	"A.-St., Ci.-St., A.-Cu."	"Cu.. Cu.-St., Nb."	7	b.c.				SE	3	30.0		 
+11	4			W	3-4	29.28	26.0	25.0		St.-Cu.	10	c.		SE	2			30.0		"2.30: Rays of light and radiating fan-shape from just below thehorizon, diametrically opposite the sun. Sun obscured." 
+	8	74 38	168 55 E (7.48)	WSW	3-4	29.26	24.8	23.2	"A.-St., A.-Cu."		8	b.c.		SE	2			29.8		 
+	12	74 13	169 24 E	SSW	3	29.27	25.1	23.8	"A.-St., A.-Cu."		8	b.c.		ENE	2	ENE	2	29.6	328	 
+	16			S	3	29.24	27.9	25.8	"A.-Cu., A.-St."		9	b.c.			2	NE	3	29.0		18.30 : Commenced snowing (very slight). 
+	20			WSW	3	29.20	24.5			"Nb., St.-Cu."	10	o.c.				NE	3	28.8		23h : Wind gradually backed to E. Frequent snowfall. 
+	24			SSW	3	29.18	25.0	25.0		"Nb., St.-Cu."	10	o.c.s.		E	3	ENE	3	28.6		 
+12	4			SSW	4	29.14	26.5	26.2		"St., Nb."	10	o.c.s.		E	3			30.5		"Snow from 3 to 4 h. Snow all morning, slight to moderate." 
+	8			SSW	4	29.08		26.5		"St., Nb."	10	o.4.s.		ESE	3	ESE	3	30.0		10 h. : Swell setting in from NW. 
+	12			WSW	4	29.09	27.4	27.0		"St.-Cu., Nb."	10	o.c.		ESE	5	"Cross ENE, WNW  "	"4,5"	29.9	404	Noon : The WNW swell the greater. 
+	16	71 54	171 59 E (14.11)	SSW	5	29.01	26.0	25.2		Nb.	10	o.c				"Cross ENE, WNW "	5	29.9		18.30 : Wind increased to force 6. 
+	20			SE	7	29.01	26.8	26.0		"St.-Cu., Nb."	10	o.c.		NE by E	5	NE by E	7	28.8		"21.30 : Wind increased to 8, ESE. 23 h. : ,Wind increased to 9 in squalls." 
+	24			S	9	29.02	27.5			"St.-Cu., Nb."	10	o.c.s.		SE by E	6	ESE	8	28.8		SE by E. Very squally. Midnight : Wind increasing and inclined to back. 
+13	4			S	9	29.00	27.0	27.0		St.	10	o.		ESE	7	SE	8			"3 h. to 4 h. : Sky clearing, patches of blue sky showing through scud. Occasional snow flurries in morning. Occasional light snow in forenoon. 9 h. : Wind increasing in force again." 
+	8			SE	8	28.96	28.2	27.0		St.-Cu.	10	o.c.		E	7	E	8	28.8		Noon : Swell increasing. Slight snow. Height of sea 25 to 28 ft. Afternoon : Snow slight to moderate. Very soft. 
+	12	71 13	171 15 E	S	8	28.97	29.2	28.0		"St.-Cu., Nb."	10	o.c.s.		ESE	7	ESE	8	28.9		"16 h. : Weather moderating slightly. Ceased snowing 15.30, but flurries like April showers of thick snow generally, with increase of wind passing over from time to time. 19.30 : Wind shifted to SE and increased to force 8. 20 h. : Wind and sea increasing. Snow squalls more powerful and of greater frequency." 
+	16			S	7	29.01	29.0	27.5		St.-Cu.	10	o.c.s.		ESE	7	ESE	8	28.9	405	"Crest of waves increasing. 22 h. : Wind increasing to 10 in squalls. Sea up to 30 ft., but after two or three heavy waves generally quieter for some minutes. 1st watch : Snow moderate." 
+	20			SSW	8-9	28.98	29.0	27.2		St.-Cu. Nb.	10	o.c.q.s.		SE	8	SE (rather confused)	8			 
+	24			SSW	8-10	29.01	27.3	26.8		"St.-Cu., Nb."	10	o.c.q.s.		SE	8	SE	8	29.2		Squalls of force 10 accompanied by snow. 
+14	4			SSW	10	29.09	27.5	26.5		St.-Cu.	10	o.c.s.q.		SE	8	SE	8			 
+	8	"Hove to,"	 70 4 172 43 E	SSW	9	29.10	28.2	27.5	"A.-Cu,"	St.-Cu. 	10	o.c.q.		SE	8	SE	8	28.8		Frequent fierce squalls. Light snow throughout. 
+	12			SSW	8	29.18	28.5	27.8		St.-Cu.	7	b.c.q.		SE	8	SE	8			"Morning : Frequent squalls. Snow slight to moderate. 10 h. : Sun broke through clouds, and inclined to ease. Sea during first half of forenoon between 25 and 30 ft., occasionally higher, often with ugly fierce head. In latter half of watch inclined to ease." 
+	16			SSW	8	29.18	29.0	27.5		"Cu., St.-Cu."	7	b.c.q.		SE and E	8	SE	8		405	18 h. to 20 h. : Squalls easing and wind easing. 23 h. : Cu. and St.-Cu. moving very fast. Midnight : Wind SSE. Light rain. Wind veered to S by E. 
+	20			S	6-7	29.19	28.0	27.2	"Ci.-St,, A. -Cu., A. -St."	"Cu., St.-Cu."	6	b.c.		SE	8	SE	8			 
+	24			SSW	6-7	29.19	28.0	27.5	A.-St.	"Nb., Cu.-St."	10	o.c.s.		Ely and S by E	8	SE	8			 
+15	4			S	7-5	29.17	28.5	28.5	"Ci., A.-St,"	Nb.	3	b.c.s.		SE	5	SE	7			"Sky clearing from 2 h. 3.30 : Snow squall, 10 minutes. 8 h. : Cu. moving fast before wind. 9.30 : Snow flurry, others occurring occasionally during forenoon. Afternoon : Snow flurries from time to time, like April showers. Sky quickly clearing of lower clouds and clouding over again generally during afternoon." 
+	8	69 45	173 32 E (7.40)	S	4-5	29.15	29.0	29.0	"Ci., A.-Cu., A -St."	"Cu., St.-Cu."	5	b.c.		SE	5	SE	7	29.5	404	"St.-Cu., Cu., A.-Cu., and A.-St. 20 h. : Frequent snow squalls in which wind increased to 6-7. 23.10 : Snow squall, force about 8, lasted half an hour. Sky cleared by midnight." 
+	12	69 41	173 22 E	S	4-5	29.16	29.0	28.2	"Ci. -St., A.-Cu., A.-St."	"Cu., St.-Cu."	6	b.c.		SE	5	SE	7	30.0		 
+	16			S	6-7	29.20	29.0	28.2		St.-Cu.	9	b.c.		SE	6	SE	7	30.0		 
+	20			S	5-6	29.25	27.8	27.0	"Ci.-St., A.-Cu."	"St.-Cu., Cu."	4	b.c		SE	7	SE	7			 
+	24			SE	6-8	29.26	27.5	25.8	"Ci. -St., A.-Cu."	"St.-Cu., Cu., Nb."	7	b.c.q.s.		E by S	7	ESE	8	29.8		 
+16	4			SE	7	29.29	26.5	26.5	A.-Cu.	St.-Cu.	2	b.c.		E	6	ESE	8			"4 h. : Clear sky, no squalls or snow." 
+	8	70 8	169 45 E (7.30)	SE	6-7	29.30	28.5	28.0	"A.-Cu., A -St."	"Cu., St.-Cu."	8	b.c.		E by S	6	E by S	7	29.6		 
+	12	70 28	168 47 E (13.17)	SE	6-7	29.35	28.2	26.5	"A.-Cu., A.-St."	"Cu., St.-Cu."	4	b.c.		E	6	E	7	29.6	403 deeper	 
+	16			SE	7	29.31	28.8	27.5	"Ci.-St., A.-Cu., A.-St."	"Cu., St.-Cu."	3	b.c.		E	6	E	7	30.0		 
+	20		20.40 hove to	ESE	7	29.25	27.8	26.8	"Ci., Ci. -St., A. -Cu., A.-St."	Cu.	4	b.c.		E	7	E	7	29.9		23 h. : Nb. and Cu.-St. gathering to N (true). 
+	24			SE	5-7	29.21	26.8	25.8	"Ci., Ci.-St., A.-Cu. A. -St."	"Cu., Cu.-St. St.-Cu."	5	b.c.q.		E	7	E	7	29.8		"Midnight : Wind squally. - Arch of St. from E then N to NW, 30° high, travelling from NW." 
+17	4	70 48	168 14 E (2.h)	S	3	29.20	24.5	24.0	A.-St.		1	b.				E	4			Wind dropped and changed E to SE at 2.30. 
+	8	71 0	168 30 E (6.46)	SSW	3	29.16	24.0	21.5	"A.-Cu., A.-St."	Cu.	2	b.c.			2	E	3	28.8		 
+	12	71 10	168 42 E (11.34)	W	3	29.15	27.0	24.0	"A.-Cu., A.-St."	Cu.	1	b.c.								 
+	16	71 24	169 32 E (16.28)	ESE	4	29.14	28.5		"A.-Cu., A.-St."	Cu.	1	b.c.			2	E	3-4	30.4	403 deeper	 
+	20		In Robertson Bay	SSE	6-7	29.09	24.4	22.0	"A.-St., A.-Cu."	"Cu,"	1	b.c.			2		2	29.8		20 h. : Squally. 
+	24			SE	4	29.13	24.0	22.0	A.-Cu.		0	b.			2		2			A.-Cu. on Western Mountains only. 
+18	8	1.20 h. 	Off Cape Adare	SW	2	29.16	29.0		"A.-St., A. -Cu."	St.-Cu.	1	b.c.						29.0		 
+	12		"Robertson Bay, Cape Adare"	Calm	0	29.23	32.8	26.5	"A.-St., A.-Cu."	"Cu., St.-Cu."	1	b.c.						28.9	403 deeper	 
+	16			Calm	0	29.25	32.0	26.8	"A.-Cu., A. -St."	"Cu., St.-Cu."	4	b.c.								 
+	20			ENE	Airs	29.30	28.5	26.0	"A.-Cu., A. -St."	"Cu., St.-Cu."		b.c.								"20 h. : Heavy bank of Cu. on Western Mountains, under it Locke drawing water. Cu. on Western Mountains generally and Nb. south of Cape Adare." 
+19	8			WNW	Airs	29.36	27.0		"A.-Cu., A.-St."	"St.-Cu., Cu., Nb.."	8	b.c.						29.2		"8 h. : No snow in the immediate vicinity, but much snow to SW and NW. 9.30 to 12 h. : Snow slight to moderate. Occasional slight snow during afternoon. 16 h. : A suspicion of snow falling." 
+	12		Cape Adare	Calm	0															 
+	16			WSW	Airs	29.35	29.0	27.6	"A.-Cu., A.-St."	"Cu.-St., Cu., Nb."	7	b.c.								 
+20	8	5 h.	Proceeded	ENE	3	29.26	27.0		"A.-Cu., A.-St."	"Cu., St.-Cu."	9	b.c.								5 h. : Proceeded from Robertson Bay. 
+	12			E	5	29.22	28.0	25.2		"Cu., St.-Cu."	4	b.c.		NNE	5	NNE	5			 
+	16			ESE	5	29.17	27.4	26.5		Nb. 	10	o.c.s.		NE	6	NE	6	28.8	405	16 h. : Snowing slightly during latter half of afternoon. Occasional slight snow during dogs. 22 h. : Wind increased to force 7. 
+	20			ESE	6	29.09	26.8	25.5			10	o.c.		NE	6	NE	7	29.2		22.50 : Snow squall lasting 10 minutes. 23.30 : Wind fell to 5 between squalls. Midnight : Sea easing down. 
+	24			ESE	5-7	29.14	27.0	26.2		"St.-Cu. St., Nb."	10	o.c.q.s.		NE	7	NE	7	29.2		 
+21	4			SE	6	29.11	26.5	26.5		St.	10	o.s.q. 		NE	6	ENE	6			"4 h. : Light snow throughout, thickening from 3 to 4 h. Morning : Snow slight to moderate. Fog 1-3. Forenoon : Occasional snow flurries, slight to moderate ; no wind in them. Afternoon : Sun showing mistily most of time. Dogs : Weather improving generally." 
+	8.30	68 59	168 55 E	SE	6	29.09	28.0	27.0		"St., Nb. "	10	o.q.f.		NE	6	ENE	6	29.0		 
+	12	68 41	168 29 E	SSE	6	29.10	27.5	27.5		"St., Nb. "	10	o.c.s.		E	7	E	7	29.0		 
+	16			SSE	6	29.18	26.5	25.4		"St.-Cu., Cu."	10	b.c.		E	6	E	6	29.5		 
+	20	68 40	165 45 E (20.10)	SSE	4	29.22	27.2	25.0	"A.-St., Ci."	"Cu., St.-Cu.,"	6	b.c.		E	5	E	6	29.5	404	"20 h. : Ci. in strips, running in NNW to SSE direction." 
+	24			SE	4-3	29.29	27.5	26.3	Ci.	St.-Cu. 	5	b.c.		E	2	E	4			 
+22	4	68 42	165 57 E (0.45)	SSE	1	29.26	29.8	29.0	Ci.-St.	"Cu., Cu.-St."	4	b.c.		ESE	2	ESE	4	29.2		5.30: Wind to WSW 1. 
+	8			NW	3	29.24	29.0	26.9	A.-St.	"Cu., Cu.-St. "	9	b.c.			2	"ESE, NE"	3	29.4		7.30: Slight snow for 10 minutes. 
+	12	69 15	164 24 E (13.45)	WSW	4	29.21	28.0			St.-Cu.	10	o.c.s.f.		SW	4	Confused SW	"3,4"	29.4		14 h. : Wind gradually veering to S. Higher layer of lower clouds from NW very slowly. Green flash at sunset. Much mirage. 
+	16	69 23	163 59 E (16.32)	SW	2	29.22	26.8	24.5	"A.-St., A.-Cu."		7	b.c.			2	NE	3	29.4		 
+	20	69 43	163 24 E (22.50)	W	2	29.26	22.8	21.2	"A.-St., A.-Cu."	"St.-Cu., Cu."	3	b.c.			2	Confused SW	3	29.0		 
+23	4	69 43	163 17 E (6 h.)	W	1-2	29.35	11.0	10.0	"Ci. -St., A.-St."	"Cu.-St., St."	4	b.c.								 
+	8		Proceeded	W	3	29.34	13.8	12.0	"Ci.-St., A.-St."	Cu.-St.	3	b.c.				WNW	3	28.4		 
+	12	69 29	162 49 E	WNW	2-3	29.41	11.8	11.2	"Ci.-St., A.-St."	"Cu.-St., Cu."	7	b.c.				SW	3	28.5	405	 
+	16	69 19	162 14 E (16.18)	ENE	1	29.39	22.0	20.1		"St., Nb."		o.c.m.s.				NW	3	28.8		16 h. : Very light snow. ' 
+	20			ESE	3	29.35	23.0	22.0		"St.-Cu., -Nb., Cu."		o.c.s.				Pack		28.8		 
+	24			E	4	29.31	26.0	25.0		Nb.	10	o.1/2 s.		NE	3	Nly	4			Thick with very fine snow 10.30 to midnight. 
+24	4		Hove to	SSE	4-5	29.24	21.0	21.0		"St., Nb."	10	o.q.4s.		E by N	4	Nly	4			"Thick weather, wind increasing, intermittent snow, the whole watch." 
+	8			SSE	5-6	29.21		21.0		"St., Nb."	10	o.q.4s.		"E by N,"	4	Cross E by N	4	28.5		Morning : Snow moderate to heavy. Wind gradually increasing. 
+	12			SE	6	29.22		24.5		"St., Nb."	9	o.q.3s.		ESE	4	ESE	4			7 h. : Win to E by S. 
+	16			SE	5	29.23		25.0		"St., Nb."	10	o.q.4s.		NE	5	"E, NE"	6			"Forenoon : Snow moderate to heavy ; cleared considerably and stopped snowing, 11.30." 
+	20		Hove to	SE	5-6	29.25		27.0		St.	10	o.4s.		E	5	"E, NE"	6			12.20 : Recommenced snowing. Afternoon : Snow moderate to heavy. 
+	24		Hove to	E	4	29.29	28.5	28.0		St.	10	o.q.4s.		E	6	Ely	6	28.5		"Dogs : Snow moderate to heavy. 1st watch : Fine snow throughout, dense at times." 
+25	4	68 47	159 14 E (7.18)	ENE	3-4	29.33	28.0	27.0		St.	10	o.c.q.4s.				Nly	4	28.2		"Snow all night (moderate). 6.45: Cleared temporarily, and sun appeared." 
+	8	10.12h.	Proceeded	N	2-3	29.34		28.0		"St., Nb."	10	o.c.3s.		Nly	4	Nly	4			7.30: Snowing again. Sky light to southward. 
+	12			N	3	29.38	28.2	27		"St., Nb."	10	c.		NW	4	Nly	3	29.2		16 h. : Wind increasing slightly. 
+	16			NW	3	29.33	25.8	25.2		"St., St.-Cu."	8	b.c.		NW	2	NW	4			Commenced to snow (moderate). 
+	20	69 2	159 21 E			29.12														 
+	24		In pack	W	3	29.14	18.0	17.0		"Nb., St., St -Cu."	9	c.								 
+	4		In pack 9 h.	W	1-2	29.06	15.0	15.0		St.	10	o.								 
+26	8		Proceeded	W	Airs	28.92	15.0	14.8		"St."	10	o.			Pack heavy					8 h. : Sun shining at foot of mountains to SW. 
+	12	68 53	158 39 E (13.26)	WNW	1	29.00	16.2	15.0		"St., St.-Cu."	9	o.c.			Pancake ice			28.2		"Suggestion of sun all afternoon, ceasing at 17.30." 
+	16	68 43	158 37 E	WNW	1	28.96	12.5	12.0		"St.-Cu., Cu."	7	b.c.						28.5		19.30 : A little Ci. 
+	20	68 33	158 15 E (22.45)	Calm	0	28.88	14.0	13.0	A.-St.	"Cu., St.-Cu."		b.c.						28.5		20 h. : Cu. from WNW slowly. Midnight : Low bank of St. fog over land in S. A few streaks of Ci. in zenith from E to W. 
+	24	23.25h.	Hove to	SSE	2	28.83	14.0	13.5	Ci.	St.	1	b.								 
+27	4	5.30h.	Proceeded	SSE	3	28.79	16.0	15.0	"Ci., Ci.-St."	"Cu.-St., St."	5	b.c.								"1.30 h. : Aurora commenced. 2.45: Aurora ceased. Wind steady, increased to force 3." 
+	8			SE	3	28.74	21.8	20.0		"Cu-St., St."	8	b.c.						28.8		 
+	12	68 37	158 41 E	SE	3-4	28.76	22.8	21.2		"Cu.-St., St„ Cu."	8	b.c						28.8		 
+	16			SE	3-4	28.71	21.5			"St.-Cu., St., Cu."	9	o.c.								 
+	20			S	4	28.70				"St.-Cu., St., Cu."	S	b.c.						28.5	405	 
+	24	23.40h.	Hove to	SSE	5-4	28.71	22.0			St.	10	o.c.								 
+28	4	5.30h.	Proceeded	NW	5	28.75	11.0			"Nb.,Cu.-St."	10	o.c.s.								"2.55: Commenced snowing. Wind Ely, force 3-2. 3.7 h. : Wind shifted W by S, increasing in force." 
+	8	68 18	160 34 E (9.24)	WNW	4	28.78				Nb.	10	o.c.			Pancake ice	SEly	3	28.5		 
+	12	68 14	160 38 E	W	5	28.88	13.8		A.-St.	"St.-Cu., St."	2	b.c.		SW	2	SEly	3	29.5	403	Long slow swell. 15.15: Wind eased. 
+	16	67 54	160 22 E (18 h.)	NW	2	28.97	17.5			St.-Cu.	9	o.c.			2	NEly	3			 
+	20			NNE	3	28.96	26.0			"St., St.-Cu. St."	9	o.c.			2			30.0		22 h. : Wind from NW to N. Clouds closed rapidly. 
+	24			ENE	3	28.93	25.0	24.0	A.-St.		2	b.								23.45: Two curtains of aurora showed in zenith E and W (true). 
+"MARCH, 1911."																				 
+1	4	1h. to 5.30	Hove to	ESE	3-4	28.89	27.0	25.0			10	o.c.								2.30 : Clouded over. Wind freshening. 
+	8			ESE	3-4	28.79	27.5	26.5			10	o.s.						28.5		Morning : Occasional light snow. 
+	12	67 32	159 37 E	ESE	4	28.74		29.5			10	o.4s.		E by N	2			29.5	405	Forenoon : Snowy drizzle. 
+	16	13h.	Hove to	E	3	28.69		30.0			10	o.4s.						29.5		Afternoon : Very light snowflakes. Snow moderate. 
+	20			E	2-3	28.69		29.5			10	o.4s.				E				Dogs : Very light snowflakes. Snow moderate. 20 h. : Snow heavy. Flakes half melted. Long swell slightly increasing. 
+	24			E	2	28.74		30.0			10	o.4s.				E	2			Midnight : Snow moderate. 
+2	8	67 35	159 42 E	NNW	3	28.85		23.5		"St., St.-Cu., Nb."	9	o.ls.			2			29.5	405	"4 h. : o.4s, snow slight. 5 h. : Snow eased. 5.45: Ship proceeded." 
+	12	67 30	160 30 E (13.44)	WNW	3	28.86		21.0	A.-St.	"St., St.-Cu."	7	b.c.			2			29.8		 
+	16	67 25	160 40 E (15.53)	WNW	1	28.87		23.0	"A.-Cu., A.-St., Ci., Ci.-St."	"St., St.-Cu., Cu."	4	b.c.			Pack			29.5		Slight swell in pack. 
+	21.20		Stopped in pack	ENE	3	28.75	24.0	22.5		"St., St.-Cu."	9	b.c.			Pack					 
+	24			ESE	4	28.66	26.0	25.5		Nb.	10	o.s.			Pack					Snow thick. 
+3	4		Stopped in pack	SE	6-5	28.60	27.0	27.0		Nb.	10	o.s.			Pack					1.30 : Wind E ; increased till 2 h. and then fell gradually. Middle : 
+	8			SE	5	28.68	27.0	27.0		"St., St.-Cu. Nb."	10	o.s.q.			Pack					Snowing all the watch. Occasional slight snow during morning Noon : Long heavy swell from Eastward. 
+	12	67 22	160 31 E	S	3	28.82	28.5	28.0		"St., St.-Cu. Nb."	8	b.c.			Pack					 
+	16			S	3	29.00	30.5	29.0		St.	10	o.s.			Pack					Dogs : Swell increasing. 
+	20			S	2	29.13	28.5	27.5		"St., St.-Cu."		b.c.				E by S	3			 
+	24			Calm	0	29.20	27.5	26.5			10	o.c.				E	3			"Midnight : Slight aurora in zenith E to W, detached streamers." 
+4	4		Stopped in pack	Calm	0	29.23	27.2	26.8		St.	10	o.c.								0.20: Sky cleared. 2.40: Clouded over and shut out aurora and stars. 4 h. : Light airs from NNW. 8 h. : Very long swell. 
+	8		Stopped in pack	NNW	3	29.21	27.8	26.8		St.	10	o.				Ely	3			"16 h. : Very windy-looking Ci. to N and NW. 19 h. : Low and rather thick A.-St. from WSW, gradually overspreading the whole western sky. Considerable Ci. of varying altitude over most of the sky. Calm with occasional light Nly airs." 
+		12h.	Proceeded																	 
+	12	67 18	160 38 E	NW	3	29.18	29.5			"Cu., St., St.-Cu."	8	b.c.				E	3			 
+	16	67 6	160 54 E	W	3	29.09	26.0	25.0	"Ci., A.-St."	"St., Cu., St.-Cu."	5	b.c.				Ely	3			"20 h. : Surface of sea just frozen. Sky, though still unsettled looking, better than at 19 h. 22 h. : Commenced snowing." 
+	20			ENE	2	28.95	26.3		"Ci., A.-St."	"Cu., St., St.-Cu."	7	b.c.				Ely	3	29.9		 
+	24			ENE	2-3	28.87				St.	9	c.s.								 
+5	4	1.40 to 6.20	Hove to	SE	2	28.86	25.5	24.5												2 h. : Wind veering NE to E. 4 h. : Snow light through watch. 
+	8			E	1	28.84	26.9	25.0	"A.-St., A.-Cu."	"St.-Cu., Cu."	6	b.c.							435	8 h. : Lower clouds from NW. 
+	12	66 44	161 18 E (10.10)	SSW	1	28.83	27.8	26.4	"A.-St., A.-Cu."	"St.-Cu., Cu."	5	b.c.		Calm		Calm		28.9		 
+	16	66 19	161 38 E (17.25)	SW	2	28.81	25.2	24.0	"A.-St., A.-Cu."	"St., Cu."	3	b.c.								Cu. (low) all round horizon. 
+	20			SW	4	28.86	16.5	16.5	"A.-St., A.-Cu."	"Cu., St.-Cu."	9	b.c.								 
+	24			SW	4	28.94	18.0	18.0		"Cu.-St., Nb."	10	o.c.								23 h. : Suspicion of snow fell. 
+6	4	65 35	160 46 E (4.55)	W	4-5	28.97	20.0	18.5				b.		SW	2					"4 h. : Fine aurora in NW (compass) chiefly all watch. Double auroral arc., the lower being just above horizon, the upper at an altitude of some 30° (judged) extending over nearly 135°, but the ends disconnected from remainder in shape of darts of light (like Plate II, "" Discovery,"" Physical Observations). Beams of undefined shape forming at times into folds stretching through SW to NE (compass)." 
+	8			WNW	4	28.99	21.0	20.5		"Cu., Cu.-St."	8	c.		SW	'3	NE	3	29.8		 
+	12	65 14	161 24 E	W	4-5	29.02	26.0	25.9	A.-Cu.	"Cu., Cu.-St."	5	b.c.		SW	4	Wly	4	29.6		 
+	16			W	4	29.03	27.5	26.5	A.-Cu.	"Cu., Cu.-St."	7	c.		SW	4	Wly	4	29.0		 
+	20			NW	4	28.99	30.0	30.0	"A.-Cu., Ci.-St., Ci."	"Cu., Cu.-St."	7	c.		W	4	W	4	29.5		"21 h. : Fine sunset, with Ci. clouds." 
+	24	23.40h.	Hove to	WNW	2-3		28.0	27.0	A.-Cu.	"Cu., Cu.-St. Nb."	8	b.c.		W	3					22 h. : Start of aurora which was obscured by clouds. 
+7	4	6h.	Proceeded	WNW	2	29.01	29.0	27.5		Cu.-St.	10	o.				NW	2			"Midnight to 1.30: Sky cleared and aurora showed in streamer form, W to NE. In NW quadrant a few perpendicular rays." 
+	8			NNW	3	28.98	30.5	29.8		St.	10	o.c.			2	NW	3	29.9		1.30: Sky clouded and aurora stopped. Distinct arc about 15° high (estimated). Faint reddish glow frequently showing. 
+	12	65 0	161 22 E	NE	3	28.94	31.8	31.0		"St., Nb."	10	o.c.3s.		NNE	3	Confused	3	29.5	405	Occasional isolated patches showed extreme brilliancy. 8 h. : Sun shining through. Long low swell. 9 h. : Commenced snowing (slight). 14.15: Wind shifted NE 2 to SW 2. 15.10 : Wind freshened to SSW 7 in snow squall. 19.50 : Locke drawing water to SW and also inverted to NE. 21 h. : Wind eased to 2. 
+	16			WSW	6	29.02	24.0	23.0	A.-Cu.	"St.-Cu., St."	8	b.c.				Ely	3	29.0		 
+	20	22.30h.	Hove to	WSW	4	29.11	21.0	20.0	"Ci., Ci.-St., A.-Cu., A. -St."	"St.-Cu., St."	6	b.c.		NNW	3	SE	4			"22.30 : Aurora commenced. A peculiar V formed, with apex of V overhead and pointing by W. The arms of the V being ESE and NNW . 23 h. : clouded over and obscured aurora." 
+	24			N	3	29.06	25.7	25.0	"Ci., Ci.-St., A.-Cu., A.-St."	"Nb., Ci., Ci.-St."	7	b.c.								23 20 : Aurora visible in between clouds. 
+8	4	6.30h.	Proceeded	N	4	28.96	30.5	30.0		St.	10	o.		NNW	2	SW	3			Midnight to 1 h. : Faint auroral lights showing. Sun shining through. Suspicion of snow. Forenoon : Snow fine and slight. 
+	8			NE	3	28.81	30.0	29.5		St. I	10	o.			2	NE	3		405	 
+	12	64 23	161 39 E	ENE	4	28.68	30.9	30.0		"St., Nb."	10	o.4s.		NNE	4	NE	4	30.0		Afternoon : Snow. 
+	16			ESE	4	28.54	31.0	31.0		"St., Nb."	10	o.4s.f.	3	ENE	4	N	4	31.0		Dogs : Snow and sleet. The NW swell the greater of the two. 
+	20			SSE	4	28.55	31.0	31.0		"St., Nb"	10	o.3s.f.	3			Confused				 
+	24			SW	5-6	28.70	30.0	30.0		"St., Nb."	10	o.d.s.	1	ESEly Confused	5	"Confused Cross SE, NW"	"5, 6"	31.0		First : Intermittent drizzling sleet all the watch. 20.40 : Wind shifted to SSE and gradually worked to S. Observed phosphorescence to a slight degree in the water. 
+9	4			WSW	7	28.80	27.0	27.0		St.	10	o.c.q.		S	6	"NW by N, S confused"	6			 
+	8	63 3	160 56 E	SW	6-7	29.00	25.0	24.0	A.-Cu.	"Cu., St.-Cu."	7	b.c.q.		SSW	7	Confused 	6			 
+	12	62 51	160 55 E	WSW	5	29.06	28.5	26.0		St.-Cu.	10	o.		Sly	7	S by W	7	29.0		9 h. : Locke drawing water to NNW. 
+	16			W	5	29.11	30.5	29.0		"St.-Cu., Nb."	10	c.		SWly Confused	7	"Cross SSW,WSW"	7	31.6		 
+	20			WSW	5	29.23	31.5	30.0		St.-Cu.	9	c.		SWly Confused	7	"Cross SSW,WSW"	"6,7"	33.5	404	 
+	24			W	5-4	29.28	29.0	29.0		"Nb., Cu.-St., St."	8	c.q.		Swly Wly	"6, 6"	"Cross SW, W"	"7,6"	33.8		"20 h. : Wind squalls occasionally, force 6-7. First : Phosphorescence in water. 22 h. : Ten minutes' snow. 21.50: Aurora (fine) commenced." 
+10	4			WNW	5-3	29.10	35.0	33.0		St.	10	o.2s.		SW	4	SWly	6			2 h. : Sky clouded. 2 to 3 h. : Thick with fine snow. 
+	8			NW	5	28.94	36.0	35.0			10	o.r.f.	1	SWly	5	WSW 	7	34.8		Forenoon : Squalls of hail occasionally. 
+	12	62 0	162 3 E	W	6-7	28.80	35.5	35.5		St.-Cu.	10	o.c.q.		W	7	W	7	35.0	405	 
+	16			W	7-8	28.84	36.0	34.8		St.	10	o.c.q.		WSW	7	WSW	7	31.0		 
+	20			W	7-8	28.97	35.0	34.0		St.	10			WSW	8	WSW	7	34.0		22 h. : Drizzling sleet and hail. 22.30 : Aurora commenced. 
+	24			SW	6-8	29.09	34.0	32.0		"Cu., Nb."	8	c.q.		SW	7	SW	7			 
+11	4			WSW	7-5	29.20	35.0	34.0		St.	1	b.		SW	6	SW	6			0.30 h. : Slight aurora clouded out. 2 h. : Sky cleared. Wind decreasing. 8 h. : Suspicion of snow. Sun trying to shine through mist. Noon : Slight fine snow all forenoon. 
+	8			WNW	4		34.0	33.0		St.-Cu.	10	o.		SW	5	SW	6	35.0	404	 
+	12	61 13	163 11 E	WSW	2	29.20	33.5	32.5		Nb.	10	o.4s.		SW	4	SW	5	35.2		 
+	16			SE	2	29.22	34.0	32.0		St.-Cu.	10	o.		SW	3	SW Confused	5	35.3		"21 h. : Breeze freshened and took up from NE. 22.10 : Aurora commenced. Consisted of arches of light S and E, with streaks of incandescent light shooting towards zenith. Display lasted 10 minutes." 
+	20	61 10	163 1 E (20.38)	SE	2	29.26	33.5	32.5	"Ci.-St., A.-St."	St.	2	b.c. 		SW	3	SW Confused	6	35.2		 
+	24			NE	3-4	29.28	34.0	33.0	"A.-St., Ci.-St."	"St.-Cu., Ci.-St., St.-Nb."	5	b.c. 		NE	4	SSW	5	35.0		 
+12	4			ENE	5	29.12	34.0	34.0		St.	10	o.r.s.	3	NE	4	SW	4			"1 h. : Sky clouded. 1.30: Light rain commenced and thickened, turning to snow." 
+	8			NE	4	28.86	36.0	35.5			10	0.4r.f.	2		3	"SW, Wly, Confused"	"5, 4"	35.8		 
+	12	60 46	161 41 E	N	1	28.69	37.0	37.0			10	0.4r.f.	3		3	SWly Confused	5	35.4	404	Noon to 15 h. : Thick misty rain. 15 h.-16 h. : Fog. 
+	16			NNE	4	28.60	36.0	36.0			10	o.3r. 1/2f.	4		3	WNWIy Confused				"16.50: Wind began to increase and back. 17.30 : Wind SW, 6. Steadily backed till at 18 h. was S. 19 h. : S. 7-8. 1st :" 
+	20			SW	8	28.81	33.8	32.6		St.-Cu.	10	o.c.		S	6	S	5			About 21.30 very heavy squall with wind force 9. Midnight : Wind eased slightly. Locke drawing water effected by moon's rays. 
+	24			SW	7-8	29.21	33.0	32.2		St.-Cu.	9	b.c.q.		S	7	SSW	7	35.4		 
+13	4			W	7-6	29.28	33.0	32.6		"Cu., St.-Cu."	9	c.q.		SW	5	SSW	6			"4 h. : Weather moderating. Noon : The higher of lower clouds from SSW. 23.10 : Wind eased to force 4, sky cleared. Aurora" 
+	8			N	5	29.44	34.0	33.0		St.-Cu.	7	b.c.		SWIy	5	"SW by E., SW"	"6, 7"	35.0		"commenced, extending from WSW at an altitude of 10° in a curve to within 5° of zenith to E by S, where it terminated at" 
+	12	59 48	160 8 E	SW	5	29.49	36.0	35.0		St.-Cu.	10	c.		SWly	6	Swly Confused	7	35.3		an altitude of about 17°. From zenith to W was of curtain formation and incandescent and almost green : light to the Eastward was misty nebulous in appearance and of a reddish hue. 
+	16	59 27	160 1 E (17.52)	SW	6	29.69	37.0	35.0		"St.-Cu., Cu."	7	b.c.		SWly	6	SWly Confused	7	35.8	404	 
+	20			WSW	5	29.74	37.0	35.0		"Cu., St.-Cu."	7	b.c.		SWIy	6	SWly	7	35.9		 
+	24			WSW	4-3	29.78	37.0	35.2		"Cu., St.-Cu."	5	b.c.		SW	6	SW	6			 
+14	4			WNW	4-5	29.79	37.0	35.0	Ci.-Cu.	St.	8	c.		W	4	SW	5			"2 h. : Halo round moon, about 25° radius. High clouds from SSW. 8 h. : The whole sky covered with light A.-St., through which the sun was shining. Wind in puffs. 9 h : Clouds turned principally into A.-St. (9)." 
+	8			NW	4	29.8	37.8	36.0	A.-St.		10	c.		Wly	5	Wly	6	36.2		 
+	12	58 30	161 35 E	NW	4	29.74	39.5	38.0	"A.-St., Ci. -St., A.-Cu."		9	c.		Wly	5	Wly	6	38.8		 
+	16			WNW	5	29.69	40.0	38.0	A.-St.	St.	9	c.		Wly	5	Wly	6	39.5		 
+	20			NW	6	29.56	39.0	39.0			10	o.r.		SWly		WNW	6	39.8		First Watch : Rain all the watch and increase of wind. 
+	24			NNW	5-6	29.49	38.0	38.0		Nb.	10	o.q.r.		WNWly Nwly	6	WSW NW	6			 
+15	4			SSW	4	29.39	36.0	35.0		St.	10	o.4r.		Confused	4	"W, NW"	6			"2.30 to 3 : Wind backed from WNW 4 to S 4, not suddenly. Continuous rain all watch. Drizzle (moderate) till 3.45." 
+	8			SW	4	29.57	35.9	34.0		St.-Cu.	9	c.		Wly	4	Wly Confused	6	36.5		"Afternoon : Rain, occasionally accompanied by snow. 18.45: Sky clearing, showing A.-Cu. and high Ci., the latter in stripes" 
+	12	58 25	161 22 E	WNW	4	29.52	37.9	36.5		"Cu., St.-Cu."	9	c.lr.		Wly	4	Wly	6	36.3		"running in a NNE and SSW line, principally in SE quarter of heavens. Dogs : Wind increased to force 5 at 17 h. with" 
+	16			WNW	4	29.50	37.8	37.0			10	o.4r.		W	4	W	6	36.5		"occasional squalls of 5-6, and very gradually backed to SW by W at 19 h, Occasional drops of rain. 21.30 : The lower" 
+	20			W		29.59	39.3	38.0		"St.-Cu., St."	10	o.		W	4	W	6	39.0		"clouds appear to be in two layers, one moving before the wind and the other from WNW as seen against stars and moon." 
+	24			WSW		29.70	40.0	39.0	Ci. -Cu.	"Cu.-St., St., Nb."	8	c.q.p.		WSW	5	W	6			"Sky clouding over and partially clearing at short intervals. First Watch : Occasional showers, wind force about 6 in squalls." 
+16	4			WNW	4	29.79	40.0	38.5		"Cu.-St., St."	8	c.		WSW	5	W	5			No squalls after 2 h. 4 h. : Low Cu. travelling fast from S and SSW. 7 h. : Wind freshening. 
+	8			WNW	5-6	29.81	41.0	40.0		"St.-Cu., St."	10	o.c.		W	5	W	6	39.0		 
+	12	56 46	162 32 E	WNW	6	29.91	42.2	40.8		"St.-Cu., St."	10	o.c.		W	5	WSW	6	40.2		Afternoon : Misty. Inclined to clear at 15 h. Wind inclined to back in the squalls. 15 h. : Signs of swell from SW. 
+	16			WNW	6	29.97	42.8	41.5		St.	10	o.c.		W	5	"Cross W, SW"	"7, 6"	41.0		 
+	20			WNW	5	29.97	42.5	41.9		St.	10	o.		W	5	"W, SSW"	"7, 6"	40.2		16.30: Fog intensity 1. Wind gradually backing after 22 h. 
+	24			WSW	3	30.05	42.0	41.2		"St., Cu.-St."	10	o.		SW	4	SW	4	40.0		Midnight : Wind falling light. 
+17	4	55 56	163 34 E (6 hr.)	WNW	3-4	30.10	42.0	41.0		"St., Cu.-St"	10	o.c.		SW	4	Wly	3			Middle Watch : Wind gradually veering. Morning : Wind gradually veering and falling light. 
+	8	55 54	163 38 E (9.16)	NNW	2-3	30.02	43.5	41.8		High St.-Cu.	8	c.			3	SWly	4	43.9		 
+	12	56 14	163 48 E	NNW	2-3	29.99	44.0	42.5	"Ci., A.-Cu., Ci.-St., A.-St."	"Cu., St.-Cu."	4	b.c.			3	SW	4	43.9	404	"13 h. : Sky half covered with Ci.-Cu., A.-St., and windy-looking false Ci., the lower clouds having all disappeared. 16.30: Mist coming on. Wind force 1-2. 18 h. : Fog intensity 1." 
+	16			NNW	3	29.86	44.0	42.2	"Ci., A.-St., A.-Cu."	St.-Cu.	6	b.c.			3	SWly	5	41.0		Wind N 1. Confused swell from N to SW. 18.30 : Fog intensity 2. 23 h. : Fog set in. Intermittent drizzle all watch. Wind falling light. 
+	20			NNE	2	29.71		43.0			10	o.lr.m.f.	3		3	NW Confused	5	41.0		 
+	24			NNE	1-2	29.67	41.2	41.2		"St., Nb."	10	o.d.f.	2	Nly	2	WSW	4			 
+18	4			NW	3-2	29.62	41.0	41.0		St.	10	o.r.4f.	4-3			WSW	4			"Wind shifting slowly all watch. Morning : Fog intensity 2 till 7 h., then 1. 8 h. : Began to drizzle. 9 h. : Fog intenity 2-3." 
+	8			NNW	1	29.72		41.0		St.	10	o.4r.f.	2-1			SWly and W Confused	6	40.5		Fine drizzle all forenoon. Very long swell. 12.30: Drizzle stopped. 15.30: Fog eased off and sun came out. Wind freshened to force 2. 15.45: Fog descended again. 16.30: 
+	12	56 28	162 57 E	NNE	0-1	29.47		41.0		St.	10	o.4f.4d.	2			Swly Confused	6	41.0		Wind freshened to force 4. 
+	16			NNW	2	29.36		41.0		St.	10	4f.	3			SWly	6	40.0		 
+	20			N	5	29.21		41.0		St.	10	4f.4d.	4	Confused	5	Confused	6			 
+	24			N	6	28.97				Nb.	10	o.4r.		NNW	5					 
+19	4			NNW	7-6	28.94	42.0	42.0		Cu.-St.	8	o.c.q.		NW	4					2 h. : Heavy rain squalls. 2-3 h. : Wind eased considerably. Later weather cleared. Wind unsteady in direction and force. 
+	8			NNW	6-7	28.83	42.8	41.0		Cu.-St.	9	o.c.q.		NW	5	NW Confused	6			"Morning : Showers of drizzle to rain (moderate) most of watch. 8 h. : Squalls, force 7 to 8. 8.30 : Sky rapidly cleared of clouds." 
+	12	57 23	159 37 E	NNW	6	28.73	41.8	40.0	"A.-Cu., A.-St."	"Cu., Nb., St."	5	b.c.q.		NW	5	NW Confused	7			"9.15: Wind eased to force 5, NW by W. 9.30: Wind W by N, force 4. 16.30 : Wind increased to force 7-8. Squalls, force 9." 
+	16			NNW	5-6	28.48	41.0	40.0		St.-Cu.	10	c.q.s.		NW	7	NW Confused	7			"17 h. : Wind slowly backing. 19.30: Wind W by N, force" 
+	20			W	9-8	28.32	41.0	40.0		"Nb., St.-Cu."		c.q.p.		Confused	8	SW Confused	8			"7-8, backed rapidly to WSW. Occasional showers of slight rain with big drops. 1st Watch : Occasional squalls (heavy)." 
+	24			WNW	8-9	28.75	38.5	36.0	A.-Cu.	"Nb., St.-Cu."		b.c.q.		Confused	8	W by S Confused	8			Upper clouds moving rapidly from W by S. 
+20	4			WNW	9	28.90	35.0	35.0		"Cu., St.-Cu., Nb"	5	b.c.q.r.		W	9					"Middle : Very heavy squalls. 14 h. : Very heavy squalls, wind and hail. 20 h. : Height of waves, 22 ft. Heavy bank of clouds approaching from SW. 21 h. : Cloud bank over ship." 
+	8			NW	6	29.00	38.0	35.0	A.-St.	"Cu., St.-Cu."	1	b.c.q.		W	8	Wly	8	38.5		St. from SW. 21 h. : Aurora commenced. Rather obscured by clouds. Very fine lines of radiating light from zenith in a 
+	12	57 16	160 17 E	NNW	6	29.04	40.5	38.0	A.-Cu.	"Cu., St.-Cu."	5	b.c.q.		Wly	8	Wly Confused	8	38.5		"NW and W (compass) direction. Colour whitish yellow, but among clouds a very distinct greenish tinge. 21.40 : Ceased entirely. Stars showed plainly through it. All the stars of" 
+	16			NW	6-7	29.24	39.0	39.0	A.-Cu.	"Cu., St.-Cu. -Cu."	7	b.c.q.		Wly	8	Wly Confused	8	38.8		"Orion's sword, for instance, being visible. 22 h. : Aurora commenced again, but rather faint." 
+	20			NW	4	29.14	39.0	36.0	A.-St.	"Cu., St.-Cu."	3	b.c. 			4	"W by N, SW"	8 Confused	38.8		 
+	24			NW	6-4	29.21	38.0	36.0		"St., Nb."	10	b.e.p.q.o.		WNWIy	4	"SW, WNW"	8 Confused			 
+21	4			NNW	4-2	29.22	39.0	38.0		St.-Cu.	10	o.c.				"SW, NW"	Confused 8			"0 h. to 1 h. : Brilliant aurora, curtains from N to S horizon through zenith. Greenish tinge generally, with occasional dull red." 
+	8			NE 	3	29.13		39.0		"St.-Cu., St."	10	c.f.	1		3	Confused	8	38.5		"Highly evanescent. 6 h. : Wind rapidly veered to NNW, force 1-2. Morning : Rain to drizzle most of watch. 11 h. : Commenced raining (moderate). 13 h. : Rain drizzle most of afternoon. Dogs : Occasional showers. 17 h. : Wind N 4. " 
+	12	57 30	159 59 E	ENE	3-4	28.93		39.0		Nb.	10	c.I r.			4	Confused	7	38.5		"18 h. : Wind N 3. 19.40: Wind N 2-3, commenced to back. " 
+	16			NNE	5-6	28.63		45.0			10	o.d.f.	3	Confused	5	Confused	7	38.5		19.45: Wind jumped round to SSW and increased quickly in strength. 
+	20.45					28.48					10	o.r.f. 	2	Confused		Confused	8			 
+	24			W	7	28.71	37.5			St.-Cu.	10	c.q.		Confused WSWly	6	Confused WSW	8			"20.15: Force 8-9. Occasional showers of heavy driving rain and sleet. Remainder of watch heavy squalls of force 9-10, easing off after 23 h. to squalls of 8-9." 
+22	4			WSW	7	28.81	37.0	37.0		"Cu., St.-Cu., N b."	8	b.c.q.		SWly	7	SWly	8			1 h. : Slight aurora. Wind eased to squalls 8. Corona round moon on high St.-Cu. clouds. Morning : Heavy snow squalls frequent during watch. 6 h. : Fierce squall of wind and hail. 8 h. :  Blue 
+	8			WSW	5	28.85	35.0	33.0		"Cu., St.-Cu., Nb."	8	b.c.q.s.		SW	7	SW	7	38.8		"sky with bright Cu. clouds to S and SE. Forenoon : Snow squalls frequent. 10.45: Strong wind and hail. 16 h. : Very heavy squalls, frequent rain, hail, and snow. Dogs : Squalls less " 
+	12	56 5	159 22 E (13.56)	WSW	6	28.88	37.8	35.0	A.-Cu.	"Cu. St.-Cu., Nb."	6	b.c.q.		SW	7	SW	7	38.5		"frequent. Wind steadying. 21.30 : Aurora curtain formation, one hour duration. Fine low aurora showing two distinct arches between S (true) and WSW (true), the brightest being of 11°" 
+	16	55 54	159 37 E (18.17)	W	7	28.98	36.0	35.0		"Cu., St.-Cu., N b."	6	b.c.q.r.h.s.		SW	7	SW	7	39.0	404	"altitude, the upper one fainter and more irregular. Above the clouds (near S) was a patch of auroral light, with a distinct reddish tinge, all the remainder being of a greenish tinge. From" 
+	20	55 39	160 11 E (20.25)	WSW	6	29.07	37.0	35.0		"Cu., St.-Cu."	6	b.c.q.s.		SW	7	SW	7			S perpendicular rays shot up. Midnight : Frequent passing showers of hail and sleet. 
+	24			WSW	4-6	29.17	35.0	33.8	A.-St.	"Nb., Cu., St.-Cu."	8	b.c.q.p.s.		SW	7	SW	7			 
+23	4	54 56	159 31 E (6.25)	WSW	5	29.22	37.0	35.0		"St.-Cu., Cu., N b."	7	"b.c.q,r.s."		SW	5	SWly	6			"1.30: Snow squall. Auroral curtain in S. 3.30 : Heavy squall, wind and sleet. Auroral arch in S. 10 h. : Sky completely" 
+	8			WSW	4	29.24	29.4		A.-Cu.	"Cu., St.-Cu."	6	b.c.		SWly	5	SW	6	39.0		clouded over with high St.-Cu. and A.-St. Wind eased to force 2-3. Wly cross swell appearing. Forenoon : Squalls of 
+	12	54 23	160 39 E	WSW	3	29.28	38.2	37.5			10	o.r.			3	SW	5	38.9		"snow, sleet, and rain occasionally. Afternoon : Last shower of sleet at 13 h. Wind increasing gradually during watch, and" 
+	16			WSW	5	29.33	41.0		A.-Cu.	"Cu., St.-Cu."	7	c.q.		SW	5	SW	6	40.0	404	"shifted to WSW at 14.30. 16 h. : Showers about. 21.30 : Wind backed to SW by W, force 8-9, in sharp squalls. Midnight :" 
+	20			WNW	6-7	29.31	45.0	43.0		"Nb., Cu."		c.q.		Wly	6	Wly Confused	7	42.8		Strength of squalls moderating. Rain 21- hours. 
+	24			W	9-6	29.23	46.0	45.2		"St.-Cu., Nb."	10	o.q. r.		WSW	6	Confused	7			 
+24	4			W	8	29.23				"Nb., St.-Cu."	9	c.p. 		WSW	6	SWly	7			Middle : Passing showers of rain and sleet. Fairly steady wind with occasional lulls. 6 h. : Wind backed to SW. 
+	8			WSW	8	29.36	43.5	42.0		"St.-Cu., Cu."	4	b.c.		SW	7	SW	8	44.6		 
+	12	51 55	162 8 E	WSW	7	29.57	45.0	42.2		"St.-Cu., Cu."	9	c.		SW	7	SW	8			 
+	16	51 25	162 15 E (17.21)	WSW	7	29.68	45.9	43.0		"St.-Cu., Cu."	8	c.		SW	8	SW	8	49.1		 
+	20			WSW	6	29.76	47.5	45.0		"St.-Cu., Cu."	10	c. 		SW	8	SW	8	49.6		 
+	24			WSW	5-6	29.75	49.5	49.2		"St., Nb."	10	q.c.d.		SW	7	SW	7			Midnight : Wind freshening slightly. 
+25	4			W	7	29.78	50.0	50.0		"St.-Cu., Cu."	6	b.c. 		WSW	7	SW	7			Two hours' drizzle. Barograph rising slightly till 2 h. then falling slightly. 
+	8			WSW	7	29.77	50.2	49.0		High St. -Cu.	10	c.		SW	7	SW	8	50.1		 
+	12	50 10	163 10 E	WNW	7	29.76		50.0		"St., St.-Cu."	10	o.c.		W	7	W	8	52.0		 
+	16			WNW	7	29.79		51.5		"St., St.-Cu."	10	o.c.f.		W	7	W	8	53.5	405	 
+	20	49 16	164 11 E (19.45)	W	7	29.83		52.5		St.-Cu.	4	b.c.			7	Wly	8	53.8		 
+	24			WSW	5	29.93	52.0	52.0		"St., St.-Cu."	2	b.c.		WSW	6	W	8	51.6		 
+26	8			W	5	29.93	54.2	52.8		"St.-Cu., Cu."	9	c.		WSW	6	SW	8	55.8		 
+	12	47 41	166 43 E	WNW	5	29.93	54.0	52.5	"Ci.-Cu., A.-Cu."	"St.-Cu., Cu."	6	b.c.		W by S	5	SW by S	6	56.8		Wind gradually increasing during afternoon. 
+	16			WNW	8	29.87	56.0	54.2		"St.-Cu., St."	10	c.q.		W	6	Wly	8	56.6	405	 
+	20			WNW	6	29.87		57.0		"Nb., St.-Cu."	8	c.r.lq.			6	Wly	8			1st Watch : Occasional showers. Wind squally and slightly increasing. 
+	24			WNW	5-6	29.84	55.8	54.2		"Nb., St.-Cu."	10	c.q.p. 		W	6	Wly	7			 
+27	4			WNW	6	29.87	57.0	55.0		"Cu., St.-Cu."	8	c.q.		W	4	W	5			 
+	8			WNW	6	29.89	58.0	55.5		"Cu., St.-Cu."	6	b.c.		W	5	W	6	55.0		 
+	12	46 50	168 43 E	WNW	5	29.86	64.0	58.0	A.-St. (false Ci.)	"St., St.-Cu., Cu."		b.c.		W	5	SSW	6	56.0		 
+	16			W	4	29.80	61.9	61.2		"Cu., St."		b.c.			3		3	56.5		"16 h. : Off Peterson's Inlet, Stewart Island." 

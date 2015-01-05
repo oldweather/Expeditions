@@ -1,0 +1,336 @@
+"157 TABLE XXXIL—METEOROLOGICAL LOG OF S.Y. "" NIMROD,"" VOYAGE I. 1ST JANUARY TO 8TH MARCH, 1908."													
+Time			Temperature			Wind							
+Day	Hour LMT	Barometer	Dry	Wet	Sea	Direction	Force	"Position, Maximum and Minimum Temperature, Remarks, &c."					 
+			°F	°F	°F								
+"January, 1908."													
+1	16							Left Lyttelton Wharf.					
+	22.30							Banks Peninsula Light abeam.					
+	24							"Fine, clear. NW swell."					
+2	4	29.66				Sly.	2	"Dull, cloudy, but fine. Heavy SE swell."					
+	8					SSW		Gentle to mod. breeze. High SW sea.					
+	12	29.70				SSW		45° 00' S 173° 27' E.					
+	16	29.71				SW	4						
+	20	29.73				SW		"Mod, breeze. Heavy SW swell. Overcast; dull. Rain squalls."					
+	24	29.76				SW		Mod. breeze. Considerable head sea. Overcast; dull. Rain squalls.					
+3	4	29.73				SW x W	8	M. gale; cloudy; high sea.					
+	8	29.85				SW x W		Fresh gale ; high sea. Vessel shipping sea fore and aft.					
+	12	29.95				SW x W		"45° 57' S 173° 59' E. Weather moderating, less sea."	
+	16	29.97				SW x S	5	Fine. Sea moderating.	
+	20	30.02				SW x S	4	Mod. breeze; dull; cloudy.	
+	24	30.03				SW x S	3	Gentle breeze. Heavy SW swell.	
+4	4	29.92				SW	5	Fresh wind ; high sea.	
+	8	29.91	51.0	50.5	49.3	W x S		Overcast ; Cu-St and St; slight mist. SW swell.	
+	12	29.85	51.0	50.2	48.9	WSW		47° 26' S 174° 13' E. Overcast. Dim sun occasionally. High SW swell.	
+	16	29.81	50.6	49.4	49.2	SW		Overcast ; a little sun occasionally.	
+	20	29.75	49.6	48.2	48.2	WSW		Overcast.	
+	24	29.74	49.5	48.0	47.8	WSW		Max. 53° F.	
+5	4	29.65	48.6	46.5	47.3	WSW		Beginning to rain from the S. Fresh gale; high sea.	
+	8	29.53	48.1	46.0	47.5	WSW		Occasional rain squalls. High irregular sea.	
+	12	29.39	47.3	44.8	47.6	WSW		49° 49' S 174° 40' E. Similar weather ; clear to S. Heavy squalls.	
+	16	29.51	46.5	43.8	47.2	SW x W		14.20 sleet; 15.15 sharp hail squall.	
+	20	29.64	45.5	44.0	45.5	SW x W	8	Wind 7 in squalls. Clearing ; some Cu. High SW sea.	
+	24	29.68	43.5	42.5	45.8	WSW		"Max. 50.2° F, Min. 41.0° F."	
+6	4	29.74	45.3	43.8	46.9	SW		Clear overhead; cloudy horizon. Mod. gale; high sea.	
+	8	29.85	46.3	44.5	46.7	SW x S		Patches blue sky.	
+	12	29.80	46.5	44.8	46.0	SW		"50° 58' S., 175° 19' E. Fresh breeze; heavy sea."	
+	16	29.66	47.8	47.2	45.4	W x N		Overcast; dull; misty. Fresh breeze; heavy sea.	
+	20	29.54	47.0	47.0	44.4	W x S		"Overcast. Mod. gale; heavy, lumpy sea."	
+	24	29.44	46.4	47.0	44.3	W		"Max. 50.5° F, Min. 41.0° F."	
+7	4	29.28	47.0	47.0	44.5	W x N	6	Overcast; hazy ; threatening. Very high westerly sea.	
+	8	29.12	47.3	47.7	44.0	NW x W		Overcast; strong breeze.	
+	12	28.85	46.3	45.8	44.3	W	8	"53° 02. S., 175° 39. E. Gale, frequent heavy squalls. Very high sea."	
+	16	28.84	40.2	45.4	44.6	WSW	9	Squalls of hurricane force ; mountainous sea.	
+	20	29.03	43.0	43.0	44.0	SSW	10	Strong gale ; tremendous sea; dull; gloomy.	
+	24	29.22	42.4	41.3	44.0	SSW	7	"Max. 51.0° F., Min. 41.3° F. Strong gale, moderating. Sky clearing. (Temps. not observed till 01.00 hrs. on 8th.)"	
+8	4	29.45	42.5	41.5	44.5	WSW	8	"Cloudy, but clearing to SW. Mountainous sea."	
+	8	29.48	40.8	41.6		SSW	8-9	Occasional patches blue sky. Hail in squall at 07.00. High sea.	
+	12	29.45	42.1	42.3	44.0	SW	8	53° 26' S 177° 42' E. Gale continues; mountainous sea.	
+	16	29.55	43.3	42.8	44.1	SW x S	6	Wind moderating.	
+	20	29.60	42.8	42.4	44.1	WSW	5-8	Weather moderating; sky clearing. Sea still heavy.	
+	24	29.64	42.0	42.0	43.5	WSW	4	"Max. 49.0° F, Min. 39.0° F."	
+9	4	29.52	43.0	42.8	43.8	WSW	4-5	Overcast ; drops of rain in gusts. Confused SW sea.	
+	8	29.07	45.5	46.0	44.1	NW		Heavy rain at intervals. Thunder and lightning in WSW.	
+	12	28.86	47.8	48.5	45.0	W x N	5	"Overcast ; strong breeze. Sea rough and breaking slightly. 54° 18' S, 178° 00' E. "	
+	16	28.78	45.8	45.4	44.1	WSW	7	"Overcast. Wind rapidly increased to strong gale. At its height at 19.00 hrs, with squalls of hurricane force and tremendous seas. Blinding spray. Temps. refer to 15.00 hrs."	
+	20	28.82				SW x S	8-10	"Still strong gale with hurricane gusts, but moderating slightly."	
+	24	29.18				SW		"Wind and sea moderating. Max. 53° F, Min, 11.5° F, but rather uncertain."	
+10	4	29.30				SSW	5	"Fine, clear. Still high westerly sea, but wind and sea moderating with extraordinary rapidity."	
+	8	29.43	46.8	45.7	44.7	SW	4	Sky blueo; light clouds. Mod. sea but heavy swell. Temps. Refer to 09.00 hrs.	
+	12	29.44	46.1	44.4	44.8	WSW		"55° 15'S, 179° 32' E. Cu and patches of blue sky. Fine. Mod. Sea."	
+	16	29.42	45.0	44.0	44.5	W	4	Overcast; fresh breeze. SW swell.	
+	20	29.40	43.9	43.5	44.3	SW	2	Overcast; steady drizzling rain. 	
+	24	29.45	43.5	43.5	43.9	NNE	2-3	Max. 49.4° F. Min. 39.1° F. drizzling rain.	
+11	4	29.01	45.5	45.5	41.8	NNW	3	Overcast; slight haze. Mod. breeze. Confused sea.	
+	8	28.82	45.9	45.6	44	WNW	4	Overcast Nb. Fresh breeze.	
+	12	28.67	45.0	43.6	42.2	WNW	6	"57° 37' S., 178° 53' E. Small patch broken sky."
+	16	28.57	42.1	40.5	41.3	NW x W	7-8	
+	20	28.65				W	7-8	Fresh gale; heavy squalls; high sea.
+	24	28.77				SW	7	Max. 49.0°F. Fresh gale; squally.
+12	4	28.87				W	7	"Heavy gale; high sea. 02.00, snow squall."
+	8	28.97				W	7	Fresh gale but moderating. Heavy squalls of sleet and rain.
+	12	29.14	40.9	38.5	38.1	SW	5	"59° 26' S., 179° 53' E. 09.00, Ci.Cu from WNW. Noon; Ci, Cu, St. Still heavy sea."
+	16	29.25	39.3	37.2	39.4	W x S	2	Cu and blue sky.
+	20	29.42	36.8	37.1	39.8	W x S	2	Cu near horizon; otherwise clear.
+	24	29.44	35.0	34.5	37.0			"Max. 43° F, Min. 34.8° F. Clear; light breeze; smooth sea."
+13	4	29.40	37.0	35.1	37.3	E	2	"Cloudy to N, Ci-S to S ; otherwise fine and clear. SW swell."
+	8	29.34	38.0	36.3	36.3	E x S	1	Fine. Clear to S; some Cu.
+	12	29.41	37.1	35.0	38.1	E		"61° 29' S, 179° 53' E. Gentle breeze; overcast. Mod. S swell."
+	16	29.42	36.3	34.5	37.5	E		Gentle breeze. Overcast; dull; fine.
+	20	29.33	36.5	34.8	37.5	E		Gentle breeze. Fine.
+	24	29.38	35.3	34.1	36.0	E x S	1	"Max. 40.0° F., Min. 34.2° F. Ci-S to S, Ci-Cu overhead."
+14	4	29.37	35.7	34.8	34.9	Calm		"Fine, clear; light St."
+	8	29.37	39.2	37.0	36.5	Calm		"Fine ; clear ; Ci-S. Temps. refer to 07.00 hrs. 09.00 hrs, tabular iceberg abeam. 150 ft. high, 446 ft. long. Some growlers."
+	12	29.34	38.2	36.2	35.3	Var	1	"63° 59' S, 179° 47' W."
+	16	29.32	38.6	36.8	35.0	NW	2	Blue sky to S; Ci-Cu to N.
+	20	29.30	34.7	33.8	34.0	N	2	Clear; Some Ci-S to N.
+	24	29.23	34	34.5	33.1	N x W	4	"Max. 47.0° F, Min. 33.4° F. Overcast sky ; breaks to E and S."
+15	4	29.13	33.8	32.2	32.5	N x E	5	Overcast; Cu to E.
+	8	29.04	33.6	33.5	32.1	N x E	5	"Overcast; Nb. Sleet. 09.00, sighted pack ice. Continuous line of bergs on S horizon."
+	12	28.92	35.0	35.0	32.5	ENE	5	"66° 17'S, 179° 09'W. Overcast; dull."
+	16	28.79	34.6	34.6	32.2	N	5	Misty; some snow.
+	20	28.77	33.2	33.0	33.1	NW		Overcast with fairly dense Cu; strips of blue to W.
+	24	29.07	31.7	31.6	30.9	N x W		"Max. 37.0° F, Min. 30.2° F. Tabular and hummocky bergs  40-60 ft. high, a few up to 100 ft. From 22.30. ship passing through small ice. Snowing occasionsally for 2 hours. Overcast."
+16	4	28.99	32.3	32.0	30.5	N x E	4	"Mod. wind . overcast ; snowing occasionally. 01.30, passed several very massive bergs. 02.00, passing floe bergs, densely packed. 03.00, floe bergs more scattered and lower (15 to 30 ft). In pack ice."
+	8	29.02	32	32.0	30.1	N	3	"Overcast. 05.00, many small tabular bergs. 07.00 to 08.00, in stream of many tabular bergs of land ice: estimated height 150 ft."
+	12	29.05	33.8	33.6	30.3	NW	3	"68° 06'S, 179° 21' W. Clearer; Cu to N. Thick ice to S."
+	16	29.07	32.1	32	30.2	NW	3-4	"Overcast; fresh wind; passing snow showers. Now S of belt of bergs. 14.00, passing through very heavy screwed ice, and floe bergs. 15.30, passed into clear water."
+	20	29.04	30.6	30.6	30.1	NW	3	Overcast; hazy; light snow. No ice in sight.
+	24	28.99	30.6	30.6	30.3	NW x N	5	Max. 34.8°F. Min. 29.0° F. Fine wet snow.
+17	4	29.13	31.0	30.9	30.0	NE	4	"Overcast; snow falling. Total snow since 14.00 hrs. on 16th about I"". Light sea from N."
+	8	29.14	31.0	31.0	31	E	4	"Heavy snow; total now l 1/2"". Open water. Small bergs 3 miles to W."
+	12	29.14	31.0	31.1	31.1	ENE	3-4	"70° 43' S, 178° 58' W. Snow occasiomlly ; indications of clearing to N."
+	16	29.14	31.0	31.5	32.2	SE	3-4	Overcast with Nb. No ice. 15.15; passed several bergs.
+	20	29.13	31.5	31.2	31.8	SE	3	"Clearing in places. 19.30; "" sago "" snow. Several small bergs."
+	24	29.05	31.0	30.8	31.1	SSE	3	"Max. 35.0° F., Min. 29.7°F. Overcast; thick; occasional light snow. 21.00; passed several bergs, one with discoloration. 21.00 to 24.00; continual hummocky pack ice and numerous flow bergs, larger up to 20ft. in height and 60ft. long."
+18	4	28.99	31	30.8	31.0	S x E	3-4	"Snowing, delicate crystals. Midnight to 01.00; passing through hummocky bergs and thick pack."
+	8	28.96	31.9	31.6	31.7	S	4	"Overcast; heavy snow showers. Since previous observation, many tabular bergs and small quantity of pack"
+	12	28.79	31.4	31.2	31.8	8 x W	4-5	"72° 32' S, 178° 10' E. Fresh breeze; cloudy. Passing many bergs of various sizes."
+	16	28.74	30.0	30	30.6	SSE	5-6	Thickly overcast with Cu. Still a little snow. Choppy sea. Water clear of ice. Sun white and hazy.
+	20	28.71	28.8	28.8	29.2	S x E	8	Overcast; thick. Heavy sea. 18.00; large berg in sight.
+	24	28.71	28.3	28.3	29.6	S	7	"Max. 34.6° F, Min. 27.8° F. Overcast, thick. Squally; heavy sea. Several icebergs and some small ice."
+19	4	28.69	28.0	27.5	29.3	S x W	6	Cloudy but fine. High SSW sea. Several large bergs to lee-ward.
+	8	28.82	29.8		29.3	SE	6	"Thick  overcast with Cu. Puffy wind, fresh at times. High lumpy sea."
+	12	28.83	30	29.7	31.5	SSW	8	"72° 44' S, 177° 19' E. Overcast. Mod. gale. High sea. Occasional bergs."
+	16	28.83	28.8		31.2	S x W	6	Overcast with Cu; break to NE. Mod. gale. High sea.
+	20	28.87	27.5	27.3		SSW	5	Weather and sea moderating.
+	24	28.86	27.3			SW	5	"Max. 31.9° F, Min. 24.2° F. Overcast, St-Cu. Clear atmosphere. Large berg about 5 miles E."
+20	4	28.86	28.0		31.0	WSW	5	"Overcast ; light ""sago"" snow. Open water; occasional small bergs."
+	8	28.88	28.7		31.7	S	3-4	Overcast with Cu. Mod. wind and sea.
+	12	28.90	29.6			S	3-4	"72° 45' S, 179° 21' E. Overcast; occasional hail Small pieces of ice at intervals."
+	16	28.91	31.1		32.0	S	2	Gentle breeze; fine; clear. Several large bergs around.
+	20	28.94	29.9		32.0	S x E	3	"Overcast, Nb. Occasional large tabular bergs and scattered irregular masses. 19.00; passed long thin line of pack lying in E and W direction."
+	24	29.00	28.5		32.5	S x W	3	"Max. 32.5° F. Overcast, St-Cu."
+21	4	28.96	29.2			SSW	3	Sky cloudy but clearing. Passing bergs.
+	8	28.99	34.2		32.0	SW x S	3	Much Cu and St-Cu.
+	12	29.02	31.1	30.0	32.0	SSW	4	"74° 27'S, 179° 10' W. Broken sky, Cu and Nb. SSW swell."
+	16	28.98	28.5		31.0	SW	3	"Overcast, St-Cu. Passed two tabular bergs about 3 miles long."
+	20	28.96	31		31.5	SW	2	Sky mainly clear; heavy patches. Cu and St-Cu. Occasional bergs and floe ice.
+	24	28.95	30.0			S x E	4	"A little high Ci. Light southerly swell. Observed during last four days southerly wind has freshened about 05.00 hrs, blowing gentle to mod, breeze throughout day, dying away about 18.00 hrs. Max. 34.4° F."
+22	4	28.91	31.5		34.0	S	2	Fine; clear. Few small bergs.
+	8	29.00	32.0		32.2	S	2	Cloudless overhead; Cu on horizon.
+	12	29.00	30.5		31.8	SW x S	3	"76° 18' S, 176° 40' W. Clear. Passing bergs on both sides."
+	16	28.98	29.6		31.0	SSW	4	Fine.
+	20	28.94	29.3		32.3	SW	3-4	"Fine. SW swell. 18.00, passed long line of large tubular bergs. Ci and Ci-S moving rapidly from NE."
+	24	28.93	26.7		31.8	S	0	"Max. 37.5° F, Min. 25'.5° F. Overcast, Cu. Mirage. Several large bergs."
+23	4	28.96	24.8			SSE	2	Fine. 
+	8	28.97	23.5		28.5	"S x E."	1	"Overcast, St-Cu. 07.00 passed line of close pack, also several large bergs. Tilted berg shows discoloured bottom. ""Sago"" snow at 05.00."
+	12	29.01	21.6		31.8	ESE	2	"78° 27'S 171°54'W. Overcast; dull. Occasional snow previously. 09.00; sighted Ross Barrier, much distorted by mirage. 11.00; proceeding along face of Barrier. Bergs and broken ice seen. Large portion of Barrier appeared to have broken off in one place."
+	16	29.05	21.2		32.0	SE	2	Misty; overcast; St-Cu. Passing along Barrier 1.8 miles distant. Height by sextant 105 ft.
+	20	29.03	19.0		29.0	Calm		Overcoat; hazy.
+	24	29.06	20.8			SE	0-1	"Max. 28.4°F, Min. 18.3°F. Fine, clear. Much pack ice and bergs. Sighted strong indications of land, ridgy undulations to SSW."
+24	4	29.08	23.8			Calm		"Clear in places to S, but chiefly overcast. Sea smooth. Passing bay in Barrier. Large cakes of sea ice all round. Much mirage. 02.15; encountered heavy pack; ship headed northward to skirt along edge."
+	8	29.09	24.0			Calm		"Overcast, St-Cu. Steaming along Barrier through pack."
+	12	29.08	25.4		30.0	ESE	1	" 78° 19' S, 162° 53' W. Sky clear, except at horizon. Proceeding W along Barrier."
+	16	29.07	23.1			SW x S	3	"Mainly overcast ; sunshine at intervals. Cleared pack, sailing along Barrier face. 14.30; off head of large bay. Skirted along fixed ice. Observed hummocky bergs, scattered and marooned in sea ice. Smooth sea surface as far as eye could see to S. To W; low-lying sloping hills extending at right angles to Barrier edge."
+	20	29.08	15.5			Var		Overcast; hazy. 18.15; frost smoke.
+	24	29.04	16.5			SE	1	Passing through pack.
+25	4	28.99	19.5			W	2	Clear. Passing through pack showing pressure. Ice blink to NW. Much refraction.
+	8	28.94	28.0	27.6	33.3	Calm		Clear overhead; Cu to N. Brought up by large field of bay ice extending all round S horizon. Left pack at 06.00. Ci moving slowly from NE at 06.00.
+	12	28.87	30.6		32.0	Calm		"77° 39' S, 163° 44' W. Fine, clear weather. Smooth sea. 09.00; steering round heavy pack. 10.45; found opening in pack."
+	16	28.82	30.0		32.0	NNW	2-3	"Ci-S and St-Cu with patches of blue sky. Passing squalls of Fine snow. Since noon, passing impenetrable pack to starboard."
+	20	28.75	28.3		32.0	NW	4	Overcast. Wind bad previously freshened to gale with heavy squalls of snow and sleet. 18.30 to 20.00; vessel turned back towards W side of Ross Sea. Rapidly entering door water; occasionaI bergs.
+	24	28.71	27.0			WSW	3	"77° 32'S Max. 33.4° F, Min. 15.2° F. Fine; clear, atmosphere; dull, cloudy sky. Occasional bergs. At 17.00 hrs, passed berg about 15 miles long, of land ice, about 20 ft. high."
+26	4	28.70	26.3			WSW	4	Cloud Light swell.
+	8	28.74	26.1			WSW	3-4	Overcast; dull. Clear sea. Occasional bergs.
+	12	28.69	26.0		33.0	W	4	"77° 32' S, 169° 33'W. Ci-Cu.overhead; St-Cu below. Occasional bergs."
+	16	28.65	26.4			WNW	4	"Overcast, Cu."
+	20	28.70	21.5			SW x W	3	Wind puffy. Slight head sea. Occasional bergs. 17.00 hrs observed blink Barrier. Sea discoloured to light green.
+	24	28.73	16.5		33.6	SW	2-4	"Max. 27.8° F, Min. 15°F. Wind unsteady in force and direction. Isolated tabular bergs. 22.30; sighted Barrier."
+27	4	28.78	16		32.3	SW x W	3	Cloudy in NW; elsewhere clear.
+	8	28.87	25		32.7	W x S	4	Cloudless. Head sea. Occasional bergs.
+	12	28.92	26.5			WSW	4	"78° 09'S, 173° 43'W. Fine; mod. head sea. Tabular bergs."
+	16	28.94	29.1		31.0	SW	3	"Light fall of ""sago"" snow, about 1/16"". Water discoloured to dark olive green."
+	20	29.00	28.5			SW	1	Nimbus on N horizon; otherwise clear. Two bergs visible.
+	24	29.02	25.4			S	1	"Max. 32.1°F, Min. 14.4°F. Sky cloudy; some Ci-Cu. 78° 19'S. Several bergs."
+28	4	29.04	25.9		33.0	S	2	Clear to S over Barrier. Elsewhere overcast.
+	8	29.07	25.8		33.0	WSW	2	"Overcast with St-Cu, except for arch to S over Barrier."
+	12	29.11	22.0		31.0	WSW	3	77° 46'S 175° 35'E.
+	16	29.18	18.0			SW	3-4	"St to S, Cu to N. Smooth sea."
+	20	29.22	18.2		32.0	S	2	Clear sky; St on horizon. Barrier visible on S horizon.
+	24	29.24	19.0			SSE	3	"Max 29.5°F, Min. 16.0°F. Clear overhead, clouds gathering to W. 22.15; Cape Crozier abeam"
+29	4	29.21	20.5	20.4		NW	1-2	"Overcast, Cu. Fine snow."
+	8	29.22	26.8	26.8	33.0	Calm		"Overcast, snowing. Coasting round Cape Bird."
+	12	29.17	24.0		31.5	SE	1-2	77° 38'S 166° 11'E. Small decaying pack ice. 10.00; Cape Royds abeam 2 miles off.  Overcast; thick to N. A little snow
+	16	29.15	22.0			ESE	4	Overcast; mist obscures land; fine snow.
+	20	29.11	17.0			SE x E	2	Cloudy but much clearer.
+	24	29.11	14.0			ESE	3	"Max 28.0°F, Min. 11.0°F. From 10.50, at ice edge near Cape Barne."
+30	4	29.09	11.0			SE x E	4	"Fresh wind, cloudy."	
+	8	29.08	12.0			SE x E	5-6	Mod. Blizzard with drift. Erebus summit visible at intervals.	
+	12	29.14	16.0			SE x E	5-6	"77° 38'S 166° 12'E. Anchored in pack. Blue sky with Ci-S. Low Cu to E. Some drift, but clearing."	
+	16	29.13	16.0			SE x S	5	"Clear, except for patches of Cu. Erebus smoke from NE."	
+	20	29.12	14.0			SE x E	4	Blue sky. Patches of Ci and Ci-S. Erebus smoke from ENE.	
+	24	29.14	10.6			SE x E	4	"21.35 to23.30; moved some distance southward in pack. Max. 18.2°F, Min. 7.5°F."	
+31	4	29.15	10.2			SE	3	Fine; passing clouds. Erebus smoke from NE.	
+	8	29.18	20.0			SE	5	St increasing; Cu to E. Erebus smoke from NE.	
+	12		18.0			SE x E	5	77° 40'S 166° 12'E (approx.).Ci overhead in lines trending N and S.	
+	16	29.27	21.0			SE x E	6	Ci-S and Cu. Ice breaking up.	
+	20	29.27	22.0					Erebus smoke from Se at 22.00 hrs.	
+	24	29.29	17.0			SE x E	4	"Max. 26.°F, Min. 7.4°F. Heavy Cu."	
+"February, 1908."									
+1	4	29.22	20.0			SE	0-1	Erebus smoke from SE x S. Ci radiant in S; Cu.	
+	8	29.22	18.0			E	1-2	"Erebus smoke from SE x S. Ci moving from E, slowly. Mainly clear."	
+	12	29.24	26.0			Calm		Mainly blue sky; some Ci-S. 77° 43'S 166° 20'E.	
+	16	29.19	23.9			SE	2	"Blue sky, with Ci-S in bands lying N-S. Erebus smoke from SE."
+	20	29.13	21.0			Var	1	Erebus smoke from SSE. Fine.
+	24	29.16	11.0			NE	1	"Erebus smoke from SE. Fine. Max. 28.3°F, Min. 10.5°F."
+2	4	29.08	12.0			Calm		Erebus in clouds; Ci-S radiant point in NE. SE swell.
+	8	29.02	17.0		30.5	Calm		Sky thick.
+	12	29.02						77° 43'S 166° 30'E (approx.).
+	16	29.02	24.0		31.0	E x N	3	Sky thick. Overcast.
+	20	29.00	21.0					
+	24	29.01	21.0			Var	0-1	"Max. 33.°F, Min. 10.2°F. Cloudy; fine. Ice continued breaking out during day."
+3	4	29.00	26.0			NE	1	Overcast. St.
+	8		25.5		31.0	N	2	"Snowing. Overcast, St."
+	12	28.98	27.0			Var	0-1	77° 33'S 166° 08'E. Snowing.
+	16	28.95	30.4			NNW	2	"Sun shining; Ci-S, Ci-Cu."
+	20	28.95	27.8			NNW	2	"Overcast; a little blue sky to N, mostly dense Cu."
+	24	28.95	25.0			Var	0-2	"Max. 32.6.°F, Min. 21.0°F."
+4	4					SE x E	2	
+	8					SE x E	5	Thick; misty.
+	12	28.96	22.5			SE	3-4	"77° 34'S 166° 04'E. A little snow. Overcast, thick."
+	16	28.98	22.9			ESE	3	
+	20	29.03	23.0			SE x E	4-5	Overcast.
+	24		21.0			SE x E	5-6	"St. Blue sky showing overhead through St. Max. 28.0°F, Min 19.5°F."
+5	4	29.06	21.0			SE x E	5	Weather clearing.
+	8	29.03	25.5					
+	12	29.01	25.4					77° 41'S 166° 10'E. Weather moderating.
+	16					SE	3-4	
+6								"At Cape Royds and in vicinity. Noon, temp. 27°F. Wind mainly SEly. Throughout day and light, but freshened for while in afternoon."
+7								At Cape Royds and in vicinity. Mod. To fresh SEly. wind throughout day. Snowing at midnight.
+8	4	29.34				SE	3	Snow ceased at 03.40. Bar. Approx. At Cape Royds and in vicinity. Winds mainly SEly. and mod.
+9								"01.00-02.00, fine snow. Wind mainly Sly. And light. At Cape Royds. Fine and clear at midnight."
+10								"At Cape Royds. Light winds. Fine, clear weather."
+11								"At Cape Royds. In aftrernoon proceeded towards Glacier Tongue. Much broken ice in Sound. Winds SEely; mainly light, occasionally moderate. Midnight, gentle ESE breeze; heavy cloud bank in SE."
+12	8	29.04	19.0			SE	4	"At Cape Royds till 09.30, when proceeded southward."
+	24	29.16	15.0			SE	3	"Arriving at ice edge, 7 miles from Hut Point, at 14.00 hrs. Wind SE mod. To fresh during day. Mod. Swell. Thick weather and light snow at 14.00 hrs. Bar. Approx."
+13								"Midnight to 08.00, dull; cloudy; fresh SE wind."
+	12	29.22				SE	5	"Noon, fine; clear; Bar. Approx. For preceeding 24 hrs. Max 20°F, Min 15°F. In neighbourhood of Glacier Tongue."
+	24	28.98				SE	3	
+14	4		20.0			SE	3	"05.30, proceeded towards Cape Royds, arriving 08.00. Wind freshening, SEly. Swell.  Boat work abandoned.  In evening light Sly. Winds."
+15	4	29.04	19.0			SE	4	"Heavily overcast. Bar. Approx. At Cape Royds and vicinity until 10.00, when proceeded to Hut Point. Mod. To fresh Se wind during day."
+16								"04.30, proceeded to Cape Royds, arriving 08.00. Wind light NW at 08.00; otherwise mainly SE and, in afternoon, frresh."
+17	4	29.26	14.0			SE	6	Mod. Swell. Wind moderated 05.00. At Cape Royds.
+18								"At  Cape Royds. 06.00 to 12.00, wind fresh from NW. 08.00, wind NW 3, weather becoming thick, land obscured at times. 19.30, wind swuddenly shifted to ESE and rapidly freshened to blizzard; land completely obscured. Rough sea."
+19	4					ESE	7	"In McMurdo Sound, N of Cape Royds, cruising in blizzard. 00.30, encountered loose pack. Squally,"
+	8	29.36				SE	7	Bar. approx.
+	12					SE	7	Snowy; rough sea. Mod. gale.
+	16					SE	8	High sea. WSW from Cape Bird at 17.30.
+	20					SE	6	
+	24					SSE	7	Weather moderating slightly. High sea. Numerous isolated bergs.
+20	4					SE	 6-7	Fresh gale. High sea. Sighted land to west.
+	8					S	 6-7	Fresh gale. Weagther clearing to westward.
+	12					SSE	7-8	In McMurdo Sound cruising in blizzard. Gale freshening; heavy sea.
+	16					SSE	8	Heavy Sly. Gale; high sea. 17.00 sighted land to E.
+	20					SSE	9	Heavy Sly. Gale; high sea. At 18.00; temp 10° F.
+	24	29.29				SSE	9	Bar. approx. Very high short sea. Isolated bergs.
+21	4					SSE	9	"Heavy Sly. gale; high sea. 07.00, entered mash of slushy ice of brown colour ; reduced sea."
+	12							Weather moderating slightly. 17.00. Erebus and Terror visible to SE. 18.00; position 50 miles NW of Cape Royds.
+	20							Weather moderating; sea still heavy. Erebus and Discovery visible.
+	24							Md. Breeze; rough swell; clear weather.
+22								"In McMurdo Sound. lce observed to have broken out as far as Hut Point. lce had been breaking out gradually during whole period vessel was in Sound. 08.15; wind freshened. 15.30 at Cape Royds, wind dying away. 22.15; vessel left for north on return journey."
+23	4	29.25	14.0			NE	1	Light NE wind and swell. Passing through young ice. 05.30; Beaufort Island abeam. 07.00; entered clear water.
+	8					NE	1	
+	12	29.19				W	3	"76° 13'S, 168° 50' E. Fine. clear weather."
+	16	29.08				SW	3	Wind freshening from SW. No ice.
+	20					SW	5	Passing snow squalls. No ice.
+	24	28.99				WSW	6	Strong breeze; rough sea.
+24	4	28.96	22.0			SW	5	
+	8					SW		Clear water; no ice.
+	12	28.98				SW	5	"Occasional snow; otherwise fine with clear air. No ice. 73° 30' S, 174° 14' E."
+	16	29.01				SSW	4-5	"Fine, clear."
+	20					SSW	3	Cloudy.
+	24	28.93				SSW	5	Frequent snow squalls. Passing heavy bergs.
+25	4	28.84	22.0			SSW	5	Frequent snow squalls. A few bergs in vicinity.
+	8					SSW	4-5	Unsteady wind ; frequent snow squalls.
+	12	28.80						"70° 31' S, 175° 41' E. Strong breeze: occasional squalls. Occasional bergs."
+	16	28.83				S	5-6	Fresh breeze; fine. No ice.
+	20					S	6	Fresh breeze; high following sea. No ice.
+	24	28.90				S	6	Similar wind and weather. No ice.
+26	4	29.08	26.0			SSW	4-5	"Wind moderating; fine, clear weather."
+	8					S	4	Passing snow squalls. Two bergs in sight.
+	12	29.64				S	4	"67° 34' S., 175° 44' E. Fine. Small pieces of ice in vicinity."
+	16					S	5	Overcast; fresh breeze; rough sea. Several small bergs in vicinity.
+	20	28.95				S	5	Dull; cloudy. Passed two large bergs.
+	24	29.01				SSE	6	Clear. Passed several berms
+27	4	29.04	27.0			SSE	5	Rough following sea. Passed several bergs.
+	8					SSW	5	Passing squalls; no ice.
+	12	29.24				Var.	2	"64°39' S, 171° 52' E. Wind moderating and hailing to NW."
+	16	29.19				WNW	3	Fine; clear.
+	20					WNW	4	Wind freshening.
+	24	29.15				W x N	4	Fine; heavy westerly swell. Aurora Australis to W. Passed isolated tabular bergs at intervals during day.
+28	4	29.098				W x N	4-5	Occasional light snow. Heavy westerrly swell.
+	8					WNW	4	Cloudy.
+	12	29.17				WNW	3	"62° 15' S, 170° 10' E. Fine."
+	16	29.27				WNW	3	Fine; clear.
+	20					NW	0-1	Fine • westerly sm. 
+	24	29.28				Var.	2	Clear. Aurora in W. No snow seen during day.
+29	4	29.28	33.0			NE	3	Wind freshening.
+	8					NE x N	4	Thick rain.
+	12	29.02				NE x N	3	"60° 36' S, 169° 16' E. Weather clearing."	
+	16	29				NNW	4	Overcast. Occasional light rain.	
+	20					WNW	4	Cloudy; dull.	
+	24	29.27				WNW	4	Overcast; dull. Westerly sea. Unsettled throughout day. No ice seen.	
+"March, 1908."									
+1	4	29.29	42			W	4-5	Clear.	
+	8					WNW	4-5	Cloudy.	
+	12	29.51				W	4	"58° 25' S, 169° 32' E. Westerly swell."	
+	16	29.48				WSW	4	Cloudy.	
+	20					N x W	3	SW sea.	
+	24	29.32				N	3	Overcast.	
+2	4	29.1				NE	4	"03.00 to 04.00, passing showers."	
+	8	29				S	4		
+	12	29.41				SW	5	"56° 12' S, 169° 40' E. Fine; clear. High and dangerous sea."	
+	16	29.63				WSW	6	Occasional squalls; heavy W sea.	
+	20					WNW	2	Wind moderating and backing towards N.	
+	24	29.67				WNW	7	
+3	4	29.62				WNW	7	Heavy beam sea.
+	8	29.68				NW x W	7	Fine. High sea.
+	12	29.68				WNW	7	"53° 39' S, 172° 53' E. Overcast; mod. gale; high sea."
+	16	29.7				WNW	7	Overcast; squally; heavy sea.
+	20					W	6	Weather clearing.
+	24	29.72				WSW	5	Clear sky. Heavy westerly swell.
+4	4	29.74				W	5	Fine; clear; rough sea.
+	8	29.96				W	3	Fine.
+	12	29.95				W	3	"51° 06' S, 172° 34' E. Fine; clear."
+	16	30.02				Var.	1	
+	20	30.00				Var.	0-1	Fine.
+	24	29.96				Var.	2	Fine; clear.
+5	4	29.94				NW x N	2	Fine; clear.
+	8					W x N	3	
+	12	29.95				W x N	3	"48° 46' S, 171° 49' E. Fine; clear."
+	16	30.02				W x S	4	Fine.
+	20	30.09				SSW	3	Sea smooth.
+	24	30.18				SSE	2	Overcast. Fine throughout day and mainly clear.
+6	4	30.22				ESE	2	Cloudy.
+	8					NE	2	Fine; clear. 06.40; sighted Cape Saunders.
+	12	29.24				NE	2	"Off Taiaroa Head, Otago Harbour. 12.35, left for Lyttelton."
+	16	29.27				NE	2	Overcast; fine.
+	20					NE	3-4	Clear to SE.
+	24	29.36				NE	3-4	Slight head sea.
+7	4	29.33				NE	2	Fine; clear.
+	8					NE	3	
+	12	29.31				NE	5	"44° 28' S, 172° 53' E. Fine; clear. Head sea."
+	16	29.28				NE x N	5	Steep head sea.
+	20					NE x N	5	Steep head sea.
+	24	29.23				NE	5	Steep head sea.
+8	4	29.11				NE	3	"09.50; off Godley Head, Lyttelton Harbour."

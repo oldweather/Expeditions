@@ -1,0 +1,22 @@
+    <ScreenOverlay>
+      <name>Source Data</name>
+      <open>0</open>
+      <visibility>0</visibility>
+       <overlayXY x="0.5" y="0.45" xunits="fraction" yunits="fraction"/>
+       <screenXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+       <size x="0.9" y="0" xunits="fraction" yunits="fraction"/>
+       <Icon>
+         source/Data_table.png
+       </Icon>
+     </ScreenOverlay>
+    <ScreenOverlay>
+      <name>Notes</name>
+      <open>0</open>
+      <visibility>0</visibility>
+       <overlayXY x="0.5" y="0.45" xunits="fraction" yunits="fraction"/>
+       <screenXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+       <size x="0" y="0.9" xunits="fraction" yunits="fraction"/>
+       <Icon>
+         source/Notes.png
+       </Icon>
+     </ScreenOverlay>

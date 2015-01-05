@@ -1,0 +1,21 @@
+   <Folder>
+      <name>Comparison with present Day</name>
+      <open>0</open>
+      <visibility>1</visibility>
+    <Folder>
+      <name>SST timeseries</name>
+      <open>0</open>
+      <visibility>1</visibility>
+      <description>
+        <![CDATA[<table width="650"><tr><td><img width=640 height=480 src="comparison_with_climatology/SST.png"></td></tr><tr><th>Time-series of Franklin's sea-surface temperature measurements compared with the values expected based on a modern (1961-90) SST climatology (From HadISST)</th></tr></table>]]>
+       </description>
+    </Folder>
+    <Folder>
+      <name>SST scatter plot</name>
+      <open>0</open>
+      <visibility>1</visibility>
+      <description>
+        <![CDATA[<table width="650"><tr><td><img width=640 height=480 src="comparison_with_climatology/SST_scatter.png"></td></tr><tr><th>Comparison of Franklin's sea-surface temperature measurements compared with the values expected based on a modern (1961-90) SST climatology (From HadISST). If the Franklin measurements were equal to their expected values in the HadISST climatology, the points would lie on the solid line.</th></tr></table>]]>
+       </description>
+    </Folder>
+   </Folder>

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>IMMA data</name>
+    <open>0</open>
+<Style id="Ship_01">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_01.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_02">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_02.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_03">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_03.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_04">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_04.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_05">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_05.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_06">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_06.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_07">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_07.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_08">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_08.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_09">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_09.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_10">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_10.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_11">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_11.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_12">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_12.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_13">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_13.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_14">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_14.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_15">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_15.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_16">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_16.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_17">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_17.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_18">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_18.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_19">
+ <IconStyle>
+  <Icon>
+   <href>markers/rb_diverging_19.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_other">
+ <IconStyle>
+  <Icon>
+   <href>http://labs.google.com/ridefinder/images/mm_20_grey.png</href>
+ </Icon>
+ </IconStyle>
+</Style>
+<Style id="Ship_route">
+  <LineStyle>
+    <color>ff777777</color>
+    <width>2</width>
+  </LineStyle>
+</Style>
+   <Folder>
+     <name>BFranklin</name>
+     <visibility>0</visibility>
+     <open>0</open>
+      <Placemark>
+        <styleUrl>#Ship_10</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          26</pre></td><td bgcolor=grey><pre>HR:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      37.65</pre></td><td bgcolor=lightgrey><pre>LON:     -60.63</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=grey><pre>DI:         N/A</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        15.6</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       21.1</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-60.63,37.65,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-26</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_10</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          27</pre></td><td bgcolor=grey><pre>HR:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      37.22</pre></td><td bgcolor=lightgrey><pre>LON:     -62.48</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          158</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        15.6</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       21.1</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-62.48,37.22,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-27</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-60.63,37.65,0 -62.48,37.22,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-27</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_08</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          28</pre></td><td bgcolor=lightgrey><pre>HR:        3.69</pre></td><tr><td bgcolor=lightgrey><pre>LAT:       37.8</pre></td><td bgcolor=lightgrey><pre>LON:     -64.58</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          225</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        21.1</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       17.8</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-64.58,37.8,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-28T03:41:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-62.48,37.22,0 -64.58,37.8,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-28T03:41:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_06</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          28</pre></td><td bgcolor=lightgrey><pre>HR:       13.64</pre></td><tr><td bgcolor=lightgrey><pre>LAT:       37.7</pre></td><td bgcolor=lightgrey><pre>LON:     -65.33</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=grey><pre>DI:         N/A</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        19.4</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       15.6</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-65.33,37.7,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-28T13:38:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-64.58,37.8,0 -65.33,37.7,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-28T13:38:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_11</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          29</pre></td><td bgcolor=lightgrey><pre>HR:         3.6</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      37.43</pre></td><td bgcolor=lightgrey><pre>LON:        -66</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          360</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        17.2</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       21.7</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-66,37.43,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-29T03:36:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-65.33,37.7,0 -66,37.43,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-29T03:36:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_11</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          29</pre></td><td bgcolor=lightgrey><pre>HR:       12.55</pre></td><tr><td bgcolor=lightgrey><pre>LAT:       37.4</pre></td><td bgcolor=lightgrey><pre>LON:     -66.75</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:           45</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        18.3</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       22.2</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-66.75,37.4,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-29T12:33:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-66,37.43,0 -66.75,37.4,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-29T12:33:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_09</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          29</pre></td><td bgcolor=lightgrey><pre>HR:        18.5</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      37.38</pre></td><td bgcolor=lightgrey><pre>LON:      -67.5</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        18.9</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       18.9</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-67.5,37.38,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-29T18:30:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-66.75,37.4,0 -67.5,37.38,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-29T18:30:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_10</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          30</pre></td><td bgcolor=lightgrey><pre>HR:        3.45</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      37.37</pre></td><td bgcolor=lightgrey><pre>LON:     -68.25</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:           45</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        17.8</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       21.1</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-68.25,37.37,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-30T03:27:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-67.5,37.38,0 -68.25,37.37,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-30T03:27:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_10</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          30</pre></td><td bgcolor=lightgrey><pre>HR:       19.41</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      37.33</pre></td><td bgcolor=lightgrey><pre>LON:     -68.88</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=grey><pre>DI:         N/A</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        16.7</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       21.1</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-68.88,37.33,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-30T19:24:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-68.25,37.37,0 -68.88,37.33,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-30T19:24:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_11</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          30</pre></td><td bgcolor=lightgrey><pre>HR:       13.36</pre></td><tr><td bgcolor=lightgrey><pre>LAT:       37.5</pre></td><td bgcolor=lightgrey><pre>LON:     -69.67</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          113</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        17.8</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       22.2</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-69.67,37.5,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-30T13:21:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-68.88,37.33,0 -69.67,37.5,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-30T13:21:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_06</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           4</pre></td><td bgcolor=lightgrey><pre>DY:          30</pre></td><td bgcolor=lightgrey><pre>HR:        17.3</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      37.67</pre></td><td bgcolor=lightgrey><pre>LON:      -70.5</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          180</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        18.3</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       16.1</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-70.5,37.67,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-04-30T17:18:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-69.67,37.5,0 -70.5,37.67,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-04-30T17:18:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_07</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           1</pre></td><td bgcolor=lightgrey><pre>HR:        2.23</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.83</pre></td><td bgcolor=lightgrey><pre>LON:      -71.5</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=grey><pre>DI:         N/A</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:          20</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       17.2</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-71.5,38.83,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-01T02:13:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-70.5,37.67,0 -71.5,38.83,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-01T02:13:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_03</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           1</pre></td><td bgcolor=lightgrey><pre>HR:       19.17</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.22</pre></td><td bgcolor=lightgrey><pre>LON:     -72.38</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          203</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        18.3</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       13.3</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-72.38,38.22,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-01T19:10:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-71.5,38.83,0 -72.38,38.22,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-01T19:10:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_03</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           1</pre></td><td bgcolor=lightgrey><pre>HR:       11.14</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.38</pre></td><td bgcolor=lightgrey><pre>LON:     -72.83</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=grey><pre>DI:         N/A</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        17.8</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       13.3</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-72.83,38.38,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-01T11:08:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-72.38,38.22,0 -72.83,38.38,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-01T11:08:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_04</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           1</pre></td><td bgcolor=lightgrey><pre>HR:        17.1</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.55</pre></td><td bgcolor=lightgrey><pre>LON:      -73.5</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          225</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        17.8</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       13.9</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-73.5,38.55,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-01T17:06:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-72.83,38.38,0 -73.5,38.55,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-01T17:06:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_02</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           2</pre></td><td bgcolor=lightgrey><pre>HR:        3.06</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.72</pre></td><td bgcolor=lightgrey><pre>LON:     -74.05</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=grey><pre>DI:         N/A</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        16.7</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       11.7</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-74.05,38.72,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-02T03:03:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-73.5,38.55,0 -74.05,38.72,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-02T03:03:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_02</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           2</pre></td><td bgcolor=lightgrey><pre>HR:       19.05</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.67</pre></td><td bgcolor=lightgrey><pre>LON:     -74.25</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          248</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        15.6</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       11.7</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-74.25,38.67,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-02T19:03:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-74.05,38.72,0 -74.25,38.67,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-02T19:03:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_03</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           2</pre></td><td bgcolor=lightgrey><pre>HR:       13.03</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.62</pre></td><td bgcolor=lightgrey><pre>LON:      -74.5</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=lightgrey><pre>D:          315</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        17.8</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       12.8</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-74.5,38.62,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-02T13:01:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-74.25,38.67,0 -74.5,38.62,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-02T13:01:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_03</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           2</pre></td><td bgcolor=lightgrey><pre>HR:       17.02</pre></td><tr><td bgcolor=lightgrey><pre>LAT:      38.55</pre></td><td bgcolor=lightgrey><pre>LON:     -74.75</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>DI:           1</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        18.3</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       12.8</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-74.75,38.55,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-02T17:01:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-74.5,38.62,0 -74.75,38.55,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-02T17:01:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_02</styleUrl>
+        <description>
+<![CDATA[<table cellpadding=3 bgcolor=grey><tr><td bgcolor=lightgrey><pre>YR:        1775</pre></td><td bgcolor=lightgrey><pre>MO:           5</pre></td><td bgcolor=lightgrey><pre>DY:           3</pre></td><td bgcolor=lightgrey><pre>HR:           2</pre></td><tr><td bgcolor=lightgrey><pre>LAT:       38.5</pre></td><td bgcolor=lightgrey><pre>LON:        -75</pre></td><td bgcolor=lightgrey><pre>IM:           0</pre></td><td bgcolor=lightgrey><pre>ATTC:         1</pre></td><tr><td bgcolor=lightgrey><pre>TI:           0</pre></td><td bgcolor=grey><pre>LI:         N/A</pre></td><td bgcolor=grey><pre>DS:         N/A</pre></td><td bgcolor=grey><pre>VS:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>NID:          3</pre></td><td bgcolor=lightgrey><pre>II:          10</pre></td><td bgcolor=lightgrey><pre>ID:   BFranklin</pre></td><td bgcolor=grey><pre>C1:         N/A</pre></td><tr><td bgcolor=grey><pre>DI:         N/A</pre></td><td bgcolor=grey><pre>D:          N/A</pre></td><td bgcolor=grey><pre>WI:         N/A</pre></td><td bgcolor=grey><pre>W:          N/A</pre></td><tr><td bgcolor=grey><pre>VI:         N/A</pre></td><td bgcolor=grey><pre>VV:         N/A</pre></td><td bgcolor=grey><pre>WW:         N/A</pre></td><td bgcolor=grey><pre>W1:         N/A</pre></td><tr><td bgcolor=grey><pre>SLP:        N/A</pre></td><td bgcolor=grey><pre>A:          N/A</pre></td><td bgcolor=grey><pre>PPP:        N/A</pre></td><td bgcolor=grey><pre>IT:         N/A</pre></td><tr><td bgcolor=lightgrey><pre>AT:        16.7</pre></td><td bgcolor=grey><pre>WBTI:       N/A</pre></td><td bgcolor=grey><pre>WBT:        N/A</pre></td><td bgcolor=grey><pre>DPTI:       N/A</pre></td><tr><td bgcolor=grey><pre>DPT:        N/A</pre></td><td bgcolor=grey><pre>SI:         N/A</pre></td><td bgcolor=lightgrey><pre>SST:       12.2</pre></td><td bgcolor=grey><pre>N:          N/A</pre></td><tr><td bgcolor=grey><pre>NH:         N/A</pre></td><td bgcolor=grey><pre>CL:         N/A</pre></td><td bgcolor=grey><pre>HI:         N/A</pre></td><td bgcolor=grey><pre>H:          N/A</pre></td><tr><td bgcolor=grey><pre>CM:         N/A</pre></td><td bgcolor=grey><pre>CH:         N/A</pre></td><td bgcolor=grey><pre>WD:         N/A</pre></td><td bgcolor=grey><pre>WP:         N/A</pre></td><tr><td bgcolor=grey><pre>WH:         N/A</pre></td><td bgcolor=grey><pre>SD:         N/A</pre></td><td bgcolor=grey><pre>SP:         N/A</pre></td><td bgcolor=grey><pre>SH:         N/A</pre></td></tr></table>]]>
+        </description>
+        <Point>
+          <coordinates>-75,38.5,0</coordinates>
+        </Point>
+        <TimeStamp>
+          <when>1775-05-03T02:00:00Z</when>
+        </TimeStamp>
+      </Placemark>
+      <Placemark>
+        <styleUrl>#Ship_route</styleUrl>
+        <LineString>
+          <coordinates>-74.75,38.55,0 -75,38.5,0</coordinates>
+        </LineString>
+        <TimeStamp>
+          <when>1775-05-03T02:00:00Z</when>
+        </TimeStamp>
+      </Placemark>
+   </Folder>
+   <Folder>
+     <name>HadISST SST</name>
+     <visibility>0</visibility>
+     <open>0</open>
+   <GroundOverlay>
+     <visibility>0</visibility>
+     <open>0</open>
+      <name>1775/04/26</name>
+       <TimeSpan>
+         <begin>1775-04-26T00:00Z</begin>
+         <end>1775-05-01T00:01Z</end>
+       </TimeSpan>
+      <Icon>
+      <href>images/SST_023.png</href>
+      </Icon>
+      <LatLonBox>
+        <north>50.0</north>
+        <south>20.0</south>
+        <east>10</east>
+        <west>-90</west>
+        <rotation>0.0</rotation>
+      </LatLonBox>
+    </GroundOverlay>
+   <GroundOverlay>
+     <visibility>0</visibility>
+     <open>0</open>
+      <name>1775/05/01</name>
+       <TimeSpan>
+         <begin>1775-05-01T00:00Z</begin>
+         <end>1775-05-06T00:01Z</end>
+       </TimeSpan>
+      <Icon>
+      <href>images/SST_024.png</href>
+      </Icon>
+      <LatLonBox>
+        <north>50.0</north>
+        <south>20.0</south>
+        <east>10</east>
+        <west>-90</west>
+        <rotation>0.0</rotation>
+      </LatLonBox>
+    </GroundOverlay>
+   </Folder>
+</Document>
+</kml>

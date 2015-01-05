@@ -1,0 +1,1115 @@
+			NOTE: Barometer Mean missing much of the time							
+			"In the first three years, 1807, 1808 and 1809, the day commences at twelve at noon, according to the usual nautical estimation, and is twelve hours earlier than the day by civil reckoning; but this time, in every succeeding year, is the civil day, commencing at twelve at night."							
+
+Year	Month	Day	Latitude (N)	Therm.	Barometer	Wind Direction	Force	Meteors and Weather.		
+1807	4	1	60 9	43	29.86	NNW to NE	Fresh breezes	Snow		
+		2	Lerwick	47	29.90	to N N W	Ditto	Ditto		
+		3		50	30.04	N.erly	Moderate breezes	Cloudy		
+		4	60 30	41	29.79	SSW	Little wind	Ditto		
+		5	60 43	45	29.35	to W	Strong breezes	Snow		
+		6	Balta Sound	48	29.65	to N b W	Strong gales	Rain		
+		7		55	29.99	S.erly	Moderate	Cloudy		
+		8		50	29.78	W	Strong breezes	Rain		
+		9		38	30.05	Variable	Fresh gales	Showers of rain		
+		10		42	29.70	DItto	Light airs	Rain		
+		11	62 34	36	29.21	"ESE, ENE"	Fresh breezes	Ditto		
+		12	63 26	33	29.74	E N E	Hard gales	Dino		
+		13	63 52	29	29.77	N E	Ditto	Dry Weather		
+		14	64 20	28	29.90	NE	Strong gales	Cloudy		
+		15	66 1	25	29.65	to ESE	Ditto	Ditto		
+		16	66 8	17	29.53	N	Hard gales	Snow		
+		17	65 24	29	30.08	N	Ditto	Ditto		
+		18	65 13	32	30.16	N	Light airs	Cloudy		
+		19	67 21	39	30.00	S	Strong breezes	Ditto		
+		20	69 47	35	29.97	S S W	Fresh breezes.	Hazy		
+		21	72 4	36	29.96	S S W	Ditto	Foggy		
+		22	73 40	34	29.90	S W	Ditto	Ditto		
+		23	75 9	29	29.76	to W b S	Strong breezes	Clear		
+		24	74 59	24	29.76	N W to E b N	Moderate breezes	Cloudy		
+		25	75 0	26	29.67	to N	Fresh breezes	Ditto		
+		26	75 19	26	29.66	N	Ditto	Ditto		
+		27	75 36	24	29.68	N	Light airs	Ditto		
+		28	75 30	16	29.50	NE b E	Fresh breezes	Snow		
+		29	75 20	20	29.48	N	Strong gales	Ditto		
+		30	75 10	16	29.70	N	Ditto	Snow showers		
+	5	1	73 2	18	30.05	N to N N W	Fresh gales	Much snow		
+		2	75 7	28	30.07	S W.erly	Light airs	Cloudy		
+		3	74 26	20	30.16	to N.erly	Strong gales	Ditto		
+		4	75 55	14	30.18	N b W to E N E	Strong breezes	Ditto		
+		5	75 57	18	30.31	to N N E	Fresh gales	Clear		
+		6	75 47	27	30.20	N N E	Moderate breeze	Ditto		
+		7	75 51	34	30.00	N	Gentle breeze	Cloudy		
+		8	76 0	20	29.87	N	Fresh breeze	Ditto		
+		9	75 31	19	29.80	N	Brisk gale	Snow		
+		10	75 30	21	29.81	N	Fresh gale	Ditto		
+		11	75 30	22	29.75	to ENE	Fresh breezes	Ditto		
+		12	75 20	20	29.81	to N	Ditto	Ditto		
+		13	75 30	17	29.48	N W.erly	Strong breezes.	Ditto		
+		14	75 22	15	29.46	WNW	Fresh breeze	Ditto		
+		15	75 22	18	29.47	WNW	Fresh breeze	Cloudy		
+		16	75 32	26	29.60	S S W	Light airs	Ditto		
+		17	75 45	24	29.78	S. W.	Gentle breeze	Ditto		
+										
+Year	Month	Day	Latitude (N)	Therm.	Barometer	Wind Direction	Force	Meteors and Weather.		
+1807	5	18	75 50	27	29.78	W	Gentle breeze	Snow		
+		19	75 35	22	29.76	N W to N E	Light airs	Cloudy		
+		20	75 55	22	29.80	N W to N E	Fresh breezes	Ditto		
+		21	75 55	22	29.76	N	"Light airs, calm"	Ditto		
+		22	76 2	28	29.76		Calm	Clear		
+		23	75 58	31	29.66	N	Moderate breeze	Cloudy		
+		24	75 56	26	29.80	N W	Gentle breeze	Ditto		
+		25	75 55	29	30.00	NNE	Light airs	Clear		
+		26	75 55	26	30.01	N E	Ditto	Ditto		
+		27	75 57	25	29.88	N b E	Fresh breeze	Cloudy		
+		28	75 56	26	29.91	to N N W	Ditto	Snow	
+		29	75 56	23	29.84	to N W	Ditto	Ditto	
+		30	75 55	18	29.78	N W	Strong breeze	Ditto	
+		31	75 51	22	29.81	NNW	Fresh breeze	Cloudy	
+	6	1	75 48	25	29.93	Calm	Calm	Ditto	
+		2	75 46	28	29.99	"SE, WSW"	Moderate breeze	Hazy	
+		3	75 49	32	29.88	SW	Light airs	Ditto	
+		4	75 59	33	29.82	S by W	Strong breeze	Ditto	
+		5	76 16	32	29.97	to WSW	Brisk gales	Rain	
+		6	76 20	31	29.97	SE	Light airs	"Rain, fog"	
+		7	76 36	30	29.83	N W	Ditto	Thick fog	
+		8	76 35	28	29.60	S W	Ditto	Cloudy	
+		9	76 48	32	29.78	W b N	Fresh gales	Ditto	
+		10	76 48	32	29.79	W b N	Light airs	Foggy	
+		11	76 50	32	29.88	"W N W, SE"	Nearly calm	Clear	
+		12	76 49	32	29.93	"E, E S E"	Fresh breezes	Cloudy	
+		13	76 52	29	30.00	E S E	Brisk gales	Ditto	
+		14	77 0	31	29.97	E	Fresh gales	Snow	
+		15	76 54	31	29.68	to E N E	Ditto	Ditto	
+		16	76 50	30	29.65	ENE	Fresh breeze	Ditto	
+		17	77 0	33	29.66	N E	Ditto	Ditto	
+		18	77 34	32	29.72	N E	Moderate breeze	Foggy	
+		19	76 26	34	29.81	"N NE, W N W"	Fresh breezes	Ditto	
+1808	5	1	76 17	24	29.23	NNE to E	Strong gales	Showers of snow	
+		2	76 50	28	29.50	E to SSE	Fresh gales	Dttto	
+		3	77 2	28	29.40	to ESE	Ditto	Snow	
+		4	76 6	27	29.67	ESE	Light breeze	Cloudy	
+		5	77 20	29	29.54	N.erly	Fresh gales	Snow	
+		6	78 0	28	29.73	ESE to ENE	Strong gales	Ditto	
+		7	78 0	26	30.20	to N N W	Fresh breezes	Cloudy	
+		8	78 0	27	30.23	SE to E	Moderate breeze	Snow showers	
+		9	78 0	28	30.10	to NNW	Strong br. Calm	Ditto	
+		10	77 50	18	30.54	N N W	Light air	Cloudy	
+		11	77 50	26	30.45	Calm	Calm	Ditto	
+		12	77 40	32	29.73	S	Fresh gale	Fog	
+		13	77 45	25	29.53	Variable	Fresh breezes	Snow	
+		14	77 50	22	29.47	"W, SSW"	to moderate br.	Ditto	
+		15	77 50	20	29.50	Variable.	to Calm	Hazy	
+		16	77 40	24	29.55	WNW to N	Moderate breeze	Ditto	
+		17	77 30	27	29.60	N	Fresh breeze	Snow	
+		18	77 50	25	29.60	N	Ditto	Ditto	
+		19	77 55	24	29.81	to N W b N	Strong breeze	Cloudy	
+		20	78 4	20	29.80	N.erly	Light airs	Ditto	
+		21	78 8	26	29.85	W.erly	Moderate breeze	Snow	
+		22	78 10	29	29.98	Calm.	Calm	Cloudy	
+		23	78 13	29	29.86	SW	Moderate breeze	Fog	
+		24	78 4	24	29.78	WNW to NNW	Light breeze	Clear	
+		25	77 55	26	29.70	N.erly	Ditto	Cloudy	
+		26	77 50	22	29.80	N W	Strong breeze	Snow
+		27	77 58	24	30.09	N W	Ditto	Ditto
+		28	78 30	25	30.00	ESE	Light breeze	Snow shower
+		29	78 37	24	29.90	Var. W N W	to Fresh gales	Much snow
+		30	78 36	32	29.93	N E	Light airs	"Fog, cloudy"
+		31	78 36	26	29.96	N E	to Calm	Snow shower
+	6	1	78 37	24	29.99	N E	Fresh breeze	Snow
+		2	78 43	36	29.97	N E	Nearly calm	Fog
+		3	78 43	28	29.97	Var. calm	Ditto	Fog
+		4	78 35	31	29.90	Calm	Calm	Clear
+		5	78 25	30	29.90	SSW	Fresh breeze	Hazy
+		6	78 20	32	29.83	S.erly	Light breeze	Fog or snow
+		7	78 20	29	29.87	S W	Ditto	Ditto
+		8	78 10	29	29.88	S.erly	Nearly calm	Fog. cloudy
+		9	77 50	27	29.78	Variable.	Ditto	Cloudy
+		10	77 18	27	29.79	W N W	Light or Mod. Br.	Clear
+		11	77 6	30	29.80	S	Strong breeze	Fog		
+		12	76 37	33	29.83	S.erly	Fresh gales	Ditto		
+		13	76 35	33	29.90	S S W	Fresh gale	Haze or fog		
+		14	76 30	34	29.99	S S W	Strong breeze	Fog		
+		15	75 58	34	30.06	S S W	Fresh breeze	Fog		
+										
+Year	Month	Day	Latitude (N)	Therm.	Barometer	Wind Direction	Force	Meteors and Weather.		
+1809	5	1	74 15	12	29.68	N E	Moderate breeze	Frost rime		
+		2	74 5	10	29.84	NE b N	to Strong gale	Ditto		
+		3	73 54	20	29.87	to NE b E	Strong gales	Snow		
+		4	74 10	36	29.94	to SE b S	Fresh gales	Ditto		
+		5	74 10	36	30.00	to S b E	to Light breezes	Clear		
+		6	73 49	32	29.38	ESE to S W	Light breezes	Rain		
+		7	73 48	25	29.53	"S W, N"	Fresh gales	Snow		
+		8	73 38	27	29.72	to W	to Fresh breezes	Cloudy		
+		9	73 50	21	29.76	to NNE 	Fresh gales	Snow shower		
+		10	74 10	19	29.80	"N E., calm"	to Calm	Snow
+		11	74 45	13	30.20	"N, NNE"	Fresh breezes	Snow shower
+		12	75 0	16	30.15	"NNE, calm"	Strong br. Calm	Cloudy
+		13	75 8	16	30.04	"WNW, WSW"	Fresh breezes	Ditto
+		14	75 48	19	30.00	Variable	Moderate breeze	Ditto
+		15	76 3	20	30.02	E.erly	Nearly calm	Ditto
+		16	76 4	22	29.78	E	to Calm	Snow
+		17	76 8	30	29.35	ESE	Strong gale	Ditto
+		18	76 6	23	29.79	"to N N E, W N W"	to Moderate br.	Snow showers
+		19	76 16	32	29.65	to SSW	Fresh breezes	Clear
+		20	76 30	31	30.03	to N W	Ditto	"Fog, snow"
+		21	76 26	31	30.12	Var. E S E	Moderate breezes	Cloudy
+		22	76 32	31	29.73	to S E	Ditto	Fog
+		23	76 24	21	30.06	"to W, N"	Strong gales	Cloudy
+		24	77 8	17	29.98	N.erly	to Moderate br.	Ditto
+		25	77 20	20	29.87	N N W	Light breeze	A little snow
+		26	77 20	17	29.87	N W b N	to Strong gale	Snow
+		27	77 20	19	29.80	N N E	Strong gale	Ditto
+		28	77 20	19	30.04	N N E	Fresh gale	Cloudy
+		29	79 0	20	30.05	N E.erly	Ditto	Ditto
+		30	79 0	20	30.05	to N.	to Strong gales	Snow showers
+		31	79 0	23	30.06	N E.erly	Fresh gale	Ditto
+1809	6	1	78 56	23	30.02	NNE	Ditto	Cloudy
+		2	79 4	22	30.24	NNE	Fresh breeze	Ditto
+		3	79 4	28	30.20	E.erly	Nearly calm	Clear
+		4	79 4	26	30.10	E.erly	to Moderate br.	Cloudy
+		5	79 0	24	30.06	N E	to Light airs	Ditto
+		6	79 0	30	29.95	N E	Light breeze	"Haze, snow"
+		7	79 4	31	29.88	S E.erly	Ditto	"Cloudy, snow"
+		8	79 8	29	29.88	S E	to Calm	Snow showers
+		9	79 2	27	29.86	to W	Strong gales	Ditto
+		10	79 0	25	29.93	S W	Moderate breeze	Ditto
+		11	79 2	30	30.06	S W.erly	Ditto	Snow
+		12	78 56	29	30.07	to S	Ditto	A little snow
+		13	78 52	31	29.97	to W	Ditto	Fog showers
+		14	78 56	31	29.82	W	Nearly calm	Fog
+		15	79 0	30	29.68	S E	Fresh breeze	Snow showers
+		16	79 0	32	29.50	to E N E	to Light breezes	"Much snow, fog"
+		17	79 0	32	29.62	"to S, S S W"	to Fresh breezes	"Snow, fog"
+		18	79 30	27	29.90	"N N W, S S W"	Moderate breezes	Clear
+		19	79 30	27	29.91	S W.erly	Strong breeze	Snow showers
+		20	79 50	42	29.67	to E N B	Nearly calm	Clear
+		21	79 50	30	29.81	"to SSW, SSE"	to Fresh breezes	Fog
+		22	79 45	32	29.81	Variable	Light breeze	"Fog, snow"
+		23	79 45	32	29.82	Ditto	Ditto	Ditto
+		24	79 57	32	29.59	"N N W, var."	Moderate breeze	Snow showers
+		25	79 30	34	29.64	Variable	to Fresh breeze	Fog showers
+		26	79 0	32	29.84	"W N W, S"	Strong breezes	"Snow, fog"
+		27	78 50	32	29.94	Var. calm	Nearly calm	Ditto					
+		28	78 48	32	29.82	Variable	Ditto	"Cloudy, fog"					
+		29	78 36	32	29.82	to S.erly	to Fresh breezes	Cloudy					
+		30	77 40	35	29.80	to W N W	Moderate breezes	Thick fog.					
+
+Year	Month	Day	Latitude	Longitude	Thermometer		Barometer			Winds		Weather	Situation
+					Max.	Min.	Max.	Min.	Med.	Direction	Force	and Meteors	and Remarks
+1810	4	9	74 6	14 37 E	14	10	30.00	29.94	29.97	N E.erly	Hard gales	Snow showers	At sea
+		10	73 41	16 0	12	10	30.14	30.00	30.07	 to E S E	"Fresh, light br."	Ditto	Ditto
+		11	74 16	14 47	20	16	30.00	29.88	29.94	 to E	to Strong gales	Showers cryst. snow	Drift ice
+		12	73 42	14 0	24	14	29.88	29.80	29.84	 E.erly	Strong gales	Ditto	"At sea, no ice"
+		13	73 59	16 0	8	6	30.14	29.80	29.97	 to N N E	"to Moderate br,"	Snow showers	Ditto
+		14	74 50	11 30	17	12	30.14	30.02	30.08	 to N	Fresh gales	Shower cryst. snow	Bay ice
+		15	75 4	9 38	14	10	30.26	30.02	30.14	 N to E S E	to Light airs	Snow	Ditto
+		16	75 46	9 14	15	10	30.26	30.08	30.17	 Calm	to Calm	Showers of snow	Bay and drift ice
+		17	76 6	9 30	10	4	30.08	29.90	29.99	 Variable	Fresh breezes	Ditto	Crowded ice
+		18	76 18	8 50	5	0	29.92	29.90	29.91	" N W, S W"	Fresh gales	Ditto	Much ice
+		19	76 16	9.0	12	10	30.07	29.92	30.00	 W.erly	Light br. calm	cloudy	Very crowded ice
+		20	76 22	9.0	21	16	30.07	29.60	29.83	" E S E, var."	Light br. fr. gales	Some cryst. snow	Ice more open.
+		21	76 37	11.0	21	8	29.60	29.58	29.59	 E N E to N	Strong gales	Constant cryst. snow	Much bay and drift ice
+		22	76 17	11.0	8	5	30.00	29.60	29.80	" N N W, N W"	to Light breezes	Frost rime	Bay ice
+		23	76 16	10 50	16	11	30.12	30.00	30.06	" N.erly, var."	Light breezes	Clear	Beset in bay ice
+		24	76 20	10 30	28	19	30.24	29.72	29.98	 E S E	to Fresh gale	Snow showers	Bay and drift ice
+		25	76 30	11 10	31	18	29.72	29.30	29.51	 Var. W N W	Strong ga. calm	Coarsely cryst. snow	Floes of Bay ice
+		26	76 25	11 15	20	17	29.68	29.30	29.49	 W N W	to Moderate breeze	A little snow	Open drift ice
+		27	77 10	10 20	23	17	29.85	29.68	29.76	 to N.erly	to Fresh breeze	Showers cryst. snow	Ice streams
+		28	77  0	10 40	21	11	29.91	29.85	29.88	 W N W to W	to Light breezes	Ditto	Ditto
+		29	76 50	10 0	18	14	29.98	29.91	29.95	 to SSW. var.	Calm to fresh br.	Much snow	Much ice near
+		30	76 41	9 30	22	12	30.04	29.98	30.01	 Variable	Light or fresh br.	Thick snow showers	Ice streams
+1810	5	1	76 58	10 0	16	12	30.04	30.01	30.02	"N W to E, S E"	Calm to str. gales	Much cryst. snow	A pack of ice near
+		2	77 10	10 0	14	8	30.00	29.96	29.98	 to N E	to Light breeze	Snow showers	"Bay floes, & thick ice"
+		3	77 39	10 10	16	13	30.02	29.98	30.00	"N N W, NNE"	to Strong gales	Cryst. snow	Ditto
+		4	77 30	9 50	15	12	30.05	30.01	30.03	 to N b W	to Moderate breeze	Some snow showers	Ditto
+		5	77 14	10 0	16	16	30.01	29.81	29.91	 to N E	"Light hr, brisk ga."	Coarse cryst. snow	Much bay & drift ice
+		6	77 20	9 50	26	22	29.81	29.57	29.69	"N b E, N b W"	Fresh or strong ga.	"Clear, cloudy"	Ditto
+		7	77 28	10 0	25	21	29.75	29.50	29.62	"to N b E, N.erly"	Strong gales	Snow showers	Drift ice
+		8	77 1	9 5	21	18	30.09	29.75	29.92	N b E to N N W	Fresh gales	Showers cryst. snow	Crowded drift ice
+		9	77 3	8 0	19	17	30.22	30.09	30.16	 N.erly	Ditto	Ditto	Sea open
+		10	77 5	5 40	20	17	30.30	30.22	30.26	" N W, N"	to Moderate br.	Ditto	A little drift ice
+		11	78 15	5 35	22	19	30.34	30.32	30.33	NNW to W.erly	"Light airs, calm"	Clear	Near much ice
+		12	78 15	5 30	28	19	30.34	30.33	30.33	 to N E.erly	to fresh breeze	Cloudy	Ditto
+		13	78 25	5 50	20	15	30.40	30.33	30.37	 N E to N N W	to Strong gales	Showers cryst. snow	Ice streams
+		14	78 48	5 30	20	12	30.40	30.21	30.30	 to N W b N	Brisk gales	Ditto	Ditto
+		15	79 0	5 0	18	15	30.21	29.86	30.03	 N.erly	to Strong gales	Snow showers	Ditto
+		16	78 45	4 30	20	19	29.86	29.66	29.76	" N W b N, N"	to Brisk gales	A little snow	Ditto
+		17	78 30	4 0	17	16	29.88	29.76	29.82	 to N E	to Strong gales	Ditto	Ditto
+		18	78 25	4 10	18	16	29.89	29.86	29.88	 N E.erly	Fresh breezes	Showers cryst. snow	Floes and drift ice
+		19	78 35	5 0	18	17	29.90	29.84	29.87	 to Variable	Ditto	Some snow	Ice streams
+		20	79 5	4 0	24	15	29.97	29.90	29.93	N	to Light breeze	Some cryst. Snow	Fields and floes
+		21	79 15	3 0	26	16	29.93	29.76	29.85	"to W.erly, SSW"	Light breezes	Clear	Ditto
+		22	79 20	3 30	22	20	29.76	29.61	29.68	to S W	to Fresh gales	Showers cryst. snow	Ditto
+		23	79 15	3 50	24	22	29.74	29.58	29.66	to N E or E.erly	to Calm	Coarse cryst. snow	Many floes
+		24	79 0	4 0	18	14	29.96	29.74	29.85	N E.arly	Brisk gales	Showers cryst. snow	Heavy drift ice
+		25	78 45	4 10 E	16	12	30.02	29.96	29.99	to N W	Ditto	Showers of snow	Floes and drift ice
+		26	78 53	3 40 	16	12	29.99	29.84	29.92	W N W	to Light breeze	Some snow	Field and drift ice
+		27	78 57	3 28	17	16	29.85	29.72	29.78	"N.erly, var."	Light airs	Fine cryst. snow	Fields and floes
+		28	78 50	3 0	18	10	30.05	29.85	29.95	"E.erly, var."	Nearly calm	Cloudy	Ditto
+		29	78 45	2 50	18	12	30.12	29.93	30.03	"E.erly, S.erly"	Fresh or light br.	Some snow	Ship embayed among do.
+		30	78 50	2 50	28	27	29.93	29.61	29.77	S	Fresh gale	Snow showers	Ditto
+		31	79 0	2 50	36	20	29.75	29.47	29.61	N.erly	"Calm, fresh gales"	Clear	Ditto
+1810	6	1	78 34	3 0	24	20	30.04	29.75	29.89	"N W b N, S.erly"	Ditto	Ditto	Fields and floes
+		2	78 24	4 0	28	26	29.95	29.86	29.90	E to N N E	to Light breeze	Coarse cryst. snow	Floes and drift ice
+		3	78 20	3 30	26	16	29.91	29.88	29.89	to N b W	Light breeze	Small snow	"Fields, floes, & drift ice"
+		4	78 15	3 0	21	17	29.94	29.91	29.93	N.erly	Moderate breeze	Cloudy	Floes and drift ice
+		5	78 12	3 20	27	15	29.92	29.84	29.88	"to N N E, N N W"	Ditto	Snow	Crowded drift ice
+		6	78 8	3 20	26	22	29.84	29.75	29.80	N.erly	Light breeze	Snow showers	"Ship beset by a field, &c."
+		7	78 4	3 10	30	21	29.75	29.73	29.74	"N, N N W"	to Strong gales	Some snow	Ditto
+		8	78 0	3 10	25	24	29.74	29.69	29.71	N b W to N W	to Fresh gales	Snow showers	Field and drift ice
+		9	77 55	3 0	30	27	29.68	29.64	29.66	W N W	Fresh gales	Ditto	"Ice open, field, &c."
+		10	77 54	3 5	27	25	29.78	29.68	29.73	to W.	"Calm, moderate br."	Some snow	Field and floes
+		11	77 48	3 0	35	27	29.85	29.78	29.82	"N W, W b S"	Light breeze	Fog	Ditto
+		12	77 47	3 10	34	30	29.87	29.85	29.86	"to S b E, var."	to Moderate breeze	Hazy	Ditto
+		13	77 47	3 10	34	30	29.97	29.86	29.91	8 W to S E	Light airs	Fine clear weather	Ditto
+		14	77 50	3 0	34	30	30.12	29.97	30.05	to W. var.	to Moderate breeze	Fog showers	Fields and drift ice
+		15	77 55	3 10	35	28	30.20	30.12	30.16	"SSW, S E, var."	to Calm	Clear	Ditto
+		16	77 59	3 40	30	28	30.25	30.20	30.23	"S to W, var."	to Moderate breeze	A little snow	Floes and drift ice
+		17	78 4	3 30	31	30	30.20	29.97	30.08	"W N W, to S b W"	Fresh gales	Some snow	"Field, floes, &c."
+		18	78 7	3 20	32	30	29.97	29.68	29.82	S to W N W	to Moderate breeze	"Fog, snow"	Ditto
+		19	78 0	3 45	33	27	29.68	29.60	29.64	to N N W	Strong or light breeze	Some snow	Ditto
+		20	77 58	3 38	39	27	29.62	29.60	29.61	"N W, N E.erly"	to Calm	Cloudy	Ditto
+		21	78 0	3 44	32	25	29.72	29.62	29.67	N E b N	to Moderate breeze	Ditto	Floes and drift ice
+		22	77 59	4 10	28	27	29.93	29.72	29.82	to N W b N	to Fresh breeze	Clear	In an open pack
+		23	76 55	7 30	31	30	30.06	29.93	30.00	Variable	to Moderate breeze	Ditto	Ice streams
+		24	76 40	6 30	35	32	30.04	29.94	29.99	S.erly	"Light airs, calm showers of snow"	Showers of snow	Sea open
+		25	76 10	7 0	32	31	30.14	29.88	30.01	Var. E S E	to Fresh gales Ditto	Ditto	A pack of ice near
+		26	75 40	6 10	33	32	29.74	29.62	29.68	"to S, N W"	to Fresh breeze	"Snow, fog"	No ice
+		27	75 0	8 30	32	32	29.86	29.74	29.80	"to S, S W"	Strong ga. mod. br.	A little snow	Much ice
+		28	74 20	12 30	39	35	29.86	29.78	29.82	"S, N W"	Fresh gales	Rain	At sea
+		29	73 0	12 28	35	33	29.84	29.78	29.81	"S, N W"	Calm to str. ga.	Some snow	Ditto
+		30	70 50	10 20	36	35	30.24	29.84	30.04	to S W	to Light breeze	A little snow	Ditto
+
+
+1811	4	1	69 41	3 31 W	18	15	30.13	30.00	30.06	W b N to N b W	Fresh breezes	Clear	At sea
+		2	69 40	1 11 E	23	15	30.24	30.12	30.18	Variable	to Calm	Some snow	Ice streams
+		3	70 22	3 23	30	27	29.95	29.70	29.83	S S W to W N W	Fresh br. to st. ga.	Much snow	Drift ice
+		4	70 33	5 4	30	25	29.88	29.77	29.82	W to N N W	to Moderate br.	Cloudy	Ice near
+		5	70 49	7 15	14	10	29.88	29.69	29.79	N N W	Fresh gales	"Snow, frost rime"	Ditto
+		6	71 25	10 53	27	10	29.69	29.50	29.60	"to W N W, E"	to Light br. hard ga.	Snow showers	No ice
+		7	71 29	10 39	28	28	29.50	29.50	29.50	to N E	Very hard gales	Some snow	At sea
+		8	70 56	10 30	30	28	29.70	29.50	29.60	N E	Very hard gale	Some hail	Ditto
+		9	70 25	8 15	24	15	30.00	29.70	29.85	to N	to Fresh gales	Snow showers	Ditto
+		10	70 32	6 58	11	8	30.18	30.00	30.09	to N N E	to Strong gales	Ditto	A little ice
+		11	70 44	6 26	25	17	30.26	30.18	30.22	to N E	to Fresh gales	Some snow showers	Drift ice
+		12	70 52	6 0	27	25	30.25	30.19	30.22	"N E, N E b N"	Fresh gales	Ditto	Ice streams
+		13	70 8	8 57	29	27	30.19	30.14	30.16	N N E to W N W	to Calm	Cloudy	Ditto
+		14	70 52	8 59	34	25	30.23	30.19	30.21	Var. E.erly	to Strong gales	Snow showers	Sea open
+		15	72 36	13 30	34	26	30.23	30.02	30.13	E S E to S S W	Fresh gales	Clear	Bay ice
+		16	74 31	16 32	37	33	30.02	29.82	29.92	to W S W	to Strong gales	Hazy	A little drift ice
+		17	75 34	15 4	34	32	29.82	29.74	29.78	to S S W	to Fresh gales	Rain	A peck of ice near
+		18	75 34	13 46	34	27	29.89	29.66	29.77	to W	Strong gales	Some snow	In a bight of ice
+		19	75 59	12 50	32	22	30.12	29.89	30.01	W N W to S S W	to Calm	Snow showers	Among drift ice
+		20	76 21	12 0	12	10	30.16	30.12	30.14	W S W to N N E	Fresh br. light br.	Clear	Much drift ice
+		21	76 32	1 0	14	12	30.24	30.16	30.20	E b N	Nearly calm	Ditto	Much ice
+		22	76 28	10 50	15	10	30.39	30.24	30.32	E.erly. W N W	to Moderate breeze	A little snow	Crowded ice
+		23	76 34	10 20	25	15	30.47	30.31	30.39	WNW	to Calm	Clear	Ship beset
+		24	76 45	10 45	27	20	30.31	29.97	30.14	E S E. W N W	to Fresh gale	Much snow	Bay and heavy ice
+		25	76 58	10 20	22	19	29.97	29.82	29.89	to N to E N E	Light br. strong ga.	Ditto	Crowded ice
+		26	77 0	10 20	14	5	30.04	29.92	29.98	to N N W	to Light breeze	Some snow showers	Ditto
+		27	76 58	10 0	12	12	30.12	30.04	30.08	N E.erly	to Fresh gale	Ditto	Ditto
+		28	77 4	8 50	26	16	30.17	30.10	30.14	N E to N N W	to Light breeze	Clear	Ice more open
+		29	77 0	8 50	23	16	30.10	30.05	30.07	"to N N E, W N W"	to Calm	Snow showers	Ice crowded
+		30	77 8	8 48	18	16	30.12	30.06	30.09	S S W to S E	Fresh breezes	Continual snow	Ship frozen up
+1811	5	1	77 15	8 20	21	13	30.17	30.12	30.15	N N E to S E	Moderate breeze	Snow showers	Ditto
+		2	77 17	8 10	23	15	30.17	30.02	30.09	to ENE	Ditto	A little snow	Ship beset
+		3	77 22	8 0	23	19	30.02	29.81	29.92	to E S E	Fresh breezes	Snow showers	Ditto
+		4	77 27	7 50	23	19	29.81	29.73	29.77	to N E	Fresh gales	Much snow	Ditto
+		5	77 34	7 50	25	11	29.74	29.71	29.73	Variable	to Calm	Snow showers	Ditto
+		6	77 32	7 58	12	10	29.79	29.74	29.77	NW.erly	Fresh breezes	Ditto	Ditto
+		7	77 28	8 4	10	8	29.91	29.79	29.85	NW b W	Strong gales	Ditto	Ditto
+		8	77 24	8 10	11	5	30.02	29.91	29.96	N W	to Strong breeze	Cryst. snow	Ditto
+		9	77 26	8 10	24	20	30.05	30.02	30.04	S S W to W N W	Fresh gales	Snow showers	Ditto
+		10	77 10	8 10	22	14	30.12	30.05	30.08	to N N W	to Fresh breeze	Ditto	Ditto
+		11	77 6	8 3	10	9	30.15	30.07	30.11	to N W	Fresh gales	A little snow	Ditto
+		12	77 1	8 5	23	17	30.07	29.81	29.94	S b E to S E b S	to Light airs	Ditto	Ditto
+		13	77 4	8 10	31	11	29.81	29.63	29.72	"to S S W, W b S"	Hard gales	Snow showers	Ditto
+		14	77 2	 8 15	13	10	29.83	29.68	29.76	to W N W	Strong gales	Ditto	Ice more open
+		15	77 2	8 56	16	12	29.94	29.83	29.88	"W N W, var."	Fresh gales	Much small snow	Ice rather open
+		16	77 0	8 59	24	19	29.95	29.87	29.91	E.erly	"Calm, light breeze"	Snow showers	Ditto
+		17	77 0	9  0 E	24	16	29.90	29.80	29.85	N.erly	Moderate breezes	Much snow	Ice rather open
+		18	76 46	8 46	23	20	30.00	29.90	29.95	"N.erly, var."	Light breezes	Ditto	Ditto
+		19	76 54	8 38	23	22	29.97	29.87	29.92	to S E.erly	to Strong gales	Some snow	Ditto
+		20	77 5	8 30	22	20	29.87	29.77	29.82	S E.erly	Hard gales	Much small snow	Ditto
+		21	77 20	8 28	24	20	29.89	29.78	29.84	to E.erly	to Calm	Clear	Ditto
+		22	77 22	8 0	33	24	29.88	29.68	29.78	to S E.erly	Moderate breezes	A little snow	Ditto
+		23	77 16	8 16	24	18	30.11	29.88	30.00	"N, var."	Light breezes	Clear	Ditto
+		24	77 14	8 50	28	23	30.16	30.07	30.11	to N W	Ditto	Cloudy	Ditto
+		25	77 24	9 10	26	23	30.07	29.94	30.00	N W.erly	to Fresh breezes	Some snow	Ditto
+		26	78 0	9 50	27	24	29.94	29.88	29.91	to NNW	to Strong gales	"Clear, cloudy"	Ship at liberty
+		27	78 15	9 30	23	20	29.88	29.86	29.87	N b W	Hard gale	Some snow shoers	A little ice
+		28	78 20	9 30	25	21	29.99	29.88	29.94	N b W	Strong gale	Cloudy	Ditto
+		29	78 22	9 27	24	21	30.08	29.99	30.03	N b W	Ditto	Clear	Ditto
+		30	78 28	5 40	23	21	30.09	30.03	30.06	to N N W. var.	Fresh breezes	Cloudy	Near a pack of ice
+		31	78 34	5 35	29	24	30.03	29.98	30.01	to N W.erly	to Light breezes	Snow showers	Loose ice
+1811	6	1	78 34	5 38	26	24	30.04	30.01	30.03	W b N to N N E	Light to fresh br.	Some snow showers	"Floes, loose ice"
+		2	78 36	6 10	23	22	30.04	30.00	30.02	N.erly	to Moderate breezes	"Cloudy, hazy"	Drift ice
+		3	78 34	6 10	34	28	30.00	29.96	29.98	Variable	"Light breezes, calm"	Thick snow showers	Scattered drift ice
+		4	78 38	5 58	34	24	29.96	29.90	29.93	E.erly to N	to Light breezes	Snow showers	Ditto
+		5	78 29	5 54	34	23	29.90	29.82	29.86	"N W.erly, var."	Fresh to light br.	Hazy some snow	Ditto
+		6	78 40	6 10	29	28	29.82	29.71	29.76	N N E to E N E	to Fresh gales	Snow showers	Ditto
+		7	79 20	8 0	32	30	29.71	29.63	29.67	to S E	Strong gales	"Snow showers, hazy"	Ditto
+		8	79 10	7 50	30	29	29.78	29.63	29.71	to S b E	Fresh gales	"Snow, hazy"	"Sea open, ice near"
+		9	78 58	7 0	31	30	29.94	29.78	29.86	to S S W	to Moderate breezes	A little snow	Ditto
+		10	78 58	6 58	38	31	29.95	29.94	29.94	to ES E	Light breezes	"Cloudy, snow"	Ditto
+		11	78 58	6 0	32	30	29.94	29.93	29.94	to NE.erly	to Moderate breezes	Clear	Ditto
+		12	78 56	5 50	30	26	29.95	29.91	29.93	N E.erly	Moderate breeze	"Clear, cloudy"	Ditto
+		13	78 40	5 30	31	27	29.91	29.82	29.87	N E.erly	Light airs	Small showers snow	Ditto
+		14	78 45	5 15	33	28	29.82	29.76	29.79	Variable	to Calm	"Rain, haze"	Drift ice
+		15	78 45	5 13	34	32	29.80	29.77	29.78	"E.erly, S E"	to Light airs	Cloudy	Streams of drift ice
+		16	78 42	5 10	35	30	29.85	29.80	29.83	Variable	to Calm	"Haze, fog"	Ditto
+		17	78 40	5 8	34	30	29.87	29.85	29.86	NNE	to Fresh breeze	"Clear, hazy"	"Sea open, ice in sight"
+		18	78 36	5 10	31	30	29.89	29.87	29.88	N b E	Fresh gale	Clear. cloudy	Ditto
+		19	78 15	5 4	33	29	29.91	29.89	29.90	N b E	Fresh breeze	"Cloudy, clear"	Sea open
+		20	78 10	5 0	37	31	29.92	29.77	29.84	"to W, S S W"	to Light breezes	Fog showers	"Drift ice, floes"
+		21	78 15	5 0	32	31	29.77	29.62	29.70	S W.erly	to Calm	Ditto	Ditto
+		22	78 11	5 15	37	33	29.64	29.62	29.63	S E.erly. var.	"Light airs, calm"	Small rain	Loose ice
+		23	78 17	5 25	34	32	29.67	29.64	29.65	"E.erly, S S W"	to Moderate breeze	"Fog, showers"	Ditto
+		24	78 20	5 26	35	33	29.68	29.59	29.64	"to S, W.erly"	Light breeze to calm	"Fog, clear"	Much drift ice
+		25	78 21	5 26	35	30	29.59	29.50	29.54	Variable	to Moderate breezes	Snow showers	Ditto
+		26	78 35	5 54	33	32	29.64	29.58	29.61	N W to S S E	to Fresh breezes	"Snow, fog"	"Field, drift ice"
+		27	78 15	5 50	36	34	29.73	29.53	29.63	to SSW NW b W	Fresh or Mod. br.	Ditto	Ditto
+		28	78 4	5 0	34	30	30.02	29.73	29.88	"to S W, S S E"	Fresh ga. light br.	"Clear, fog"	Ditto
+		29	78 0	5 15	35	30	30.10	30.02	30.06	to E.erly	to Fresh breeze	"Fog, snow"	Ditto
+		30	78 50	6 40	37	34	30.02	29.94	29.98	E.erly	to Strong breeze	Ditto	Sea open
+1811	7	1	78 40	7 18 E	38	31	30.09	29.99	30.04	"E.erly, N W, S W"	Light to mod. hr.	"Snow, fog, cloudy"	"Sea open, a pack near"
+		2	78 20	6 30	36	33	30.13	30.08	30.11	"SW, SSW"	Moderate breezes	"Fog, clear"	Drift ice
+		3	78 0	6 0	37	35	30.08	29.96	30.02	to SSE	Ditto	"Cloudy, rain"	Ditto
+		4	77 58	5 40	42	35	29.96	29.88	29.92	to S E b E	to fresh breezes	Clear	Very loose drift ice
+		5	77 56	6 0	42	41	29.96	29.91	29.93	to S S W	to Moderate breeze	"Clear, fog showers"	"Sea open, drift ice"
+		6	77 48	6 58	44	36	30.03	29.96	30.00	S.erly	to Light breeze	Fog	Drift ice
+		7	77 48	7 20	45	36	30.07	30.03	30.05	S.erly var.	"Light airs, calm"	Fog. clear	Crowded drift ice
+		8	76 36	9 20 	40	38	30.03	29.98	30.00	W.erly to S S W	Fresh gale	Fog	No ice
+		9	75 40	11 36	42	39	29.98	29.98	29.98	"SW, var."	"Fresh breeze, calm"	Ditto	Ditto
+		10	75 15	12 0	40	38	29.98	29.92	29.95	 S W to S S E	Fresh br. mod. br.	Hazy	Ditto
+		11	74 52	11 0	41	40	29.99	29.95	29.97	" S W, var."	"Light breeze, calm"	"Rain, fog"	Drift ice
+		12	74 10	11 0	42	40	29.95	29.85	29.90	E.erly	Light breeze	"Clear, fog"	Ditto
+		13	73 10	9 40	42	39	29.89	29.85	29.87	 to SE	to Fresh breeze	Fog	At sea
+		14	72 17	8 27	46	36	29.99	29.89	29.94	" SE, W"	Moderate br. calm	Very foggy	Ditto
+		15	72 10	6 57	44	40	30.10	29.99	30.05	 to S S W	to Moderate breeze	Thick fog	Ditto
+													
+
+1812	5	1	74 30	15 13	28	20	30.28	30.20	30.24	W N W to N N W	Fresh gales	Cloudy	At sea
+		2	75 23	14 25	30	19	30.37	29.60	29.98	N N E to S E.erly	Mod. br. fresh ga.	"Cloudy, snow"	A pack of ice near
+		3	75 35	10 43	14	13	29.70	29.40	29.55	to N E b E	Very hard gales	"Snow, frost rime"	"At sea, no ice"
+		4	74 36	10 0	13	12	29.89	29.70	29.80	to NE b N	Hard gales	Ditto	Ditto
+		5	73 41	10 40	13	12	29.81	29.60	29.70	to N N E	Ditto	Frost rime	Ditto
+		6	73 10	10 18	21	10	29.76	29.60	29.68	N N E	Hard gale	"Frost rime, snow"	Ditto
+		7	73 38	10 19	23	21	29.91	29.76	29.84	to N	Fresh gales	Snow showers	Ditto
+		8	73 33	10 21	26	22	30.00	29.91	29.95	to N W	to Fresh breezes	Ditto	Streams of ice
+		9	73 57	10 21	26	24	30.10	30.00	30.05	"to N E.erly, var."	to Light br. Calm	Much cryst. snow	Ditto
+		10	74 28	9 37	30	25	30.10	29.96	30.03	to N W.erly. var.	to Light breeze	Snow showers	Ditto
+		11	75 36	8 8	32	30	29.96	29.86	29.91	" E b S, ENE "	to Fresh gales	Ditto	Crowded drift ice
+		12	75 38	8 20	31	23	29.86	29.80	29.83	to N	Light br strong br.	Cloudy	Ditto
+		13	75 52	9 20	24	22	29.83	29.77	29.80	to var.	Strong breezes	Ditto	Much ice
+		14	76 12	10 20	26	20	29.88	29.79	29.84	W.erly to SSE	to Maderate breeze	"Cloudy, snow"	Ditto
+		15	76 15	9 0	32	30	29.79	29.60	29.69	to ENE	Fresh breezes	Cloudy some snow	Ditto
+		16	76 20	9 40	30	30	29.67	29.50	29.59	to N	Strong gales	Much snow	Beset among drift ice
+		17	76 7	9 30	22	20	29.85	29.67	29.76	 to N W	Hard gales	Cloudy	Ditto
+		18	76 37	10 45	30	17	29.84	29.74	29.79	Variable	to Fresh gales	Much snow	Open drift ice
+		19	76 30	10 45	20	19	29.98	29.84	29.91	N W by N	to Strong gales	Ditto	Large floes
+		20	76 30	10 30	20	18	30.03	29.91	29.97	 N W b N	to Fresh gales	Ditto	Beset among floes
+		21	76 30	10 0	19	19	29.91	29.73	29.82	 N W b N	Strong gales	Snow	Ditto
+		22	76 20	10 0	21	20	29.78	29.66	29.72	 N W b N	Hard Gales	Much snow	In an opening of ice
+		23	76 10	10 0	25	24	29.95	29.78	29.87	to NW by W	Strong gales	Some snow	Numerous floes
+		24	76 5	10 0	30	25	30.03	29.95	29.99	 to W b N	to Light breezes	Clear	Ditto
+		25	75 58	10 0	32	27	30.09	30.03	30.06	to Var.	Light breezes	"Clear, cloudy"	"Drift ice, floes"
+		26	75 50	9 40	34	32	30.15	30.09	30.12	 to N E.erly	Ditto	Clear	Ditto
+		27	75 57	9 0	27	25	30.22	30.15	30.18	" to S.erly, var."	Nearly calm	Ditto	Ditto
+		28	75 50	9 20	30	28	30.28	30.22	30.25	 to S W.erly	Ditto	Cloudy	Ditto
+		29	76 0	9 20	31	26	30.30	30.28	30.29	to Variable	"Light breeze, calm"	Clear	Ditto
+		30	76 20	10 0	30	27	30.32	30.30	30.31	 SS E to E	Nearly calm	Ditto	Ditto
+		31	76 30	10 50	29	27	30.34	30.32	30.33	 to S W.erly	Ditto	"Clear, cloudy"	Drift ice
+1812	6	1	77 14	9 5 E	31	29	30.37	30.34	30.36	S W.erly	"Mod. breeze, calm"	Cloudy	Sea open
+		2	78 15	5 27	33	30	30.37	30.35	30.36	S S W	Mod. or fresh br.	"Much snow, fog"	Drift ice and floes
+		3	78 50	7 0	32	30	30.35	30.15	30.25	to S E	Fresh gales	"Snow showers, fog"	Ditto
+		4	78 30	5 30	33	30	30.15	29.93	30.04	S E	Ditto	Fog showers	Ditto
+		5	78 30	5 30	34	33	29.93	29.89	29.91	S.erly	Fresh breezes	"Fog, rain"	Ditto
+		6	78 26	5 45	35	33	29.89	29.87	29.88	"S.erly, var."	Light breezes	"Constant fog, rain"	Drift ice
+		7	78 0	5 45	33	31	29.98	29.89	29.93	N.erly	Calm to fresh br.	"Fog, showers"	Ditto
+		8	78 0	6 45	28	23	30.10	29.98	30.04	N N W to W N W	to Strong gales	Clear	Drift ice and floes
+		9	78 0	6 30	27	23	30.05	29.90	29.98	to W b S	to Light breezes	Ditto	Ditto
+		10	77 54	6 15	34	26	29.90	29.78	29.84	to N N E	Fresh breezes	Snow showers	Ditto
+		11	78 44	6 30	26	24	29.83	29.77	29.80	N E.erly	to Strong gales	"Snow, clear"	Ditto
+		12	78 58	6 30	26	23	29.88	29.78	29.83	N N E to N	Fresh breezes	Clear	Ditto
+		13	78 56	6 30	28	24	29.78	29.68	29.73	"to N W, N N E"	Fresh or strong ga.	"Frost rime, clear"	Ditto
+		14	78 50	6 30	28	26	29.78	29.72	29.75	N E to N	Strong gales	Clear	Ditto
+		15	78 40	6 15	30	29	29.80	29.78	29.79	N	Fresh or strong ga.	Some snow	Ditto
+		16	79 26	6 45	28	27	29.81	29.77	29.79	"N b E, N"	Strong gales	"Cloudy, snow"	Sea open
+		17	78 30	6 0	29	28	29.86	29.80	29.83	to W b N	to Light breeze	Cloudy	Floes and drift ice
+		18	78 20	6 0	34	29	29.83	29.79	29.81	"to S S W, to E"	to Calm	Much snow	Ditto
+		19	78 10	6 0	31	26	29.88	29.78	29.83	E N E to N	to Fresh breeze	Cloudy	Ditto
+		20	78 17	6 0	27	26	29.88	29.74	29.81	N	Fresh breeze	"Fog, snow"	Ditto
+		21	78 25	6 30	30	27	29.74	29.70	29.72	N	Strong gale	"Snow, clear"	Ditto
+		22	78 32	6 30	29	28	29.76	29.72	29.74	N	to Moderate breeze	Snow showers	Ditto
+		23	78 30	6 15	32	28	29.80	29.68	29.74	to W S W	Light to strong br.	Some snow	Ditto
+		24	78 5	6 35	33	31	29.75	29.50	29.62	to S E to N E	Strong ga. to lig. br.	"Fog, much snow"	Streams of ice
+		25	78 9	6 45	33	31	29.97	29.75	29.86	to N	Fresh gales	"Snow, clear"	Sea open
+		26	78 10	6 40	35	30	30.00	29.92	29.96	to N W b W	Light breezes	Clear	Floes
+		27	77 59	6 7	36	33	29.92	29.76	29.84	N to N W	Fresh breezes	Showers snow	Floes and field
+		28	78 0	6 0	37	35	29.76	29.60	29.68	to N	Moderate breezes	"Fog, snow"	Floes and drift ice
+		29	77 48	6 50	35	34	29.60	29.52	29.56	NNW to W N W	to Fresh breeze	Thick fog. rain	Drift ice
+		30	77 30	6 45	33	32	29.58	29.50	29.54	"N W to S, var."	Moderate breezes	Much snow	Very open ice
+1812	7	1	77 54	6 15	38	32	29.71	29.57	29.64	E to N E	Ditto	"Snow, fog"	Sea stream
+		2	78 9	6 30	37	34	29.77	29.50	29.64	"to E S E, var."	to Fresh breeze	Thick fog	Ditto
+		3	78 20	6 30	33	32	29.50	29.40	29.45	N E to N N W	to hard gales	Much snow	"Floes, drift ice"
+		4	78 18	6 40	34	31	29.58	29.41	29.49	to W to S	Mod. or fresh br.	Showers of snow	Drift ice
+		5	78 10	6 45	33	31	29.82	29.58	29.70	SSW	to Strong breeze	Some snow	Sea open
+		6	78 5	6 30	32	31	29.96	29.82	29.89	to W	Moderate breezes	"Snow, fog"	Drift ice
+		7	78 58	6 45	34	31	30.00	29.96	29.98	W.erly	"Calm, light breeze"	Ditto	Sea open
+		8	77 40	6 10	33	31	29.96	29.86	29.91	"S S W, S W"	to Fresh breeze	"Cloudy, fog"	No ice
+		9	77 30	6 0	34	31	29.86	29.82	29.84	to W to N	Fresh breeze 	"Hazy, cloudy"	Ice streams
+		10	77 30	6 0	33	31	29.86	29.80	29.83	N W to N N W	Fresh gales	"Fog, clear"	Ditto
+		11	78 0	5 30	32	32	29.90	29.86	29.88	N to N W	Strong gales	Snow showers	Floes and drift ice
+		12	77 56	5 30	35	31	29.95	29.87	29.91	to N N E	Ditto	Ditto	Ditto
+		13	77 46	5 27	40	34	30.03	29.95	29.99	to N N W	Fresh breezes	Fog showers	Ditto
+		14	78 20	6 25	34	32	29.97	29.83	29.90	to N b E	to Strong gales	Ditto	Sea open
+		15	77 40	5 20	34	32	29.83	29.67	29.75	N E.erly	Strong gales	"Fog, snow showers"	Drift ice
+		16	77 45	5 30 E	33	31	29.85	29.60	29.73	to ESE	Strong gales	Thick fog	Drift ice
+		17	77 50	5 7	33	31	30.21	29.85	30.03	E S E	Ditto	Fog. snow shower	Ice near
+		18	77 59	5 0	34	31	30.32	30.22	30.27	to N	Moderate breeze	"Much snow, fog"	Ditto
+		19	78 0	5 0	32	31	30.22	30.12	30.17	"to W, var."	"Light airs, calm"	Ditto	Ditto
+		20	78 0	5 0	36	33	30.16	30.12	30.14	S W.erly	to Fresh breeze	Fog showers	Drift ice
+		21	78 0	4 50	35	34	30.22	30.16	30.19	to E	Strong breezes	Clear	Embayed in ice
+		22	78 0	4 30	35	33	30.24	30.22	30.23	E.erly	Fresh breezes	Hazy	Ditto
+		23	78 0	4 30	39	37	30.25	30.20	30.22	SSE	Light airs	Fog	Ditto
+		24	78 6	5 15	38	33	30.20	30.14	30.17	S.erly	Ditto	"Clear, fog"	Ice open
+		25	78 20	6 5	38	31	30.14	30.06	30.10	to W	to calm	Thick fog	Ditto
+		26	77 44	6 39	33	32	30.06	30.00	30.03	to N N E	Strong breezes	Ditto	Sea open
+		27	76 4	6 48	33	32	30.00	29.90	29.95	N E.erly	Moderate breezes	Ditto	Ditto
+		28	73 26	6 45	40	37	29.90	29.75	29.83	N E	Fresh gale	Cloudy	At sea
+		29	71 18	3 45	41	39	29.75	29.70	29.72	N E	to Strong gale	Rain	Ditto
+		30	70 3	2 5	42	39	29.80	29.70	29.75	to S E. var.	Light breeze	"Fog, rain"	Ditto
+		31	68 24	1 7	45	44	29.96	29.80	29.88	N W.erly	"Fresh breeze, calm"	"Fog, clear"	Ditto
+													
+
+1813	4	15	76 2	9 27	23	22	28.90	28.85	28.88	E N E b ESE	Very hard gales	Much snow	At sea
+		16	76 57	9 59	25	20	29.07	28.90	28.98	to ENE	Hard gales	"Snow, cloudy"	Stream of ice
+		17	78 59	7 40	25	18	29.60	29.07	29.34	Variable	Light br. to fr. ga.	Ditto	Charles. Isl. In sight
+		18	78 57	3 10	16	15	29.90	29.60	29.75	N E	Strong gale to calm	"Snow, clear"	A pack of ice
+		19	78 51	4 30	29	14	29.90	29.83	29.86	Variable	"Calm, light breeze"	Clear	Ditto
+		20	79 5	4 0	29	25	29.83	29.53	29.68	S S E to E	Very hard gales	Constant snow	Ditto
+		21	79 42	4 50	26	16	29.65	29.53	29.59	to S to N W	To calm	"Snow, clear"	Ditto
+		22	80 0	4 30	22	16	29.74	29.65	29.70	"S W, var."	to Fresh breeze	"Fog, cloudy"	"Sea open, pack"
+		23	80 7	4 20	30	12	29.74	28.92	29.33	Variable	Calm to strong ga.	Snow showers	Pack near
+		24	80 10	5 0	6	-2	29.78	28.92	29.35	N N E	Hard or fresh ga	"Snow, frost rime"	Drift ice
+		25	79 15	5 0	10	-4	29.95	29.78	29.86	N E b N	Hard gales	Thick frost rime	Sea open
+		26	78 20	5 20	15	14	30.15	29.95	30.05	to NNW	Ditto	"Frost, rime, snow"	Ditto
+		27	78 7	3 30	20	14	30.33	30.15	30.24	N b W	to Moderate breeze	Clear	Streams of ice
+		28	78 19	3 50	25	15	30.35	30.33	30.34	N	To calm	Ditto	Ditto
+		29	78 34	4 50	21	17	30.35	30.12	30.24	S W	To strong gale	"Snow, clear"	Sea open
+		30	79 5	8 15	25	21	30.12	29.70	29.91	to S	Strong gales	"Clear, cloudy"	Ditto
+1813	5	1	79 15	4 40	20	14	29.70	29.50	29.60	SSW to WNW	Fresh gales	Cloudy	Ice near
+		2	79 54	7 0	25	12	29.70	29.50	29.60	to NNE	Fresh breezes	"Fog, clear"	A pack in sight
+		3	79 36	8 15	28	13	30.20	29.70	29.95	"to E, S"	Mod. to fresh gales	Delightful weather	Spitzbergen in sight
+		4	78 50	5 0	32	30	30.20	29.95	30.08	"S S E, var."	Strong gale to calm	Much snow	Sea open
+		5	79 33	4 40	30	22	29.95	29.95	29.95	N E	Fresh gale	Clear	Ice near
+		6	79 29	3 20	22	21	30.10	29.95	30.02	to N W	to Light air	Ditto	Ditto
+		7	78 50	2 20	25	20	30.10	29.95	30.03	"to S, S W"	to fresh breezes	Ditto	Ditto
+		8	78 47	2 0	22	19	29.95	29.70	29.82	"to W, N W"	Fresh breezes	"Cloudy, snow"	Ditto
+		9	79 16	4 0	28	25	29.70	29.65	29.68	"S W, var."	to Light breeze	"Cloudy, clear"	Ditto
+		10	79 16	4 0	25	22	29.65	29.50	29.57	S.erly	to Fresh gales	"Snow, cloudy"	Spitzbergen in sight
+		11	79 20	5 30	16	15	29.55	29.50	29.53	"NNE, NNW"	Hard gales	Snow showers	Sea open	
+		12	78 59	5 10	21	16	29.55	29.34	29.44	to N E b E	Very hard gales	Cloudy	Streams of ice	
+		13	78 50	2 20	25	20	29.54	29.34	29.44	N N E to E S E	to Fresh gales	Thick snow	Ditto	
+		14	78 45	2 30	27	24	29.42	29.40	29.41	N E to N b E	Strong gales	"Clear, snow"	Sea open	
+		15	78 25	2 10	26	13	29.40	29.40	29.40	to N N W	Ditto	Showers of snow	Ice near	
+														
+														
+Year	Month	Day	Latitude	Longitude	Thermometer			Barometer			Winds		Weather	Situation
+					Max.	Min.	Med.	Max.	Min.	Med.	Direction	Force	and Meteors	and Remarks
+		16	77 51	1 50 E	20	14	17.0	29.55	29.40	29.48	to N W	Fresh gales	Clear	Loose ice
+		17	78 0	1 10	18	16	17.0	29.60	29.55	29.57	to N	to Moderate gales	Cloudy	Floes and loose ice
+		18	78 10	1 30	22	16	19.3	29.70	29.60	29.65	to N N W	Fresh gales	"Snow, cloudy"	Near a pack
+		19	78 0	2 0	22	18	19.7	29.78	29.70	29.74	N. var.	to Calm	Ditto	Ditto
+		20	77 40	2 0	30	22	24.7	29.89	29.78	29.84	N. var.	"Light breeze, calm"	Ditto	Floe and drift ice
+		21	77 35	2 30	30	20	26.6	30.02	29.89	29.95	to E to S E.	to Fresh gales	Much snow	Ditto
+		22	77 28	2 35	32	18	27.3	30.02	29.65	29.84	S S E. to W N W	to Strong gale	"Hazy, snow"	Ditto
+		23	77 19	2 30	27	20	24.4	29.93	29.65	29.79	to N N W	to Light airs	Clear	Ditto
+		24	77 9	2 45	23	16	19.0	30.06	29.93	29.99	N	Fresh breeze	"Clear, cloudy"	Ditto
+		25	77 20	3 0	26	25	25.7	30.06	30.04	30.05	N b E	Ditto	Cloudy	Sea open
+		26	77 20	3 0	27	25	25.7	30.04	29.97	30.01	N. var.	Light airs	Ditto	Ditto
+		27	77 35	3 15	24	23	23.3	29.97	29.92	29.94	"N E, N W, var."	to Moderate breezes	Ditto	Loose ice
+		28	77 45	3 15	27	25	26.0	29.98	29.92	29.95	"N.erly, var."	Fresh breeze	"Cloudy, snow"	Drift ice
+		29	78 0	3 15	26	18	22.0	29.98	29.95	29.97	N W	to Moderate breezes	Frost rime	Ditto
+		30	78 15	3 15	22	16	18.0	30.02	29.95	29.98	W to S	to Calm	Ditto	Ditto
+		31	77 41	2 45	30	20	25.0	30.02	29.95	29.99	S.erly	Fresh breezes	Cloudy	Ditto
+1813	6	1	77 25	4 0	32	30	31.0	29.95	29.67	29.81	S b E	"Strong gale, calm"	"Fog, rain"	At sea
+		2	78 14	4 50	29	29	29.0	29.77	29.67	29.72	N W	Fresh breeze to calm	"Rain, clear"	Ice near
+		3	78 34	5 1	31	25	28.3	29.77	29.77	29.77	S to W	Light breeze to calm	"Snow, cloudy"	Ditto
+		4	78 45	5 0	30	27	28.3	29.77	29.75	29.76	W.erly	Light breeze	"Cloudy, snow"	Drift ice
+		5	78 48	4 0	35	31	33.0	29.83	29.75	29.79	SW to S	to Fresh gales	"Clear, fog"	Much ice
+		6	78 41	4 0	34	32	32.7	29.85	29.75	29.80	S S E	Fresh gale	"Fog, snow"	Ditto
+		7	78 46	3 45	44	35	38.0	29.86	29.75	29.81	to SSW	to Moderate breezes	"Snow, fog"	Floes and drift ice
+		8	78 54	3 40	37	35	35.7	29.87	29.80	29.83	to S E	Strong gale	"Rain, sleet, fog"	Ship beset
+		9	78 49	3 38	48	35	41.0	30.25	29.80	30.03	"S W, E.rly"	"Fresh breeze, calm"	"Clear, fog"	Do. Among floes
+		10	78 50	3 40	38	34	35.4	30.30	30.25	30.27	S W	to Fresh breeze	"Fog, cloudy"	Do. Floes and dr. ice
+		11	78 50	3 41	35	31	33.0	30.26	30.12	30.19	"S W, N W, N"	"Light breeze, calm"	Ditto	Ditto
+		12	78 50	3 40	34	27	31.3	30.18	30.12	30.15	N E to W N W	Fresh breeze	Fog showers	Ditto
+		13	78 48	3 50	33	28	30.6	30.24	30.18	30.21	"S W, W S W"	Calm to fresh br.	Thick fog	Open drift ice
+		14	78 38	4 10	35	34	34.3	30.20	30.13	30.17	to N	Moderate breeze	Cloudy	Sea open
+		15	78 38	4 0	34	32	33.0	30.16	30.13	30.14	to N N W	to Fresh breeze	"Fog, cloudy, snow"	Ina bay of ice
+		16	78 26	3 50	38	34	36.4	30.16	30.10	30.13	N	Moderate br. calm	"Fog, cloudy"	Drift ice
+		17	78 20	3 45	39	34	36.3	30.10	29.97	30.04	N	Fresh gale	Snow showers	Ditto
+		18	78 14	3 50	42	32	37.3	29.97	29.88	29.92	N W	to Strong gale	Ditto	Ditto
+		19	78 20	4 5	35	32	33.4	29.88	29.76	29.82	N W	Strong gale	"Snow, sleet"	Floes and drift ice
+		20	78 4	4 5	35	28	32.0	29.90	29.73	29.82	N to N W	to Moderate breezes	Snow showers	Ditto
+		21	78 2	4 40	42	35	38.3	30.00	29.90	29.95	to S	to Fresh gales	"Fog, snow"	Ice streams
+		22	78 12	6 0	36	32	33.7	30.02	29.88	29.95	S b W	Fresh gales	Fog. cloudy	Drift ice
+		23	78 30	6 0	37	34	35.3	29.96	29.86	29.91	to S S E	Moderate breeze	Fog	Ditto
+		24	78 26	5 55	39	34	37.0	30.03	29.96	29.99	to SSW	Light breezes	Thick fog	Ditto
+		25	78 25	5 50	40	35	37.0	30.03	30.03	30.03	to WSW	to Moderate breeze	Fog showers	Ditto
+		26	78 19	5 46	40	35	37.4	30.08	30.04	30.06	to NNE	Moderate br. calm	Snow showers	Ditto
+		27	78 9	5 48	38	34	36.0	30.08	30.08	30.08	Variable	to Moderate breeze	"Snow, fog"	Sea open
+		28	77 44 	6 20	33	32	32.6	30.16	30.08	30.12	NNE	Fresh breeze	"Fog, snow"	No ice
+		29	77 50	6 0	35	32	33.3	30.28	30.16	30.22	NNE	Moderate breeze	Snow shower	Ice near
+		30	77 50	6 0	35	33	34.0	30.30	30.28	30.29	to ENE	Ditto	Ditto	Ditto
+1813	7	1	77 25	3 30 E	46	35	40.0	30.30	30.30	30.30	"E to S, var."	Moderate breezes	Showers of snow	lce near
+		2	77 20	3 41	36	35	35.3	30.30	30.23	30.27	S W.erly	Fresh breezes	Ditto	Sea open
+		3	77 18	3 20	38	33	36.3	30.23	30.03	30.13	N E to N	Light br. to str. ga.	"Cloudy, snow"	No ice
+		4	77 29	2 40	35	33	34.0	30.03	29.58	29.80	"N, S"	to Moderate gales	Snow and sleet	Ice near
+		5	77 24	2 0	35	33	34.0	29.80	29.56	29.68	S W.erly	Strong to fresh ga.	Thick snow	Ditto
+		6	77 26	2 20	40	35	37.7	29.83	29.78	29.81	N N E to N W	Calm to fresh br.	"Snow, hazy"	Ditto
+		7	77 46	3 10	36	35	35.7	29.86	29.78	29.82	N W to S W	to Moderate breezes	Cloudy	No ice
+		8	77 35	2 0	38	34	35.4	30.00	29.86	29.93	to S S W	Fresh ga. to calm	"Snow, fog."	A floe
+		9	77 38	2 0	38	33	35.3	30.05	30.00	30.02	to S	to Strong breeze	"Cloudy, hazy"	Ditto
+		10	77 30	2 10	36	34	35.0	30.06	29.70	29.88	SSE to SW	Strong gales	"Fog, haze, rain"	Floes and drift ice
+		11	77 20	1 50	36	35	35.3	29.70	29.53	29.62	"S W, var."	Moderate breezes	"Heavy rain, fog"	Ditto
+		12	77 0	2 0	38	36	37.4	29.64	29.53	29.58	"S W to S, var."	to Fresh breezes	"Fog, rain"	Drift ice
+		13	76 54	4 20	40	38	39.3	29.66	29.54	29.60	b W to S S E	Fresh gales	Ditto	No ice
+		14	77 10	2 30	39	39	39.0	29.54	29.50	29.52	S	Ditto	Ditto	Drift ice
+		15	77 30	2 0	39	36	37.3	29.77	29.48	29.63	S to S S W	Ditto	"Fog, rain, clear"	"Drift ice, streams"
+		16	78 2	1 10	37	34	35.6	29.92	29.77	29.84	W to W S W	Strong gales	Fog	Ditto
+		17	78 12	1 15	37	33	34.4	29.98	29.92	29.95	"SSW, S S E"	to Light breeze	"Fog, rain"	Ditto
+		18	78 20	1 0	33	33	33.0	29.98	29.64	29.81	"S, var. N."	"Fresh gale, to calm"	"Fog, snow"	Floes
+		19	77 40	1 10	42	37	39.3	30.00	29.62	29.81	"N, var."	"Calm, moderate br."	Fog	Floes and drift ice
+		20	77 10	7 0	40	38	38.7	30.04	29.70	29.87	S E to W S W	Fresh gales	"Rain, fog"	At sea
+		21	76 42	7 30	40	36	37.7	29.70	29.53	29.62	WSW	Ditto	Fog showers	No ice
+		22	75 9	7 45	37	36	36.3	29.75	29.68	29.71	W to N N W	to Moderate breeze	Cloudy	Ditto
+			 											
+														
+														
+1814	5	1	77 52	6 48	15	14	14.4	29.74	29.63	29.69	N N E to N W	Fresh gales	"Snow, frost rime"	Ice streams
+		2	78 20	7 50	20	16	18.0	29.63	29.41	29.52	N	Hard gale	Snow showers	Ditto
+		3	77 48	8 30	27	17	22.0	29.50	29.40	29.45	N	Ditto	Cloudy	Detached drift ice
+		4	77 17	7 54	24	21	23.0	29.90	29.50	29.70	N	to Moderate breeze	"Cloudy, clear"	Ice streams
+		5	77 51	6 50 	25	21	23.3	30.03	29.73	29.88	Variable	to Strong gales	"Clear, hazy"	Ice fields and floes
+		6	78 5	5 10	27	20	23.3	29.73	29.60	29.66	"N N W, N"	to Fresh breeze	"Cloudy, clear"	Ditto
+		7	78 10	4 50	16	10	14.0	29.63	29.61	29.62	N	Fresh gale	"Snow, clear"	Ditto
+		8	78 3	4 50	17	9	13.7	29.97	29.63	29.65	N	Ditto	Frost rime	Ditto .
+		9	78 5	4 0	26	13	18.4	30.13	29.97	30.05	N	to Light breeze	Ditto	Ditto
+		10	78 4	4 10	15	13	14.0	30.14	30.13	30.14	W.erly	Light breezes	"Frost rime, snow"	Beset among ditto
+		11	78 9	4 10	30	10	17.5	30.15	30.14	30.14	E.erly	"Light airs, calm"	Hoar frost	Ship beset
+		12	78 8	4 10	18	9	14.3	30.17	30.15	30.16	N.erly	Light breeze	Thick hoar frost	Ditto
+		13	78 6	4 10	16	7	12.3	30.20	30.10	30.15	S E	Calm to moder. br.	Great refraction	Ditto
+		14	78 9	4 2	25	19	20.7	30.24	30.12	30.18	S E.erly	Moderate breeze	Snow showers	Ditto
+		15	78 2	4 0	23	11	18.4	30.27	30.24	30.26	N E	Fresh breeze	Cloudy	Ditto
+		16	77 56	3 54	19	10	15.0	30.51	30.27	30.39	to N N W	Fresh breezes	Great refraction	Ditto
+		17	77 46	0 30	16	14	14.6	30.50	30.46	30.48	to W N W	to Strong breeze	"Clear, hazy"	Ditto
+		18	77 36	0 0	30	12	21.3	30.46	30.32	30.39	W to E N E	to Light airs	Fine weather	Ditto
+		19	77 34	0 0	27	17	22.7	30.32	30.32	30.32	N W to S W	Calm to fresh br.	Hoar frost	Ditto
+		20	77 35	0  5 E	29	15	20.2	30.33	30.32	30.32	S W to S	Fresh gales	Fog	Ice rather slack
+		21	77 37	0 15	28	20	24.0	30.31	30.09	30.20	S W to N b W	to Strong gales	"Fog, snow"	Ditto
+		22	77 23	0 15	31	20	25.3	30.09	30.00	30.05	"N, NNE"	Fresh gales	"Snow, fog"	Ditto
+		23	77 18	0 40	27	22	25.0	30.20	30.10	30.15	"N, var."	Light airs	Fog	Ship partly beset
+		24	77 14	0 40	28	20	25.0	30.20	30.18	30.19	N E.erly	Calm to fresh breeze	Fog. snow	Ditto
+		25	77 6	1 0	25	19	21.4	30.18	30.15	30.16	to N	to Strong gale	Snow showers	Ditto
+		26	76 50	1 40	22	20	21.0	30.15	30.12	30.14	N E.erly	to Fresh breeze	Snow showers	Ice more open
+		27	77 0	4 16	25	19	22.3	30.12	29.94	30.03	to N	to Hard gales	Thick snow	Ice slack
+		28	76 46	4 6	34	28	30.0	29.94	29.82	29.88	to Var.	to Moderate breeze	"Snow, clear"	Sea open
+		29	77 38	6 0	28	24	26.0	29.95	29.79	29.87	"S W, W, var"	Light breezes	"Rain, cloudy"	Ditto
+		30	78 0	4 0	30	26	28.3	30.00	29.95	29.97	Variable	to Fresh gales	Constant snow	Drift ice
+		31	77 50	4 20	31	30	30.4	30.00	29.62	29.81	"E N E, N E"	Strong gales	Much snow	No ice
+1814	6	1	77 45	4 0	29	26	27.3	29.95	29.62	29.79	N E.erly	Fresh to Mod. Gales	Ditto	Near ice
+		2	78 0	4 39	26	21	23.3	30.01	29.95	29.98	"N.erly, var"	Fresh to Mod. Br.	Cloudy	No ice
+		3	78 5	4 10	25	23	24.0	30.06	30.01	30.03	N.erly	to Calm	Ditto	Ice near
+		4	78 11	4 0	30	22	26.4	30.10	30.06	30.08	Variable	Moderate breezes	Fog showers	Drift ice
+		5	78 6	5 40	29	27	28.0	30.11	30.09	30.10	"S.erly, W.erly"	Ditto	Ditto	Sea open
+		6	78 25	4 55	31	29	30.0	30.09	29.90	30.00	"S W, var"	Fresh to light br.	Haze or fog showers	Ditto
+		7	78 28	4 50	32	29	30.7	29.90	29.86	29.88	N.erly. var.	Calm to moder. Br.	"Clear, cloudy"	Ice near
+		8	78 40	5 40	31	28	29.0	29.93	29.85	29.89	to SW	Calm to fresh br.	Cloudy	No ice
+		9	78 47	5 0	29	27	27.7	29.93	29.84	29.88	S W	Fresh gale	Much small snow	In a bay of the ice
+		10	78 50	5 5	32	31	31.6	29.90	29.60	29.75	to S	Ditto	Thick fog	Ditto
+		11	79 0	5 10	34	32	33.0	29.60	29.44	29.52	to N W	Strong ga. To lig. Br.	Hazy	Sea open
+		12	78 25	7 30	34	28	31.7	29.84	29.42	29.63	N b W	to Fresh gales	"Cloudy, snow"	No ice
+		13	78 23	6 25	40	30	35.0	30.04	29.84	29.94	Var. S W	to Calm	Clear	Charles' Island near
+		14	78 40	6 0	34	34	34.0	30.04	29.93	29.99	"to SE, var."	Fresh br. To lig. Airs	"Clear, snow"	Ditto
+		15	78 27	6 20	34	29	32.5	30.00	29.88	29.94	Var. E.erly	Calm to fresh br.	Charming weather	No ice
+		16	78 17	7 30	35	34	34.3	30.00	29.72	29.86	"E, ESE"	to Strong gales	"Snow, sleet"	Charles' Island 25 miles
+		17	78 27	7 10	36	34	35.0	29.84	29.72	29.78	to SSE	to Fresh gales	Fog	Ditto. No ice
+		18	78 20	7 25	35	33	34.0	29.84	29.84	29.84	to W S W	to Fresh breeze	"Dense fog, snow"	No ice
+		19	77 58	5 40	36	34	34.8	29.80	29.75	29.77	to SSE	to Strong gales	"Fog, rain"	Sea open
+		20	78 15	5 55	36	35	35.7	29.85	29.74	29.80	S	Strong gales	"Dense fog, rain"	A little ice
+		21	78 30	5 15	35	35	35.0	29.85	29.77	29.81	"S b E, W.erly"	Moderate breezes	Much rain	Ditto
+		22	78 38	4 50	33	33	33.0	30.00	29.72	29.86	Variable	Ditto	Fog	Ice in sight
+		23	78 40	4 0	34	33	33.3	30.04	29.86	29.95	S	Brisk gales	Snow. rain	Drift ice
+		24	78 35	4 40	34	30	32.0	29.98	29.86	29.92	"S.erly, W.erly"	Gentle breezes	Dense fog	Ice near
+		25	78 28	 5 20	34	33	33.4	29.98	29.76	29.87	SSE to SSW	to Strong gales	"Rain, sleet"	Ditto
+		26	78 35	4 50	34	32	33.0	29.90	29.60	29.75	to S	Fresh gales	"Fog, snow"	Ice distant
+		27	78 50	5 25	35	34	34.3	29.80	29.54	29.67	"ESE, SSW"	to Strong gale	"Fog, rain, snow"	Ditto
+		28	78 40	5 25	34	34	34.0	29.54	29.50	29.52	SE to S	Fresh to Mod. Br.	"Fog, snow"	Ice streams
+		29	78 20	4 0	34	34	34.0	29.76	29.50	29.63	SSE to S b W	to Strong breeze	"Dense fog, snow"	Much ice
+		30	78 35	5 20	37	33	35.0	29.85	29.76	29.80	S to E.erly	to Gentle breezes	"Fog, snow, clear"	Spitzbergen in sight
+1814	7	1	79 30	6  0	34	33	33.7	29.85	29.60	29.72	"E.erly, var."	Moderate br. calm	"Rain, dense fog"	Near much ice
+		2	79 25	6 10	33	30	32.0	29.62	29.45	29.54	S W to S	Gentle breeze	"Fog, snow showers"	Ditto
+		3	79 22	5 45	35	34	34.7	29.70	29.62	29.65	S to W.erly	Strong gales	Constant snow	Ditto
+		4	79 10	4 20	33	31	32.0	29.81	29.70	29.75	S W to S	Fresh gales	"Snow, fog"	Drift ice and floes
+		5	79 21	5 20	35	33	34.0	29.90	29.81	29.86	S	Strong gale	Cloudy	Ditto
+		6	79 42	8 0	40	36	38.3	29.90	29.89	29.89	"S b E, S S W"	Hard gales	"Clear, cloudy, fog"	Patch of ice
+		7	80 25	8 10	39	37	38.0	29.89	29.83	29.86	to S W	Ditto	"Dense fog, clear"	Ditto
+		8	80 10	8 5	36	31	32.6	29.83	29.79	29.81	"to N W, N, N E"	to Gentle breeze	Ditto	Near the N.ern ice
+		9	79 33	7 50	42	36	39.0	30.17	29.79	29.98	"E.erly, S"	Calm to fresh gale	Ditto	Ice streams
+		10	79 23	7 55	35	34	34.7	30.17	30.07	30.12	"S, var."	to Calm	Fog. cloudy	Ditto
+		11	79 10	6 0	34	34	34.0	30.07	30.06	30.07	"N Early, var."	to Light airs	Constant fog	Floes and patches
+		12	78 58	7 50	36	35	35.7	30.17	30.06	30.11	S	Fresh breeze	"Fog, cloudy"	Ice Strea. and floes
+		13	78 50	7 10	37	33	34.6	30.17	30.15	30.16	"S.erly, var."	"Light breeze, calm"	"Fog, clear"	Much drift ice
+		14	78 40	8 55	34	31	32.3	30.15	29.92	30.03	"S.erly, var."	"Mod. breeze, calm"	Fog	Charles' Isl. 3 lea. Off
+		15	78 30	9 5	48	32	41.0	29.92	29.90	29.91	Variable	"Light airs, calm"	"Dense fog, clear"	Charles' Island near
+		16	77 50	9 0	46	40	42.5	29.90	29.79	29.85	Variable	Light breezes	Dense fog	At sea
+														
+														
+														
+1815	3	23	54 29	0 30 W				29.20	29.06	29.13	"S E to W, N W"	Hard gales	Much rain	Whitby harbour
+		24						29.55	29.06	29.31	Variable	Strong to light br.	Some rain	Ditto
+		25	56 10	0 12			47.0	29.55	29.08	29.31	S W to N W	to Fresh gales	Showers of rain	At sea
+		26	58 24	0 42	45	42	43.5	29.40	29.08	29.24	W to S	Strong gales	"Hazy, clear"	Ditto
+		27	60 8	1 8	46	43	44.5	29.40	28.89	29.15	S E to S S W	Hard gales	Rain	"Brassa Sound, Shet."
+		28			46	44	45.0	29.07	28.91	28.99	W b S	Very hard gale	Some rain	Ditto
+		29			49	43	46.0	29.79	29.09	29.44	"N W to W, S E"	Fresh gales	Much rain	Ditto
+		30			49	43	46.0	29.79	29.64	29.71	"W S W, S W"	Ditto	"Cloudy, rain"	Ditto
+		31			49	47	47.7	29.74	29.64	29.69	S b W	Fresh breeze	Clear	Ditto
+1815	4	1	61 52	0 7	55	50	53.0	29.84	29.74	29.79	"E b W, S E.erly"	Fresh br. light air	"Clear, hazy"	At sea
+		2	62 58	0 14 E	46	46	46.0	29.80	29.50	29.65	S S E to S S W	Light breezes	Hazy	Ditto
+		3	64 32	0 39	44	40	42.7	29.50	29.06	29.28	"SS W, N N E"	to Hard gale	"Hazy, rain"	Ditto
+		4	64 55	0 21 W	42	37	39.0	29.60	29.06	29.33	to S E.erly	"to Calm, fresh br."	Thunder & lighten.	Ditto
+		5	66 56	1  6 E	40	37	39.0	29.60	29.38	29.49	ESE	Fresh gale	Showery	Ditto
+		6	69 14	3 12	39	35	36.7	29.38	29.18	29.28	E b S to NNE	Ditto	Aurora borealis	Ditto
+		7	70 9	4 22	36	30	33.6	29.75	29.16	29.46	"N, NNW"	"Strong gale, calm"	Ditto	Ditto
+		8	71 16	5 36	42	33	38.3	29.95	29.75	29.85	"S.erly, S b W"	to Strong gale	Much rain	Ditto
+		9	72 37	8 31	36	34	35.0	29.95	29.36	29.65	W b S to S	to Fresh gale	"Hazy, snow"	Ditto
+		10	74 56	10 14	22	15	17.3	29.40	29.29	29.35	"W S W, W"	Strong gales	Snow showers	Ditto
+		11	76 33	10 2	16	10	12.4	29.44	29.33	29.38	"N W, S E to E"	to Calm	Thick snow	Ditto
+		12	77 21	8 27	15	7	12.0	30.00	29.40	29.70	"Var., N"	Mod. to fresh br.	Small snow	Spitzbergen in sight
+		13	77 34	7 40	10	6	8.2	30.10	29.95	30.05	N N E to N	Fresh breezes	Frost rime	Ice streams
+		14	77 56	7 25	10	8	9.3	29.95	29.82	29.88	b E to N N E	Fresh to mod. gale	"Frost rime, clear"	Charles' Id. 15 lea.
+		15	78 4	5 25	13	7	10.0	29.82	29.82	29.82	to N	Str. ga. to Mod. br.	Clear	Ditto 10 lea.
+		16	77 50	6 50	20	6	12.0	29.82	29.65	29.74	Variable	Light airs to fr. ga.	Charm. clear weath.	Ice Streams
+		17	77 40	5 50	19	17	18.0	29.65	29.50	29.57	"N W, N N E"	Fresh gales	Snow showers	Ditto
+		18	77 35	8 0	24	20	22.0	29.90	29.50	29.70	"E.erly, var."	"Fresh gales, calm"	Great fall of snow	Ditto
+		19	77 42	7 20	24	19	21.0	30.03	29.90	29.97	Var. ESE	Strong gales	Much snow	A little ice
+		20	 77 50	7 54	22	18	20.3	30.33	30.03	30.18	"S E, var."	Str. ga. to Light airs	"Snow, clear"	Spitzbergen near
+		21	78 0	7 30	25	23	24.0	30.33	30.30	30.31	Var. W.erly	Light airs	"Much snow, clear"	Ice streams
+		22	78 15	7 10	29	22	25.8	30.30	30.00	30.15	S S W	to Strong gale	Snow showers	Ditto
+		23	78 0	5 50	30	25	28.0	30.00	29.95	29.98	S W to W	Strong gales	Ditto .	Much ice
+		24	78 16	6 20	28	14	20.2	30.03	29.95	29.99	"W N W, var."	Moderate br. calm	Charming weather	Ice streams
+		25	78 25	8 30	26	22	24.4	30.01	29.75	29.88	"E.erly, N b E"	to Fresh breeze	Ditto	Charles' lsl. 1 lea.
+		26	78 30	7 0	24	20	22.3	29.75	29.65	29.70	"N, Serly"	to Calm	Fine clear weather	Ditto 9 lea.
+		27	78 20	8 30	30	28	29.0	29.65	29.35	29.50	S E to W S W	Very hard gales	"Cloudy, hazy"	Much ice
+		28	78 10	9 35	26	23	24.3	29.46	28.79	29.12	to W N W	Ditto	"Snow, clear"	Charles' Isl. 12 miles.
+		29	77 28	9 40	24	19	21.0	30.07	29.27	29.67	to W S W	Strong gales	Cloudy	No ice
+		30	78 10	6 20	21	16	18.0	30.20	30.07	30.14	N W to W S W	Fresh breezes	Clear	Ice streams
+1815	5	1	78 25	7 30	17	12	13.7	30.13	29.90	30.01	N W to N	Strong gales	Thick frost rime	Scattered drift ice
+		2	78 15	6 40	12	11	11.7	30.57	30.13	30.35	N	Fresh gale	Frost rime	Sea open
+		3	78 0	6 35	17	8	11.6	30.57	30.51	30.54	N N W to N W	Strong gales	"Frost rime, clear"	Ice near
+		4	77 45	5 10	16	10	13.0	30.51	30.17	30.34	to N N W	to Fresh gales	Snow showers	Patches of ice
+		5	77 50	6 20	18	15	16.3	30.17	29.91	30.04	to N	Strong gales	Thick snow show	Ice streams
+		6	78 15	5 30	22	18	20.0	29.93	29.91	29.92	Variable	to Calm	Thick snow	Much ice
+		7	78 25	6 25	25	19	21.8	29.93	29.90	29.92	"S E, S W"	to Strong breeze	Great fall of snow	Ice streams
+		8	78 15	6 20	22	14	18.3	29.90	29.75	29.82	W N W to N	Light br. to fr. ga.	Snow showers	Ditto
+		9	78 35	9 0	14	9	12.0	29.85	29.73	29.79	"N N W, var."	Strong breezes	Some snow	Charles' Isl. 3 miles
+		10	78 45	7 45	20	14	16.8	29.83	29.73	29.78	"to W.erly, var."	Light airs	Great fall of wow	"Bay ice, &c."
+		11	78 22	6 46	16	13	14.4	29.73	29.66	29.69	NNW	to Fresh gale	Much snow	Much bay ice
+		12	77 50	5 50	12	10	10.6	29.83	29.66	29.75	to N N W. var	Strong breezes	Snow showers	Scattered ice
+		13	77 20	4 0	18	16	17.0	29.90	29.83	29.86	"N N W, N"	Light airs	A little snow	Ditto
+		14	77 7	4 30	27	15	20.6	29.92	29.85	29.89	"N.erly, var."	Ditto	"Clear, snow"	Ice streams
+		15	77 17	4 10	20	15	17.7	29.85	29.83	29.84	"Var. W, S S W"	"Gentle breeze, calm"	Some snow	Ditto
+		16	77 40	5 10	24	21	22.2	30.04	29.85	29.94	S to W	to Moderate breeze	Cloudy	Dftto
+		17	77 30	6 10	32	29	30.3	30.05	29.95	30.00	to S.erly	"Calm, to light br."	Ditto	Sea open
+		18	77 20	5 45	32	17	23.3	29.95	29.89	29.92	to Var. N.	to Strong gales	Snow showers	Some ice
+		19	76 40	4 20	23	19	20.7	30.10	29.90	30.00	N N W to N E	to Hard gale	Much snow	Ice streams
+		20	77 20	4 55	25	22	23.2	30.24	30.10	30.17	"N N W, N"	Mod. to fresh gales	Clear	Ditto
+		21	77 32	6 25	27	25	26.0	30.23	30.15	30.19	N	Fresh breeze	Ditto	Much drift ice
+		22	77 36	6 54	33	25	30.0	30.15	30.06	30.11	"N.erly, E.erly"	to Calm	Fine clear weather	Ditto
+		23	77 48	7 10	34	32	33.3	30.07	30.06	30.06	"N.erly, var."	"Calm, light breeze"	Charming weather	Floes and drift ice
+		24	78 0	6 56	34	31	32.4	30.18	30.06	30.12	Variable	to Calm	"Clear, fog"	Ditto
+		25	78 10	5 40	32	28	29.7	30.22	30.18	30.20	N W to N N E	to Moderate breeze	Clear	Ditto
+		26	77 26	9 40	32	30	30.6	30.30	30.22	30.26	to Var.	to Calm	Cloudy	Spitzbergen 30 mil.
+		27	77 20	7 0	31	28	29.3	30.30	30.15	30.23	"W, S W.erly"	to Fresh breeze	Snow showers	Ice streams
+		28	77 35	5 10	31	27	29.0	30.15	30.11	30.13	Var. N b W	Light breeze	Cloudy	Floss and drift ice
+		29	77 27	3 16	27	23	25.7	30.27	30.11	30.19	W S W	Fresh breeze	Fog showers	Flees and bay ice
+		30	77 32	3 15	28	25	26.7	30.28	30.16	30.22	to S	to Gentle breeze	Fog	Ditto
+		31	77 23	3 35	33	29	31.0	30.16	30.15	30.15	S S E	Moderate breeze	Cloudy	Ditto
+1815	6	1	79 0	6 35	32	32	32.0	30.15	30.10	30.13	S S E to S	Fresh gales	Hazy	Floes near
+		2	79 10	6 45	33	25	30.2	30.10	29.80	29.95	"to W, N N W"	Hard ga. fresh br.	"Snow, sleet"	A body of floes
+		3	79 15	6 45	20	16	18.3	29.80	29.72	29.76	N N W	Brisk breeze	Clear	Ditto
+		4	78 53	5 56	25	20	21.7	29.78	29.72	29.75	Var. S W	Gentle breeze	Fog showers	Sea 600 fath. deep
+		5	78 53	5 56	21	18	19.7	29.78	29.77	29.77	to N W to N N E	to Strong breeze	"Fog, snow"	Large floes
+		6	78 27	6 50	19	18	18.6	29.77	29.73	29.75	N W to N N W	to Light breeze	Snow showers	Ditto
+		7	78 30	5 10	21	18	19.3	29.94	29.72	29.83	to N N E	Light breeze	Fog showers	Floes and fields
+		8	78 34	5 15	24	18	20.7	30.06	29.94	30.00	N to S W	Ditto	Clear	Ditto
+		9	78 25	5 10	30	26	28.0	30.06	30.02	30.04	S. erly	Moderate breeze	Showery	Ditto
+		10	78 20	5 30	34	32	33.0	30.02	29.94	29.98	S S E to S W	to Light breeze	Cloudy	Ditto
+		11	78 30	7 50	34	34	34.0	30.02	29.96	29.99	S W to S S E	to Fresh gale	Hazy	Scattered ice
+		12	78 15	6 0	38	34	36.4	30.02	29.84	29.93	"S to S E, var."	Hard ga. to calm	"Snow, fog"	Drift ice and floes
+		13	78 23	5 40	39	34	37.0	29.90	29.80	29.85	"W.erly, var."	to Fresh breeze	Ditto	Ditto
+		14	78 33	6 25	26	25	25.3	29.93	29.80	29.87	N	Moderate breeze	Cloudy	Charles' Isl; 35 mil.
+		15	77 57	6 0	31	28	29.7	29.80	29.76	29.78	N	Fresh gale	Some snow	Crowded ice
+		16	78 11	4 30	34	29	31.0	29.82	29.76	29.79	to W S W	Fresh breezes	Charming weather	Ditto and floes
+		17	78 30	6 10	36	32	34.0	30.02	29.82	29.92	to E.erly	to Calm	"Clear, cloudy"	Floes
+		18	78 34	6 10	34	28	31.6	30.13	30.02	30.07	Var. N.erly	"Light breeze, calm"	Clear	Floes and drift ice
+		19	77 22	5 40	32	30	31.0	30.21	30.09	30.13	N	Fresh breeze	"Fog, clear"	Sea open
+		20	75 59	3 50	34	32	32.7	30.09	29.90	30.00	N W	Strong breeze	Fine clear weather	Ditto
+		21	75 53	3 0	37	32	34.7	29.90	29.82	29.86	W N W to N	Moderate breeze	"Fog, snow"	In a bay of the ice
+		22	75 55	3 15	37	32	34.6	29.84	29.82	29.83	N 	to Calm	Thick snow showers	Ditto
+		23	75 48	2 55	37	34	35.7	29.94	29.84	29.89	"to W, var."	Light airs	Fog	Ditto
+		24	76 0	4 20	36	33	34.3	29.93	29.80	29.86	N N W to S W	to Fresh gale	"Fog, clear"	Drift ice
+		25	75 47	5 0	37	35	36.0	29.94	29.72	29.83	to S S W	Strong gales	"Snow, buy"	At sea
+		26	76 20	5 50	38	35	36.4	29.74	29.72	29.73	Variable	Light breezes	"Hazy, fog"	Ditto
+		27	75 54	4 30	36	35	35.7	29.74	29.38	29.56	S E to S	to Strong gale	"Much rain, fog"	A little ice
+		28	77 50	5 50	38	35	36.3	29.38	29.34	29.36	Variable	"Fresh gale, calm"	"Rain, thick fog"	Charles' Isl. 15 lea.
+		29	77 55	6 50	40	38	39.3	29.50	29.34	29.42	N E	Moderate breeze	"Rain, clear"	Spitzbergen near
+		30	77 42	8 0	40	37	38.6	29.90	29.50	29.70	"N W, var."	Light breeze	Clear	Ditto
+1815	7	1	76 15	14 40	40	40	40.0	30.02	29.90	29.96	"N W, W N W"	Moderate breezes	Fog showers	No ice
+		2	75 13	12 37	41	39	40.0	30.08	30.02	30.05	to W	Light breezes	Clear	At sea
+		3	74 53	10 50	39	39	39.0	30.10	30.08	30.09	"to N, var."	Ditto	Fog showers	A little ice .
+		4	74 30	8 30	38	38	38.0	30.10	30.04	30.07	N E.erly	Fresh breeze	Thick fog	Drift ice
+		5	74 35	7 30	38	36	37.0	30.04	29.96	30.00	to N.erly	to Light breeze	Fog showers	Ditto
+		6	74 45	6 30	37	36	36.3	29.96	29.95	29.96	"N W, N"	Moderate breeze	Ditto	Open ice
+		7	74 55	4 55	37	37	37.0	29.95	29.85	29.90	N W to N	Fresh gales	"Rain, clear"	Drift ice
+		8	75 10	3 10	42	37	39.0	29.85	29.81	29.83	N E to E N E	Light airs	Clear	Ice near
+		9	75 27	3 0	39	36	37.3	29.81	29.76	29.78	E.erly	Ditto	Cloudy	Ditto
+		10	75 34	3 0	40	37	38.7	29.76	29.72	29.74	N W.erly	Ditto	Charm. clear weath.	Ditto
+		11	76 16	3 30	40	36	38.4	29.72	29.72	29.72	W N W to N W	Moderate breeze	"Fog, snow"	Ice streams
+		12	76 36	4 25	38	32	35.7	29.77	29.72	29.75	to N	to Fresh gales	Thick snow	Ice near
+		13	76 57	4 5	37	31	34.0	29.90	29.77	29.83	W N W	Fresh gale	Snow shower	Ditto
+		14	75 15	4 30	40	28	33.0	30.05	29.90	29.98	to N W	Fresh breeze	Thick show. of snow	Ditto
+		15	73 35	4 55	40	38	39.0	30.05	29.95	30.00	W.erly	Fresh p. light br.	"Clear, fog, rain"	Ditto
+		16	73 06	4 15	42	40	41.0	29.95	29.84	29.99	WSW	Fresh gales	"Rain, fog"	Ditto
+		17	73 5	3 45 E	41	40	40.40	29.84	29.76	29.80	S W to W	"Moderate br, calm"	Fog	Some ice
+		18	72 45	2 40	40	39	39.30	29.86	29.77	29.81	E.erly	to Fresh breeze	"Fog, rain, hazy"	Ice in sight
+		19	72 6	2 0 W	38	37	37.30	29.93	29.86	29.90	E S E to N E	to Strong gale	"Thick fog, rain"	Ditto
+		20	69 12	2 0	48	42	44.00	29.89	29.66	29.77	to E.erly	to Light airs	Ditto	No ice
+		21	67 50	1 30	53	51	51.60	29.88	29.85	29.86	"E.erly, var."	to Calm	"Fog, rain"	At sea
+		22	66 18	0 43	48	47	47.70	29.75	29.66	29.72	"N N W, W N W"	to Fresh breeze	Cloudy	Ditto
+		23	64 26	0 46	50	47	48.70	29.83	29.75	29.80	"to W, var."	Moderate breeze	Ditto	Ditto
+		24	63 38	0 52	52	50	51.40	30.00	29.92	29.96	Var.	"Calm, light breeze"	Ditto	Ditto
+		25	63 28	0 55	56	53	54.60	30.08	30.00	30.04	Var. N. W.	Moderate breeze	Rain	Ditto
+		26	62 43	1 0	56	54	55.00	30.20	30.08	30.14	N W.erly	Fresh breezes	Ditto	No soundings
+		27	61 45	1 0	58	56	56.70	30.26	30.20	30.23	to W.erly	to Calm	Clear	"Soundings, 105 fa."
+		28	61 15	1 48 E	57	56	56.70	30.26	30.26	30.26	S b W	Moderate breeze	Cloudy	"Soundings, 86 fa."
+		29	61 7	1 0	58	57	57.60	30.26	30.13	30.20	to Var.	"Strong breeze, calm"	"Rain, hazy"	"Soundings, 90 fa."
+		30	60 15	0 25 W	56	53	54.30	30.23	30.13	30.18	N W to W	Fresh gales	"Rain, fog"	Zetland in sight
+		31	58 6	1 6	54	53	53.50	30.27	30.23	30.25	N	Fresh breeze	Cloudy	"Kinnaird's Head,45'"
+
+
+
+1816	4	1	59 10	2 0 W	40	40	40.0	30.36	30.10	30.23	S S E	Fresh or strong ga.	"Snow, sleet, hail"	At sea
+		2	60 8	1 8	42	38	40.0	30.10	30.00	30.05	to S E	Strong gales	"Show. of hail, sleet"	In Brassa Sound
+		3	60 8	1 8	43	39	40.3	30.20	30.00	30.10	to S S E	Fresh gales	Cloudy	Zetland
+		4	61 23	0 10	43	40	41.5	30.20	30.06	30.13	S	Fresh breeze	"Hail, sleet "	At sea
+		5	63 59	0 32 E	44	40	42.0	30.06	29.86	29.96	S to S E	to Strong gale	Showers of hail	Ditto
+		6	66 54	2 18	42	40	40.7	29.86	29.50	29.68	to E	to Moderate breeze	"Hail, rain, sleet"	Ditto
+		7	67 54	3 2	45	41	42.3	29.70	29.56	29.63	E	Light br. squally	"Snow, rain"	Ditto
+		8	69 30	5 0	42	37	39.7	29.86	29.70	29.78	E	"Light air, calm"	Snow showers	Ditto
+		9	69 50	5 32	42	31	37.6	29.86	29.75	29.80	N W.erly	to Fresh breeze	"Clear, snow"	Ditto
+		10	71 24	9 10	24	21	22.7	29.80	29.75	29.78	N W. E S E	Fresh gales	Snow showers	Ditto
+		11	73 4	9 34	34	29	31.7	29.80	29.50	29.65	"W.erly, var."	"Strong gale, calm"	Much snow	Ditto
+		12	73 5	7 2	20	12	16.4	29.67	29.38	29.58	N	Hard gale	Snow showers	Ditto
+		13	72 45	8 2	24	16	20.6	29.80	29.67	29.73	N N E to N N W	to Fresh breeze	Snow showers	Saw a piece of ice
+		14	72 54	5 0	20	20	20.0	30.00	29.78	29.80	"to N N E, S E"	Lig. br. to hard ga.	Constant snow	Drift ice
+		15	73 55	7 20	28	14	20.0	29.78	29.47	29.62	to E N E	Very hard gales	"Snow, sleet, haze"	One piece of ice
+		16	73 3	6 30	34	27	31.0	29.62	29.56	29.59	to E	Hard gales	Snow showers	No ice
+		17	73 23	5 40	24	20	22.0	29.56	29.40	29.48	to N N E	Ditto	Thick snow	Ditto
+		18	74 13	2 0	20	16	18.0	29.70	29.40	29.55	to N	to Fresh breeze	Snow showers	Ice streams
+		19	74 40	3 4	26	25	25.7	29.70	29.60	29.65	N N E to E	to Strong gale	Ditto	Ditto
+		20	75 17	3 47	30	28	29.0	29.65	29.60	29.63	"E N E, var,"	to Light breeze	"Thick snow, sleet"	Ditto
+		21	75 37	4 41	32	28	30.7	29.60	29.35	29.47	Variable	"Fresh breeze, calm"	"Snow, haze, sleet"	A little ice
+		22	75 50	7 44	27	26	26.3	29.85	29.43	29.64	Ditto	Moderate br. calm	"Snow, thick fog"	Loose pieces of ice
+		23	76 14	9 48	32	30	30.6	29.90	29.75	29.83	E S E	Very hard gale	"Fog, haze"	Ice streams
+		24	76 59	9 6	32	29	30.7	29.75	29.50	29.62	S E.erly	"Strong gale, calm"	Thick snow	Much Drift ice.
+		25	77 0	8 30	29	23	26.3	29.65	29.45	29.55	E N E to N N W	Fresh gales	Cloudy	Ditto
+		26	76 55	8 35	20	17	18.4	29.55	29.45	29.50	N W	Fresh gale	Crystallized snow	Ditto
+		27	76 45	9 40	21	15	17.7	29.55	29.49	29.52	"N W, E.erly"	to Gentle breeze	Much crys. snow	Ditto
+		28	76 28	8 40	27	14	20.6	29.60	29.49	29.55	to N N W	Light airs	Snow showers	Ditto
+		29	76 26	8 9	24	21	22.7	29.95	29.60	29.77	N N W	Moderate breeze	Fine snow crystals	Ditto
+		30	76 20	8 10	30	27	28.3	30.05	29.95	30.00	"N, E, S S E"	"Calm, strong gale"	Very thick snow	Ditto
+1816	5	1	77 4	10 30 E	26	21	23.0	30.06	29.96	30.01	SE	Very hard gale	Thick snow	"Amo. heavy dr. ice, with tremend. swell,"
+		2	77 30	9 10	22	18	20.3	29.96	29.78	29.87	S E	Hard gale	Ditto	ship driv.into a heavy
+		3	77 40	9 5	22	21	21.3	29.98	29.96	29.97	"SE, SSE"	Strong gales	Snow showers	"pack, and damaged."
+		4	77 58	8 50	28	25	26.4	29.98	29.90	29.94	"SSE, S b E"	Very hard gales	Thick snow shower	Among much ice
+		5	78 10	8 40	28	17	24.7	29.90	29.90	29.90	"S to WNW, N"	to Light breezes	Constant snow	Ditto
+		6	78 5	8 40	14	10	12.3	29.90	29.80	29.85	N	Strong gale	Snow showers	Ditto
+		7	77 59	8 30	10	8	9.5	30.03	29.83	29.93	N. N W	Fresh gales	Frost rime	Sea open
+		8	78 50	8 0	12	9	10.3	30.03	30.02	30.02	N W to N	Moderate breeze	Cloudy	Ditto
+		9	78 55	7 50	20	10	15.4	30.02	29.90	29.90	Var. S E.erly	"Calm, fresh breeze"	Strong snow show.	Ice near
+		10	78 53	7 40	20	10	16.0	29.90	29.65	29.78	"W N W, N N E"	Strong gales	Cloudy	Surrounded by ice.
+		11	78 45	7 0	26	20	23.5	29.90	29.65	29.77	to N E	to Light breeze	Some snow	Sea open
+		12	78 40	7 50	28	16	22.5	29.97	29.90	29.94	N.erly	Light airs	Clear	Bay ice
+		13	78 48	8 0	24	18	20.0	29.92	29.86	29.89	N.erly	Ditto	Show. of crys. snow	Spitzbergen in sight
+		14	78 40	8 0	24	10	17.8	29.86	29.82	29.84	ENE to N	to Fresh gales	"Clear, cloudy"	Ice near
+		15	78 38	7 25	15	8	10.7	29.87	29.82	29.84	N to N W	to Light breeze	Clear	Drift ice
+		16	78 40	7 35	16	15	15.6	29.85	29.80	29.83	Var. SW	"Calm, mod. breeze"	A little snow	Frozen in bay ice
+		17	78 40	8 36	23	16	19.0	29.98	29.80	29.89	N.erly var.	to Calm	Cloudy	Ditto
+		18	78 30	8 50	28	22	24.7	30.20	29.98	30.09	S	Strong gale	"Clear, snow"	Ice streams
+		19	78 50	7 50	34	30	32.0	30.20	29.88	30.04	S to SSW	Fresh gales	Much rain. fog	Floes and drift ice
+		20	78 58	5 50	34	30	32.0	29.88	29.76	29.83	"S, SW"	to Moderate breeze	"Thick fog, snow"	Large floes
+		21	79 4	5 55	38	33	35.0	29.96	29.76	29.86	S to S S E	Fresh gales	"Fog shower, rain"	Ditto
+		22	79 14	5 40	35	32	33.7	29.90	29.60	29.75	SE	to Moderate breeze	"Fog, rain, snow"	Many floes
+		23	79 23	5 30	33	30	32.0	29.63	29.55	29.59	SE to SSW	to Fresh gale	Much snow	Ditto
+		24	79 27	4 50	35	26	31.7	29.55	29.40	29.47	SE var.	"to Calm, str. br."	"Snow, fog"	Ditto
+		25	79 32	5 50	28	21	24.6	29.80	29.37	29.59	"N W.erly, var."	Fresh breeze	Clear	Charles' Isl. 22 lea.
+		26	79 36	5 20	38	29	33.5	29.86	29.68	29.77	S S E	Strong gale	"Snow, fog. rain"	Many floes
+		27	79 40	5 20	34	32	33.0	29.68	29.56	29.62	to S	to Light breeze	"Rain, haze, fog"	Surrounded by floes
+		28	79 42	5 30	36	33	34.3	29.63	29.60	29.61	S S E to S S W	to Fresh gales	Fog or snow show.	Ship beset by ditto
+		29	79 46	5 30	37	35	36.0	29.95	29.63	29.79	S	Strong breeze	Ditto	Ditto
+		30	79 50	5 20	40	34	36.0	30.03	29.95	29.99	S to S W	Moderate breezes	Constant fog	Ditto
+		31	79 55	5 10	36	34	35.0	30.03	29.85	29.94	S S W	Fresh gale	Fog showers	Ditto
+1816	6	1	80 0	5 15	37	34	35.7	29.85	29.81	29.83	S b W to S b E	Fresh ga. mod. br.	Snow showers	Ship closely beset by
+		2	80 1	5 20	41	39	40.0	29.83	29.77	29.80	E b N to S	Light airs	Fog showers	floes and heavy ice
+		3	79 59	5 25	42	34	39.0	29.77	29.59	29.68	S E to N E	to Fresh gale	"Fog, rain, sleet"	Hackl. Headlan. 45
+		4	79 58	5 21	39	33	35.3	29.59	29.50	29.55	S E to N E	to Light airs	"Fog, snow, sleet"	Ship close beset
+		5	79 58	5 20	38	33	34.7	29.50	29.42	29.46	S E to S S W	Fresh br. str. ga.	Much snow	Made a small rem.
+		6	80 0	5 10	36	32	34.0	29.53	29.52	29.52	S E to S b E	to Moderate breeze	"Snow, sleet"	Ship immoveable
+		7	79 56	5 0	37	32	34.6	29.67	29.53	29.60	Variable	to Calm	"Snow, fog"	Ditto
+		8	79 53	4 55	42	32	36.0	29.80	29.67	29.74	"W.erly, N.erly"	to Light airs	"Fog, clear"	Ditto
+		9	79 49	4 53	32	30	30.7	29.88	29.80	29.84	N	Fresh breeze	Snow showers	Moved a little way
+		10	79 47	4 50	45	32	37.0	29.89	29.88	29.88	to W var.	"Light breeze, calm"	"Fog, clear"	Removed some dist.
+		11	79 46	4 56	34	30	32.0	29.89	29.64	29.77	NNE	Light hr. to fr. gale	"Fog, snow"	Gained smaller ice
+		12	79 40	4 45	34	33	33.3	29.64	29.58	29.61	N E to N b W	to Light airs	"Haze, fog, snow"	Escaped to sea
+		13	79 44	4 55	34	33	33.7	29.70	29.61	29.66	Variable	Gentle breezes	Fog or snow show.	Drift ice
+		14	79 0	5 0	35	33	34.0	29.70	29.56	29.63	Var. N E.erly	to Strong breeze	Curious refraction	Ice streams
+		15	79 0	5 0	35	31	33.6	29.62	29.53	29.57	to N N W	Strong breeze	Fog showers	Sea open
+		16	79 12	4 50 E	37	31	35.0	29.79	29.62	29.71	N W.erly	to Light airs	Clear	Sea open
+		17	79 10	6 50	33	32	32.7	29.86	29.79	29.82	"W.erly, S b W"	"Moder. Breeze, calm"	Snow showers	Ice streams
+		18	79 0	4 40	33	31	32.4	29.96	29.86	29.91	W b N to SSW	to Moder. Breeze	Ditto	Ice in sight
+		19	79 40	5 10	34	32	33.3	30.05	29.96	30.01	to W	Fresh or light br.	"Thick fog, snow"	Sea open
+		20	78 20	4 45	38	33	35.7	30.25	30.05	30.14	to S S W	to Fresh breeze	"Snow, fog"	Drift ice
+		21	78 7  	4 50	36	34	35.3	30.36	30.23	30.29	S W	Strong breeze	Fog	Ditto
+		22	78 16	1 0	34	33	33.6	30.36	30.06	30.21	SW b S	Strong gale	"Fog, haze, rain"	Much drift ice
+		23	78 24	2 0	34	32	33.4	30.06	29.82	29.94	to SW b W	Fresh to light br.	Thick fog	Ditto
+		24	78 11	0 30	38	31	34.7	29.86	29.82	29.84	Var.N W to N E	to Fresh br. calm	Snow showers	Much heavy ice
+		25	78 15	0.0	31	27	28.7	30.00	29.85	29.92	to N	Fresh br. to calm	"Snow, fog"	Floes and drift ice
+		26	78 20	1 0 W	29	28	28.6	30.10	30.00	30.05	Var. S b W	to Moderate breeze	Snow showers	Ditto
+		27	78 16	1 25	31	29	30.0	30.07	29.84	29.96	S W	to Fresh breeze	Ditto	Ditto
+		28	78 8	1 30	33	30	31.0	29.84	29.77	29.80	to W N W	Strong breezes	Ditto	Ditto
+		29	78 8	2 0	34	29	32.0	29.80	29.77	29.79	Variable	Light br. Calm	Some snow	"Ship in great distress,"
+		30	78 6	2 5	38	34	36.0	29.90	29.80	29.85	Ditto	Ditto	Fog or snow	fills with water
+														
+														
+														
+1817	4	1	54 29	0 28 W	50	44	47.0	30.57	30.43	30.50	S W to E S E	Gentle breezes	Clear	In Whitby harbour
+		2	56 20	1 0	48	45	46.5	30.57	30.54	30.55	"S W, N E."	Fresh br. To calm	Cloudy	At sea
+		3	56 53	1 20	56	44	49.3	30.67	30.54	30.61	"N.erly, S.erly"	"Light breeze, calm"	Fine clear weather	Ditto
+		4	57 57	1 12	44	38	41.3	30.71	30.67	30.69	S	to Fresh gale	Dense atmosphere	"Buchanness, 6 leag."
+		5	60 8	1 8	46	44	45.0	30.68	30.62	30.65	"SSW to WNW, N"	Fresh breezes	Aurora borealis	In Brassa Sound
+		6	60 8	1 8	50	43	46.5	30.65	30.62	30.64	N.erly to S W	"Calm, fresh gale"	Cloudy	Ditto
+		7	62 47	1  1 E	46	44	45.0	30.65	30.05	30.35	S W	Strong gale	Rain. Haze	At sea
+		8	65 6	1 35	36	28	32.6	30.05	29.45	29.75	"to W, N E to N"	Mod. Br. Strong ga.	"Snow, aurora bor."	Ditto
+		9	64 39	2 6	28	26	27.0	29.65	29.45	29.55	to N N E	Hard gales	"Much snow, hail"	Ditto
+		10	64 29	3 30	28	26	27.0	29.95	29.65	29.80	"N b W, N W"	Intermittent gale	Snow show.	Ditto
+		11	65 0	 5 13	31	29	29.7	29.95	29.70	29.82	W N W to N	Ditto	Opaque hail	Ditto
+		12	65 48	4 19	34	31	32.7	29.80	29.55	29.68	"NNE, SW"	Fresh ga. light hr.	"Snow, sleet, rain"	Ditto
+		13	68 3	6 3	40	30	36.0	29.80	29.07	29.43	S S W to W	Strong or fresh ga.	"Sleet, rain, snow"	Ditto
+		14	69 25	6 32	35	34	34.6	29.45	29.07	29.26	NN E to E	Mod. br. hard ga.	Ditto	Ditto
+		15	70 27	4 42	32	28	30.4	29.36	29.10	29.23	E N E to N N E	Very hard gale	"Rain, snow"	Ditto
+		16	70 0	6 52	30	28	29.0	29.62	29.35	29.48	to NW b N	Strong gales	Snow showers	Ditto
+		17	70 12	9 40	30	28	29.0	29.85	29.62	29.74	N b W to N W	Fresh breezes	Some snow	Ditto
+		18	71 56	10 16	32	32	32.0	29.87	29.23	29.55	"S to SE, W b S"	Cal. To exces. Ha. Ga.	Constant snow	Ditto
+		19	73 13	11 46	35	34	34.7	29.25	28.75	29.00	to Var.	"to Calm, light br."	Showers of snow	"Heavy sea, no wind"
+		20	73 25	11 30	34	28	31.0	29.76	29.25	29.50	"N.erly, S W, var."	to Fresh gale	"Cloudy, snow"	"Temp. of sea, 35 deg."
+		21	76 5	13 22	28	21	25.0	29.65	29.20	29.43	W S W to W N W	to Hard gales	Snow showers	"Spitzbergen 30', Ice"
+		22	75 50	11 50	24	21	22.3	29.73	29.30	29.51	"to N W, E. var."	to Calm	Snow	"Ditto 40' , Ice"
+		23	77 24	7 0	22	18	20.7	29.90	29.73	29.82	E S E. to N E  	Strong gales	Snow shower	Ice near
+		24	78 21	2 23	21	16	19.0	29.82	29.75	29.78	E N E. to N b W	Fresh or strong ga.	Much snow	Loose drift ice
+		25	78 0	2 35 W	11	7	09.3	30.02	29.82	29.92	"NNW, NW"	Fresh breezes	"Frost, rime"	"Streams, &c. of ice"
+		26	78 23	1 55	14	8	10.2	30.02	29.86	29.94	to N N E	to Light airs	"Frost rime, clear"	A little ice
+		27	78 20	2 10	22	12	16.8	29.86	29.76	29.81	to N E	to Fresh gale	"Clear, snow showers"	Scattered ice
+		28	78 5	4  0 E	14	12	13.4	29.76	29.67	29.72	NNE to NNW	Strong gales	A little frost rime	No ice
+		29	77 54	2 40 W	8	4	06.3	29.76	29.67	29.71	NNW	Ditto	Frost rime	Loose ice
+		30	77 48	3 20	8	5	06.6	29.80	29.75	29.78	NNW	Fresh gale	Thick Frost rime	Ice streams
+1817	5	1	77 55	2 40 W	16	10	13.3	29.90	29.80	29.85	N b E. var.	Light or fresh br.	"Frost rime, snow"	Near the main ice
+		2	78 15	2 35	19	15	17.3	29.90	29.80	29.85	"E to N, var."	to Fresh gales	Cryst. snow	Ditto
+		3	78 28	1 5	20	13	17.4	29.80	29.50	29.65	"N b E, S E b E"	"Strong gale, calm"	Much cryst. snow	Ditto
+		4	78 55	0 45	20	20	20.0	29.85	29.50	29.68	S E to E N E	to Fresh gale	Snow showers	Ditto
+		5	80 5	5 50 E	30	28	29.7	29.95	29.85	29.90	Ditto	to Light breeze	"Clear, cloudy"	Spitz. 40 to 50 miles
+		6	79 18	3 58	28	26	27.0	29.95	29.80	29.87	E S E to SE	Fresh ga. light br.	Fine snow crystals	Near the W.rn pack
+		7	78 55	0 40	31	30	30.3	29.85	29.80	29.83	S S E to E N E	Moderate breezes	Hazy weather	Ditto
+		8	78 50	1 20 W	30	30	30.0	29.89	29.81	29.85	to S E b E	to Fresh gales	"Snow, sleet, haze"	Ditto
+		9	77 30	1 40	31	30	30.3	29.80	29.43	29.51	E to S S E	Strong breezes	"Thick fog, snow"	At sea
+		10	77 52	1 50	31	30	30.4	29.53	29.30	29.46	E S E to S b E	to Light breeze	Fog or snow show.	Ice in sight
+		11	78 2	2 40	30	29	29.7	29.83	29.53	29.68	S W to S b E	Mod. or strong br.	Snow showers	Ditto
+		12	77 50	2 20	32	26	29.3	30.15	29.83	29.90	"S S W, N b E"	to Calm	"Fog, snow"	Ditto
+		13	76 50	2 30	32	28	30.3	30.25	30.15	30.20	to E N E	Fresh breezes	"Thick fog, snow"	No ice
+		14	75 52	8 5	23	15	19.0	30.30	30.00	30.15	"N b W, N N E"	Mod. br. strong ea.	"Fog, snow"	Near a pack
+		15	75 53	6 40	18	15	16.4	30.10	30.00	30.05	N b E	Very hard gale	Thick snow	Amongst loose ice
+		16	75 12	6 0	31	27	29.3	30.10	29.70	29.90	to N b W	Strong gales	"Haze, snow"	A few pieces of ice
+		17	75 16	8 30	31	28	29.6	29.97	29.90	29.94	N b E	Fresh breeze	"Haze, fog"	"Ice streams, &c."
+		18	75 28	11 20	34	31	32.7	30.00	29.97	29.90	N	Light breeze	"Thick fog, snow"	Much heavy ice
+		19	75 23	10 40	34	32	33.0	30.07	30.00	30.04	N N E to E b N	to Fresh breeze	"Fog, haze"	An open pack
+		20	75 30	9 50	32	30	31.0	30.07	30.07	30.07	N E	Strong gale	"Haze, snow"	At sea
+		21	75 30	9 40	31	31	31.0	30.07	29.85	29.96	N E b N	to Fresh gale	"Haze, snow, fog"	Ditto
+		22	75 34	9 40	31	30	30.3	29.85	29.73	29.79	N E b N	to Calm	"Thick fog, snow"	Brash ice
+		23	75 45	9 10	32	29	30.4	29.95	29.73	29.84	N to N W	Calm to moder. br.	Snow showers	Near the W. pack
+		24	75 58	8 50	29	28	28.3	30.14	29.95	30.04	to N	Moderate breezes	Ditto	Ditto
+		25	76 15	7 32	30	24	27.7	30.16	30.02	30.09	"N, S E b E"	Moder. br. calm	Cloudy	Ditto
+		26	76 37	5 35	38	32	35.3	30.02	30.00	30.01	to S S E	Light airs	Clear	Much heavy ice
+		27	77 7	3 20	32	31	31.6	30.10	30.00	30.05	to E b N	Light breezes	Cloudy	Ditto
+		28	77 25	2 50	32	30	30.7	30.25	30.10	30.18	E.erly	"Light breeze, calm"	"Clear, fog"	Ice near
+		29	77 34	1 50	30	27	28.7	30.25	30.20	30.22	N E to N b W	Moderate breezes	"Clear, cloudy"	"Drift ice, &c."
+		30	77 39	1 40	27	25	26.0	30.20	29.93	30.07	to W	to Fresh breeze	Clear	At sea
+		31	78 2	0 30	28	26	27.0	29.93	29.84	29.98	to N N W	to Moderate breeze	Cloudy	Much crowded ice
+1817	6	1	78 29	1 20	28	22	24.7	29.89	29.84	29.87	N b W to N W	Moderate breeze	Frost rime	Much ice
+		2	78 15	0 25 E	30	26	28.7	29.95	29.80	29.92	Var. S b W	to Strong breeze	Cloudy	At sea
+		3	77 56	0 20	36	33	34.3	29.94	29.92	29.93	S b W to S b E	Moderate breeze	Snow showers	A little ice
+		4	78 0	0 20	34	33	33.6	29.96	29.87	29.91	"to E b S, var."	Ditto	Ditto	Ditto
+		5	77 54	0 10	33	33	33.0	29.87	29.81	29.84	E b S to SE b S	to Light airs	Brilliant rainbow	Ditto
+		6	77 56	0 15	40	33	36.3	29.87	29.79	29.83	to S b E	Moderate breeze	Snow showers	Ditto
+		7	78 2	0 20	43	36	38.4	29.93	29.87	29.90	Variable	Light airs	Ditto	Ditto
+		8	78 10	0 10	30	28	29.0	29.95	29.93	29.94	Ditto	to Calm	Fog showers	Drift ice and floes
+		9	78 12	2 0 W	30	27	28.3	30.04	29.95	30.00	Ditto	to Light airs	Ditto	"Floes, &c."
+		10	78 20	0 24 E	30	27	28.3	30.06	30.04	30.05	"W.erly, N.erly"	to Moderate breeze	"Clear, cloudy"	Drift ice
+		11	78 26	0 30 W	27	23	25.7	30.09	30.06	30.07	NW to W	Fresh breeze	Clear	In a bay of the ice
+		12	78 34	1 40	26	25	25.4	30.07	29.95	30.01	NW	to Hard gale	"Cloudy, snow"	Solid ice near
+		13	78 28	1 30	28	22	25.7	29.95	29.60	29.78	N b W to W N W	to Strong breeze	Thick snow	Drift ice and floes
+		14	78 17	2 5	29	20	25.0	29.60	29.50	29.55	to N	Hard gale	Snow showers	Ditto
+		15	78 4	2 50	25	22	23.3	29.55	29.52	29.53	to N W b N	to Strong gale	Cloudy	Ditto
+		16	77 44	3 15 	26	23	24.0	29.52	29.50	29.51	
+		17	77 30	1 25	32	25	29.0	29.75	29.50	29.63	
+		18	77 27	2 6	34	29	31.0	30.05	29.75	29.90	
+		19	77 36	1 15	40	34	36.6	30.15	30.05	30.10	
+		20	77 41	1 0 E	37	32	34.5	30.22	30.15	30.18	
+		21	77 58	0 20	34	30	32.3	30.25	30.09	30.17	
+		22	78 20	1 20 W	33	30	31.4	30.09	30.00	30.05	
+		23	77 30	2 20	35	30	33.0	30.16	30.00	30.08	
+		24	76 30	3 50	38	33	35.3	30.24	30.16	30.20	
+		25	76 17	3 10	34	30	32.3	30.24	30.20	30.22	
+		26	76 33	4 40	35	34	34.4	30.20	29.98	30.00	
+		27	76 26	5 0	35	34	34.3	29.98	29.80	29.80	
+		28	76 30	5 5	34	32	32.7	29.80	29.60	29.70	
+		29	76 24	5 20	38	32	35.3	29.71	29.68	29.69	
+		30	76 4	5 40	38	36	37.0	29.72	29.68	29.70	
+1817	7	1	75 59	7 20	38	36	37.3	29.92	29.72	29.82	
+		2	75 25	8 10	38	35	36.3	29.92	29.92	29.92
+		3	75 40	7 30	36	35	35.7	29.92	29.85	29.86
+		4	75 50	5 20	36	33	34.6	29.85	29.80	29.83
+		5	75 54	7 10	38	32	35.4	29.80	29.78	29.79
+		6	75 46	7 20	42	32	36.7	29.88	29.82	29.85
+		7	75 53	7 40	35	31	33.7	29.88	29.88	29.88
+		8	75 50	8 35	36	33	34.7	29.88	29.88	29.88
+		9	75 12	9 10	36	34	35.0	29.88	29.83	29.85
+		10	75 20	7 10	40	35	37.0	29.83	29.72	29.78
+		11	75 12	6 40	40	32	36.0	29.78	29.70	29.74
+		12	75 20	4 50	35	32	33.6	29.83	29.78	29.80
+		13	75 18	4 20	33	32	32.3	29.83	29.78	29.81
+		14	74 59	2 50	37	33	35.0	29.80	29.78	29.79
+		15	75 54	1 0 E	38	33	35.7	29.87	29.80	29.83
+		16	76 20	0 33 W	40	35	37.7	29.92	29.87	29.90
+		17	75 56	3 49 E	36	34	35.3	29.93	29.92	29.92
+		18	75 45	6 30	40	36	37.4	29.94	29.93	29.94
+		19	76 20	10 30	37	36	36.5	30.08	29.94	30.01
+		20	76 4	13 10	40	38	39.0	30.08	29.95	30.01
+		21	75 15	12 42	39	37	37.6	29.98	29.97	29.98
+		22	75 5	11 38	42	41	41.3	30.01	29.96	29.98
+		23	74 25	6 58	45	44	44.3	29.96	29.92	29.94
+		24	73 49	1 58	45	40	42.4	29.92	29.73	29.83
+		25	73 55	0 1 W	40	38	39.3	29.97	29.83	29.90
+		26	73 35	0 30	41	39	40.0	29.97	29.85	29.91
+		27	73 27	0 35	41	35	38.3	29.85	29.83	29.84
+		28	73 56	4 47	39	35	36.7	29.83	29.65	29.74
+		29	74 0	10 37	36	33	34.7	29.70	29.65	29.67
+		30	73 46	8 50	38	32	35.0	29.70	29.70	29.70
+		31	73 46	8 10	40	33	36.0	29.75	29.70	29.73
+
+
+1818	5	1	70 50	6 50 	27	25	26.3	30.45	30.25	30.35	N E b E to E	Strong breezes	Snow showers	Bay and drift ice
+		2	71 10	6 20	28	25	26.7	30.54	30.45	30.49	E b N	to Light breeze	"Cloudy, clear"	Ice streams
+		3	71 34	5 28	29	26	27.3	30.47	30.44	30.46	E N E	to Fresh breeze	Cloudy	Ditto
+		4	72 1	4 26	31	30	30.4	30.44	30.04	30.24	to E b S	to Strong gale	"Clear, snow"	Drift and bay ice
+		5	72 30	3 0	32	30	31.3	30.04	29.60	29.82	S E to S W	Strong gales	"Fog showers, cloudy"	A little ice
+		6	74 40	1 44 E	27	24	25.7	29.80	29.60	29.70	to N W	to Light airs	Cloudy	Ice streams
+		7	75 39	2 40	32	29	31.0	29.82	29.74	29.78	"Variable, S"	to Strong gale	"Snow, fog, cloudy"	No ice
+		8	78 10	5 10	29	16	22.3	29.74	29.40	29.57	S b W to W	to Fresh breeze	"Cloudy, snow show."	Drift ice
+		9	78 30	6 20	22	19	20.4	29.70	29.40	29.55	"W b N, W S W, N"	Light breezes	"Clear, cloudy "	Ditto
+		10	78 16	4 10	22	14	17.0	29.90	29.70	29.80	"N N W, N"	Light airs	Cloudy 	Ice streams
+		11	78 10	4 0	19	14	17.0	29.90	29.88	29.89	"N N E, N W"	Fresh gales	"Snow, clear "	Much ice
+		12	78 6	3 10	22	13	16.3	30.05	29.88	29.96	"N W, var."	to Calm	Clear 	Much drift ice
+		13	78 0	3 30	28	20	24.0	30.29	30.05	30.17	"S, W S W to N"	to Moderate breeze	Ditto 	Ice streams
+		14	78 27	1 50	28	24	26.0	30.32	30.29	30.31	N N E to E S E	Light airs	Partially clear 	An open pack
+		15	78 35	2 20	30	28	28.6	30.34	30.20	30.27	S E.erly	Near calm	Clear in the N W 	Ditto
+		16	78 26	1 40	30	25	28.0	30.20	30.14	30.17	Variable	to Fresh breeze	"Cloudy, ditto "	Ditto
+		17	78 36	1 30	24	24	24.0	30.14	30.02	30.08	N E b E	Strong gale	Thick snow 	Drift and bay ice
+		18	78 26	0 40 W	22	18	19.3	30.02	29.80	29.91	N E b N	Hard gale	"Snow, hazy "	Ditto
+		19	78 10	0 50	18	12	15.2	29.85	29.73	29.79	to N b E	Ditto	"Clear, snow "	Near a west pack
+		20	77 55	0 55	20	13	15.8	29.88	29.85	29.86	N b E	Ditto	Clear	 Ditto
+		21	77 59	0 40	26	19	22.4	30.00	29.88	29.94	N to W b N	to Calm	"Cloudy, snow "	Floes and heavy ice
+		22	78 0	1 0	30	27	28.7	30.00	29.90	29.95	"W.erly, var."	"Light airs, calm"	Snow showers 	Ditto
+		23	77 58	1 2	26	23	25.0	30.02	29.88	29.95	Variable	Ditto	Cloudy 	Much ice
+		24	77 55	0 42	22	19	20.3	30.06	30.02	30.04	"E b N, N E b E"	Fresh breeze	"Ice blinks, snow "	Heavy drift ice
+		25	77 59	0 30 E	19	18	18.8	30.08	30.06	30.07	N E b N to N b E	Fresh gales	Snow showers 	Floes and drift ice
+		26	77 40	0 10 W	20	16	18.0	30.20	30.08	30.14	to W b N	to Moderate breeze	Ditto 	Drift ice
+		27	77 31	0 40	29	24	25.7	30.22	30.18	30.20	to S S W	Fresh gales	"Clear, cloudy "	Bay and drift ice
+		28	78 0	0 50	30	30	30.0	30.18	29.70	29.94	to S E & S W	Strong ga. light br.	"Foggy, hazy, snow "	Some ice
+		29	78 5	1 20 E	30	25	28.4	29.70	29.30	29.50	to W b N	"Calm, fresh gale"	"Hazy, snow "	Ice streams
+		30	78 30	0 19	28	24	25.5	29.30	29.30	29.30	"to S, var."	to Calm	"Clear, snow "	Floes near
+		31	78 28	0 30	24	22	22.5	29.40	29.30	29.35	"N, N N W"	to strong gale	Snow showers 	Heavy drift ice
+1818	6	1	78 25	0 10	24	23	23.3	29.50	29.40	29.45	N	Fresh breeze	Ditto 	Ice streams
+		2	78 20	0 10 W	27	25	26.0	29.70	29.50	29.60	"N N W, W N W"	Strong breeze	Cloudy 	Ditto
+		3	78 28	1 10 W	27	26	26.3	29.85	29.70	29.77	W b N to N W	Light airs	"Hazy, clear "	Ditto
+		4	78 35	0 55	27	26	26.4	29.86	29.85	29.86	N N W to N W	to Moderate breeze	"Snow, fog, rain "	"Floes, drift ice"
+		5	78 50	0 20 W	28	26	27.0	30.02	29.86	29.94	"W N W, var."	Moderate breeze	Fog or snow show.	"Fields, floes, &c."
+		6	78 22	0 40 E	29	26	27.7	30.02	30.00	30.01	"W S W, S W"	to Fresh breeze	Fog or snow 	Field
+		7	78 28	0 30	33	31	32.0	30.00	29.96	29.98	S S W to S S E	Strong gales	"Fog, hail, rain, snow "	Ditto
+		8	78 25	0 30 W	34	33	33.7	29.96	29.25	29.60	to E to N b E	Fresh p. mod. br.	"Snow, rain, sleet, fog"	Ditto
+		9	78 20	0 5 E	34	32	33.3	29.63	29.25	29.44	to N	Fresh gales	Snow or fog show.	"Floes, drift ice"
+		10	78 30	2 0	33	31	32.3	29.90	29.63	29.77	"NN E, N E"	Light airs	"Cloudy, snow"	At sea
+		11	78 34	1 40	32	30	30.6	30.15	29.90	30.02	"N N E, var. S"	"Calm, light breeze"	Snow showers	Loose ice
+		12	78 50	2 20	40	32	35.4	30.22	30.15	30.19	S b W to E S E	Light airs	"Thick fog, snow"	A pack near
+		13	78 47	3 0	34	31	32.3	30.30	30.20	30.25	S S E 	to Moderate breeze	"Fog shower, cloudy"	Ditto
+		14	79 10	3 25	32	30	31.0	30.20	30.20	30.20	to S W	to Fresh breeze	Hazy	Ditto
+		15	79 18	3 12	32	31	31.3	30.22	30.16	30.19	"WSW, var."	Gentle breeze	Ditto	Field near
+		16	79 26	2 42	34	29	31.7	30.16	30.04	30.10	 Variable 	"Calm, light breeze"	Snow showers	Field near
+		17	79 30	2 11	34	30	31.7	30.04	30.02	30.03	Var. NE b N	to Calm	Ditto	Ship enclosed in ice
+		18	79 28	2 20	34	31	32.4	30.02	29.98	30.00	Var. SW.erly	to Moderate breeze	Ditto	Ditto
+		19	79 0	4 22	32	29	31.0	29.98	29.96	29.97	S S W to W S W	to Strong breeze	Ditto	Spitzbergen in sight
+		20	78 31	4 0	34	31	32.0	29.96	29.93	29.94	 W b S to S S W	o Moderate breeze	"Snow, clear"	No ice
+		21	78 10	2 0	32	31	31.3	29.93	29.87	29.90	"to WSW, var."	to Fresh breeze	"Fog, snow"	Ice streams
+		22	77 45	3 4	32	30	31.0	29.87	29.78	29.83	 N to N E	to Calm	Snow showers	Ditto
+		23	77 40	2 44	31	29	30.0	29.78	29.76	29.77	 N N E	Fresh breeze	"Cloudy, snow"	Ditto
+		24	77 1	2 30	34	31	32.3	29.76	29.65	29.70	 N to ENE	Fresh or Mod. br.	"Snow, hazy"	At sea
+		25	75 40	2 30	35	34	34.4	29.65	29.35	29.50	 to E	Strong gale	"Haze, rain"	No ice
+		26	75 44	0 10 W	38	32	35.3	29.55	29.35	29.45	 to E S E. var.	to Light airs	"Thick fog, cloudy"	Ditto
+		27	76 10	2 0	32	31	31.3	29.70	29.55	29.62	 E b N to E SE	Strong br. mod. Br.	Fog. snow	A pack near
+		28	75 40	3 40	34	30	31.4	29.76	29.70	29.73	 to S E b S	to Fresh breeze	Thick fog	Brash ice
+		29	75 40	8 20	32	30	31.0	29.76	29.70	29.73	Var. N E to N b W	Calm to strong breeze	"Fog, snow, rain"	Crowded ice
+		30	75 10	8 0	34	32	33.0	29.70	29.62	29.66	 to N W b W	to Fresh breeze	Ditto	Ship beset
+1818	7	1	74 54	9 0	36	30	32.7	29.82	29.70	29.76	 Var. W S W	Calm to strong breeze.	"Clear, fog"	Near a pack of ice
+		2	74 20	7 0	32	30	30.7	29.96	29.82	29.89	S W to S to W	to Mod. Breeze	Thick fog	Ditto
+		3	74 50	8 20	38	34	36.5	29.98	29.96	29.97	"to N W, var. S"	to Calm	Beautifully clear	In a bay of the ice
+		4	75 50	5 0	36	34	34.5	29.98	29.90	29.94	S b W	to Strong gale	"Ditto, cloud"	Ice near
+		5	76 0	4 30	36	34	34.6	29.90	29.80	29.85	"to S W, var."	Moder. br. calm	Fog	Ice streams
+		6	76 10	4 0	33	30	31.7	29.86	29.80	29.83	E.erly. N E	"Calm, fresh breeze"	"Fog,rain, snow, hail"	Pack near
+		7	75 56	3 30	33	32	32.3	29.86	29.78	29.82	N b E	to Moderate breeze	Ditto	Heavy streams
+		8	75 50	3 10	36	34	35.0	29.86	29.78	29.82	N.erly	to Calm	Fog	Ice streams
+		9	75 58	3 40	35	32	34.0	30.06	29.86	29.96	S b E	to Fresh breeze	"Fog, haze, cloudy"	Ditto
+		10	76 30	3 0	35	33	34.0	30.08	30.06	30.07	 S E to E b S	Fresh breeze	Fog. rain	In an open pack
+		11	76 30	3 20	35	34	34.3	30.08	30.08	30.08	 N E b E to N b W	to Light breeze	"Thick fog, rain"	Sailing Ice
+		12	76 30	3 30	35	34	34.4	30.08	29.92	30.00	N b E to N b W	Moderate breeze	Thick fog	Crowded ice
+		13	76 25	2 0	36	28	32.3	30.08	29.92	30.00	"S Werly, var."	to Calm	Constant fog	Encl. In a bay of ice
+		14	76 20	1 10	32	29	30.7	30.08	29.98	30.03	 S W.erly	Light airs	"Fog, snow"	At sea
+		15	77 10	1 30 E	36	34	34.6	29.98	29.88	29.93	 S W b S	Fresh breeze	"Fog, rain"	Ice in sight
+		16	77 55	1 10	38	35	36.3	29.88	29.74	29.81	 S W to S E.	Fresh gales	Much rain	Ditto
+		17	78 40	7 0	38	36	37.4	29.74	29.62	29.68	 to SS W	to Calm	"Rain, fog"	"Near Spitzbergen, no ice"
+		18	79 10	9 4	36	34	35.0	29.70	29.62	29.66	 N W	Fresh or Mod. br.	"Rain, fog, snow"	Spit.. 9 miles off
+		19	79 15	5 30	38	33	35.7	29.95	29.70	29.83	 Var. W S W	to Calm	"Fog, clear"	Loose ice
+		20	79 22	5 55	34	34	34.0	30.08	29.95	30.01	 S  	Gentle br. calm	Fog	In open pack
+		21	79 19	6 10	46	34	40.0	30.08	30.08	30.08	" E.erly, var."	Light airs. calm	Fog. clear	Ice and land in sight
+		22	79 11	6 10	44	40	42.0	30.08	29.90	29.99	 Var.	"Calm, light airs"	"Clear, rain, fog"	"Char. Isl. S S E, 25'"
+		23	79 14	7 30	44	42	42.7	29.90	29.88	29.89	 Ditto	Calm. light breeze	" Rain, clear"	"Ditto. SSE, 20'"
+		24	79 8	9 15	48	44	46.0	29.88	29.80	29.84	 Ditto	Chiefly calm	Fine clear weather	"Mitre Cape, SE 5'"
+		25	79 5	9 22	45	38	41.6	29.80	29.68	29.74	 Var. S.erly	Calm to strong gale	" Clear, rain. fog"	"Ditto, E 1'"
+		26	79 5	9 24	38	36	37.3	29.82	29.62	29.72	 W N W to N N W	Fresh br. Light airs	 Cloudy. clear	"Ditto, E 1/4'"
+		27	78 55	9 55	46	40	42.3	30.10	29.82	29.96	 SS W to SSE	Fresh gale	"Clear, rain"	In King's Bay
+		28	79 10	7 30	41	39	40.0	30.10	29.79	29.94	 S to S W	Strong ga. Fresh br.	"Cloudy, rain, fog"	Fair Foreland in sight
+		29	78 40	6 5	41	39	40.0	30.01	29.38	29.70	S to E N E	to Hard gale	"Rain, fog, hazy"	At sea
+		30	78 48	6 30	36	34	34.7	29.88	29.38	29.63	 S to W & N	Very hard ga. calm	" Hazy, cloudy"	Ditto
+		31	78 18	4 30	41	33	38.0	29.98	29.88	29.93	 N	Calm gentle breeze	" Cloudy, clear"	Char. Isl. E b N 60'
