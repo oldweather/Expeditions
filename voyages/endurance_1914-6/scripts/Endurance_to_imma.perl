@@ -7,13 +7,14 @@ use strict;
 use warnings;
 use MarineOb::IMMA;
 use MarineOb::lmrlib
-  qw(rxltut ixdtnd rxnddt fxeimb fwbpgv fxtftc ix32dd ixdcdd fxbfms fwbptc);
+  qw(rxltut ixdtnd rxnddt fxeimb fwbpgv fxtftc fxtktc ix32dd ixdcdd fxbfms fwbptc);
 use FindBin;
+use Date::Calc qw(Add_Delta_Days);
 
 my $Ship_name = 'Endurance';
 my ( $Year, $Month, $Day );
-my $Last_lon;
-my $Last_lat;
+my $Last_lon=51;
+my $Last_lat=-3;
 my $Lat_flag = 'N';
 my $Lon_flag = 'W';
 
@@ -38,8 +39,12 @@ while (<>) {
     $Ob->{MO} = $Month;
     $Ob->{DY} = $Day;
     if ( defined( $Fields[3] ) && $Fields[3] =~ /\d/ ) {
-        if($Fields[3]==2400) { $Fields[3]=23.98; }
-        $Ob->{HR} = int( $Fields[3] / 100 ) + ( $Fields[3] % 100 ) / 60;
+        if($Fields[3]==2400) { 
+	    ($Ob->{YR},$Ob->{MO},$Ob->{DY}) = Add_Delta_Days($Ob->{YR},$Ob->{MO},$Ob->{DY},1);
+	    $Ob->{HR}=0;
+        } else {
+          $Ob->{HR} = int( $Fields[3] / 100 ) + ( $Fields[3] % 100 ) / 60;
+        }
     }
 
     if ( defined( $Fields[4] ) && $Fields[4] =~ /[a-z]/ ) {    # Port name
@@ -103,41 +108,60 @@ while (<>) {
 
     # Pressure converted from inches
     if ( defined( $Fields[12] ) && $Fields[12] =~ /\d/ ) {
-        $Ob->{SLP} = fxeimb($Fields[12]);
-    }
+        if($Fields[12]<100) { $Ob->{SLP} = fxeimb($Fields[12]); } # inches Hg
+        else { $Ob->{SLP} = $Fields[12]; } # hPa
     # Temperature correction
-    if (   defined( $Ob->{SLP} )
-        && defined( $Fields[13] )
-        && $Fields[13] =~ /\d/ )
-    {
-        $Ob->{SLP} += fwbptc( $Ob->{SLP}, fxtftc( $Fields[12] ) );
+	if (   defined( $Ob->{SLP} )
+	    && defined( $Fields[14] )
+	    && $Fields[14] =~ /\d/ ) # F
+	{
+	    $Ob->{SLP} += fwbptc( $Ob->{SLP}, fxtftc( $Fields[14] ) );
+	} elsif ( defined( $Ob->{SLP} )
+	    && defined( $Fields[15] )
+	    && $Fields[15] =~ /\d/ ) # K
+    	{
+	    $Ob->{SLP} += fwbptc( $Ob->{SLP}, fxtktc( $Fields[15] ) );
+	}
+	else { $Ob->{SLP} = undef; }
+	# Gravity correction
+	if ( defined( $Ob->{SLP} ) && defined($Last_lat) ) {
+	    $Ob->{SLP} += fwbpgv( $Ob->{SLP}, $Last_lat, 2 );
+	}
     }
-    else { $Ob->{SLP} = undef; }
-    # Gravity correction
-    if ( defined( $Ob->{SLP} ) && defined($Last_lat) ) {
-        $Ob->{SLP} += fwbpgv( $Ob->{SLP}, $Last_lat, 2 );
-    }
+    # If no mercury pressure, use aneroid
+    if(!defined($Ob->{SLP}) && defined( $Fields[13] ) && $Fields[13] =~ /\d/) {
+        if($Fields[13]<100) { $Ob->{SLP} = fxeimb($Fields[13]); } # inches Hg
+        else { $Ob->{SLP} = $Fields[13]; } # hPa
+    }   
 
     # Temperatures converted from Farenheit
-    if ( defined( $Fields[14] ) && $Fields[14] =~ /\d/ ) {
-        $Ob->{AT} = fxtftc( $Fields[14] );
-    }
-    if ( defined( $Fields[15] ) && $Fields[15] =~ /\d/ ) {
-        $Ob->{WBT} = fxtftc( $Fields[15] );
-    }
     if ( defined( $Fields[16] ) && $Fields[16] =~ /\d/ ) {
-        $Ob->{SST} = fxtftc( $Fields[16] );
+        $Ob->{AT} = fxtftc( $Fields[16] );
+    }
+    if ( defined( $Fields[17] ) && $Fields[17] =~ /\d/ ) {
+        $Ob->{WBT} = fxtftc( $Fields[17] );
+    }
+    if ( defined( $Fields[18] ) && $Fields[18] =~ /\d/ ) {
+        $Ob->{SST} = fxtftc( $Fields[18] );
+    }
+    if ( !defined($Ob->{SST}) && defined($Fields[19] ) && $Fields[19] =~ /\d/ ) {
+        $Ob->{SST} = fxtktc( $Fields[19] );
     }
     if ( defined( $Fields[10] ) && $Fields[10] =~ /\S/ ) {
         my $Dirn = $Fields[10];
         $Dirn =~ s/b/x/;
+        $Dirn =~ s/\//x/;
         $Dirn = sprintf "%-4s", uc($Dirn);
-	( $Ob->{D}, undef ) = ix32dd($Dirn);
-	if ( defined( $Ob->{D} ) ) {
-	    $Ob->{DI} = 1;    # 32-point compass
-	}
+        if($Dirn =~ /CALM/) { $Ob->{D} = 361; }
+        elsif($Dirn =~ /VAR/) { $Ob->{D} = 362; }
 	else {
-	    warn "Unknown wind direction $Dirn - $Fields[8]";
+	    ( $Ob->{D}, undef ) = ix32dd($Dirn);
+	    if ( defined( $Ob->{D} ) ) {
+		$Ob->{DI} = 1;    # 32-point compass
+	    }
+	    else {
+		warn "Unknown wind direction $Dirn - $Fields[8]";
+	    }
 	}
     }
     if ( defined( $Fields[11] ) && $Fields[11] =~ /\d/ ) {
@@ -147,7 +171,7 @@ while (<>) {
 
     # Fill in extra metadata
     $Ob->{IM}   = 0;            
-    $Ob->{ATTC} = 0;            # icoads
+    $Ob->{ATTC} = 0;            # None
     $Ob->{TI}   = 0;            # Nearest hour time precision
     $Ob->{DS}   = undef;        # Unknown course
     $Ob->{VS}   = undef;        # Unknown speed
@@ -170,8 +194,8 @@ while (<>) {
 # Get a position from a port name
 sub position_from_port {
     my $Name = lc(shift);
-    if ( $Name =~ /santa cruz/ ) { # Rio Santa Cruz, patagonia
-        return ( -50.1, -68.3 );   # Guessed
+    if ( $Name =~ /santa cruz/ ) { # Tenerife
+        return ( 28.5, -16.3 );   #
     }
 
     die "Unknown port $Name";
