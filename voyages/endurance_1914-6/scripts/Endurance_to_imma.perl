@@ -132,6 +132,7 @@ while (<>) {
     if(!defined($Ob->{SLP}) && defined( $Fields[13] ) && $Fields[13] =~ /\d/) {
         if($Fields[13]<100) { $Ob->{SLP} = fxeimb($Fields[13]); } # inches Hg
         else { $Ob->{SLP} = $Fields[13]; } # hPa
+        $Ob->{SLP} -= 10; # Fix - their aneroid is about 10hPa high.
     }   
 
     # Temperatures converted from Farenheit
@@ -146,6 +147,7 @@ while (<>) {
     }
     if ( !defined($Ob->{SST}) && defined($Fields[19] ) && $Fields[19] =~ /\d/ ) {
         $Ob->{SST} = fxtktc( $Fields[19] );
+        if($Ob->{SST}< -5) { $Ob->{SST}=undef; } # Fix for some bad data in the spreadsheet
     }
     if ( defined( $Fields[10] ) && $Fields[10] =~ /\S/ ) {
         my $Dirn = $Fields[10];
