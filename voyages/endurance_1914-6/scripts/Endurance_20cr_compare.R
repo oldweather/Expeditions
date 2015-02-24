@@ -39,14 +39,14 @@ get.comparisons<-function(i) {
   prmsl.spread<-GSDF.interpolate.ll(prmsl,o$LAT[i],o$LON[i])
   sst<-TWCR.get.slice.at.hour('sst',year,month,day,hour,
                               version=version)
-  sst.mean<-GSDF.interpolate.ll(sst,o$LAT[i],o$LON[i],greedy=FALSE)  
+  sst.mean<-GSDF.interpolate.ll(sst,o$LAT[i],o$LON[i],greedy=TRUE)  
   sst<-TWCR.get.slice.at.hour('sst',year,month,day,hour,
                               type='spread',
                               version=version)
-  sst.spread<-GSDF.interpolate.ll(sst,o$LAT[i],o$LON[i])  
+  sst.spread<-GSDF.interpolate.ll(sst,o$LAT[i],o$LON[i],greedy=TRUE)  
   icec<-TWCR.get.slice.at.hour('icec',year,month,day,hour,
                               version=version)
-  icec.mean<-GSDF.interpolate.ll(icec,o$LAT[i],o$LON[i],greedy=FALSE)  
+  icec.mean<-GSDF.interpolate.ll(icec,o$LAT[i],o$LON[i],greedy=TRUE)  
   return(c(t2m.mean,t2m.spread,prmsl.mean,prmsl.spread,sst.mean,sst.spread,icec.mean))
 }
 
