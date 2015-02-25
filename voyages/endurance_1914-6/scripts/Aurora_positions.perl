@@ -20,6 +20,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[4]) && $Fields[4] =~ /\S+/) { 
        $Lats{$Date} = $Fields[4]; 
        if($Lats{$Date} =~ /(\d+)\D(\d*)/) { $Lats{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lats{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[5]) && $Fields[5] =~ /[Ss]/) {
 	   $Lats{$Date} *= -1;
@@ -28,6 +29,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[6]) && $Fields[6] =~ /\S+/) { 
        $Lons{$Date} = $Fields[6]; 
        if($Lons{$Date} =~ /(\d+)\D(\d*)/) { $Lons{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lons{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[7]) && $Fields[7] =~ /[Ww]/) {
 	   $Lons{$Date} *= -1;
@@ -49,14 +51,16 @@ while(my $Line = <DIN>) {
     if(defined($Fields[4]) && $Fields[4] =~ /\S+/) { 
        $Lats{$Date} = $Fields[4]; 
        if($Lats{$Date} =~ /(\d+)\D(\d*)/) { $Lats{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lats{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[5]) && $Fields[5] =~ /[Ss]/) {
 	   $Lats{$Date} *= -1;
        }
     }
-    if(defined($Fields[6]) && $Fields[4] =~ /\S+/) { 
+    if(defined($Fields[6]) && $Fields[6] =~ /\S+/) { 
        $Lons{$Date} = $Fields[6]; 
        if($Lons{$Date} =~ /(\d+)\D(\d*)/) { $Lons{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lons{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[7]) && $Fields[7] =~ /[Ww]/) {
 	   $Lons{$Date} *= -1;
@@ -78,6 +82,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[4]) && $Fields[4] =~ /\S+/) { 
        $Lats{$Date} = $Fields[4]; 
        if($Lats{$Date} =~ /(\d+)\D(\d*)/) { $Lats{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lats{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[5]) && $Fields[5] =~ /[Ss]/) {
 	   $Lats{$Date} *= -1;
@@ -86,6 +91,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[6]) && $Fields[6] =~ /\S+/) { 
        $Lons{$Date} = $Fields[6]; 
        if($Lons{$Date} =~ /(\d+)\D(\d*)/) { $Lons{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lons{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[7]) && $Fields[7] =~ /[Ww]/) {
 	   $Lons{$Date} *= -1;
@@ -107,6 +113,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[4]) && $Fields[4] =~ /\S+/) { 
        $Lats{$Date} = $Fields[4]; 
        if($Lats{$Date} =~ /(\d+)\D(\d*)/) { $Lats{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lats{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[5]) && $Fields[5] =~ /[Ss]/) {
 	   $Lats{$Date} *= -1;
@@ -115,6 +122,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[6]) && $Fields[6] =~ /\S+/) { 
        $Lons{$Date} = $Fields[6]; 
        if($Lons{$Date} =~ /(\d+)\D(\d*)/) { $Lons{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lons{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[7]) && $Fields[7] =~ /[Ww]/) {
 	   $Lons{$Date} *= -1;
@@ -136,6 +144,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[4]) && $Fields[4] =~ /\S+/) { 
        $Lats{$Date} = $Fields[4]; 
        if($Lats{$Date} =~ /(\d+)\D(\d*)/) { $Lats{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lats{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[6]) && $Fields[6] =~ /[Ss]/) {
 	   $Lats{$Date} *= -1;
@@ -144,6 +153,7 @@ while(my $Line = <DIN>) {
     if(!defined($Lats{$Date}) && defined($Fields[5]) && $Fields[5] =~ /\S+/) { 
        $Lats{$Date} = $Fields[5]; 
        if($Lats{$Date} =~ /(\d+)\D(\d*)/) { $Lats{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lats{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[6]) && $Fields[6] =~ /[Ss]/) {
 	   $Lats{$Date} *= -1;
@@ -152,6 +162,7 @@ while(my $Line = <DIN>) {
     if(defined($Fields[7]) && $Fields[7] =~ /\S+/) { 
        $Lons{$Date} = $Fields[7]; 
        if($Lons{$Date} =~ /(\d+)\D(\d*)/) { $Lons{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lons{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[9]) && $Fields[9] =~ /[Ww]/) {
 	   $Lons{$Date} *= -1;
@@ -160,6 +171,7 @@ while(my $Line = <DIN>) {
     if(!defined($Lats{$Date}) && defined($Fields[8]) && $Fields[8] =~ /\S+/) { 
        $Lons{$Date} = $Fields[8]; 
        if($Lons{$Date} =~ /(\d+)\D(\d*)/) { $Lons{$Date} = $1+$2/60; }
+       else { warn "Odd format: $Lons{$Date}"; }
        $Dates{$Date}=1;
        if(defined($Fields[9]) && $Fields[9] =~ /[Ww]/) {
 	   $Lons{$Date} *= -1;
