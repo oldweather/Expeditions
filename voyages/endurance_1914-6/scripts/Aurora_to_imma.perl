@@ -69,7 +69,7 @@ while(my $Line = <DIN>) {
 	$Obs{$Date}{'barometer'}=$Fields[13];
     }
     if(defined($Fields[11]) && $Fields[11] =~ /\S+/) { 
-	$Obs{$Date}{'attached'}=$Fields[9];
+	$Obs{$Date}{'attached'}=$Fields[11];
     }
     if(defined($Fields[10]) && $Fields[10] =~ /\S+/) { 
 	$Obs{$Date}{'wind'}=$Fields[10];
@@ -275,7 +275,7 @@ foreach my $Date (sort(keys(%Dates))) {
 	if (   defined( $Ob->{SLP} )
 	    && defined( $Obs{$Date}{'attached'} ))
 	{
-	    $Ob->{SLP} += fwbptc( $Ob->{SLP}, $Obs{$Date}{'attached'} );
+	    $Ob->{SLP} += fwbptc( $Ob->{SLP}, fxtftc($Obs{$Date}{'attached'}) );
 	}
 	else { $Ob->{SLP} = undef; }
 	# Gravity correction
@@ -289,10 +289,10 @@ foreach my $Date (sort(keys(%Dates))) {
         $Ob->{AT} = fxtftc( $Obs{$Date}{'dry'} );
     }
     if ( defined( $Obs{$Date}{'wet'} )) {
-        $Ob->{WBT} = fxtftc( $Obs{$Date}{'dry'} );
+        $Ob->{WBT} = fxtftc( $Obs{$Date}{'wet'} );
     }
     if ( defined( $Obs{$Date}{'sea'} )) {
-        $Ob->{SST} = fxtftc( $Obs{$Date}{'dry'} );
+        $Ob->{SST} = fxtftc( $Obs{$Date}{'sea'} );
     }
 
     # Wind direction and force
@@ -336,12 +336,15 @@ foreach my $Date (sort(keys(%Dates))) {
     }
 
      #Add the remarks as a supplemental attachment
+     push @{ $Ob->{attachments} }, 99;
+     $Ob->{ATTE} = undef;
+     $Ob->{SUPD} = $Remarks{$Date};
      if(defined($Remarks{$Date})) {
-        push @{ $Ob->{attachments} }, 99;
-        $Ob->{ATTE} = undef;
         $Ob->{SUPD} = $Remarks{$Date};
      }
-        
+    else {
+	$Ob->{SUPD} = ' ';
+    }   
 
     #print "$Date ";
     $Ob->write( \*STDOUT );
