@@ -18,6 +18,24 @@ my $Last_lat=-3;
 my $Lat_flag = 'N';
 my $Lon_flag = 'W';
 
+# Load the external position data
+open(DIN,"../as_digitised/Endurance_positions.txt") or die;
+my %Lat_e;
+my %Lon_e;
+while(<DIN>) {
+    unless($_ =~ /^19/) { next; }
+    my @Fields = split /\t/, $_;
+    my $Lat = $Fields[3];
+    $Lat =~ /(\d\d)\.(\d\d)\./ or die "Bad lat $Lat";
+    $Lat = ($1+$2/60)*-1;
+    my $Lon = $Fields[4];
+    $Lon =~ /(\d\d)\.(\d\d)\./ or die "Bad lon $Lon";
+    $Lon = ($1+$2/60)*-1;
+    $Lat_e{sprintf "%04d-%02d-%02d",$Fields[0],$Fields[1],$Fields[2]}=$Lat;
+    $Lon_e{sprintf "%04d-%02d-%02d",$Fields[0],$Fields[1],$Fields[2]}=$Lon;
+}
+close(DIN);
+
 for ( my $i = 0 ; $i < 5 ; $i++ ) { <>; }    # Skip headers
 
 while (<>) {
@@ -84,6 +102,11 @@ while (<>) {
         if ( defined( $Ob->{LAT} ) || defined( $Ob->{LON} ) ) {
             $Ob->{LI} = 4;    # Deg+Min position precision
         }
+    }
+    if($Fields[3]==1200) {
+        my $dte=sprintf "%04d-%02d-%02d",$Year,$Month,$Day;
+	if(defined($Lat_e{$dte})) { $Ob->{LAT} = $Lat_e{$dte}; }
+	if(defined($Lon_e{$dte})) { $Ob->{LON} = $Lon_e{$dte}; }
     }
     if ( defined( $Ob->{LON} ) ) { $Last_lon = $Ob->{LON}; }
     if ( defined( $Ob->{LAT} ) ) { $Last_lat = $Ob->{LAT}; }
