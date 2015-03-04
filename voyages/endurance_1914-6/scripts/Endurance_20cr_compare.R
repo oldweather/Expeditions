@@ -6,6 +6,43 @@ library(parallel)
 
 # Get the observations for this ship
 o<-IMMA.read('../../../imma/Endurance_1914-16.imma')
+o$chron<-chron(dates=sprintf("%04d/%02d/%02d",o$YR,o$MO,o$DY),
+             times=sprintf("%02d:00:00",as.integer(o$HR)),
+             format=c(dates = "y/m/d", times = "h:m:s"))
+
+# Fill in gaps in the obs series - just to make the reanalysis series continuous
+o.add<-o[1,]
+for(i in seq(1,length(o.add))) is.na(o.add[[i]])<-T
+c.date<-o[2,]$chron+1
+while(c.date<o[length(o$YR)-1,]$chron-1) {
+   year<-as.integer(as.character(years(c.date)))
+   month<-as.integer(months(c.date))
+   day<-as.integer(days(c.date))
+   for(hour in c(0,6,12,18)) {
+      w<-which(o$YR==year & o$MO==month & o$DY==day & abs(o$HR-hour)<3)
+      if(length(w)>0) next
+      insert<-o.add
+      insert$YR<-year
+      insert$MO<-month
+      insert$DY<-day
+      insert$HR<-hour
+      insert$chron<-chron(dates=sprintf("%04d/%02d/%02d",year,month,day),
+                          times=sprintf("%02d:00:00",hour),
+                          format=c(dates = "y/m/d", times = "h:m:s"))
+      before<-max(which(o$chron<insert$chron))
+      after<-min(which(o$chron>insert$chron))
+      weight<-(as.numeric(insert$chron)-as.numeric(o[before,]$chron))/
+              (as.numeric(o[after,]$chron)-as.numeric(o[before,]$chron))
+      insert$LAT<-o[after,]$LAT*weight+o[before,]$LAT*(1-weight)
+      insert$LON<-o[after,]$LON*weight+o[before,]$LON*(1-weight)
+      w<-which(o$chron<insert$chron)
+      o<-rbind(o[w,],insert,o[-w,])
+   }
+   c.date<-c.date+1
+}
+
+
+
 version<-'3.5.1'
 
 # Will probably run this more than once, cache the field accesses.
@@ -64,11 +101,11 @@ icec.mean<-r[seq(7,length(r),7)]
 
 # Output the result
 fileConn<-file(sprintf("Endurance.comparisons"))
-writeLines(sprintf("%d %d %d %d %f %f %f %f %f %f %f %f %f %f",
+writeLines(sprintf("%d %d %d %d %f %f %f %f %f %f %f %f %f %f %f %f",
                    o$YR,o$MO,o$DY,as.integer(o$HR),
                    o$SLP,prmsl.mean/100,prmsl.spread/100,
                    o$AT,t2m.mean-273.15,t2m.spread,
                    o$SST,sst.mean-273.15,sst.spread,
-                   icec.mean),
+                   icec.mean,o$LAT,o$LON),
                    fileConn)
 close(fileConn)

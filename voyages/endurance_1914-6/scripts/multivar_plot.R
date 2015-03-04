@@ -24,7 +24,7 @@ pdf(file="Endurance_comparison.pdf",
 pushViewport(viewport(width=1.0,height=0.34,x=0.0,y=0.0,
                       just=c("left","bottom"),name="Page",clip='off'))
    pushViewport(plotViewport(margins=c(4,6,0,0)))
-      pushViewport(dataViewport(dates,c(970,1040)))
+      pushViewport(dataViewport(dates,c(960,1040)))
       
       # Mark the major ports
          gp=gpar(col=rgb(0.98,0.98,0.98,1),fill=rgb(0.98,0.98,0.98,1))
@@ -89,7 +89,7 @@ popViewport()
 pushViewport(viewport(width=1.0,height=0.28,x=0.0,y=0.34,
                       just=c("left","bottom"),name="Page",clip='off'))
    pushViewport(plotViewport(margins=c(0,6,0,0)))
-      pushViewport(dataViewport(dates,c(-20,30)))
+      pushViewport(dataViewport(dates,c(-30,30)))
 
          grid.yaxis(main=T)
          grid.text('Air temperature (C)',x=unit(-4,'lines'),rot=90)

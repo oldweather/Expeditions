@@ -49,7 +49,6 @@ Options<-WeatherMap.set.option(Options,'lon.max',150)
 Options<-WeatherMap.set.option(Options,'pole.lon',180)
 Options<-WeatherMap.set.option(Options,'pole.lat',50)
 Options<-WeatherMap.set.option(Options,'label.xp',0.49)
-Options<-WeatherMap.set.option(Options,'background.resolution','high')
 Options$ice.points<-50000
 
 set.pole<-function(Date,Options) {
@@ -95,7 +94,7 @@ plot.time<-function(c.date) {
                                  version='3.5.1')
     
     png(ifile.name,
-                 width=1080*WeatherMap.aspect(Options.local),
+                 width=1080*16/9,
                  height=1080,
                  bg=Options.local$sea.colour,
                  pointsize=24,
@@ -298,7 +297,7 @@ e.date<-chron(dates="1916/03/31",times="23:59:59",
 Dates = list()
 count=1
 while(c.date<e.date) {
-  for(hour in seq(0,23)) {
+  for(hour in c(0,6,12,18)) {
      Dates[[count]]<-c.date+hour/24
      count<-count+1
    }
