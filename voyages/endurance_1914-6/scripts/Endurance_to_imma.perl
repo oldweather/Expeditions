@@ -132,7 +132,11 @@ while (<>) {
     if(!defined($Ob->{SLP}) && defined( $Fields[13] ) && $Fields[13] =~ /\d/) {
         if($Fields[13]<100) { $Ob->{SLP} = fxeimb($Fields[13]); } # inches Hg
         else { $Ob->{SLP} = $Fields[13]; } # hPa
-        $Ob->{SLP} -= 10; # Fix - their aneroid is about 10hPa high.
+        unless($Ob->{YR}>1915 || 
+           ($Ob->{YR}==1915 && $Ob->{MO}>10) ||
+	       ($Ob->{YR}==1915 && $Ob->{MO}==10 && $Ob->{DY} >27)) {
+           $Ob->{SLP} -= 10; # Fix - their aneroid is about 10hPa high. (On-ship only, not on the ice)
+	}
     }   
 
     # Temperatures converted from Farenheit
