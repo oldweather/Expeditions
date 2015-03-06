@@ -144,7 +144,7 @@ plot.time<-function(c.date) {
                    Latitude=Aurora.imma$LAT[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
-      if(Options$label != '') {
+      if(Options.local$label != '') {
             WeatherMap.draw.label(Options.local)
       }
 
@@ -304,6 +304,6 @@ while(c.date<e.date) {
   c.date<-c.date+1
 }
 
-#plot.time(Dates[[10000]])
+#plot.time(Dates[[100]])
 
 mclapply(Dates,plot.time,mc.cores=8,mc.preschedule=FALSE)
