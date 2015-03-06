@@ -63,6 +63,7 @@ while (<>) {
     {
 	$Ob->{LAT} = ($1 + $2 / 60)*-1;
     }
+    if($Month==5 && $Day==13) { $Fields[5]='37.0'; } # Correction - can't be 47
     if ( defined( $Fields[5] )
 	&& $Fields[5] =~ /(\d+)\D+(\d+)/ )
     {
