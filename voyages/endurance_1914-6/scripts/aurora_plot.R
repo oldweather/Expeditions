@@ -5,6 +5,7 @@ library(grid)
 library(chron)
 
 o<-read.table('Aurora.comparisons')
+o2<-read.table('Aurora.comparisons.ERA20C')
 dates<-chron(dates=sprintf("%04d/%02d/%02d",o$V1,o$V2,o$V3),
              times=sprintf("%02d:00:00",o$V4),
              format=c(dates = "y/m/d", times = "h:m:s"))
@@ -24,7 +25,7 @@ pdf(file="Aurora_comparison.pdf",
 pushViewport(viewport(width=1.0,height=0.34,x=0.0,y=0.0,
                       just=c("left","bottom"),name="Page",clip='off'))
    pushViewport(plotViewport(margins=c(4,6,0,0)))
-      pushViewport(dataViewport(dates,c(960,1030)))
+      pushViewport(dataViewport(dates,c(960,1040)))
       
          grid.xaxis(at=as.numeric(tics),label=ticl,main=T)
          grid.text('Date',y=unit(-3,'lines'))
@@ -32,7 +33,7 @@ pushViewport(viewport(width=1.0,height=0.34,x=0.0,y=0.0,
          grid.text('Sea-level pressure (hPa)',x=unit(-4,'lines'),rot=90)
          
 
-         # Analysis spreads
+         # 20CR Analysis spreads
          gp=gpar(col=rgb(0.8,0.8,1,1),fill=rgb(0.8,0.8,1,1))
          for(i in seq_along(o$V1)) {
             x<-c(dates[i]-0.125,dates[i]+0.125,
@@ -45,6 +46,11 @@ pushViewport(viewport(width=1.0,height=0.34,x=0.0,y=0.0,
                          y=unit(y,'native'),
                       gp=gp)
           }
+         # ERA20C best-estimate
+         gp=gpar(col=rgb(1,0.4,0.4,1),fill=rgb(1,0.4,0.4,1))
+         grid.lines(x=unit(dates,'native'),
+                    y=unit(o2$V6,'native'),
+                      gp=gp)
             
         # Observation
          gp=gpar(col=rgb(0,0,0,1),fill=rgb(0,0,0,1))
@@ -61,13 +67,13 @@ popViewport()
 pushViewport(viewport(width=1.0,height=0.28,x=0.0,y=0.34,
                       just=c("left","bottom"),name="Page",clip='off'))
    pushViewport(plotViewport(margins=c(0,6,0,0)))
-      pushViewport(dataViewport(dates,c(-40,20)))
+      pushViewport(dataViewport(dates,c(-30,30)))
 
          grid.yaxis(main=T)
          grid.text('Air temperature (C)',x=unit(-4,'lines'),rot=90)
          
 
-         # Analysis spreads
+         # 20CR Analysis spreads
          gp=gpar(col=rgb(0.8,0.8,1,1),fill=rgb(0.8,0.8,1,1))
          for(i in seq_along(o$V1)) {
             x<-c(dates[i]-0.125,dates[i]+0.125,
@@ -80,6 +86,11 @@ pushViewport(viewport(width=1.0,height=0.28,x=0.0,y=0.34,
                          y=unit(y,'native'),
                       gp=gp)
           }
+         # ERA20C best-estimate
+         gp=gpar(col=rgb(1,0.4,0.4,1),fill=rgb(1,0.4,0.4,1))
+         grid.lines(x=unit(dates,'native'),
+                    y=unit(o2$V9,'native'),
+                      gp=gp)
             
         # Observation
          gp=gpar(col=rgb(0,0,0,1),fill=rgb(0,0,0,1))
@@ -96,13 +107,13 @@ popViewport()
 pushViewport(viewport(width=1.0,height=0.28,x=0.0,y=0.34+0.28,
                       just=c("left","bottom"),name="Page",clip='off'))
    pushViewport(plotViewport(margins=c(0,6,0,0)))
-      pushViewport(dataViewport(dates,c(-5,25)))
+      pushViewport(dataViewport(dates,c(-3,35)))
 
          grid.yaxis(main=T)
          grid.text('SST (C)',x=unit(-4,'lines'),rot=90)
          
 
-         # Analysis spreads
+         # 20CR Analysis spreads
          gp=gpar(col=rgb(0.8,0.8,1,1),fill=rgb(0.8,0.8,1,1))
          for(i in seq_along(o$V1)) {
             x<-c(dates[i]-0.125,dates[i]+0.125,
@@ -115,6 +126,11 @@ pushViewport(viewport(width=1.0,height=0.28,x=0.0,y=0.34+0.28,
                          y=unit(y,'native'),
                       gp=gp)
           }
+         # ERA20C best-estimate
+         gp=gpar(col=rgb(1,0.4,0.4,1),fill=rgb(1,0.4,0.4,1))
+         grid.lines(x=unit(dates,'native'),
+                    y=unit(o2$V12,'native'),
+                      gp=gp)
             
         # Observation
          gp=gpar(col=rgb(0,0,0,1),fill=rgb(0,0,0,1))
@@ -136,7 +152,17 @@ pushViewport(viewport(width=1.0,height=0.1,x=0.0,y=0.34+0.28+0.28,
          grid.yaxis(main=T)
          grid.text('Ice fraction',x=unit(-4,'lines'),rot=90)
          
-         # Analysis value
+         # ERA20C value
+         gp=gpar(col=rgb(1,0.4,0.4,1),fill=rgb(1,0.4,0.4,1))
+         for(i in seq_along(o$V1)) {
+            x<-c(dates[i]-0.125,dates[i]+0.125,
+                 dates[i]+0.125,dates[i]-0.125)
+            y<-c(0,0,o2$V14[i],o2$V14[i])
+            grid.polygon(x=unit(x,'native'),
+                         y=unit(y,'native'),
+                      gp=gp)
+          }
+         # 20CR Analysis value
          gp=gpar(col=rgb(0.4,0.4,1,1),fill=rgb(0.4,0.4,1,1))
          for(i in seq_along(o$V1)) {
             x<-c(dates[i]-0.125,dates[i]+0.125,
@@ -146,6 +172,11 @@ pushViewport(viewport(width=1.0,height=0.1,x=0.0,y=0.34+0.28+0.28,
                          y=unit(y,'native'),
                       gp=gp)
           }
+         # ERA20C overdraw 
+         gp=gpar(col=rgb(1,0.4,0.4,1),fill=rgb(1,0.4,0.4,1))
+         grid.lines(x=unit(dates,'native'),
+                    y=unit(o2$V14,'native'),
+                      gp=gp)
             
       popViewport()
    popViewport()

@@ -8,20 +8,29 @@ library(parallel)
 library(IMMA)
 
 Endurance<-read.table('Endurance.comparisons')
-Endurance.imma<-IMMA.read('../../../imma/Endurance_1914-16.imma')
 Endurance$Dates<-chron(dates=sprintf("%04d/%02d/%02d",Endurance$V1,
                           Endurance$V2,Endurance$V3),
                     times=sprintf("%02d:00:00",Endurance$V4),
                        format=c(dates='y/m/d',times='h:m:s'))
 
 Aurora<-read.table('Aurora.comparisons')
-Aurora.imma<-IMMA.read('../../../imma/Aurora_1914-16.imma')
 Aurora$Dates<-chron(dates=sprintf("%04d/%02d/%02d",Aurora$V1,
                           Aurora$V2,Aurora$V3),
                     times=sprintf("%02d:00:00",Aurora$V4),
                        format=c(dates='y/m/d',times='h:m:s'))
 
-lDates<-c(Endurance$Dates,Aurora$Dates)
+James_Caird<-read.table('James_Caird.comparisons')
+James_Caird$Dates<-chron(dates=sprintf("%04d/%02d/%02d",James_Caird$V1,
+                          James_Caird$V2,James_Caird$V3),
+                    times=sprintf("%02d:00:00",James_Caird$V4),
+                       format=c(dates='y/m/d',times='h:m:s'))
+
+EmmaYelcho<-read.table('Emma+Yelcho.comparisons')
+EmmaYelcho$Dates<-chron(dates=sprintf("%04d/%02d/%02d",EmmaYelcho$V1,
+                          EmmaYelcho$V2,EmmaYelcho$V3),
+                    times=sprintf("%02d:00:00",EmmaYelcho$V4),
+                       format=c(dates='y/m/d',times='h:m:s'))
+lDates<-c(Endurance$Dates,Aurora$Dates,James_Caird$Dates,EmmaYelcho$Dates)
 tics=pretty(lDates)
 ticl=attr(tics,'labels')
 
@@ -75,6 +84,48 @@ set.pole<-function(Date,Options) {
   return(Options)
 }
   
+# Plot a field of surface temperature
+plot.surface.temperature<-function(t,Options) {
+
+  t<-GSDF.WeatherMap:::WeatherMap.rotate.pole(t,Options)
+  n.colours<-70
+  st.palette=diverge_hcl(n.colours, c = 50,
+                    l = 50, power = 1) # Interpolated blue red
+  plot.colours<-rep(st.palette[[1]],length(t$data))
+  # temperature should be on the range -2:40
+  t$data[]<-t$data-273.15 
+  t$data[]<-pmax(-1,pmin(39,t$data))
+  t$data[]<-(t$data+2)/42 # scale to 0:1
+  lats<-rev(seq(Options$lat.min,Options$lat.max,0.5)) # 0.5 degree resolution
+  longs<-seq(Options$lon.min,Options$lon.max,0.5)
+  full.lats<-matrix(data=rep(lats,length(longs)),ncol=length(longs),byrow=F)
+  full.longs<-matrix(data=rep(longs,length(lats)),ncol=length(longs),byrow=T)
+  plot.colours<-GSDF.interpolate.ll(t,as.vector(full.lats),as.vector(full.longs),
+                                    greedy=Options$greedy)
+  plot.colours<-st.palette[as.integer(plot.colours*n.colours)+1]
+  dl<-longs[2]-longs[1]
+    grid.raster(matrix(plot.colours, ncol=length(longs), byrow=F),
+                x=unit((Options$lon.min+Options$lon.max)/2,'native'),
+                y=unit((Options$lat.min+Options$lat.max)/2,'native'),
+                width=unit(Options$lon.max-Options$lon.min,'native'),
+                height=unit(Options$lat.max-Options$lat.min,'native'))
+}
+
+Draw.temperature<-function(temperature,Options,Trange=3) {
+
+  Options.local<-Options
+  Options.local$fog.min.transparency<-0.5
+  tplus<-temperature
+  tplus$data[]<-pmax(0,pmin(Trange,tplus$data))/Trange
+  Options.local$fog.colour<-c(1,0,0)
+  WeatherMap.draw.fog(tplus,Options.local)
+  tminus<-temperature
+  tminus$data[]<-tminus$data*-1
+  tminus$data[]<-pmax(0,pmin(Trange,tminus$data))/Trange
+  Options.local$fog.colour<-c(0,0,1)
+  WeatherMap.draw.fog(tminus,Options.local)
+}
+
 # Make the selected plot
 
 plot.time<-function(c.date) {
@@ -92,6 +143,11 @@ plot.time<-function(c.date) {
     Options.local<-set.pole(c.date,Options)
     icec<-TWCR.get.slice.at.hour('icec',year,month,day,hour,
                                  version='3.5.1')
+    #sst<-TWCR.get.slice.at.hour('sst',year,month,day,hour,
+    #                             version='3.5.1')
+    #sst.normal<-TWCR.get.slice.at.hour('sst',year,month,day,hour,version='3.4.1',
+    #                                         type='normal')
+    #sst$data[]<-sst$data-sst.normal$data
     
     png(ifile.name,
                  width=1080*16/9,
@@ -106,6 +162,8 @@ plot.time<-function(c.date) {
                                 c(Options$lat.min,Options$lat.max),
                                 extension=0,gp=base.gp))
 
+      #Draw.temperature(sst,Options.local)     
+
       ip<-WeatherMap.rectpoints(Options.local$ice.points,Options.local)
       WeatherMap.draw.ice(ip$lat,ip$lon,icec,Options.local)
       WeatherMap.draw.land(NULL,Options.local)
@@ -114,8 +172,8 @@ plot.time<-function(c.date) {
       if(length(w)>0) {
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
                                    rgb(200,200,200,55,maxColorValue=255))
-          ot<-list(Longitude=Endurance.imma$LON[w],
-                   Latitude=Endurance.imma$LAT[w])
+          ot<-list(Longitude=Endurance$V16[w],
+                   Latitude=Endurance$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
       w<-which(abs(Endurance$Dates-c.date)<1)
@@ -123,16 +181,33 @@ plot.time<-function(c.date) {
           w<-max(w)
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
                                    rgb(255,0,0,255,maxColorValue=255))
-          ot<-list(Longitude=Endurance.imma$LON[w],
-                   Latitude=Endurance.imma$LAT[w])
+          ot<-list(Longitude=Endurance$V16[w],
+                   Latitude=Endurance$V15[w])
+          WeatherMap.draw.obs(ot,Options.local)
+     }
+      w<-which(James_Caird$Dates<c.date)  
+      if(length(w)>0) {
+          Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
+                                   rgb(200,200,200,55,maxColorValue=255))
+          ot<-list(Longitude=James_Caird$V16[w],
+                   Latitude=James_Caird$V15[w])
+          WeatherMap.draw.obs(ot,Options.local)
+     }
+      w<-which(abs(James_Caird$Dates-c.date)<1)
+      if(length(w)>0) {
+          w<-max(w)
+          Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
+                                   rgb(255,0,0,255,maxColorValue=255))
+          ot<-list(Longitude=James_Caird$V16[w],
+                   Latitude=James_Caird$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
       w<-which(Aurora$Dates<c.date)  
       if(length(w)>0) {
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
                                    rgb(200,200,200,55,maxColorValue=255))
-          ot<-list(Longitude=Aurora.imma$LON[w],
-                   Latitude=Aurora.imma$LAT[w])
+          ot<-list(Longitude=Aurora$V16[w],
+                   Latitude=Aurora$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
       w<-which(abs(Aurora$Dates-c.date)<1)
@@ -140,8 +215,28 @@ plot.time<-function(c.date) {
           w<-max(w)
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
                                    rgb(0,0,255,255,maxColorValue=255))
-          ot<-list(Longitude=Aurora.imma$LON[w],
-                   Latitude=Aurora.imma$LAT[w])
+          ot<-list(Longitude=Aurora$V16[w],
+                   Latitude=Aurora$V15[w])
+          WeatherMap.draw.obs(ot,Options.local)
+     }
+      if(Options.local$label != '') {
+            WeatherMap.draw.label(Options.local)
+      }
+      w<-which(EmmaYelcho$Dates<c.date)  
+      if(length(w)>0) {
+          Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
+                                   rgb(200,200,200,55,maxColorValue=255))
+          ot<-list(Longitude=EmmaYelcho$V16[w],
+                   Latitude=EmmaYelcho$V15[w])
+          WeatherMap.draw.obs(ot,Options.local)
+     }
+      w<-which(abs(EmmaYelcho$Dates-c.date)<1)
+      if(length(w)>0) {
+          w<-max(w)
+          Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
+                                   rgb(0,0,0,255,maxColorValue=255))
+          ot<-list(Longitude=EmmaYelcho$V16[w],
+                   Latitude=EmmaYelcho$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
       if(Options.local$label != '') {
@@ -186,6 +281,50 @@ plot.time<-function(c.date) {
 			 pch=20,
 			 gp=gp)
          }
+        # Add the James Caird
+        w2<-which(James_Caird$Dates<=c.date)  
+         gp=gpar(col=rgb(0.7,0.7,0.7,1),fill=rgb(0.7,0.7,0.7,1))
+         if(length(w2)>0) {
+	     for(i in seq_along(James_Caird$V1[w2])) {
+		x<-c(James_Caird$Dates[i]-0.125,James_Caird$Dates[i]+0.125,
+		     James_Caird$Dates[i]+0.125,James_Caird$Dates[i]-0.125)
+		y<-c(James_Caird$V6[i]-(James_Caird$V7[i])*2,
+		     James_Caird$V6[i]-(James_Caird$V7[i])*2,
+		     James_Caird$V6[i]+(James_Caird$V7[i])*2,
+		     James_Caird$V6[i]+(James_Caird$V7[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp)
+	      }
+	     gp=gpar(col=rgb(1,0,0,1),fill=rgb(1,0,0,1))
+	     grid.points(x=unit(James_Caird$Dates[w2],'native'),
+			 y=unit(James_Caird$V5[w2],'native'),
+			 size=unit(0.005,'npc'),
+			 pch=20,
+			 gp=gp)
+         }
+        # Add the Emma and Yelcho
+        w3<-which(EmmaYelcho$Dates<=c.date)  
+         gp=gpar(col=rgb(0.7,0.7,0.7,1),fill=rgb(0.7,0.7,0.7,1))
+         if(length(w3)>0) {
+	     for(i in seq_along(EmmaYelcho$V1[w3])) {
+		x<-c(EmmaYelcho$Dates[i]-0.125,EmmaYelcho$Dates[i]+0.125,
+		     EmmaYelcho$Dates[i]+0.125,EmmaYelcho$Dates[i]-0.125)
+		y<-c(EmmaYelcho$V6[i]-(EmmaYelcho$V7[i])*2,
+		     EmmaYelcho$V6[i]-(EmmaYelcho$V7[i])*2,
+		     EmmaYelcho$V6[i]+(EmmaYelcho$V7[i])*2,
+		     EmmaYelcho$V6[i]+(EmmaYelcho$V7[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp)
+	      }
+	     gp=gpar(col=rgb(0,0,0,1),fill=rgb(0,0,0,1))
+	     grid.points(x=unit(EmmaYelcho$Dates[w3],'native'),
+			 y=unit(EmmaYelcho$V5[w3],'native'),
+			 size=unit(0.005,'npc'),
+			 pch=20,
+			 gp=gp)
+         }
           popViewport()
        popViewport()
     popViewport()
@@ -216,6 +355,51 @@ plot.time<-function(c.date) {
 			 pch=20,
 			 gp=gp)
          }
+        # Add the James Caird
+        w2<-which(James_Caird$Dates<=c.date)  
+         gp=gpar(col=rgb(0.7,0.7,0.7,1),fill=rgb(0.7,0.7,0.7,1))
+         if(length(w2)>0) {
+	     for(i in seq_along(James_Caird$V1[w2])) {
+		x<-c(James_Caird$Dates[i]-0.125,James_Caird$Dates[i]+0.125,
+		     James_Caird$Dates[i]+0.125,James_Caird$Dates[i]-0.125)
+		y<-c(James_Caird$V9[i]-(James_Caird$V10[i])*2,
+		     James_Caird$V9[i]-(James_Caird$V10[i])*2,
+		     James_Caird$V9[i]+(James_Caird$V10[i])*2,
+		     James_Caird$V9[i]+(James_Caird$V10[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp)
+	      }
+	     gp=gpar(col=rgb(1,0,0,1),fill=rgb(1,0,0,1))
+	     grid.points(x=unit(James_Caird$Dates[w2],'native'),
+			 y=unit(James_Caird$V8[w2],'native'),
+			 size=unit(0.005,'npc'),
+			 pch=20,
+			 gp=gp)
+         }
+        # Add the Emma and Yelcho
+        w3<-which(EmmaYelcho$Dates<=c.date)  
+         gp=gpar(col=rgb(0.7,0.7,0.7,1),fill=rgb(0.7,0.7,0.7,1))
+         if(length(w3)>0) {
+	     for(i in seq_along(EmmaYelcho$V1[w3])) {
+		x<-c(EmmaYelcho$Dates[i]-0.125,EmmaYelcho$Dates[i]+0.125,
+		     EmmaYelcho$Dates[i]+0.125,EmmaYelcho$Dates[i]-0.125)
+		y<-c(EmmaYelcho$V9[i]-(EmmaYelcho$V10[i])*2,
+		     EmmaYelcho$V9[i]-(EmmaYelcho$V10[i])*2,
+		     EmmaYelcho$V9[i]+(EmmaYelcho$V10[i])*2,
+		     EmmaYelcho$V9[i]+(EmmaYelcho$V10[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp)
+	      }
+	     gp=gpar(col=rgb(0,0,0,1),fill=rgb(0,0,0,1))
+	     grid.points(x=unit(EmmaYelcho$Dates[w3],'native'),
+			 y=unit(EmmaYelcho$V8[w3],'native'),
+			 size=unit(0.005,'npc'),
+			 pch=20,
+			 gp=gp)
+         }
+
           popViewport()
        popViewport()
     popViewport()
@@ -291,7 +475,7 @@ Dates = list()
 count=1
 c.date<-chron(dates="1914/08/08",times="00:00:00",
           format=c(dates='y/m/d',times='h:m:s'))
-e.date<-chron(dates="1916/03/31",times="23:59:59",
+e.date<-chron(dates="1916/09/01",times="23:59:59",
           format=c(dates='y/m/d',times='h:m:s'))
 
 Dates = list()
