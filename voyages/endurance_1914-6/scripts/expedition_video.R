@@ -8,6 +8,7 @@ library(parallel)
 library(IMMA)
 
 Endurance<-read.table('Endurance.comparisons')
+Endurance.4<-read.table('Endurance.comparisons.354')
 Endurance$Dates<-chron(dates=sprintf("%04d/%02d/%02d",Endurance$V1,
                           Endurance$V2,Endurance$V3),
                     times=sprintf("%02d:00:00",Endurance$V4),
@@ -168,7 +169,7 @@ plot.time<-function(c.date) {
       WeatherMap.draw.ice(ip$lat,ip$lon,icec,Options.local)
       WeatherMap.draw.land(NULL,Options.local)
 
-      obs<-TWCR.get.obs(year,month,day,hour,version='3.5.1')
+      obs<-TWCR.get.obs(year,month,day,hour,version='3.5.4')
       w<-which(obs$Longitude>180)
       obs$Longitude[w]<-obs$Longitude[w]-360
       Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
@@ -270,6 +271,7 @@ plot.time<-function(c.date) {
          grid.yaxis(main=T)
          grid.text('Pressure (hPa)',x=unit(-4,'lines'),rot=90)
          gp=gpar(col=rgb(0.7,0.7,0.7,1),fill=rgb(0.7,0.7,0.7,1))
+         gp2=gpar(col=rgb(0.3,0.3,0.3,1),fill=rgb(0.3,0.3,0.3,1))
          if(length(w)>0) {
 	     for(i in seq_along(Endurance$V1[w])) {
 		x<-c(Endurance$Dates[i]-0.125,Endurance$Dates[i]+0.125,
@@ -281,6 +283,17 @@ plot.time<-function(c.date) {
 		grid.polygon(x=unit(x,'native'),
 			     y=unit(y,'native'),
 			  gp=gp)
+	      }
+	     for(i in seq_along(Endurance.4$V1[w])) {
+		x<-c(Endurance$Dates[i]-0.125,Endurance$Dates[i]+0.125,
+		     Endurance$Dates[i]+0.125,Endurance$Dates[i]-0.125)
+		y<-c(Endurance.4$V6[i]-(Endurance.4$V7[i])*2,
+		     Endurance.4$V6[i]-(Endurance.4$V7[i])*2,
+		     Endurance.4$V6[i]+(Endurance.4$V7[i])*2,
+		     Endurance.4$V6[i]+(Endurance.4$V7[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
 	      }
 	     gp=gpar(col=rgb(1,0,0,1),fill=rgb(1,0,0,1))
 	     grid.points(x=unit(Endurance$Dates[w],'native'),
@@ -344,6 +357,7 @@ plot.time<-function(c.date) {
          grid.yaxis(main=T)
          grid.text('Air temperature (C)',x=unit(-4,'lines'),rot=90)
          gp=gpar(col=rgb(0.7,0.7,0.7,1),fill=rgb(0.7,0.7,0.7,1))
+         gp2=gpar(col=rgb(0.3,0.3,0.3,1),fill=rgb(0.3,0.3,0.3,1))
          if(length(w)>0) {
 	     for(i in seq_along(Endurance$V1[w])) {
 		x<-c(Endurance$Dates[i]-0.125,Endurance$Dates[i]+0.125,
@@ -355,6 +369,17 @@ plot.time<-function(c.date) {
 		grid.polygon(x=unit(x,'native'),
 			     y=unit(y,'native'),
 			  gp=gp)
+	      }
+	     for(i in seq_along(Endurance.4$V1[w])) {
+		x<-c(Endurance$Dates[i]-0.125,Endurance$Dates[i]+0.125,
+		     Endurance$Dates[i]+0.125,Endurance$Dates[i]-0.125)
+		y<-c(Endurance.4$V9[i]-(Endurance.4$V10[i])*2,
+		     Endurance.4$V9[i]-(Endurance.4$V10[i])*2,
+		     Endurance.4$V9[i]+(Endurance.4$V10[i])*2,
+		     Endurance.4$V9[i]+(Endurance.4$V10[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
 	      }
 	     gp=gpar(col=rgb(1,0,0,1),fill=rgb(1,0,0,1))
 	     grid.points(x=unit(Endurance$Dates[w],'native'),
@@ -496,6 +521,6 @@ while(c.date<e.date) {
   c.date<-c.date+1
 }
 
-#plot.time(Dates[[100]])
+#plot.time(Dates[[500]])
 
 mclapply(Dates,plot.time,mc.cores=8,mc.preschedule=FALSE)
