@@ -168,6 +168,14 @@ plot.time<-function(c.date) {
       WeatherMap.draw.ice(ip$lat,ip$lon,icec,Options.local)
       WeatherMap.draw.land(NULL,Options.local)
 
+      obs<-TWCR.get.obs(year,month,day,hour,version='3.5.1')
+      w<-which(obs$Longitude>180)
+      obs$Longitude[w]<-obs$Longitude[w]-360
+      Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
+                                rgb(255,215,0,255,maxColorValue=255))
+      Options.local<-WeatherMap.set.option(Options.local,'obs.size',0.5)
+      WeatherMap.draw.obs(obs,Options.local)
+      Options.local<-WeatherMap.set.option(Options.local,'obs.size',1.5)
       w<-which(Endurance$Dates<c.date)  
       if(length(w)>0) {
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
