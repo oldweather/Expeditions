@@ -15,18 +15,21 @@ Endurance$Dates<-chron(dates=sprintf("%04d/%02d/%02d",Endurance$V1,
                        format=c(dates='y/m/d',times='h:m:s'))
 
 Aurora<-read.table('Aurora.comparisons')
+Aurora.4<-read.table('Aurora.comparisons.354')
 Aurora$Dates<-chron(dates=sprintf("%04d/%02d/%02d",Aurora$V1,
                           Aurora$V2,Aurora$V3),
                     times=sprintf("%02d:00:00",Aurora$V4),
                        format=c(dates='y/m/d',times='h:m:s'))
 
 James_Caird<-read.table('James_Caird.comparisons')
+James_Caird.4<-read.table('James_Caird.comparisons.354')
 James_Caird$Dates<-chron(dates=sprintf("%04d/%02d/%02d",James_Caird$V1,
                           James_Caird$V2,James_Caird$V3),
                     times=sprintf("%02d:00:00",James_Caird$V4),
                        format=c(dates='y/m/d',times='h:m:s'))
 
 EmmaYelcho<-read.table('Emma+Yelcho.comparisons')
+EmmaYelcho.4<-read.table('Emma+Yelcho.comparisons.354')
 EmmaYelcho$Dates<-chron(dates=sprintf("%04d/%02d/%02d",EmmaYelcho$V1,
                           EmmaYelcho$V2,EmmaYelcho$V3),
                     times=sprintf("%02d:00:00",EmmaYelcho$V4),
@@ -177,10 +180,10 @@ plot.time<-function(c.date) {
       Options.local<-WeatherMap.set.option(Options.local,'obs.size',0.5)
       WeatherMap.draw.obs(obs,Options.local)
       Options.local<-WeatherMap.set.option(Options.local,'obs.size',1.5)
-      w<-which(Endurance$Dates<c.date)  
+      w<-which(Endurance$Dates<(c.date+1))  
       if(length(w)>0) {
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
-                                   rgb(200,200,200,55,maxColorValue=255))
+                                   rgb(200,200,200,255,maxColorValue=255))
           ot<-list(Longitude=Endurance$V16[w],
                    Latitude=Endurance$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
@@ -194,10 +197,10 @@ plot.time<-function(c.date) {
                    Latitude=Endurance$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
-      w<-which(James_Caird$Dates<c.date)  
+      w<-which(James_Caird$Dates<(c.date+1))  
       if(length(w)>0) {
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
-                                   rgb(200,200,200,55,maxColorValue=255))
+                                   rgb(200,200,200,255,maxColorValue=255))
           ot<-list(Longitude=James_Caird$V16[w],
                    Latitude=James_Caird$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
@@ -211,10 +214,10 @@ plot.time<-function(c.date) {
                    Latitude=James_Caird$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
-      w<-which(Aurora$Dates<c.date)  
+      w<-which(Aurora$Dates<(c.date+1))  
       if(length(w)>0) {
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
-                                   rgb(200,200,200,55,maxColorValue=255))
+                                   rgb(200,200,200,255,maxColorValue=255))
           ot<-list(Longitude=Aurora$V16[w],
                    Latitude=Aurora$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
@@ -231,10 +234,10 @@ plot.time<-function(c.date) {
       if(Options.local$label != '') {
             WeatherMap.draw.label(Options.local)
       }
-      w<-which(EmmaYelcho$Dates<c.date)  
+      w<-which(EmmaYelcho$Dates<(c.date+1))  
       if(length(w)>0) {
           Options.local<-WeatherMap.set.option(Options.local,'obs.colour',
-                                   rgb(200,200,200,55,maxColorValue=255))
+                                   rgb(200,200,200,255,maxColorValue=255))
           ot<-list(Longitude=EmmaYelcho$V16[w],
                    Latitude=EmmaYelcho$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
@@ -305,6 +308,7 @@ plot.time<-function(c.date) {
         # Add the James Caird
         w2<-which(James_Caird$Dates<=c.date)  
          gp=gpar(col=rgb(0.7,0.7,0.7,1),fill=rgb(0.7,0.7,0.7,1))
+         gp2=gpar(col=rgb(0.3,0.3,0.3,1),fill=rgb(0.3,0.3,0.3,1))
          if(length(w2)>0) {
 	     for(i in seq_along(James_Caird$V1[w2])) {
 		x<-c(James_Caird$Dates[i]-0.125,James_Caird$Dates[i]+0.125,
@@ -316,6 +320,17 @@ plot.time<-function(c.date) {
 		grid.polygon(x=unit(x,'native'),
 			     y=unit(y,'native'),
 			  gp=gp)
+	      }
+	     for(i in seq_along(James_Caird.4$V1[w2])) {
+		x<-c(James_Caird$Dates[i]-0.125,James_Caird$Dates[i]+0.125,
+		     James_Caird$Dates[i]+0.125,James_Caird$Dates[i]-0.125)
+		y<-c(James_Caird.4$V6[i]-(James_Caird.4$V7[i])*2,
+		     James_Caird.4$V6[i]-(James_Caird.4$V7[i])*2,
+		     James_Caird.4$V6[i]+(James_Caird.4$V7[i])*2,
+		     James_Caird.4$V6[i]+(James_Caird.4$V7[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
 	      }
 	     gp=gpar(col=rgb(1,0,0,1),fill=rgb(1,0,0,1))
 	     grid.points(x=unit(James_Caird$Dates[w2],'native'),
@@ -338,6 +353,17 @@ plot.time<-function(c.date) {
 		grid.polygon(x=unit(x,'native'),
 			     y=unit(y,'native'),
 			  gp=gp)
+	      }
+	     for(i in seq_along(EmmaYelcho.4$V1[w3])) {
+		x<-c(EmmaYelcho$Dates[i]-0.125,EmmaYelcho$Dates[i]+0.125,
+		     EmmaYelcho$Dates[i]+0.125,EmmaYelcho$Dates[i]-0.125)
+		y<-c(EmmaYelcho.4$V6[i]-(EmmaYelcho.4$V7[i])*2,
+		     EmmaYelcho.4$V6[i]-(EmmaYelcho.4$V7[i])*2,
+		     EmmaYelcho.4$V6[i]+(EmmaYelcho.4$V7[i])*2,
+		     EmmaYelcho.4$V6[i]+(EmmaYelcho.4$V7[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
 	      }
 	     gp=gpar(col=rgb(0,0,0,1),fill=rgb(0,0,0,1))
 	     grid.points(x=unit(EmmaYelcho$Dates[w3],'native'),
@@ -403,6 +429,17 @@ plot.time<-function(c.date) {
 			     y=unit(y,'native'),
 			  gp=gp)
 	      }
+	     for(i in seq_along(James_Caird.4$V1[w2])) {
+		x<-c(James_Caird$Dates[i]-0.125,James_Caird$Dates[i]+0.125,
+		     James_Caird$Dates[i]+0.125,James_Caird$Dates[i]-0.125)
+		y<-c(James_Caird.4$V9[i]-(James_Caird.4$V10[i])*2,
+		     James_Caird.4$V9[i]-(James_Caird.4$V10[i])*2,
+		     James_Caird.4$V9[i]+(James_Caird.4$V10[i])*2,
+		     James_Caird.4$V9[i]+(James_Caird.4$V10[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
+	      }
 	     gp=gpar(col=rgb(1,0,0,1),fill=rgb(1,0,0,1))
 	     grid.points(x=unit(James_Caird$Dates[w2],'native'),
 			 y=unit(James_Caird$V8[w2],'native'),
@@ -424,6 +461,17 @@ plot.time<-function(c.date) {
 		grid.polygon(x=unit(x,'native'),
 			     y=unit(y,'native'),
 			  gp=gp)
+	      }
+	     for(i in seq_along(EmmaYelcho.4$V1[w3])) {
+		x<-c(EmmaYelcho$Dates[i]-0.125,EmmaYelcho$Dates[i]+0.125,
+		     EmmaYelcho$Dates[i]+0.125,EmmaYelcho$Dates[i]-0.125)
+		y<-c(EmmaYelcho.4$V9[i]-(EmmaYelcho.4$V10[i])*2,
+		     EmmaYelcho.4$V9[i]-(EmmaYelcho.4$V10[i])*2,
+		     EmmaYelcho.4$V9[i]+(EmmaYelcho.4$V10[i])*2,
+		     EmmaYelcho.4$V9[i]+(EmmaYelcho.4$V10[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
 	      }
 	     gp=gpar(col=rgb(0,0,0,1),fill=rgb(0,0,0,1))
 	     grid.points(x=unit(EmmaYelcho$Dates[w3],'native'),
@@ -457,6 +505,17 @@ plot.time<-function(c.date) {
 			     y=unit(y,'native'),
 			  gp=gp)
 	      }
+	     for(i in seq_along(Aurora.4$V1[w])) {
+		x<-c(Aurora$Dates[i]-0.125,Aurora$Dates[i]+0.125,
+		     Aurora$Dates[i]+0.125,Aurora$Dates[i]-0.125)
+		y<-c(Aurora.4$V6[i]-(Aurora.4$V7[i])*2,
+		     Aurora.4$V6[i]-(Aurora.4$V7[i])*2,
+		     Aurora.4$V6[i]+(Aurora.4$V7[i])*2,
+		     Aurora.4$V6[i]+(Aurora.4$V7[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
+	      }
 	     gp=gpar(col=rgb(0,0,1,1),fill=rgb(0,0,1,1))
 	     grid.points(x=unit(Aurora$Dates[w],'native'),
 			 y=unit(Aurora$V5[w],'native'),
@@ -486,6 +545,17 @@ plot.time<-function(c.date) {
 		grid.polygon(x=unit(x,'native'),
 			     y=unit(y,'native'),
 			  gp=gp)
+	      }
+	     for(i in seq_along(Aurora.4$V1[w])) {
+		x<-c(Aurora$Dates[i]-0.125,Aurora$Dates[i]+0.125,
+		     Aurora$Dates[i]+0.125,Aurora$Dates[i]-0.125)
+		y<-c(Aurora.4$V9[i]-(Aurora.4$V10[i])*2,
+		     Aurora.4$V9[i]-(Aurora.4$V10[i])*2,
+		     Aurora.4$V9[i]+(Aurora.4$V10[i])*2,
+		     Aurora.4$V9[i]+(Aurora.4$V10[i])*2)
+		grid.polygon(x=unit(x,'native'),
+			     y=unit(y,'native'),
+			  gp=gp2)
 	      }
 	     gp=gpar(col=rgb(0,0,1,1),fill=rgb(0,0,1,1))
 	     grid.points(x=unit(Aurora$Dates[w],'native'),
@@ -521,6 +591,6 @@ while(c.date<e.date) {
   c.date<-c.date+1
 }
 
-#plot.time(Dates[[500]])
+#plot.time(Dates[[2000]])
 
 mclapply(Dates,plot.time,mc.cores=8,mc.preschedule=FALSE)

@@ -1,0 +1,20 @@
+#PBS -q regular
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=1:31:00
+#PBS -N ITAE
+#PBS -e ITAE.$PBS_JOBID.err
+#PBS -o ITAE.$PBS_JOBID.out
+
+cd $PBS_O_WORKDIR
+qsub -W depend=afternotok:$PBS_JOBID run.video.carver.pbs
+R --no-save < expedition_video.R
+
+cd $GSCRATCH/images
+rm ITAE.mp4
+# Get rid of empty images - they make ffmpeg stop processing
+#  These usually come from disc problems in the creation step.
+find $GSCRATCH/images/ITAE -type f -empty -delete
+
+module load ffmpeg
+ffmpeg -r 24 -pattern_type glob -i ITAE/\*.png -c:v libx264 -preset slow -tune animation -profile:v high -level 4.2 -pix_fmt yuv420p -crf 22 -c:a copy ITAE.mp4
+

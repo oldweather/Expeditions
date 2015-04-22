@@ -1,12 +1,11 @@
-# Compare data from Endurance and 20CR
-#  Assimilated version - 354
+# Compare data from Aurora and 20CR
 
 library(IMMA)
 library(GSDF.TWCR)
 library(parallel)
 
 # Get the observations for this ship
-o<-IMMA.read('../../../imma/Endurance_1914-16.imma')
+o<-IMMA.read('../../../imma/Aurora_1914-16.imma')
 o$chron<-chron(dates=sprintf("%04d/%02d/%02d",o$YR,o$MO,o$DY),
              times=sprintf("%02d:00:00",as.integer(o$HR)),
              format=c(dates = "y/m/d", times = "h:m:s"))
@@ -42,8 +41,6 @@ while(c.date<o[length(o$YR)-1,]$chron-1) {
    c.date<-c.date+1
 }
 
-
-
 version<-'3.5.4'
 
 # Will probably run this more than once, cache the field accesses.
@@ -53,13 +50,12 @@ GSDF.cache.dir<-sprintf("%s/GSDF.cache",Sys.getenv('GSCRATCH'))
   
 get.comparisons<-function(i) {
   
-  if(o$YR[i]>1915 || 
-    (o$YR[i]==1915 & o$MO[i]==12 & o$DY[i]==31)) return(rep(NA,7)) # Limit of data availability
-  
   if(any(is.na(o$YR[i]),is.na(o$MO[i]),is.na(o$DY[i]),
          is.na(o$HR[i]),is.na(o$LAT[i]),is.na(o$LON[i]))) {
     return(rep(NA,7))
   }
+  if(o$YR[i]>1915 | 
+    (o$YR[i]==1915 & o$MO[i]==12 & o$DY[i]==31)) return(rep(NA,7))
   year<-o$YR[i]
   month<-o$MO[i]
   day<-o$DY[i]
@@ -104,7 +100,7 @@ sst.spread<-r[seq(6,length(r),7)]
 icec.mean<-r[seq(7,length(r),7)]
 
 # Output the result
-fileConn<-file(sprintf("Endurance.comparisons.354"))
+fileConn<-file(sprintf("Aurora.comparisons.354"))
 writeLines(sprintf("%d %d %d %d %f %f %f %f %f %f %f %f %f %f %f %f",
                    o$YR,o$MO,o$DY,as.integer(o$HR),
                    o$SLP,prmsl.mean/100,prmsl.spread/100,
