@@ -8,6 +8,8 @@ o<-read.table('James_Caird.comparisons')
 o<-rbind(o,read.table('Emma+Yelcho.comparisons'))
 o2<-read.table('James_Caird.comparisons.ERA20C')
 o2<-rbind(o2,read.table('Emma+Yelcho.comparisons.ERA20C'))
+o3<-read.table('James_Caird.comparisons.354')
+o3<-rbind(o3,read.table('Emma+Yelcho.comparisons.354'))
 dates<-chron(dates=sprintf("%04d/%02d/%02d",o$V1,o$V2,o$V3),
              times=sprintf("%02d:00:00",o$V4),
              format=c(dates = "y/m/d", times = "h:m:s"))
@@ -44,7 +46,19 @@ pushViewport(viewport(width=1.0,height=0.34,x=0.0,y=0.0,
                          y=unit(y,'native'),
                       gp=gp)
           }
-         # ERA20C best-estimate
+             gp=gpar(col=rgb(0.4,0.4,1,1),fill=rgb(0.4,0.4,1,1))
+         for(i in seq_along(o3$V1)) {
+            x<-c(dates[i]-0.125,dates[i]+0.125,
+                 dates[i]+0.125,dates[i]-0.125)
+            y<-c(o3$V6[i]-(o3$V7[i])*2,
+                 o3$V6[i]-(o3$V7[i])*2,
+                 o3$V6[i]+(o3$V7[i])*2,
+                 o3$V6[i]+(o3$V7[i])*2)
+            grid.polygon(x=unit(x,'native'),
+                         y=unit(y,'native'),
+                      gp=gp)
+          }
+     # ERA20C best-estimate
          gp=gpar(col=rgb(1,0.4,0.4,1),fill=rgb(1,0.4,0.4,1))
          grid.lines(x=unit(dates,'native'),
                     y=unit(o2$V6,'native'),
@@ -85,7 +99,19 @@ pushViewport(viewport(width=1.0,height=0.28,x=0.0,y=0.34,
                          y=unit(y,'native'),
                       gp=gp)
           }
-         # ERA20C best-estimate
+         gp=gpar(col=rgb(0.4,0.4,1,1),fill=rgb(0.4,0.4,1,1))
+         for(i in seq_along(o3$V1)) {
+            x<-c(dates[i]-0.125,dates[i]+0.125,
+                 dates[i]+0.125,dates[i]-0.125)
+            y<-c(o3$V9[i]-(o3$V10[i])*2,
+                 o3$V9[i]-(o3$V10[i])*2,
+                 o3$V9[i]+(o3$V10[i])*2,
+                 o3$V9[i]+(o3$V10[i])*2)
+            grid.polygon(x=unit(x,'native'),
+                         y=unit(y,'native'),
+                      gp=gp)
+          }
+     # ERA20C best-estimate
          gp=gpar(col=rgb(1,0.4,0.4,1),fill=rgb(1,0.4,0.4,1))
          grid.lines(x=unit(dates,'native'),
                     y=unit(o2$V9,'native'),

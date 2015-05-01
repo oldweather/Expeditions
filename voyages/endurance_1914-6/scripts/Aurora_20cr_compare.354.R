@@ -54,8 +54,8 @@ get.comparisons<-function(i) {
          is.na(o$HR[i]),is.na(o$LAT[i]),is.na(o$LON[i]))) {
     return(rep(NA,7))
   }
-  if(o$YR[i]>1915 | 
-    (o$YR[i]==1915 & o$MO[i]==12 & o$DY[i]==31)) return(rep(NA,7))
+#  if(o$YR[i]>1915 | 
+#    (o$YR[i]==1915 & o$MO[i]==12 & o$DY[i]==31)) return(rep(NA,7))
   year<-o$YR[i]
   month<-o$MO[i]
   day<-o$DY[i]

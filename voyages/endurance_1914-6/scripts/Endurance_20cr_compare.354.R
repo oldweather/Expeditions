@@ -53,8 +53,8 @@ GSDF.cache.dir<-sprintf("%s/GSDF.cache",Sys.getenv('GSCRATCH'))
   
 get.comparisons<-function(i) {
   
-  if(o$YR[i]>1915 || 
-    (o$YR[i]==1915 & o$MO[i]==12 & o$DY[i]==31)) return(rep(NA,7)) # Limit of data availability
+  #if(o$YR[i]>1915 || 
+  #  (o$YR[i]==1915 & o$MO[i]==12 & o$DY[i]==31)) return(rep(NA,7)) # Limit of data availability
   
   if(any(is.na(o$YR[i]),is.na(o$MO[i]),is.na(o$DY[i]),
          is.na(o$HR[i]),is.na(o$LAT[i]),is.na(o$LON[i]))) {
