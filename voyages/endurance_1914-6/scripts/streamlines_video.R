@@ -85,8 +85,9 @@ set.pole<-function(Date,Options) {
   if(Date>start.date & Date<fix.date) {
     Options<-WeatherMap.set.option(Options,'pole.lon',
               180-70*as.numeric(Date-start.date)/as.numeric(fix.date-start.date))
-    Options<-WeatherMap.set.option(Options,'pole.lat',
-              50+129*as.numeric(Date-start.date)/as.numeric(fix.date-start.date))    
+    lat<-50+129*as.numeric(Date-start.date)/as.numeric(fix.date-start.date)
+    #if(lat>90) lat<-lat-180
+    Options<-WeatherMap.set.option(Options,'pole.lat',lat)    
   }
   return(Options)
 }
@@ -120,6 +121,7 @@ make.streamlines<-function(year,month,day,hour,pole.lat,pole.lon,streamlines=NUL
 
     uwnd<-TWCR.get.slice.at.hour('uwnd.10m',year,month,day,hour,version=version)
     vwnd<-TWCR.get.slice.at.hour('vwnd.10m',year,month,day,hour,version=version)
+    #vwnd$data[]<-vwnd$data*0
     t.actual<-TWCR.get.slice.at.hour('air.2m',year,month,day,hour,version=version)
     t.normal<-t.actual
     t.normal$data[]<-rep(283,length(t.normal$data))
@@ -196,8 +198,6 @@ plot.time<-function(c.date,streamlines) {
                                 rgb(255,215,0,255,maxColorValue=255))
       Options.local<-WeatherMap.set.option(Options.local,'obs.size',0.5)
       WeatherMap.draw.obs(obs,Options.local)
-      WeatherMap.draw.streamlines(streamlines,Options.local)
-      WeatherMap.draw.fog(fog,Options.local)
       Options.local<-WeatherMap.set.option(Options.local,'obs.size',1.5)
       w<-which(Endurance$Dates<(c.date+1))  
       if(length(w)>0) {
@@ -270,6 +270,8 @@ plot.time<-function(c.date,streamlines) {
                    Latitude=EmmaYelcho$V15[w])
           WeatherMap.draw.obs(ot,Options.local)
      }
+      WeatherMap.draw.streamlines(streamlines,Options.local)
+      WeatherMap.draw.fog(fog,Options.local)
       if(Options.local$label != '') {
             WeatherMap.draw.label(Options.local)
       }
@@ -595,7 +597,8 @@ popViewport()
 
 Dates = list()
 count=1
-c.date<-chron(dates="1914/08/08",times="00:00:00",
+#c.date<-chron(dates="1914/08/08",times="00:00:00",
+c.date<-chron(dates="1916/01/08",times="00:00:00",
           format=c(dates='y/m/d',times='h:m:s'))
 e.date<-chron(dates="1916/09/01",times="23:59:59",
           format=c(dates='y/m/d',times='h:m:s'))
@@ -613,7 +616,7 @@ while(c.date<e.date) {
 #plot.time(Dates[[2000]])
 
 s<-NULL
-for(c.date in Dates[1:4800]) {
+for(c.date in Dates) {
 
     year<-as.numeric(as.character(years(c.date)))
     month<-months(c.date)
