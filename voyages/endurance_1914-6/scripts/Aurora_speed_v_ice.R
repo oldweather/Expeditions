@@ -9,6 +9,7 @@ o<-IMMA::ReadObs('../../../imma/Aurora_1914-16.imma')
 o$chron<-chron(dates=sprintf("%04d/%02d/%02d",o$YR,o$MO,o$DY),
              times=sprintf("%02d:00:00",as.integer(o$HR)),
              format=c(dates = "y/m/d", times = "h:m:s"))
+load('Aurora.comparisons.icec.modern.Rdata')
 
 # Fill in gaps in the obs series - just to make the reanalysis series continuous
 o.add<-o[1,]
@@ -69,7 +70,7 @@ Era<-read.table('Aurora.comparisons.ERA20C',header=FALSE)
 # Plot the speed and coverage when entering and leaving the ice
 pdf(file="Aurora_speed_v_ice.pdf",
     width=10*sqrt(2),height=10,family='Helvetica',
-    paper='special',pointsize=18)
+    paper='special',pointsize=18,bg='white')
 
 # Enter the ice
 id<-chron(dates=c("1914/12/25","1915/01/20"),
@@ -100,6 +101,12 @@ pushViewport(viewport(width=1.0,height=0.5,x=0.0,y=0.5,
          grid.yaxis(main=F)
          gp=gpar(col=rgb(0,0,1,1),fill=rgb(0,0,1,1))
          grid.text('Ice (Fraction)',x=unit(1.10,'npc'),rot=90,gp=gp)
+         gp=gpar(col=rgb(0.75,0.75,1,1),fill=rgb(0.75,0.75,1,1),lty=1,lwd=0.5)
+         for(i in seq(1,30)) {
+	     grid.lines(x=unit(o$chron[w],'native'),
+			y=unit(endurance.icec.modern[i,w],'native'),
+			 gp=gp)
+         }
          gp=gpar(col=rgb(0,0,1,1),fill=rgb(0,0,1,1),lty=1,lwd=2)
          grid.lines(x=unit(o$chron[w],'native'),
                     y=unit(Twcr$V14[w+1],'native'),
@@ -141,6 +148,12 @@ pushViewport(viewport(width=1.0,height=0.5,x=0.0,y=0.0,
          grid.yaxis(main=F)
          gp=gpar(col=rgb(0,0,1,1),fill=rgb(0,0,1,1))
          grid.text('Ice (Fraction)',x=unit(1.10,'npc'),rot=90,gp=gp)
+         gp=gpar(col=rgb(0.75,0.75,1,1),fill=rgb(0.75,0.75,1,1),lty=1,lwd=0.5)
+         for(i in seq(1,30)) {
+	     grid.lines(x=unit(o$chron[w],'native'),
+			y=unit(endurance.icec.modern[i,w],'native'),
+			 gp=gp)
+         }
          gp=gpar(col=rgb(0,0,1,1),fill=rgb(0,0,1,1),lty=1,lwd=2)
          grid.lines(x=unit(o$chron[w],'native'),
                     y=unit(Twcr$V14[w+1],'native'),
