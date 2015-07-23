@@ -1,0 +1,34 @@
+			JAMES CAIRD LOG FROM ELEPHANT ISLAND TO SOUTH GEORGIA						
+			APRIL-MAY 1916						
+									
+YEAR	MONTH	DAY	HOUR	LAT (S)	LONG (W)	WIND	FORCE		REMARKS
+1916	4	24	1230	Proceeded from Wild Camp		WNW	6		
+1916	4	24	1600			WNW	6		
+1916	4	25	600			SE/NxE	5		
+1916	4	25	1200	60.00	54.50	W	6		
+1916	4	26	1200	59.46	50.48	WSW			"Gale, squally, heavy seas"
+1916	4	27	1200	59.46	50.48	N			"Gale, misty, squally"
+1916	4	28	1200	59.52	50.16	NW/W			
+1916	4	29	1200	58.38	50.00	W/WSW			
+1916	4	30	1200	57.34	48.36	SWxS			Gale
+1916	5	1	1200	57.11	48.01	SSW			Moderate gale
+1916	5	2	1200	56.42	46.58	SWxS			
+1916	5	3	1200	56.13	45.38	S/WbyS			
+1916	5	4	1200	55.31	44.43	SE			Moderate breeze
+1916	5	5	1200	54.30	42.36	SE	5		Fresh
+1916	5	5	2000			NNE	3		
+1916	5	6	1200	54.26	40.44	NxW			Moderate gale
+1916	5	6	1300						"Hove to, sea too heavy to carry on"
+1916	5	7	1200	54.38	39.36	NNW			Difficult for obs. Noon Lat. probably correct withn a 10 mile limit
+									Lat proved to be correct within about 2M. Long. ditto but Chron. was much slower
+									than I had allowed which made us about 20 miles of distance further astern than Obs showed.
+1916	5	8	1200	54.19	37.02	NNW/WNW			
+1916	5	8	1500			NxE	6		
+1916	5	8	pm			WNW			"Increasing to a gale with rain, snow, sleet and hail"
+1916	5	9				WNW/SSW			"Gale, rain, hail, snow and sleet"
+1916	5	9	pm			SSW			With great difficulty cleared mainland and Annenakov Island by dark
+1916	5	10	700			NW			Light wind
+1916	5	10	1700						Landed at Cove S side entrance to King Haakon Bay
+1916	5	11	1200			E/SE			"Cooked old albatross, very good but a little tough"
+1916	5	12	1200			SW			Strong breeze
+1916	5	13	1200	54.10	47.00				
