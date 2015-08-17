@@ -35,7 +35,7 @@ obs.chron<-obs.chron-0.1 # Approx UTC adjustment
 
 worst<-rep(NA,30)
 for(i in seq(1,30)) worst[i]<-max(beaufort[i,])
-print(order(worst))
+print(worst[order(worst)])
 
 
 pdf(file="James_Caird_wind.pdf",

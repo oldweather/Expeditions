@@ -45,7 +45,7 @@ while(c.date<o[length(o$YR)-1,]$chron-1) {
 # Will probably run this more than once, cache the field accesses.
 GSDF.cache.dir<-sprintf("%s/GSDF.cache",Sys.getenv('GSCRATCH'))
 
-# Get means and sds for each ob.
+# Get recent wind speeds for each ob.
   
 get.comparisons<-function(i) {
   
@@ -64,6 +64,7 @@ get.comparisons<-function(i) {
      v10m<-MERRA.get.slice.at.hour('V10M',year,month,day,hour)
      v10m.mean<-GSDF.interpolate.ll(u10m,o$LAT[i],o$LON[i])
      r[year-1980]<-sqrt(u10m.mean**2+v10m.mean**2)
+  }
   return(r)
 }
 
