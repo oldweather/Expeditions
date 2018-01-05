@@ -1,0 +1,47 @@
+<!--#include virtual="/~philip/header" -->
+
+<div id="content">
+		
+<h2>The voyage of the Uranie (1817-20)</h2>
+
+<a href="http://en.wikipedia.org/wiki/Louis_de_Freycinet">Louis de Freycinet</a> was sent by the French govornment, in command of the corvette <i>Uranie</i>, on a voyage of scientific investigation and discovery. An account of the voyage was published (in English) as <a href="http://books.google.co.uk/books?hl=en&id=rLENAAAAQAAJ&dq=freycinet+uranie&printsec=frontcover&source=web&ots=xQY7vbkqKX&sig=hbOQAfDy3uorIUKuqgl9wl7tqek&sa=X&oi=book_result&resnum=2&ct=result">Narrative of a Voyage Round the World, in the Uranie and Physicienne</a>.
+<p>
+Observations made on board the <i>Uranie</i> between the departure from Mauritius in August 1819, and the wreck of the ship on the Falklands in February 1920, are given in
+<ul>
+<li><a href="http://gallica.bnf.fr/ark:/12148/bpt6k993584">Voyage autor du monde ... </a></li>
+</ul>
+These have been extracted and converted into IMMA records.
+<p>
+<ul>
+<li>Data as digitised 
+  (<a href="../as_digitised/VOYAGE_AU_TOUR_DU_MONDE_ENTREPRIS_PAR_ORD2.xls">Excel spreadsheet</a>,
+   <a href="../as_digitised/VOYAGE_AU_TOUR_DU_MONDE_ENTREPRIS_PAR_ORD2.txt">Tab delimited text</a>)
+</li>
+<li><a href="../scripts/uranie_to_imma.perl">Script to convert to IMMA format</a> (uses <a href="http://brohan.org/philip/job/imma/perl_module">this Perl module</a>).</li>
+<li>The logs contain more weather observations than position records, so positions for some obs are generated using linear interpolation by <a href="../scripts/imma_interpolate.perl">this script</a>.</li>
+<li><a href="../imma/uranie.imma">IMMA records</a>.</li>
+</ul>
+Note that the report also contained many observations made in the ports visited on the expedition. These observations have not been included in the IMMA records (as they are not marine data).
+
+<h4>Problems with the digitisation</h4>
+<ol>
+<li>It is not clear how ship's time relates to GMT (what time-zone were they keeping on board)? The observation times have been converted to GMT assuming a time zone based on the exact longitude of the observation.</li>
+<li>A particular time problem is the change in date as the ship moved round the world. At some point in a circumnavigation the time kept has to change by a day. It's clear from the digitised times that this did not happen when the ship crossed longitude 180, or probably at any time while at sea. So the time corrections (Hour += 12*longitude/180) have been applied using the longitude range 0-360, rather than -180 to 180, so there is no discontinuity at 180E. If the ship changed its date while in port, some of these observations will be one day ahead of their correct time.</li>
+<li>Only the pressures have been digitised so far.</li>
+</ol>
+
+</div>
+		
+<div id="sidebar">
+
+	<div class="featurebox">
+	<h3>View data in Google Earth (KML files):</h3>
+	<ul>
+	<li><a href="../kml/uranie.kml">Uranie obs.</a></li>
+	</ul>
+	</div>
+			
+</div>
+				
+<!--#include virtual="/~philip/footer" -->
+		
