@@ -5,10 +5,10 @@
 
 use strict;
 use warnings;
-use IMMA;
+use MarineOb::IMMA;
 use Getopt::Long;
 use FindBin;
-use MarineOb::lmrlib qw(fwbpgv);
+use MarineOb::lmrlib qw(rxltut ixdtnd rxnddt fxmmmb fwbpgv fwbptc);
 
 my $Ship_name = 'Astrolabe';
 my ( $Year, $Month, $Day );
@@ -21,7 +21,7 @@ my $Lon_flag = 'E';
 for ( my $i = 0 ; $i < 6 ; $i++ ) { <>; }    # Skip headers
 
 while (<>) {
-    my $Ob = new IMMA;
+    my $Ob = new MarineOb::IMMA;
     $Ob->clear();                            # Why is this necessary?
     push @{ $Ob->{attachments} }, 0;
     my @Fields = split /\t/, $_;
@@ -42,7 +42,8 @@ while (<>) {
     if ( defined( $Fields[3] ) && $Fields[3] =~ /\d/ ) {
         $Ob->{HR} = int( $Fields[3] / 100 ) + ( $Fields[3] % 100 ) / 60;
     }
-    correct_hour_for_lon($Ob);
+    # Obs at 24 hours break the UTC correction
+    if($Ob->{HR}==24) { $Ob->{HR}=23.99; }
 
     if ( defined( $Fields[12] ) && $Fields[12] =~ /[a-z]/ ) {    # Port name
         ( $Ob->{LAT}, $Ob->{LON} ) = position_from_port( $Fields[12] );
@@ -72,18 +73,24 @@ while (<>) {
     if ( defined( $Ob->{LON} ) ) { $Last_lon = $Ob->{LON}; }
     if ( defined( $Ob->{LAT} ) ) { $Last_lat = $Ob->{LAT}; }
 
-    # Pressure converted from mm
-    if ( defined( $Fields[6] ) && $Fields[6] =~ /\d/ ) {
-        $Ob->{SLP} = $Fields[6] * 1.33322387415;
+    # Convert ob date and time to UTC
+    if (   defined($Last_lon)
+        && defined( $Ob->{HR} )
+        && defined( $Ob->{DY} )
+        && defined( $Ob->{MO} )
+        && defined( $Ob->{YR} ) )
+    {
+        my $elon = $Last_lon;
+        if ( $elon < 0 ) { $elon += 360; }
+        my ( $uhr, $udy ) = rxltut(
+            $Ob->{HR} * 100,
+            ixdtnd( $Ob->{DY}, $Ob->{MO}, $Ob->{YR} ),
+            $elon * 100
+        );
+        $Ob->{HR} = $uhr / 100;
+        ( $Ob->{DY}, $Ob->{MO}, $Ob->{YR} ) = rxnddt($udy);
     }
-    elsif ( defined( $Fields[7] ) && $Fields[7] =~ /\d/ )
-    {                         # Use Sympiesometer if bar not available
-        $Ob->{SLP} = $Fields[7] * 1.33322387415;
-    }
-    # Gravity correction only - no attached temperatures
-    if(defined($Ob->{SLP}) && defined($Last_lat)) {
-      $Ob->{SLP} += fwbpgv( $Ob->{SLP}, $Last_lat, 2);
-    }
+    else { $Ob->{HR} = undef; }
 
     # Temperatures already in C
     if ( defined( $Fields[8] ) && $Fields[8] =~ /\d/ ) {
@@ -91,6 +98,16 @@ while (<>) {
     }
     if ( defined( $Fields[9] ) && $Fields[9] =~ /\d/ ) {
         $Ob->{SST} = $Fields[9];
+    }
+
+    # Pressure converted from mm - already temperature corrected.
+    if ( defined( $Fields[6] ) && $Fields[6] =~ /\d/ ) {
+        $Ob->{SLP} = fxmmmb($Fields[6]);
+    }
+
+    # Gravity correction
+    if(defined($Ob->{SLP}) && defined($Last_lat)) {
+      $Ob->{SLP} += fwbpgv( $Ob->{SLP}, $Last_lat, 2);
     }
 
     # Fill in extra metadata
@@ -126,51 +143,3 @@ sub position_from_port {
     return ( undef, undef );
 }
 
-# Correct the date to UTC from local time
-# This version not used here - kept in for historical reasons.
-sub correct_hour_for_lon {
-    my @Days_in_month = ( 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 );
-    my $Ob = shift;
-    unless ( defined($Last_lon)
-        && defined( $Ob->{HR} )
-        && defined( $Ob->{DY} )
-        && defined( $Ob->{MO} )
-        && defined( $Ob->{YR} ) )
-    {
-        $Ob->{HR} = undef;
-        return;
-    }
-    if ( $Ob->{YR} % 4 == 0
-        && ( $Ob->{YR} % 100 != 0 || $Ob->{YR} % 400 == 0 ) )
-    {
-        $Days_in_month[1] = 29;
-    }
-    $Ob->{HR} += $Last_lon * 12 / 180;
-    if ( $Ob->{HR} < 0 ) {
-        $Ob->{HR} += 24;
-        $Ob->{DY}--;
-        if ( $Ob->{DY} <= 0 ) {
-            $Ob->{MO}--;
-            if ( $Ob->{MO} < 1 ) {
-                $Ob->{YR}--;
-                $Ob->{MO} = 12;
-            }
-            $Ob->{DY} = $Days_in_month[ $Ob->{MO} - 1 ];
-        }
-    }
-    if ( $Ob->{HR} > 23.99 ) {
-        $Ob->{HR} -= 24;
-        if ( $Ob->{HR} < 0 ) { $Ob->{HR} = 0; }
-        $Ob->{DY}++;
-        if ( $Ob->{DY} > $Days_in_month[ $Ob->{MO} - 1 ] ) {
-            $Ob->{DY} = 1;
-            $Ob->{MO}++;
-            if ( $Ob->{MO} > 12 ) {
-                $Ob->{YR}++;
-                $Ob->{MO} = 1;
-            }
-        }
-    }
-    if ( $Ob->{HR} == 23.99 ) { $Ob->{HR} = 23.98; }
-    return 1;
-}
