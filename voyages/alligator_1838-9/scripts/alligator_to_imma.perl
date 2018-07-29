@@ -5,9 +5,9 @@
 
 use strict;
 use warnings;
-use IMMA;
+use MarineOb::IMMA;
 use Date::Calc qw(Delta_Days);
-use MarineOb::lmrlib qw(fxtftc fxeimb fwbpgv);
+use MarineOb::lmrlib qw(rxltut ixdtnd rxnddt fxtftc fxeimb fwbpgv);
 
 my $Ship_name = 'Alligator';
 my ( $Year,     $Month,    $Day );
@@ -21,8 +21,9 @@ for ( my $i = 0 ; $i < 2 ; $i++ ) { <>; }    # Skip headers
 
 while (<>) {
     my $Line = $_;
+    chomp($Line);
     unless($Line =~ /^1/) { next; }
-    my $Ob   = new IMMA;
+    my $Ob   = new MarineOb::IMMA;
     $Ob->clear();
     push @{ $Ob->{attachments} }, 0;
     my @Fields = split /\t/, $_;
@@ -58,7 +59,7 @@ while (<>) {
 
     # 4 a.m. ob.
     $Ob->{HR} = 4;
-    correct_hour_for_lon($Ob);
+    correct_hour_for_lon($Ob,$Last_lon);
 
     if ( defined( $Fields[3] ) && $Fields[3] =~ /\d/ ) {
         $Ob->{AT} = fxtftc( $Fields[3] );
@@ -70,7 +71,7 @@ while (<>) {
     $Ob->{MO} = $Month;
     $Ob->{DY} = $Day;
     $Ob->{HR} = 8;
-    correct_hour_for_lon($Ob);
+    correct_hour_for_lon($Ob,$Last_lon);
 
     if ( defined( $Fields[4] ) && $Fields[4] =~ /\d/ ) {
         $Ob->{AT} = fxtftc( $Fields[4] );
@@ -83,7 +84,7 @@ while (<>) {
     $Ob->{MO} = $Month;
     $Ob->{DY} = $Day;
     $Ob->{HR}  = 12;
-    correct_hour_for_lon($Ob);
+    correct_hour_for_lon($Ob,$Last_lon);
 
     if ( defined( $Fields[5] ) && $Fields[5] =~ /\d/ ) {
         $Ob->{AT} = fxtftc( $Fields[5] );
@@ -110,7 +111,7 @@ while (<>) {
     $Ob->{MO} = $Month;
     $Ob->{DY} = $Day;
     $Ob->{HR} = 16;
-    correct_hour_for_lon($Ob);
+    correct_hour_for_lon($Ob,$Last_lon);
 
     if ( defined( $Fields[6] ) && $Fields[6] =~ /\d/ ) {
         $Ob->{AT} = fxtftc( $Fields[6] );
@@ -122,7 +123,7 @@ while (<>) {
     $Ob->{MO} = $Month;
     $Ob->{DY} = $Day;
     $Ob->{HR} = 20;
-    correct_hour_for_lon($Ob);
+    correct_hour_for_lon($Ob,$Last_lon);
 
     if ( defined( $Fields[7] ) && $Fields[7] =~ /\d/ ) {
         $Ob->{AT} = fxtftc( $Fields[7] );
@@ -134,7 +135,7 @@ while (<>) {
     $Ob->{MO} = $Month;
     $Ob->{DY} = $Day;
     $Ob->{HR}  = 23.99;
-    correct_hour_for_lon($Ob);
+    correct_hour_for_lon($Ob,$Last_lon);
 
     if ( defined( $Fields[8] ) && $Fields[8] =~ /\d/ ) {
         $Ob->{AT} = fxtftc( $Fields[8] );
@@ -151,48 +152,24 @@ while (<>) {
 
 # Correct the date to UTC from local time
 sub correct_hour_for_lon {
-    my @Days_in_month = ( 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 );
     my $Ob = shift;
-    unless ( defined($Last_lon)
+    my $Last_lon = shift;
+    if (   defined($Last_lon)
         && defined( $Ob->{HR} )
         && defined( $Ob->{DY} )
         && defined( $Ob->{MO} )
         && defined( $Ob->{YR} ) )
     {
-        $Ob->{HR} = undef;
-        return;
+        my $elon = $Last_lon;
+        if ( $elon < 0 ) { $elon += 360; }
+        my ( $uhr, $udy ) = rxltut(
+            $Ob->{HR} * 100,
+            ixdtnd( $Ob->{DY}, $Ob->{MO}, $Ob->{YR} ),
+            $elon * 100
+        );
+        $Ob->{HR} = $uhr / 100;
+        ( $Ob->{DY}, $Ob->{MO}, $Ob->{YR} ) = rxnddt($udy);
     }
-    if ( $Ob->{YR} % 4 == 0
-        && ( $Ob->{YR} % 100 != 0 || $Ob->{YR} % 400 == 0 ) )
-    {
-        $Days_in_month[1] = 29;
-    }
-    $Ob->{HR} += $Last_lon * 12 / 180;
-    if ( $Ob->{HR} < 0 ) {
-        $Ob->{HR} += 24;
-        $Ob->{DY}--;
-        if ( $Ob->{DY} <= 0 ) {
-            $Ob->{MO}--;
-            if ( $Ob->{MO} < 1 ) {
-                $Ob->{YR}--;
-                $Ob->{MO} = 12;
-            }
-            $Ob->{DY} = $Days_in_month[ $Ob->{MO} - 1 ];
-        }
-    }
-    if ( $Ob->{HR} > 23.99 ) {
-        $Ob->{HR} -= 24;
-        if ( $Ob->{HR} < 0 ) { $Ob->{HR} = 0; }
-        $Ob->{DY}++;
-        if ( $Ob->{DY} > $Days_in_month[ $Ob->{MO} - 1 ] ) {
-            $Ob->{DY} = 1;
-            $Ob->{MO}++;
-            if ( $Ob->{MO} > 12 ) {
-                $Ob->{YR}++;
-                $Ob->{MO} = 1;
-            }
-        }
-    }
-    if ( $Ob->{HR} == 23.99 ) { $Ob->{HR} = 23.98; }
+    else { $Ob->{HR} = undef; }
     return 1;
 }

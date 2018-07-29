@@ -5,9 +5,9 @@
 
 use strict;
 use warnings;
-use IMMA;
+use MarineOb::IMMA;
 use Date::Calc qw(Delta_Days);
-use MarineOb::lmrlib qw(fxmmmb fwbptc fwbpgv);
+use MarineOb::lmrlib qw(rxltut ixdtnd rxnddt fxmmmb fwbptc fwbpgv);
 
 my $Ship_name = 'Bonite';
 my ( $Year,     $Month,    $Day );
@@ -21,7 +21,7 @@ for ( my $i = 0 ; $i < 2 ; $i++ ) { <>; }    # Skip headers
 
 while (<>) {
     my $Line = $_;
-    my $Ob   = new IMMA;
+    my $Ob   = new MarineOb::IMMA;
     $Ob->clear();
     push @{ $Ob->{attachments} }, 0;
     my @Fields = split /\t/, $_;
@@ -65,7 +65,25 @@ while (<>) {
     }
     if ( defined( $Ob->{LAT} ) ) { $Last_lat = $Ob->{LAT}; }
     if ( defined( $Ob->{LON} ) ) { $Last_lon = $Ob->{LON}; }
-    correct_hour_for_lon($Ob);
+
+    # Convert ob date and time to UTC
+    if (   defined($Last_lon)
+        && defined( $Ob->{HR} )
+        && defined( $Ob->{DY} )
+        && defined( $Ob->{MO} )
+        && defined( $Ob->{YR} ) )
+    {
+        my $elon = $Last_lon;
+        if ( $elon < 0 ) { $elon += 360; }
+        my ( $uhr, $udy ) = rxltut(
+            $Ob->{HR} * 100,
+            ixdtnd( $Ob->{DY}, $Ob->{MO}, $Ob->{YR} ),
+            $elon * 100
+        );
+        $Ob->{HR} = $uhr / 100;
+        ( $Ob->{DY}, $Ob->{MO}, $Ob->{YR} ) = rxnddt($udy);
+    }
+    else { $Ob->{HR} = undef; }
 
     if ( defined( $Fields[12] ) && $Fields[12] =~ /\d/ ) {
         $Ob->{AT} = $Fields[12];    # assumed C
@@ -88,12 +106,12 @@ while (<>) {
     }
 
     # If no barometer - use the sympiesometer
-    if (  !defined( $Ob->{SLP} )
-        && defined( $Fields[10] )
-        && $Fields[10] =~ /\d/ )
-    {
-        $Ob->{SLP} = fxmmmb( $Fields[10] );
-    }
+    #if (  !defined( $Ob->{SLP} )
+    #    && defined( $Fields[10] )
+    #    && $Fields[10] =~ /\d/ )
+    #{
+    #    $Ob->{SLP} = fxmmmb( $Fields[10] );
+    #}
 
     # Fill in extra metadata
     $Ob->{IM}   = 0;         # C
@@ -206,52 +224,4 @@ sub position_from_port {
     die "Unknown port $Name";
 
     #return ( undef, undef );
-}
-
-# Correct the date to UTC from local time
-sub correct_hour_for_lon {
-    my @Days_in_month = ( 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 );
-    my $Ob = shift;
-    unless ( defined($Last_lon)
-        && defined( $Ob->{HR} )
-        && defined( $Ob->{DY} )
-        && defined( $Ob->{MO} )
-        && defined( $Ob->{YR} ) )
-    {
-        $Ob->{HR} = undef;
-        return;
-    }
-    if ( $Ob->{YR} % 4 == 0
-        && ( $Ob->{YR} % 100 != 0 || $Ob->{YR} % 400 == 0 ) )
-    {
-        $Days_in_month[1] = 29;
-    }
-    $Ob->{HR} += $Last_lon * 12 / 180;
-    if ( $Ob->{HR} < 0 ) {
-        $Ob->{HR} += 24;
-        $Ob->{DY}--;
-        if ( $Ob->{DY} <= 0 ) {
-            $Ob->{MO}--;
-            if ( $Ob->{MO} < 1 ) {
-                $Ob->{YR}--;
-                $Ob->{MO} = 12;
-            }
-            $Ob->{DY} = $Days_in_month[ $Ob->{MO} - 1 ];
-        }
-    }
-    if ( $Ob->{HR} > 23.99 ) {
-        $Ob->{HR} -= 24;
-        if ( $Ob->{HR} < 0 ) { $Ob->{HR} = 0; }
-        $Ob->{DY}++;
-        if ( $Ob->{DY} > $Days_in_month[ $Ob->{MO} - 1 ] ) {
-            $Ob->{DY} = 1;
-            $Ob->{MO}++;
-            if ( $Ob->{MO} > 12 ) {
-                $Ob->{YR}++;
-                $Ob->{MO} = 1;
-            }
-        }
-    }
-    if ( $Ob->{HR} == 23.99 ) { $Ob->{HR} = 23.98; }
-    return 1;
 }
