@@ -1,0 +1,406 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HMS Dorothea (1818) &#8212; Weather observations from marine expeditions</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Authors and acknowledgements" href="../credits.html" />
+    <link rel="prev" title="Arctic Expeditions" href="Arctic.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../credits.html" title="Authors and acknowledgements"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="Arctic.html" title="Arctic Expeditions"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Arctic.html" accesskey="U">Arctic Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/The_Water_Bucket_by_Carroll_Jones_III.jpg" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Arctic.html">Arctic Expeditions</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">HMS Dorothea (1818)</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Authors and acknowledgements</a></li>
+</ul>
+<h3><a href="https://github.com/oldweather/Expeditions">Get the data</a></h3>
+
+<ul>
+<li><a href="https://github.com/oldweather/Expeditions"
+           rel="nofollow">Github repository</a></li>
+<li><a href="https://github.com/oldweather/Expeditions/archive/master.zip"
+           rel="nofollow">Zip file</a></li>
+</ul>
+
+<h3>Found a bug, or have a suggestion?</h3>
+
+Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an issue</a>.
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hms-dorothea-1818">
+<h1>HMS Dorothea (1818)<a class="headerlink" href="#hms-dorothea-1818" title="Permalink to this headline">¶</a></h1>
+<p>HMS Dorothea, commanded by <a class="reference external" href="https://en.wikipedia.org/wiki/David_Buchan">David Buchan</a>, accompanied by HMS Trent (commanded by John Franklin), set out to cross the NorthWest Passage via the North Pole. They got only as far as Spitzbergen before being stopped by the ice.</p>
+<p>The reported their observations in <a class="reference external" href="https://books.google.co.uk/books?id=MKwNAAAAQAAJ&amp;redir_esc=y">A Voyage of Discovery Towards the North Pole: Performed in His Majesty’s Ships Dorothea and Trent, Under the Command of Captain David Buchan, R.N.; 1818; to which is Added, a Summary of All the Early Attempts to Reach the Pacific by Way of the Pole</a>.</p>
+<div class="section" id="transcribed-observations">
+<h2>Transcribed observations<a class="headerlink" href="#transcribed-observations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/oldweather/Expeditions/blob/master/voyages/dorothea_1818/as_digitised/ADM_55_36_HMS_Dorothea_0519_682.xls">Excel spreadsheet</a></li>
+<li><a class="reference external" href="https://github.com/oldweather/Expeditions/blob/master/voyages/dorothea_1818/as_digitised/ADM_55_36_HMS_Dorothea_0519_682.txt">CSV file</a></li>
+</ul>
+</div>
+<div class="section" id="conversion-script">
+<h2>Conversion script<a class="headerlink" href="#conversion-script" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#!/usr/bin/perl
+
+# Process digitised logbook data from the Dorothea into
+#  IMMA records.
+
+use strict;
+use warnings;
+use IMMA;
+use Getopt::Long;
+use FindBin;
+use Date::Calc qw(Add_Delta_Days);
+
+use MarineOb::lmrlib
+  qw(rxltut ixdtnd rxnddt fxtftc fxtrtc fxmmmb fxeimb fwbptc fwbpgv fxbfms ix32dd);
+use MarineOb::declination qw(magnetic_to_true);
+use MarineOb::WindTerms qw(WordsToBeaufort);
+
+my $Ship_name  = &#39;Dorothea &#39;;
+my $Last_lon   = 0;
+my $Last_lon_f = &#39;e&#39;;
+my $Last_lat   = 62;
+my $Last_lat_f = &#39;n&#39;;
+my $Last_wind_d;
+
+while ( my $Line = &lt;&gt; ) {
+    unless ( $Line =~ /^55/ ) { next; }
+    my $Ob = new IMMA;
+    $Ob-&gt;clear();    # Why is this necessary?
+    push @{ $Ob-&gt;{attachments} }, 0;
+    my @Fields = split /\t/, $Line;
+
+    $Ob-&gt;{YR} = $Fields[4];
+    $Ob-&gt;{MO} = $Fields[5];
+    $Ob-&gt;{DY} = $Fields[6];
+    if ( defined( $Fields[7] ) &amp;&amp; $Fields[7] =~ /^(\d\d):/ ) {
+        $Ob-&gt;{HR} = $1;
+    }
+    if ( $Ob-&gt;{HR} == 0 ) {    # 24, not 0
+        ( $Ob-&gt;{YR}, $Ob-&gt;{MO}, $Ob-&gt;{DY} ) =
+          Add_Delta_Days( $Ob-&gt;{YR}, $Ob-&gt;{MO}, $Ob-&gt;{DY}, 1 );
+    }
+
+    # Latitudes - observations for preference
+    if ( defined( $Fields[19] ) &amp;&amp; $Fields[19] =~ /\d/ ) {
+        $Ob-&gt;{LAT} = $Fields[19];
+        if ( defined( $Fields[20] ) &amp;&amp; $Fields[20] =~ /\d/ ) {
+            $Ob-&gt;{LAT} += $Fields[20] / 60;
+        }
+        if ( defined( $Fields[22] ) ) {
+            $Last_lat_f = lc( $Fields[22] );
+        }
+
+    }
+    elsif ( defined( $Fields[23] ) &amp;&amp; $Fields[23] =~ /\d/ ) {
+        $Ob-&gt;{LAT} = $Fields[23];
+        if ( defined( $Fields[24] ) &amp;&amp; $Fields[24] =~ /\d/ ) {
+            $Ob-&gt;{LAT} += $Fields[24] / 60;
+        }
+        if ( defined( $Fields[26] ) ) {
+            $Last_lat_f = lc( $Fields[26] );
+        }
+
+    }
+    if ( defined( $Ob-&gt;{LAT} ) &amp;&amp; $Last_lat_f =~ /s/ ) {
+        $Ob-&gt;{LAT} *= -1;
+    }
+
+    # Longitudes - chronometer for preference
+    if ( defined( $Fields[27] ) &amp;&amp; $Fields[27] =~ /\d/ ) {
+        $Ob-&gt;{LON} = $Fields[27];
+        if ( defined( $Fields[28] ) &amp;&amp; $Fields[28] =~ /\d/ ) {
+            $Ob-&gt;{LON} += $Fields[28] / 60;
+        }
+        if ( defined( $Fields[30] ) &amp;&amp; $Fields[30] =~ /[eEwW]/ ) {
+            $Last_lon_f = lc( $Fields[30] );
+        }
+    }
+    elsif ( defined( $Fields[31] ) &amp;&amp; $Fields[31] =~ /\d/ ) {
+        $Ob-&gt;{LON} = $Fields[31];
+        if ( defined( $Fields[32] ) &amp;&amp; $Fields[32] =~ /\d/ ) {
+            $Ob-&gt;{LON} += $Fields[32] / 60;
+        }
+        if ( defined( $Fields[34] ) &amp;&amp; $Fields[34] =~ /[eEwW]/ ) {
+            $Last_lon_f = lc( $Fields[34] );
+        }
+    }
+    if ( defined( $Ob-&gt;{LON} ) &amp;&amp; $Last_lon_f =~ /w/ ) {
+        $Ob-&gt;{LON} *= -1;
+    }
+    if ( defined( $Ob-&gt;{LAT} ) || defined( $Ob-&gt;{LON} ) ) {
+        $Ob-&gt;{LI} = 4;    # Deg+Min position precision
+    }
+    if (   ( !defined( $Ob-&gt;{LON} ) || !defined( $Ob-&gt;{LAT} ) )
+        &amp;&amp; defined( $Fields[35] )
+        &amp;&amp; $Fields[35] =~ /\w/ )
+    {
+        my ( $Lat, $Lon ) = position_from_port( $Fields[35] );
+        unless ( defined( $Ob-&gt;{LAT} ) ) { $Ob-&gt;{LAT} = $Lat; $Ob-&gt;{LI} = 4; }
+        unless ( defined( $Ob-&gt;{LON} ) ) { $Ob-&gt;{LON} = $Lon; $Ob-&gt;{LI} = 4; }
+    }
+
+    # Convert ob date and time to UTC
+    if (   defined($Last_lon)
+        &amp;&amp; defined( $Ob-&gt;{HR} )
+        &amp;&amp; defined( $Ob-&gt;{DY} )
+        &amp;&amp; defined( $Ob-&gt;{MO} )
+        &amp;&amp; defined( $Ob-&gt;{YR} ) )
+    {
+        my $elon = $Last_lon;
+        if ( $elon &lt; 0 ) { $elon += 360; }
+        my ( $uhr, $udy ) = rxltut(
+            $Ob-&gt;{HR} * 100,
+            ixdtnd( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ),
+            $elon * 100
+        );
+        $Ob-&gt;{HR} = $uhr / 100;
+        ( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ) = rxnddt($udy);
+    }
+    else { $Ob-&gt;{HR} = undef; }
+
+    # Pressure converted from inches
+    if ( defined( $Fields[12] ) &amp;&amp; $Fields[12] =~ /\d/ &amp;&amp; $Fields[12] != -999 )
+    {
+        $Ob-&gt;{SLP} = fxeimb( $Fields[12] );
+    }
+
+    # Temperature correction
+    if (   defined( $Ob-&gt;{SLP} )
+        &amp;&amp; defined( $Fields[13] )
+        &amp;&amp; $Fields[13] =~ /\d/
+        &amp;&amp; $Fields[13] != -999 )
+    {
+        $Ob-&gt;{SLP} += fwbptc( $Ob-&gt;{SLP}, fxtftc( $Fields[13] ) );
+    }
+
+    # Gravity correction
+    if ( defined( $Ob-&gt;{SLP} ) &amp;&amp; defined($Last_lat) ) {
+        $Ob-&gt;{SLP} += fwbpgv( $Ob-&gt;{SLP}, $Last_lat, 2 );
+    }
+
+    # Temperatures converted from Farenheit
+    if ( defined( $Fields[14] ) &amp;&amp; $Fields[14] =~ /\d/ &amp;&amp; $Fields[14] != -999 )
+    {
+        $Ob-&gt;{AT} = fxtftc( $Fields[14] );
+    }
+    if ( defined( $Fields[11] ) &amp;&amp; $Fields[11] =~ /\d/ &amp;&amp; $Fields[11] != -999 )
+    {
+        $Ob-&gt;{SST} = fxtftc( $Fields[11] );
+    }
+
+    # Wind force
+    if ( defined( $Fields[16] ) &amp;&amp; $Fields[16] =~ /(\w+)/ ) {
+        my $WindE = $Fields[16];
+        $WindE =~ s/westerly\s+//;                        # delete unwanted term
+        $WindE =~ s/Light and variable airs/light airs/;
+        $WindE =~ s/Light variable airs/light airs/;
+        $WindE =~ s/Light variable winds/light winds/;
+        $WindE =~ s/^[aA]\s+//;
+        my $Force;
+        if ( $WindE =~ /(\w+)\s+(\w+)/ ) {
+            $Force = WordsToBeaufort( $1, $2 );
+        }
+        else {
+            $Force = WordsToBeaufort($WindE);
+        }
+        if ( defined($Force) ) {
+            if ( $Force == -1 ) {
+                warn &quot;Unknown wind force term $Fields[16]&quot;;
+            }
+            else {
+                $Ob-&gt;{W}  = fxbfms($Force);    # Beaufort -&gt; m/s
+                $Ob-&gt;{WI} = 5;                 # Beaufort force
+            }
+        }
+    }
+
+    # Wind direction
+    if ( defined( $Fields[8] ) &amp;&amp; $Fields[8] =~ /\S/ ) {
+        my $Dirn = $Fields[8];
+        $Dirn =~ s/b/x/;
+        $Dirn = sprintf &quot;%-4s&quot;, uc($Dirn);
+        if ( $Dirn eq &#39;CALM&#39; || $Dirn eq &#39;CALMS&#39; ) {
+            $Ob-&gt;{D} = 361;
+        }
+        elsif ( $Dirn eq &#39;VARIAXLE&#39; ) {
+            $Ob-&gt;{D} = 362;
+        }
+        else {
+            ( $Ob-&gt;{D}, undef ) = ix32dd($Dirn);
+            if ( defined( $Ob-&gt;{D} ) ) {
+                $Ob-&gt;{DI} = 1;    # 32-point compass
+            }
+            else {
+                warn &quot;Unknown wind direction $Dirn - $Fields[8]&quot;;
+            }
+        }
+    }
+
+    # Only bother with the record if it contains a position or some met obs.
+    unless ( defined( $Ob-&gt;{LAT} )
+        || defined( $Ob-&gt;{LON} )
+        || defined( $Ob-&gt;{AT} )
+        || defined( $Ob-&gt;{SST} )
+        || defined( $Ob-&gt;{SLP} )
+        || defined( $Ob-&gt;{D} )
+        || defined( $Ob-&gt;{W} )
+        || defined( $Ob-&gt;{DPT} ) )
+    {
+        next;
+    }
+
+    # Fill in extra metadata
+    $Ob-&gt;{IM}   = 0;
+    $Ob-&gt;{ATTC} = 1;            # supplemental
+    $Ob-&gt;{TI}   = 0;            # Nearest hour time precision
+    $Ob-&gt;{DS}   = undef;        # Unknown course
+    $Ob-&gt;{VS}   = undef;        # Unknown speed
+    $Ob-&gt;{NID}  = undef;
+    $Ob-&gt;{II}   = 10;
+    $Ob-&gt;{ID}   = $Ship_name;
+    $Ob-&gt;{C1}   = &#39;03&#39;;         # UK recruited
+    if (   defined( $Ob-&gt;{AT} )
+        || defined( $Ob-&gt;{WBT} )
+        || defined( $Ob-&gt;{DPT} )
+        || defined( $Ob-&gt;{SST} ) )
+    {
+        $Ob-&gt;{IT} = 4;          # Temps in degF and 10ths
+    }
+
+    # Add the original record as a supplemental attachment
+    push @{ $Ob-&gt;{attachments} }, 99;
+    $Ob-&gt;{ATTE} = undef;
+    chomp($Line);
+    $Ob-&gt;{SUPD} = $Line;
+
+    $Ob-&gt;write( \*STDOUT );
+
+}
+
+# Get a position from a port name
+sub position_from_port {
+    my $Name = lc(shift);
+    if ( $Name =~ /hakluyt head/ ) {
+        return ( 79.78, 10.8 );
+    }
+    if ( $Name =~ /vogel sang/ ) {
+        return ( 79.85, 11.33 );
+    }
+    if ( $Name =~ /grey hook/ ) {
+        return ( 79.81, 14.55 );
+    }
+    if ( $Name =~ /cloven cliff/ ) {
+        return ( 79.85, 11.48 );
+    }
+    if ( $Name =~ /smeerenburg/ ) {
+        return ( 79.66, 11.00 );
+    }
+    if ( $Name =~ /se point of amsterdam island/ ) {
+        return ( 79.66, 11.13 );
+    }
+    if ( $Name =~ /danes island/ ) {
+        return ( 79.66, 10.5 );
+    }
+    if ( $Name =~ /magdelena hook|magdelena bay/ ) {
+        return ( 79.57, 10.80 );
+    }
+    if ( $Name =~ /prince charles foreland/ ) {    # North point
+        return ( 78.92, 10.57 );
+    }
+    if ( $Name =~ /faro island/ ) {                # North-Eest approach
+        return ( 62.37, -6.25 );
+    }
+    if ( $Name =~ /flamborough head/ ) {           #
+        return ( 54.12, -0.08 );
+    }
+    if ( $Name =~ /dumblelow/ ) {
+        return ( undef, undef );
+    }
+    if ( $Name =~ /blakeney/ ) {                   #
+        return ( 53.0, 1.01 );
+    }
+    if ( $Name =~ /land not in sight/ ) {
+        return ( undef, undef );
+    }
+    if ( $Name =~ /land sbw/ ) {
+        return ( undef, undef );
+    }
+    if ( $Name =~ /foul island shetland/ ) {
+        return ( undef, undef );
+    }
+    die &quot;Unknown location $Name&quot;;
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="converted-observations">
+<h2>Converted observations<a class="headerlink" href="#converted-observations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/oldweather/Expeditions/blob/master/imma/Dorothea_1818.imma">IMMA format</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../credits.html" title="Authors and acknowledgements"
+             >next</a></li>
+        <li class="right" >
+          <a href="Arctic.html" title="Arctic Expeditions"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Arctic.html" >Arctic Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>

@@ -7,6 +7,11 @@ ICOADS is a comprehensive collection of everything already in an appropriate dig
 
 This is a feeder dataset for ICOADS: It includes raw transcribed observations, software converting that into a standard format, and the final standardised observations. If you just want the observations, you don't want this - use ICOADS instead, but if you are looking for the provenance of the observations, or an example of how to do the necessary format conversion, this may be for you.
 
+.. toctree::
+   :maxdepth: 2
+
+   voyages/Arctic
+
 
 .. toctree::
    :maxdepth: 1
