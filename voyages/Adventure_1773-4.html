@@ -1,0 +1,370 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HMS Adventure (1773-4) &#8212; Weather observations from marine expeditions</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Arctic Expeditions" href="Arctic.html" />
+    <link rel="prev" title="James Cook’s Expeditions" href="Cook.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="Arctic.html" title="Arctic Expeditions"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="Cook.html" title="James Cook’s Expeditions"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Cook.html" accesskey="U">James Cook’s Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/The_Water_Bucket_by_Carroll_Jones_III.jpg" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Cook.html">James Cook’s Expeditions</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">HMS Adventure (1773-4)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Arctic.html">Arctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Antarctic.html">Antarctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other.html">Other Expeditions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Authors and acknowledgements</a></li>
+</ul>
+<h3><a href="https://github.com/oldweather/Expeditions">Get the data</a></h3>
+
+<ul>
+<li><a href="https://github.com/oldweather/Expeditions"
+           rel="nofollow">Github repository</a></li>
+<li><a href="https://github.com/oldweather/Expeditions/archive/master.zip"
+           rel="nofollow">Zip file</a></li>
+</ul>
+
+<h3>Found a bug, or have a suggestion?</h3>
+
+Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an issue</a>.
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hms-adventure-1773-4">
+<h1>HMS Adventure (1773-4)<a class="headerlink" href="#hms-adventure-1773-4" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/HMS_Adventure_(1771)">HMS Adventure</a> was on <a class="reference external" href="https://en.wikipedia.org/wiki/James_Cook">James Cook’s</a> <a class="reference external" href="https://en.wikipedia.org/wiki/Second_voyage_of_James_Cook">Second expedition</a>.</p>
+<p>Their observations were published in <a class="reference external" href="https://open.library.ubc.ca/collections/chung/chungpub/items/1.0129126">A voyage towards the South pole, and round the world.</a></p>
+<div class="section" id="transcribed-observations">
+<h2>Transcribed observations<a class="headerlink" href="#transcribed-observations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/oldweather/Expeditions/blob/master/voyages/adventure_1773-4/as_digitised/COOK_1-_ADVENTURE.txt">CSV file</a></li>
+</ul>
+</div>
+<div class="section" id="conversion-script">
+<h2>Conversion script<a class="headerlink" href="#conversion-script" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span>#!/usr/bin/perl
+
+# Process digitised logbook data from Cook&#39;s Adventure obs into
+#  IMMA records.
+
+use strict;
+use warnings;
+use IMMA;
+use Getopt::Long;
+use FindBin;
+use Date::Calc qw(Decode_Month);
+use MarineOb::lmrlib
+  qw(rxltut ixdtnd rxnddt fxeimb fwbpgv fxtftc ix32dd ixdcdd fxbfms);
+use MarineOb::declination qw(magnetic_to_true);
+use MarineOb::WindTerms qw(WordsToBeaufort);
+
+my $Ship_name = &#39;Adventure&#39;;
+my ( $Year, $Month, $Day, $Hour );
+my $Last_lon;
+my $Last_lat;
+my $Lat_flag = &#39;S&#39;;
+my $Lon_flag = &#39;E&#39;;
+my $Last;    # previous ob
+
+for ( my $i = 0 ; $i &lt; 3 ; $i++ ) { &lt;&gt;; }    # Skip headers
+
+while (&lt;&gt;) {
+
+    my @Fields = split /\t/, $_;
+    my $String = $_;
+    if ( lc( $Fields[2] ) =~ /we/ ) { $Lon_flag = &#39;W&#39;; }
+    if ( lc( $Fields[2] ) =~ /ea/ ) { $Lon_flag = &#39;E&#39;; }
+
+    if ( $_ =~ /^\s*(\d\d\d\d)\s+(...)/ ) {
+        $Year  = $1;
+        $Month = Decode_Month($2);
+        if ( $Month == 0 ) { die &quot;Bad month $2&quot;; }
+        next;
+    }
+    my $Ob = new IMMA;
+    $Ob-&gt;clear();    # Why is this necessary?
+    push @{ $Ob-&gt;{attachments} }, 0;
+
+    if ( defined( $Fields[0] ) &amp;&amp; $Fields[0] =~ /(\D*)\s+(\d+)/ ) {
+        $Day  = $2;
+        $Hour = 12;    # Noon by default
+        if ( defined($1) ) {
+            my $Hr = $1;
+            if ( $Hr =~ /A.*M/ ) { $Hour = 8; }     # Arbitrary morning time
+            if ( $Hr =~ /P.*M/ ) { $Hour = 18; }    # Arbitrary afternoon time
+        }
+    }
+    else { next; }
+
+    $Ob-&gt;{YR} = $Year;
+    $Ob-&gt;{MO} = $Month;
+    $Ob-&gt;{DY} = $Day;
+    $Ob-&gt;{HR} = $Hour;
+
+    if ( defined( $Fields[1] )
+        &amp;&amp; $Fields[1] =~ /(\d+)\s+([\d\.]+)\s*([NS]*)/ )
+    {
+        $Ob-&gt;{LAT} = $1 + $2 / 60;
+        if ( defined($3) &amp;&amp; ( $3 eq &#39;N&#39; || $3 eq &#39;S&#39; ) ) { $Lat_flag = $3; }
+        if ( $Lat_flag eq &#39;S&#39; ) { $Ob-&gt;{LAT} *= -1; }
+    }
+    if ( defined( $Fields[2] )
+        &amp;&amp; $Fields[2] =~ /(\d+)\s+([\d.]+)\s*([EW]*)/ )
+    {
+        $Ob-&gt;{LON} = $1 + $2 / 60;
+        if ( defined($3) &amp;&amp; ( $3 eq &#39;E&#39; || $3 eq &#39;W&#39; ) ) { $Lon_flag = $3; }
+        if ( $Lon_flag eq &#39;W&#39; ) { $Ob-&gt;{LON} *= -1; }
+    }
+    if ( defined( $Ob-&gt;{LAT} ) || defined( $Ob-&gt;{LON} ) ) {
+        $Ob-&gt;{LI} = 4;    # Deg+Min position precision
+    }
+    if ( defined( $Ob-&gt;{LAT} ) ) { $Last_lat = $Ob-&gt;{LAT}; }
+    if ( defined( $Ob-&gt;{LON} ) ) { $Last_lon = $Ob-&gt;{LON}; }
+
+    # Convert ob date and time to UTC
+    if (   defined($Last_lon)
+        &amp;&amp; defined( $Ob-&gt;{HR} )
+        &amp;&amp; defined( $Ob-&gt;{DY} )
+        &amp;&amp; defined( $Ob-&gt;{MO} )
+        &amp;&amp; defined( $Ob-&gt;{YR} ) )
+    {
+        my $elon = $Last_lon;
+        if ( $elon &lt; 0 ) { $elon += 360; }
+        my ( $uhr, $udy ) = rxltut(
+            $Ob-&gt;{HR} * 100,
+            ixdtnd( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ),
+            $elon * 100
+        );
+        $Ob-&gt;{HR} = $uhr / 100;
+        ( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ) = rxnddt($udy);
+    }
+    else { $Ob-&gt;{HR} = undef; }
+
+    # Pressure converted from inches
+    if ( defined( $Fields[5] ) &amp;&amp; $Fields[5] =~ /\d/ ) {
+        $Ob-&gt;{SLP} = fxeimb( $Fields[5] );
+    }
+
+    # Gravity correction
+    if ( defined( $Ob-&gt;{SLP} ) &amp;&amp; defined($Last_lat) ) {
+        $Ob-&gt;{SLP} += fwbpgv( $Ob-&gt;{SLP}, $Last_lat, 2 );
+    }
+
+    # Temperatures converted from F
+    if ( defined( $Fields[4] ) &amp;&amp; $Fields[4] =~ /\d/ ) {
+        $Ob-&gt;{AT} = fxtftc( $Fields[4] );
+    }
+
+    # Extract wind direction from Remarks
+    if ( defined( $Fields[6] ) &amp;&amp; $Fields[6] =~ /\w/ ) {
+        my $Dirn;
+        if ( $Fields[6] =~ /^\W*Ditto/ ) {
+            $Ob-&gt;{D}  = $Last-&gt;{D};
+            $Ob-&gt;{DI} = $Last-&gt;{DI};
+        }
+        elsif ( $Fields[6] =~
+            /([NESW][\s\.]+b*y*\s*[NESW]*[\s\.]*b*y*\s*[NESW]*[\s\.]+)/ )
+        {
+            $Dirn = $1;
+            $Dirn =~ s/[\s\.]+//g;
+            $Dirn =~ s/by/x/g;
+        }
+        elsif ( $Fields[6] =~ /[Nn]orth/ ) {
+            $Dirn = &#39;N&#39;;
+        }
+        elsif ( $Fields[6] =~ /[Ee]a[sf]t/ ) {
+            $Dirn = &#39;E&#39;;
+        }
+        elsif ( $Fields[6] =~ /[SsFf]outh/ ) {
+            $Dirn = &#39;S&#39;;
+        }
+        elsif ( $Fields[6] =~ /[Ww]e[sf][tl]/ ) {
+            $Dirn = &#39;W&#39;;
+        }
+        elsif ( $Fields[6] =~ /[Vv]ariable/ ) {
+            $Dirn = &#39;V&#39;;
+        }
+        elsif ( $Fields[6] =~ /[Cc]alm/ ) {
+            $Dirn = &#39;C&#39;;
+        }
+        else {
+            warn &quot;No wind direction in $Fields[6]&quot;;
+        }
+        if ( defined($Dirn) ) {
+            $Dirn = sprintf &quot;%-4s&quot;, uc($Dirn);
+            if ( $Dirn eq &#39;C   &#39; ) {
+                $Ob-&gt;{D} = 361;
+            }
+            elsif ( $Dirn eq &#39;V   &#39; ) {
+                $Ob-&gt;{D} = 362;
+            }
+            else {
+                ( $Ob-&gt;{D}, undef ) = ix32dd($Dirn);    # to degrees
+                if ( defined( $Ob-&gt;{D} ) ) {
+                    $Ob-&gt;{DI} = 1;                      # 32-point compass
+                }
+                else {
+                    warn &quot;Unknown wind direction $Dirn - $Fields[6]&quot;;
+                }
+            }
+        }
+    }
+
+    # Extract wind speed from remarks
+    if ( defined( $Fields[6] ) &amp;&amp; $Fields[6] =~ /\w/ ) {
+        my $Force;
+        if ( $Fields[6] =~ /^.+\.\s*Ditto/ ) {
+            $Ob-&gt;{W}  = $Last-&gt;{W};
+            $Ob-&gt;{WI} = $Last-&gt;{WI};
+        }
+        elsif ( $Fields[6] =~ /(\w+\W*gale)/ ) {
+            $Force = $1;
+        }
+        elsif ( $Fields[6] =~ /(\w+\W*wind)/ ) {
+            $Force = $1;
+        }
+        elsif ( $Fields[6] =~ /(\w+\W*breeze)/ ) {
+            $Force = $1;
+        }
+        elsif ( $Fields[6] =~ /(\w+\W+air)/ ) {
+            $Force = $1;
+        }
+        elsif ( $Fields[6] =~ /[Cc]alm/ ) {
+            $Force = &#39;calm&#39;;
+        }
+        if ( defined($Force) ) {
+            $Force =~ s/[Ff]trong/strong/;
+            $Force =~ s/[Ff]re[tfi]h/fresh/;
+            $Force =~ s/[Ff]teady/steady/;
+            $Force =~ s/[Bb]rifk/brisk/;
+            my $F2;
+            if ( $Force =~ /(\w+)\s+(\w+)/ ) {
+                $F2 = WordsToBeaufort( $1, $2 );
+            }
+            else {
+                $F2 = WordsToBeaufort($Force);
+            }
+            if ( defined($F2) ) {
+                if ( $F2 == -1 ) {
+                    warn &quot;Unknown wind force term $Force&quot;;
+                }
+                else {
+                    $Ob-&gt;{W}  = fxbfms($F2);    # Beaufort -&gt; m/s
+                    $Ob-&gt;{WI} = 5;              # Beaufort force
+                }
+            }
+        }
+    }
+
+    # Fill in extra metadata
+    $Ob-&gt;{IM}   = 0;                            # Check with Scott
+    $Ob-&gt;{ATTC} = 0;                            # No attachments
+    $Ob-&gt;{TI}   = undef;                        # Unknown time precision
+    $Ob-&gt;{DS}   = undef;                        # Unknown course
+    $Ob-&gt;{VS}   = undef;                        # Unknown speed
+    $Ob-&gt;{NID}  = undef;                        # Check with Scott
+    $Ob-&gt;{II}   = 10;                           # Check with Scott
+    $Ob-&gt;{ID}   = $Ship_name;
+    $Ob-&gt;{C1}   = &#39;03&#39;;                         # UK
+    if (   defined( $Ob-&gt;{AT} )
+        || defined( $Ob-&gt;{WBT} )
+        || defined( $Ob-&gt;{DPT} )
+        || defined( $Ob-&gt;{SST} ) )
+    {
+        $Ob-&gt;{IT} = 4;                          # Temps in degF and 10ths
+    }
+
+    # Add the text record as an attachment
+    chomp($String);
+    $Ob-&gt;{ATTC}++;
+    push @{ $Ob-&gt;{attachments} }, 99;
+    $Ob-&gt;{ATTE} = undef;
+    $Ob-&gt;{SUPD} = $String;
+
+    $Last = $Ob;
+
+    $Ob-&gt;write( \*STDOUT );
+
+}
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="converted-observations">
+<h2>Converted observations<a class="headerlink" href="#converted-observations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/oldweather/Expeditions/blob/master/imma/Adventure_1773-4.imma">IMMA format</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="Arctic.html" title="Arctic Expeditions"
+             >next</a></li>
+        <li class="right" >
+          <a href="Cook.html" title="James Cook’s Expeditions"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Cook.html" >James Cook’s Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>
