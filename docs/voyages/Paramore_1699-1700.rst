@@ -1,0 +1,26 @@
+HMS Paramore (1699-1700)
+========================
+
+in 1699 `Edmond Halley <https://en.wikipedia.org/wiki/Edmond_Halley>`_ was granted a commission as captain in the Royal Navy, and he commanded HMS Paramour on an expedition into the South Atlantic to investigate the variation of the compass. He took with him examples of those two exciting modern scientific instruments: the thermometer and the barometer.
+
+His observations were published by Alexander Dalyrmple, in 1775, as part of `A collection of voyages chiefly in the Southern Atlantick Ocean <https://books.google.co.uk/books?id=sGxbAAAAQAAJ>`_
+
+Transcribed observations
+------------------------
+
+* `Excel spreadsheet <https://github.com/oldweather/Expeditions/blob/master/voyages/paramour_1699-1700/as_digitised/Halley_1699.xls>`_
+* `CSV file <https://github.com/oldweather/Expeditions/blob/master/voyages/paramour_1699-1700/as_digitised/Halley_1699.txt>`_
+
+Conversion script
+-----------------
+
+These thermometer observations pre-date the Farenheit scale, so they are in ideosyncratic units. The conversion here is based on the recommendations given in `Middleton <https://jhupbooks.press.jhu.edu/content/history-thermometer-and-its-use-meteorology>`_ - the temperatures should be regarded as very uncertain.
+
+.. literalinclude:: ../../voyages/paramour_1699-1700/scripts/paramore_to_imma.perl
+
+Converted observations
+----------------------
+
+* `IMMA format <https://github.com/oldweather/Expeditions/blob/master/imma/Paramore_1699-1700.imma>`_
+
+

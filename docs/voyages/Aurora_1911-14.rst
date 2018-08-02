@@ -1,0 +1,23 @@
+Aurora (1911-14)
+================
+
+`Aurora <https://en.wikipedia.org/wiki/SY_Aurora>`_ was the Expedition ship for the `Australasian Antarctic Expedition <https://en.wikipedia.org/wiki/Australasian_Antarctic_Expedition>`_, commanded by `Douglas Mawson <https://en.wikipedia.org/wiki/Douglas_Mawson>`_.
+
+
+Transcribed observations
+------------------------
+
+* `Excel spreadsheet <https://github.com/oldweather/Expeditions/blob/master/voyages/aurora_1911-14/as_digitised/AURORA_VOYAGE_CAPETOWN_TO_HOBART.xls>`_
+* `CSV file <https://github.com/oldweather/Expeditions/blob/master/voyages/aurora_1911-14/as_digitised/AURORA_VOYAGE_CAPETOWN_TO_HOBART.txt>`_
+
+Conversion script
+-----------------
+
+.. literalinclude:: ../../voyages/aurora_1911-14/scripts/Aurora_to_imma.perl
+
+Converted observations
+----------------------
+
+* `IMMA format <https://github.com/oldweather/Expeditions/blob/master/imma/Aurora_1911-14.imma>`_
+
+

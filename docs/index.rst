@@ -10,7 +10,10 @@ This is a feeder dataset for ICOADS: It includes raw transcribed observations, s
 .. toctree::
    :maxdepth: 2
 
+   voyages/Cook
    voyages/Arctic
+   voyages/Antarctic
+   voyages/Other
 
 
 .. toctree::

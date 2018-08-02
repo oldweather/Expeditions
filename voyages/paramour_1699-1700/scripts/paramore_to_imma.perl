@@ -27,10 +27,10 @@ while ( my $Line = <> ) {
     push @{ $Ob->{attachments} }, 0;
     my @Fields = split /\t/, $Line;
     foreach my $Fi (@Fields) {
-        if ( $Fi =~ /\.\d*½/ ) { $Fi =~ s/½/5/; }
-        $Fi =~ s/½/\.5/;
-        if ( $Fi =~ /\.\d*¼/ ) { $Fi =~ s/¼/25/; }
-        $Fi =~ s/¼/\.25/;
+        if ( $Fi =~ /\.\d*Â½/ ) { $Fi =~ s/Â½/5/; }
+        $Fi =~ s/Â½/\.5/;
+        if ( $Fi =~ /\.\d*Â¼/ ) { $Fi =~ s/Â¼/25/; }
+        $Fi =~ s/Â¼/\.25/;
     }
 
     if (   defined( $Fields[1] )
