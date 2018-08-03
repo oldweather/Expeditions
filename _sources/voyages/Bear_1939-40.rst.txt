@@ -1,0 +1,23 @@
+USS Bear (1939-40)
+==================
+
+USS Bear was the expedition ship for the `United States Antarctic Service Expedition <United States Antarctic Service Expedition>`_, commanded by `Richard E. Byrd <https://en.wikipedia.org/wiki/Richard_E._Byrd>`_.
+
+
+Transcribed observations
+------------------------
+
+* `Excel spreadsheet <https://github.com/oldweather/Expeditions/blob/master/voyages/bear_1939-40/as_digitised/USS_BEAR_VOYAGE.xls>`_
+* `CSV file <https://github.com/oldweather/Expeditions/blob/master/voyages/bear_1939-40/as_digitised/USS_BEAR_VOYAGE.txt>`_
+
+Conversion script
+-----------------
+
+.. literalinclude:: ../../voyages/bear_1939-40/scripts/bear_to_imma.perl
+
+Converted observations
+----------------------
+
+* `IMMA format <https://github.com/oldweather/Expeditions/blob/master/imma/Bear_1939-40.imma>`_
+
+
