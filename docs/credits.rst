@@ -11,6 +11,7 @@ All blame should go to the maintainer; credit is more widely distributed:
 * Many of the original expedition records were found and selected by `Rob Allan (Met Office) <https://www.metoffice.gov.uk/research/people/rob-allan>`_.
 * Most of the transcriptions, from original record (document image) to spreadsheets, were done by Gail Kelly.
 * Whaling and Royal Navy Arctic expedition observations in the early nineteenth century were produced as part of the `Colonial Registers and Royal Navy Logbooks project <https://www.clim-past.net/6/315/2010/>`_, funded by the `Leverhulme Trust <https://www.leverhulme.ac.uk/>`_.
+* The First Fleet observations were provided by `Joelle Gergis (U. Melbourne) <https://www.findanexpert.unimelb.edu.au/display/person203094>`_ and Nicholas Brown.
 * Observations from the Imperial Trans-Antarctic Expedition were rescued and provided by `Chris Turney (UNSW) <http://www.christurney.com/>`_.
 * These observations form part of the `International Comprehensive Ocean-Atmosphere DataSet (ICOADS) <http://icoads.noaa.gov>`_.
 * This is part of a larger program of work on historical climate data coordinated by the `International ACRE Program <http://www.met-acre.net>`_.
