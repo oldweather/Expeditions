@@ -10,3 +10,5 @@ Other Expeditions
    Beagle_1831-6
    Astrolabe+Zelee_1837-40.rst
    Alligator_1838-9
+   Challenger_1872-6
+   
