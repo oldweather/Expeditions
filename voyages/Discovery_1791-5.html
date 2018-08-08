@@ -1,0 +1,254 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HMS Discovery (1791-5) &#8212; Weather observations from marine expeditions</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="../index.html">Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/The_Water_Bucket_by_Carroll_Jones_III.jpg" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Cook.html">James Cook’s Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Arctic.html">Arctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Antarctic.html">Antarctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Other.html">Other Expeditions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Authors and acknowledgements</a></li>
+</ul>
+<h3><a href="https://github.com/oldweather/Expeditions">Get the data</a></h3>
+
+<ul>
+<li><a href="https://github.com/oldweather/Expeditions"
+           rel="nofollow">Github repository</a></li>
+<li><a href="https://github.com/oldweather/Expeditions/archive/master.zip"
+           rel="nofollow">Zip file</a></li>
+</ul>
+
+<h3>Found a bug, or have a suggestion?</h3>
+
+Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an issue</a>.
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hms-discovery-1791-5">
+<h1>HMS Discovery (1791-5)<a class="headerlink" href="#hms-discovery-1791-5" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/HMS_Discovery_(1789)">HMS Discovery</a> was commanded by <a class="reference external" href="https://en.wikipedia.org/wiki/George_Vancouver">George Vancouver</a> on a voyage to chart the American Pacific Northwest.</p>
+<p>Weather observations were made by the expedition naturalist and surgeon <a class="reference external" href="https://en.wikipedia.org/wiki/Archibald_Menzies">Archibalkd Menzies</a>, and recorded in his journal, which is preserved in the library of the <a class="reference external" href="https://www.rmets.org/">Royal Meteorological Society</a>.</p>
+<div class="section" id="transcribed-observations">
+<h2>Transcribed observations<a class="headerlink" href="#transcribed-observations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/oldweather/Expeditions/blob/master/voyages/discovery_1791-5/as_digitised/VANCOUVER.xls">Excel spreadsheet</a></li>
+<li><a class="reference external" href="https://github.com/oldweather/Expeditions/blob/master/voyages/discovery_1791-5/as_digitised/VANCOUVER.txt">CSV file</a></li>
+</ul>
+</div>
+<div class="section" id="conversion-script">
+<h2>Conversion script<a class="headerlink" href="#conversion-script" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#!/usr/bin/perl
+
+# Process Surgeon Menzis&#39; observations from Vancouver&#39;s expedition into
+#  IMMA records.
+
+use strict;
+use warnings;
+use IMMA;
+use Getopt::Long;
+use FindBin;
+use Date::Calc qw(Delta_Days);
+use MarineOb::lmrlib qw(rxltut ixdtnd rxnddt fxtftc fxeimb fwbptc fwbpgv);
+
+my $Last_lon = -5;
+my $Lon_flag = &#39;N&#39;;
+my $Lat_flag = &#39;W&#39;;
+my $Last_lat = 50;
+my ( $Year, $Month );
+
+for ( my $i = 0 ; $i &lt; 3 ; $i++ ) { &lt;&gt;; }    # Skip headers
+
+while ( my $Line = &lt;&gt; ) {
+    my @Fields = apply_qc( split /\t/, $Line );
+    my $Ob = new IMMA;
+    $Ob-&gt;clear();
+    push @{ $Ob-&gt;{attachments} }, 0;
+
+    # On the Discovery
+    $Ob-&gt;{ID} = &quot;Discovery&quot;;
+
+    # Date
+    if ( defined( $Fields[0] ) &amp;&amp; $Fields[0] =~ /\d/ ) {
+        $Year = $Fields[0];
+    }
+    $Ob-&gt;{YR} = $Year;
+    if ( defined( $Fields[1] ) &amp;&amp; $Fields[1] =~ /\d/ ) {
+        $Month = $Fields[1];
+    }
+    $Ob-&gt;{MO} = $Month;
+    if ( defined( $Fields[2] ) &amp;&amp; $Fields[2] =~ /\d/ ) {
+        $Ob-&gt;{DY} = $Fields[2];
+    }
+    if ( defined( $Fields[3] ) &amp;&amp; $Fields[3] =~ /\d/ ) {
+        $Ob-&gt;{HR} = $Fields[3] / 100;
+    }
+
+    if ( defined( $Fields[4] ) &amp;&amp; $Fields[4] =~ /(\d+)\s(\d+)/ ) {
+        $Ob-&gt;{LAT} = $1 + $2 / 60;
+    }
+    if ( defined( $Fields[4] ) &amp;&amp; $Fields[4] =~ /([NS])/ ) {
+        $Lat_flag = $1;
+    }
+    if ( defined( $Ob-&gt;{LAT} ) &amp;&amp; $Lat_flag eq &#39;S&#39; ) { $Ob-&gt;{LAT} *= -1; }
+    if ( defined( $Fields[5] ) &amp;&amp; $Fields[5] =~ /(\d+)\s(\d+)/ ) {
+        $Ob-&gt;{LON} = $1 + $2 / 60;
+    }
+    if ( defined( $Fields[5] ) &amp;&amp; $Fields[5] =~ /([EW])/ ) {
+        $Lon_flag = $1;
+    }
+    if ( defined( $Ob-&gt;{LON} ) &amp;&amp; $Lon_flag eq &#39;W&#39; ) { $Ob-&gt;{LON} *= -1; }
+    if ( defined( $Ob-&gt;{LON} ) ) {
+        $Last_lon = $Ob-&gt;{LON};
+    }
+    if ( defined( $Ob-&gt;{LON} ) &amp;&amp; $Ob-&gt;{LON} &gt; 180 ) {
+        $Ob-&gt;{LON} -= 360;
+    }
+    if ( defined( $Ob-&gt;{LAT} ) ) {
+        $Last_lat = $Ob-&gt;{LAT};
+    }
+
+    # Convert dates to UTC
+    if (   defined($Last_lon)
+        &amp;&amp; defined( $Ob-&gt;{YR} )
+        &amp;&amp; defined( $Ob-&gt;{MO} )
+        &amp;&amp; defined( $Ob-&gt;{DY} )
+        &amp;&amp; defined( $Ob-&gt;{HR} ) )
+    {
+        my $elon = $Last_lon;
+        if ( $elon &lt; 0 ) {
+            $elon += 360;
+            if ( $elon &gt; 359.99 ) { $elon = 359.99; }
+        }
+        my ( $uhr, $udy ) = rxltut(
+            $Ob-&gt;{HR} * 100,
+            ixdtnd( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ),
+            $elon * 100
+        );
+        $Ob-&gt;{HR} = $uhr / 100;
+        ( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ) = rxnddt($udy);
+    }
+    else { $Ob-&gt;{HR} = undef; }
+
+    $Ob-&gt;{IM}   = 0;
+    $Ob-&gt;{ATTC} = 1;        # Supplemental
+    $Ob-&gt;{TI}   = 0;        # Nearest hour time precision
+    $Ob-&gt;{DS}   = undef;    # Unknown course
+    $Ob-&gt;{VS}   = undef;    # Unknown speed
+    $Ob-&gt;{NID}  = 3;
+    $Ob-&gt;{II}   = 10;
+
+    # (Outside) Air temperature in Farenheit
+    if ( defined( $Fields[8] ) &amp;&amp; $Fields[8] =~ /\d/ ) {
+        $Ob-&gt;{AT} = fxtftc( $Fields[8] );
+    }
+
+    # Pressure in English inches
+    if ( defined( $Fields[9] ) &amp;&amp; $Fields[9] =~ /\d/ ) {
+        $Ob-&gt;{SLP} = fxeimb( $Fields[9] );
+    }
+
+    # Temperature correction
+    if (   defined( $Ob-&gt;{SLP} )
+        &amp;&amp; defined( $Fields[7] )
+        &amp;&amp; $Fields[7] =~ /\d/ )    # Inside temperature
+    {
+        $Ob-&gt;{SLP} += fwbptc( $Ob-&gt;{SLP}, fxtftc( $Fields[7] ) );
+    }
+    else { $Ob-&gt;{SLP} = undef; }
+
+    # Gravity correction
+    if ( defined( $Ob-&gt;{SLP} ) &amp;&amp; defined($Last_lat) ) {
+        $Ob-&gt;{SLP} += fwbpgv( $Ob-&gt;{SLP}, $Last_lat, 2 );
+    }
+
+    # Add the original record as a supplemental attachment
+    push @{ $Ob-&gt;{attachments} }, 99;
+    $Ob-&gt;{ATTE} = undef;
+    chomp($Line);
+    $Ob-&gt;{SUPD} = $Line;
+
+    # Discard the ob if no location or met data
+    unless ( defined( $Ob-&gt;{SLP} )
+        || defined( $Ob-&gt;{AT} )
+        || defined( $Ob-&gt;{LAT} )
+        || defined( $Ob-&gt;{LON} ) )
+    {
+        next;
+    }
+
+    # Output the ob
+    $Ob-&gt;write( \*STDOUT );
+
+}
+
+# Correct some clearly erronious values
+sub apply_qc {
+    my @Fields = (@_);
+
+    if ( defined( $Fields[5] ) &amp;&amp; $Fields[5] eq &#39;297 55&#39; ) {
+        $Fields[5] = &#39;197 55&#39;;
+    }
+    if ( defined( $Fields[5] ) &amp;&amp; $Fields[5] eq &#39;297 06&#39; ) {
+        $Fields[5] = &#39;197 06&#39;;
+    }
+    return @Fields;
+}
+</pre></div>
+</div>
+</div>
+<div class="section" id="converted-observations">
+<h2>Converted observations<a class="headerlink" href="#converted-observations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Not yet converted</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="../index.html">Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>
