@@ -1,0 +1,27 @@
+HMS Hecla (1821-1823)
+=====================
+
+`William Parry <https://en.wikipedia.org/wiki/William_Parry_(explorer)>`_ followed up his :doc:`successful 1919-20 voyage <Hecla_1819-20>` with another NorthWest Passage Expedition. Parry was in command of `HMS Fury <https://en.wikipedia.org/wiki/HMS_Fury_(1814)>`_, supported by `HMS Hecla <https://en.wikipedia.org/wiki/HMS_Hecla_(1815)>`_ under `George Francis Lyon <https://en.wikipedia.org/wiki/George_Francis_Lyon>`_. 
+
+The reported their observations in `Journal of a second voyage for the discovery of a northwest passage ... <https://www.biodiversitylibrary.org/bibliography/26937#/summary>`_. We also have some of the Hecla's logbooks, `in the National Archives ADM55 collection <http://archive.ceda.ac.uk/corral/adm55/adm55_index.html>`_.
+
+Transcribed observations
+------------------------
+
+* From the printed report:
+   * `Excel spreadsheet <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1821-3/as_digitised/PARRY_1821_1823_gail.xls>`_
+* From the ADM55 logbooks:
+   * Excel spreadsheets `1 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1821-3/as_digitised/ADM_55_66_Hecla_0144_0308_2.xls>`_, `2 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1821-3/as_digitised/ADM_55_65_Hecla_0005_0074.xls>`_, `3 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1821-3/as_digitised/ADM_55_62_HMS_Hecla_lats_longs.xls>`_
+   * CSV files `1 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1821-3/as_digitised/ADM_55_66_Hecla_0144_0308_2.txt>`_, `2 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1821-3/as_digitised/ADM_55_65_Hecla_0005_0074.txt>`_, `3 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1821-3/as_digitised/ADM_55_62_HMS_Hecla_lats_longs.txt>`_
+
+Conversion script
+-----------------
+
+.. literalinclude:: ../../voyages/hecla_1821-3/scripts/hecla_to_imma.perl
+
+Converted observations
+----------------------
+
+* `IMMA format <https://github.com/oldweather/Expeditions/blob/master/imma/Hecla_1821-3.imma>`_
+
+
