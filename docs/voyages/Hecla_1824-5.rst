@@ -1,0 +1,30 @@
+HMS Hecla (1824-1825)
+=====================
+
+For his third Northwest Passage expedition, `William Parry <https://en.wikipedia.org/wiki/William_Parry_(explorer)>`_  was in command of `HMS Hecla <https://en.wikipedia.org/wiki/HMS_Hecla_(1815)>`_, supported by `HMS Fury <https://en.wikipedia.org/wiki/HMS_Fury_(1814)>`_ under Henry Parkyns Hoppner. 
+
+The reported their observations in `Journal of a third voyage for the discovery of a northwest passage ... <https://www.biodiversitylibrary.org/bibliography/50423#/summary>`_. We also have some of the Fury's logbooks, `in the National Archives ADM55 collection <http://archive.ceda.ac.uk/corral/adm55/adm55_index.html>`_.
+
+Transcribed observations
+------------------------
+
+* From the printed report:
+   * Excel spreadsheets: `1 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1824-5/as_digitised/VOYAGE_TO_THE_ARCTIC-1824-1825_THIRD_VOYAGE_PARRY_1824%2B5.xls>`_, `2 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1824-5/as_digitised/VOYAGE_TO_THE_ARCTIC-1824-1825_THIRD_VOYAGE_PARRY.xls>`_
+   * CSV files: `1 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1824-5/as_digitised/VOYAGE_TO_THE_ARCTIC-1824-1825_THIRD_VOYAGE_PARRY_1824.txt>`_, `2 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1824-5/as_digitised/VOYAGE_TO_THE_ARCTIC-1824-1825_THIRD_VOYAGE_PARRY_1824%2B5.txt>`_, `3 <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1824-5/as_digitised/VOYAGE_TO_THE_ARCTIC-1824-1825_THIRD_VOYAGE_PARRY.txt>`_
+* From the ADM55 logbooks:
+   * `Excel spreadsheet <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1824-5/as_digitised/ADM_55_56_HMS_Fury_0400_0467_(2).xls>`_
+   * `CSV files <https://github.com/oldweather/Expeditions/blob/master/voyages/hecla_1824-5/as_digitised/ADM_55_56_HMS_Fury_0400_0467_(2).txt>`_
+
+Conversion script
+-----------------
+
+.. literalinclude:: ../../voyages/hecla_1824-5/scripts/hecla_to_imma.perl
+.. literalinclude:: ../../voyages/hecla_1824-5/scripts/fury_to_imma.perl
+
+Converted observations
+----------------------
+
+* `IMMA format - Hecla <https://github.com/oldweather/Expeditions/blob/master/imma/Hecla_1824-5.imma>`_
+* `IMMA format - Fury <https://github.com/oldweather/Expeditions/blob/master/imma/Fury_1824-5.imma>`_
+
+
