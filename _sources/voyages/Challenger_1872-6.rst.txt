@@ -5,7 +5,7 @@ The `Challenger expedition of 1872–76 <https://en.wikipedia.org/wiki/Challenge
 
 Their surface weather observations were published in `Report on the scientific results of the voyage of H.M.S. Challenger during the years 1873-76. Narrative - Vol. 2 <https://escholarship.org/uc/item/47h046n7>`_.
 
-Some of these observations have been digitised before: `comparison of these observations with ICOADS version 2.5 <https://github.com/oldweather/Expeditions/blob/master/voyages/challenger_1872-6/scripts/challenger_in_icoads.perl>`_ showed at least 4 distinct sets of observations clearly from this expedition. But each of these covered only a small fraction of the total voyage, and only a subset of the variables. The vasty majorit of these observations are new to ICOADS.
+Some of these observations have been digitised before: `comparison of these observations with ICOADS version 2.5 <https://github.com/oldweather/Expeditions/blob/master/voyages/challenger_1872-6/scripts/challenger_in_icoads.perl>`_ showed at least 4 distinct sets of observations clearly from this expedition. But each of these covered only a small fraction of the total voyage, and only a subset of the variables. The vast majority of these observations are new to ICOADS.
 
 Transcribed observations
 ------------------------
