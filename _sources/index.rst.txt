@@ -8,6 +8,11 @@ ICOADS is a comprehensive collection of everything already in an appropriate dig
 This is a feeder dataset for ICOADS: It includes raw transcribed observations, software converting that into a standard format, and the final standardised observations. If you just want the observations, you don't want this - use ICOADS instead, but if you are looking for the provenance of the observations, or an example of how to do the necessary format conversion, this may be for you.
 
 .. toctree::
+   :maxdepth: 1
+
+   instructions
+
+.. toctree::
    :maxdepth: 2
 
    voyages/Cook
@@ -20,6 +25,7 @@ This is a feeder dataset for ICOADS: It includes raw transcribed observations, s
    :maxdepth: 1
 
    Authors and acknowledgements <credits>
+   uses
 
 This dataset is distributed under the terms of the `Open Government Licence <https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>`_.  All code included is licensed under the terms of the `GNU Lesser General Public License <https://www.gnu.org/licenses/lgpl.html>`_.
 
