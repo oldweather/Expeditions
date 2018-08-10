@@ -15,5 +15,7 @@ Other Expeditions
    Favorite_1830-2
    Astrolabe+Zelee_1837-40.rst
    Alligator_1838-9
+   Vincennes_1838-42
+   Princess_louise_1849
    Challenger_1872-6
    
