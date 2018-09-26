@@ -90,8 +90,8 @@ while (<>) {
         $Ob->{SLP} = $Fields[10];             # in hPa
     }
     if (   defined( $Ob->{SLP} )
-        && defined( $Ob->{AT} ) ) {           # temperature correction
-        $Ob->{SLP} += fwbptc( $Ob->{SLP}, $Ob->{AT} );
+         && defined( $Ob->{AT} ) ) {           # temperature correction
+         $Ob->{SLP} += fwbptc( $Ob->{SLP}, $Ob->{AT} );
     }
     if ( defined( $Ob->{SLP} ) && defined($Last_lat) ) { # gravity correction
         $Ob->{SLP} += fwbpgv( $Ob->{SLP}, $Last_lat, 2 );
