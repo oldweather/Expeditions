@@ -92,7 +92,7 @@ ax.scatter(ob_dates,ob_values,
                 linewidths=0.0,
                 alpha=1.0,
                 zorder=100)
-ob_values_shifted=[value-5 for value in ob_values]
+ob_values_shifted=[value-12 for value in ob_values]
 ax.scatter(ob_dates,ob_values_shifted,
                 100,
                 'red', # Color

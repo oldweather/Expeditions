@@ -89,14 +89,14 @@ while (<>) {
     if ( defined( $Fields[10] ) && $Fields[10] =~ /\d/ ) {
         $Ob->{SLP} = $Fields[10];             # in hPa
     }
-    if (   defined( $Ob->{SLP} )
-         && defined( $Ob->{AT} ) ) {           # temperature correction
-         $Ob->{SLP} += fwbptc( $Ob->{SLP}, $Ob->{AT} );
-    }
-    if ( defined( $Ob->{SLP} ) && defined($Last_lat) ) { # gravity correction
-        $Ob->{SLP} += fwbpgv( $Ob->{SLP}, $Last_lat, 2 );
-    }
-
+    # Currently think barometer is an aneroid -> no corrections
+    #if (   defined( $Ob->{SLP} )
+    #     && defined( $Ob->{AT} ) ) {           # temperature correction
+    #     $Ob->{SLP} += fwbptc( $Ob->{SLP}, $Ob->{AT} );
+    #}
+    #if ( defined( $Ob->{SLP} ) && defined($Last_lat) ) { # gravity correction
+    #    $Ob->{SLP} += fwbpgv( $Ob->{SLP}, $Last_lat, 2 );
+    #}
 
     # Fill in extra metadata
     $Ob->{IM}   = 0;         # C
