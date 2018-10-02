@@ -23,7 +23,7 @@ from matplotlib.figure import Figure
 obs=IMMA.read(obs_file)
 rdata_u=pickle.load(open(pickled_20CRdata_file_u,'rb'))
 rdata_v=pickle.load(open(pickled_20CRdata_file_v,'rb'))
-# Convert u and v to speed
+# Convert u and v to degrees from north
 for i in range(len(rdata_u)):
     for j in range(len(rdata_u[i][3])):
         rdata_u[i][3][j]=((180.0/math.pi)*
