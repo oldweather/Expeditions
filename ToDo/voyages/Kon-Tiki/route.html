@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kon-Tiki Expedition (1947): Route &#8212; Weather observations from marine expeditions</title>
+    <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/The_Water_Bucket_by_Carroll_Jones_III.jpg" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../instructions.html">How to use this dataset</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Cook.html">James Cook’s Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Arctic.html">Arctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Antarctic.html">Antarctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Other.html">Other Expeditions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Authors and acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../uses.html">Uses of this data</a></li>
+</ul>
+<h3><a href="https://github.com/oldweather/Expeditions">Get the data</a></h3>
+
+<ul>
+<li><a href="https://github.com/oldweather/Expeditions"
+           rel="nofollow">Github repository</a></li>
+<li><a href="https://github.com/oldweather/Expeditions/archive/master.zip"
+           rel="nofollow">Zip file</a></li>
+</ul>
+
+<h3>Found a bug, or have a suggestion?</h3>
+
+Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an issue</a>.
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="kon-tiki-expedition-1947-route">
+<h1>Kon-Tiki Expedition (1947): Route<a class="headerlink" href="#kon-tiki-expedition-1947-route" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center" id="id1" style="width: 95%">
+<a class="reference internal image-reference" href="../../../_images/Kon-Tiki_route_map.png"><img alt="../../../_images/Kon-Tiki_route_map.png" src="../../../_images/Kon-Tiki_route_map.png" style="width: 95%;" /></a>
+<p class="caption"><span class="caption-text">Noon positions of the Kon-Tiki</span></p>
+</div>
+<p>Make the figure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="c1"># Show the route of the Kon-Tiki</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">import</span> <span class="nn">pandas</span>
+
+<span class="kn">import</span> <span class="nn">iris</span>
+<span class="kn">import</span> <span class="nn">iris.analysis</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_agg</span> <span class="k">import</span> \
+             <span class="n">FigureCanvasAgg</span> <span class="k">as</span> <span class="n">FigureCanvas</span>
+<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="k">import</span> <span class="n">Figure</span>
+
+<span class="kn">import</span> <span class="nn">cartopy</span>
+<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
+
+<span class="kn">import</span> <span class="nn">Meteorographica</span> <span class="k">as</span> <span class="nn">mg</span>
+<span class="kn">import</span> <span class="nn">IMMA</span>
+
+<span class="c1"># Landscape page</span>
+<span class="n">aspect</span><span class="o">=</span><span class="mf">16.0</span><span class="o">/</span><span class="mi">9</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">Figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.8</span><span class="o">*</span><span class="n">aspect</span><span class="p">,</span><span class="mf">10.8</span><span class="p">),</span>  <span class="c1"># Width, Height (inches)</span>
+           <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+           <span class="n">facecolor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.88</span><span class="p">,</span><span class="mf">0.88</span><span class="p">,</span><span class="mf">0.88</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+           <span class="n">edgecolor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+           <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+           <span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+           <span class="n">subplotpars</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+           <span class="n">tight_layout</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">=</span><span class="n">FigureCanvas</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="c1"># East-Pacific-centred projection</span>
+<span class="n">projection</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">RotatedPole</span><span class="p">(</span><span class="n">pole_longitude</span><span class="o">=</span><span class="mi">70</span><span class="p">,</span> <span class="n">pole_latitude</span><span class="o">=</span><span class="mi">95</span><span class="p">)</span>
+<span class="n">scale</span><span class="o">=</span><span class="mi">25</span>
+<span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">scale</span><span class="o">*-</span><span class="mi">1</span><span class="o">*</span><span class="n">aspect</span><span class="p">,</span><span class="n">scale</span><span class="o">*</span><span class="n">aspect</span><span class="p">,</span><span class="n">scale</span><span class="o">*-</span><span class="mi">1</span><span class="p">,</span><span class="n">scale</span><span class="p">]</span>
+
+<span class="c1"># Single plot filling figure</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span><span class="n">projection</span><span class="o">=</span><span class="n">projection</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_extent</span><span class="p">(</span><span class="n">extent</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="n">projection</span><span class="p">)</span>
+
+<span class="c1"># Background, grid and land</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">background_patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">((</span><span class="mf">0.88</span><span class="p">,</span><span class="mf">0.88</span><span class="p">,</span><span class="mf">0.88</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">mg</span><span class="o">.</span><span class="n">background</span><span class="o">.</span><span class="n">add_grid</span><span class="p">(</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">land_img</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">background_img</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;GreyT&#39;</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;low&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add the positions</span>
+<span class="n">ob_source</span><span class="o">=</span><span class="n">IMMA</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">__file__</span><span class="p">),</span>
+                       <span class="s1">&#39;../../../../imma/Kon-Tiki_1947.imma&#39;</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">ob_source</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">continue</span>
+    <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">continue</span>
+    <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LI&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LI&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">3</span><span class="p">:</span> <span class="k">continue</span>
+    <span class="n">rp</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">projection</span><span class="o">.</span><span class="n">transform_points</span><span class="p">(</span><span class="n">ccrs</span><span class="o">.</span><span class="n">PlateCarree</span><span class="p">(),</span>
+                                      <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]),</span>
+                                      <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Circle</span><span class="p">((</span><span class="n">rp</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span><span class="n">rp</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]),</span>
+                                                <span class="n">radius</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+                                                <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span>
+                                                <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                                <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                                                <span class="n">zorder</span><span class="o">=</span><span class="mi">100</span><span class="p">))</span>    
+
+<span class="c1"># Output as png</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;Kon-Tiki_route_map.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>

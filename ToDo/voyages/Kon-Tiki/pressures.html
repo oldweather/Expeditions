@@ -1,0 +1,229 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Kon-Tiki Expedition (1947): Pressure observations &#8212; Weather observations from marine expeditions</title>
+    <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Kon-Tiki Expedition (1947): Air temperature observations" href="air_temperatures.html" />
+    <link rel="prev" title="Kon-Tiki Expedition (1947): Route" href="route.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="air_temperatures.html" title="Kon-Tiki Expedition (1947): Air temperature observations"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="route.html" title="Kon-Tiki Expedition (1947): Route"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../ToDo.html" >Expeditions To Do</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Kon-Tiki.html" accesskey="U">Kon-Tiki Expedition (1947)</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/The_Water_Bucket_by_Carroll_Jones_III.jpg" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../instructions.html">How to use this dataset</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Cook.html">James Cook’s Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Arctic.html">Arctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Antarctic.html">Antarctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Other.html">Other Expeditions</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../ToDo.html">Expeditions To Do</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Authors and acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../uses.html">Uses of this data</a></li>
+</ul>
+<h3><a href="https://github.com/oldweather/Expeditions">Get the data</a></h3>
+
+<ul>
+<li><a href="https://github.com/oldweather/Expeditions"
+           rel="nofollow">Github repository</a></li>
+<li><a href="https://github.com/oldweather/Expeditions/archive/master.zip"
+           rel="nofollow">Zip file</a></li>
+</ul>
+
+<h3>Found a bug, or have a suggestion?</h3>
+
+Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an issue</a>.
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="kon-tiki-expedition-1947-pressure-observations">
+<h1>Kon-Tiki Expedition (1947): Pressure observations<a class="headerlink" href="#kon-tiki-expedition-1947-pressure-observations" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-center" id="id1" style="width: 95%">
+<a class="reference internal image-reference" href="../../../_images/pressure_comparison.png"><img alt="../../../_images/pressure_comparison.png" src="../../../_images/pressure_comparison.png" style="width: 95%;" /></a>
+<p class="caption"><span class="caption-text">Atmospheric pressure observations made by the Kon-Tiki (black dots), compared with co-located MSLP in the 20CRv3 ensemble (blue dots). The red dots are the observations with a constant offset of 12hPa subtracted.</span></p>
+</div>
+<p>The apparent bias in the observations is large. I’m <a class="reference internal" href="metadata.html"><span class="doc">assuming the observations come from aneroid barometer</span></a>, so no temperature or gravity correction has been made. If they were really from a mercury barometer, the corrections would reduce the bias by about half (temperature and latitude vary little across the voyage).</p>
+<p>Get the 20CRv3 data for comparison:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">IRData.twcr</span> <span class="kn">as</span> <span class="nn">twcr</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="k">for</span> <span class="n">month</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">):</span>
+    <span class="n">dtn</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1947</span><span class="p">,</span><span class="n">month</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">twcr</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="s1">&#39;prmsl&#39;</span><span class="p">,</span><span class="n">dtn</span><span class="p">,</span><span class="n">version</span><span class="o">=</span><span class="s1">&#39;4.5.1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Extract 20CRv3 MSLP at the time and place of each IMMA record. Uses <a class="reference internal" href="comparators.html"><span class="doc">this script</span></a>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./get_comparators.py --imma<span class="o">=</span>../../../imma/Kon-Tiki_1947.imma --var<span class="o">=</span>prmsl
+</pre></div>
+</div>
+<p>Make the figure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="c1"># Plot a comparison of a set of ship obs against 20CRv3</span>
+
+<span class="c1"># Requires 20CR data to have already been extracted with get_comparators.py</span>
+
+<span class="n">obs_file</span><span class="o">=</span><span class="s1">&#39;../../../../imma/Kon-Tiki_1947.imma&#39;</span>
+<span class="n">pickled_20CRdata_file</span><span class="o">=</span><span class="s1">&#39;20CRv3_prmsl.pkl&#39;</span>
+
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">IMMA</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_agg</span> <span class="k">import</span> \
+                 <span class="n">FigureCanvasAgg</span> <span class="k">as</span> <span class="n">FigureCanvas</span>
+<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="k">import</span> <span class="n">Figure</span>
+
+<span class="c1"># Load the data to plot</span>
+<span class="n">obs</span><span class="o">=</span><span class="n">IMMA</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">obs_file</span><span class="p">)</span>
+<span class="n">rdata</span><span class="o">=</span><span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">pickled_20CRdata_file</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">))</span>
+<span class="n">ob_dates</span><span class="o">=</span><span class="p">([</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">],</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">],</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">],</span><span class="nb">int</span><span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]))</span> 
+                  <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obs</span> <span class="k">if</span> 
+                <span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)])</span>
+<span class="n">ob_values</span><span class="o">=</span><span class="p">[</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;SLP&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obs</span> <span class="k">if</span> <span class="n">o</span><span class="p">[</span><span class="s1">&#39;SLP&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+<span class="n">rdata_values</span><span class="o">=</span><span class="p">[</span><span class="n">value</span><span class="o">/</span><span class="mf">100.0</span> <span class="k">for</span> <span class="n">ensemble</span> <span class="ow">in</span> <span class="n">rdata</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">ensemble</span><span class="p">[</span><span class="mi">3</span><span class="p">]]</span>
+
+<span class="c1"># Set up the plot</span>
+<span class="n">aspect</span><span class="o">=</span><span class="mf">16.0</span><span class="o">/</span><span class="mf">9.0</span>
+<span class="n">fig</span><span class="o">=</span><span class="n">Figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">10.8</span><span class="o">*</span><span class="n">aspect</span><span class="p">,</span><span class="mf">10.8</span><span class="p">),</span>  <span class="c1"># Width, Height (inches)</span>
+           <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+           <span class="n">facecolor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.88</span><span class="p">,</span><span class="mf">0.88</span><span class="p">,</span><span class="mf">0.88</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+           <span class="n">edgecolor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+           <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+           <span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+           <span class="n">subplotpars</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+           <span class="n">tight_layout</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">canvas</span><span class="o">=</span><span class="n">FigureCanvas</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+<span class="n">font</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span> <span class="p">:</span> <span class="s1">&#39;sans-serif&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;sans-serif&#39;</span> <span class="p">:</span> <span class="s1">&#39;Arial&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;weight&#39;</span> <span class="p">:</span> <span class="s1">&#39;normal&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;size&#39;</span>   <span class="p">:</span> <span class="mi">14</span><span class="p">}</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">font</span><span class="p">)</span>
+
+<span class="c1"># Single axes - var v. time</span>
+<span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.945</span><span class="p">,</span><span class="mf">0.94</span><span class="p">])</span>
+<span class="c1"># Axes ranges from data</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="nb">min</span><span class="p">(</span><span class="n">ob_dates</span><span class="p">)</span><span class="o">-</span><span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+             <span class="nb">max</span><span class="p">(</span><span class="n">ob_dates</span><span class="p">)</span><span class="o">+</span><span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="nb">min</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">ob_values</span><span class="p">),</span><span class="nb">min</span><span class="p">(</span><span class="n">rdata_values</span><span class="p">))</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+             <span class="nb">max</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">ob_values</span><span class="p">),</span><span class="nb">max</span><span class="p">(</span><span class="n">rdata_values</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;MSLP (hPa)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Ensemble values - one point for each member at each time-point</span>
+<span class="n">t_jitter</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=-</span><span class="mi">6</span><span class="p">,</span><span class="n">high</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">rdata</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">]))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">rdata</span><span class="p">:</span>
+    <span class="n">ensemble</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">v</span><span class="o">/</span><span class="mf">100.0</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">i</span><span class="p">[</span><span class="mi">3</span><span class="p">]])</span> <span class="c1"># in hPa</span>
+    <span class="n">dates</span><span class="o">=</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">t_jitter</span><span class="p">]</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">dates</span><span class="p">,</span><span class="n">ensemble</span><span class="p">,</span>
+                    <span class="mi">10</span><span class="p">,</span>
+                    <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="c1"># Color</span>
+                    <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span>
+                    <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                    <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+                    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                    <span class="n">zorder</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># Observations</span>
+<span class="n">ob_dates</span><span class="o">=</span><span class="p">([</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">],</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">],</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">],</span><span class="nb">int</span><span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]))</span> 
+                  <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obs</span> <span class="k">if</span> 
+                <span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;SLP&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)])</span>
+<span class="n">ob_values</span><span class="o">=</span><span class="p">([</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;SLP&#39;</span><span class="p">]</span> 
+                  <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">obs</span> <span class="k">if</span> 
+                <span class="p">(</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;SLP&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span>
+                 <span class="n">o</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ob_dates</span><span class="p">,</span><span class="n">ob_values</span><span class="p">,</span>
+                <span class="mi">100</span><span class="p">,</span>
+                <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="c1"># Color</span>
+                <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span>
+                <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+                <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                <span class="n">zorder</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">ob_values_shifted</span><span class="o">=</span><span class="p">[</span><span class="n">value</span><span class="o">-</span><span class="mi">12</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">ob_values</span><span class="p">]</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ob_dates</span><span class="p">,</span><span class="n">ob_values_shifted</span><span class="p">,</span>
+                <span class="mi">100</span><span class="p">,</span>
+                <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="c1"># Color</span>
+                <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span>
+                <span class="n">edgecolors</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+                <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                <span class="n">zorder</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;pressure_comparison.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="air_temperatures.html" title="Kon-Tiki Expedition (1947): Air temperature observations"
+             >next</a></li>
+        <li class="right" >
+          <a href="route.html" title="Kon-Tiki Expedition (1947): Route"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../ToDo.html" >Expeditions To Do</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Kon-Tiki.html" >Kon-Tiki Expedition (1947)</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>
