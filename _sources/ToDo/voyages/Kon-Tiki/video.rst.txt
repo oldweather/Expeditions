@@ -14,7 +14,7 @@ Kon-Tiki Expedition (1947): Video summary
 
 The map on the left shows the route of the Kon-Tiki (red and grey dots) and the locations of all the other pressure observations available to 20CR3 (yellow dots). The graphs on the right show the observations made by the Kon-Tiki (red and black dots), and co-located reconstructions from the 20CR3 ensemble (blue dots).
 
-Based on the detailed figures for: :doc:`Route <route>`, :doc:`SLP <pressures>`, :doc:`air temperature <sea_temperatures>`, :doc:`SST <sea_temperatures>`, :doc:`wind speed <wind_speed>` & :doc:`wind direction <wind_speed>`. See those for the necessary data collection and pre-processing.
+Based on the detailed figures for: :doc:`Route <route>`, :doc:`SLP <pressures>`, :doc:`air temperature <sea_temperatures>`, :doc:`SST <sea_temperatures>`, :doc:`wind speed <wind_speed>` & :doc:`wind direction <wind_direction>`. See those for the necessary data collection and pre-processing.
 
 |
 
