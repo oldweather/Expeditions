@@ -8,9 +8,9 @@ Kon-Tiki Expedition (1947): Wind direction observations
 
    Wind direction observations made by the Kon-Tiki (red dots), compared with co-located 10m wind direction in the 20CRv3 ensemble (blue dots).
 
-The observed wind directions are almost certainly magnetic. To convert them to true would mean adding about 7 degrees (1/3 point) - moving them up with respect to the reanalyis data.
+The observed wind directions are almost certainly magnetic. To convert them to true would mean adding about 7 degrees (1/3 point) - moving them up with respect to the reanalysis data.
 
-The wind observations were made with :doc:`a hand-held annemometer <metadata>`, probably at the masthead (maybe 6m above sea-level).
+The wind observations were made with :doc:`a hand-held anemometer <metadata>`, probably at the masthead (maybe 6m above sea-level).
 
 Get the 20CRv3 data for comparison:
 

@@ -1,6 +1,9 @@
 cat ../as_digitised/Kon-Tiki.csv | ./kt_to_imma.perl | imma_interpolate.perl > ../../../imma/Kon-Tiki_1947.imma
 
-cd ../analyses/20CRv3_comparisons
+cd ../analyses/route_map
+./route.py
+
+cd ../20CRv3_comparisons
 # Data extraction is slow, and the v3 data must have been downloaded first
 ./get_comparators.py --imma=../../../../imma/Kon-Tiki_1947.imma --var=prmsl
 ./get_comparators.py --imma=../../../../imma/Kon-Tiki_1947.imma --var=air.2m

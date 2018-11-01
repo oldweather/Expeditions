@@ -8,7 +8,7 @@ Kon-Tiki Expedition (1947): Wind speed observations
 
    Wind speed observations made by the Kon-Tiki (red dots), compared with co-located 10m wind speed in the 20CRv3 ensemble (blue dots)
 
-The wind observations were made with :doc:`a hand-held annemometer <metadata>`, probably at the masthead (maybe 6m above sea-level) and possibly converted to Beaufort Force for radio transmission.
+The wind observations were made with :doc:`a hand-held anemometer <metadata>`, probably at the masthead (maybe 6m above sea-level) and possibly converted to Beaufort Force for radio transmission.
 
 Get the 20CRv3 data for comparison:
 
