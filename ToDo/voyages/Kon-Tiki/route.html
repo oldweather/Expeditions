@@ -4,21 +4,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Kon-Tiki Expedition (1947): Route &#8212; Weather observations from marine expeditions</title>
     <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Kon-Tiki Expedition (1947): Pressure observations" href="pressures.html" />
+    <link rel="prev" title="Kon-Tiki Expedition (1947): Video summary" href="video.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li> 
+        <li class="right" style="margin-right: 10px">
+          <a href="pressures.html" title="Kon-Tiki Expedition (1947): Pressure observations"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="video.html" title="Kon-Tiki Expedition (1947): Video summary"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../ToDo.html" >Expeditions To Do</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Kon-Tiki.html" accesskey="U">Kon-Tiki Expedition (1947)</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -35,6 +46,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../voyages/Arctic.html">Arctic Expeditions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../voyages/Antarctic.html">Antarctic Expeditions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../voyages/Other.html">Other Expeditions</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../ToDo.html">Expeditions To Do</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Authors and acknowledgements</a></li>
@@ -119,7 +133,7 @@ Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an i
 <span class="n">land_img</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">background_img</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;GreyT&#39;</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="s1">&#39;low&#39;</span><span class="p">)</span>
 
 <span class="c1"># Add the positions</span>
-<span class="n">ob_source</span><span class="o">=</span><span class="n">IMMA</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">__file__</span><span class="p">),</span>
+<span class="n">ob_source</span><span class="o">=</span><span class="n">IMMA</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span>
                        <span class="s1">&#39;../../../../imma/Kon-Tiki_1947.imma&#39;</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">ob_source</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="k">continue</span>
@@ -150,7 +164,15 @@ Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an i
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li> 
+        <li class="right" style="margin-right: 10px">
+          <a href="pressures.html" title="Kon-Tiki Expedition (1947): Pressure observations"
+             >next</a></li>
+        <li class="right" >
+          <a href="video.html" title="Kon-Tiki Expedition (1947): Video summary"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../ToDo.html" >Expeditions To Do</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Kon-Tiki.html" >Kon-Tiki Expedition (1947)</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

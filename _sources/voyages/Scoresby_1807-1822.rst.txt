@@ -1,0 +1,35 @@
+William Scoresby (1807-1822)
+============================
+
+The remarkable `William Scoresby <https://en.wikipedia.org/wiki/William_Scoresby>`_ spent 15 summers in the Greenland Sea, hunting whales. He reported his weather observations in two books:
+
+* `An Account of the Arctic Regions: With a History and Description of the Northern Whale-fishery, Volume 2 <https://books.google.co.uk/books?id=_BoFAAAAMAAJ>`_
+* `Journal of a Voyage to the Northern Whale-Fishery <https://books.google.co.uk/books?id=N8xV7OSqrCgC>`_
+
+He did make pressure measurements, but unfortunately only reported the daily means, so we can't use them.
+
+He wrote to the Royal Society in 1817, saying that there was much less ice in the sea than usual that year. This was a trigger for the Royal Navy expeditions starting in 1818.
+
+
+Transcribed observations
+------------------------
+
+* From 'An account of the Arctic regions' (1807-1818):
+   * `Excel spreadsheet <https://github.com/oldweather/Expeditions/blob/master/voyages/scoresby_1807-22/as_digitised/SCORESBY.xls>`_
+   * `CSV file <https://github.com/oldweather/Expeditions/blob/master/voyages/scoresby_1807-22/as_digitised/SCORESBY.txt>`_
+* From 'Journey of a voyage' (1822):
+   * `Excel spreadsheet <https://github.com/oldweather/Expeditions/blob/master/voyages/scoresby_1807-22/as_digitised/SCORESBY_1822.xls>`_
+   * `CSV file <https://github.com/oldweather/Expeditions/blob/master/voyages/scoresby_1807-22/as_digitised/SCORESBY_1822.txt>`_
+
+Conversion script
+-----------------
+
+.. literalinclude:: ../../voyages/scoresby_1807-22/scripts/scoresby_to_imma.perl
+
+Converted observations
+----------------------
+
+* `IMMA format 1807-1818 <https://github.com/oldweather/Expeditions/blob/master/imma/Scoresby_1807-18.imma>`_
+* `IMMA format 1822 <https://github.com/oldweather/Expeditions/blob/master/imma/Scoresby_1822.imma>`_
+
+

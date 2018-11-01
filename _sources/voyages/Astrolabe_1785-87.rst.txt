@@ -1,7 +1,7 @@
 Astrolabe (1785-87)
 ===================
 
-`La Pérouse <https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_de_Galaup,_comte_de_Lap%C3%A9rouse>`_ commanded the Astrolabe on a French-government-sponsored scientific circumnavigation voyage. 
+`La Pérouse <https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_de_Galaup,_comte_de_Lap%C3%A9rouse>`_ commanded the Astrolabe (along with the :doc:`Boussole <Boussole_1785-88>`) on a French-government-sponsored scientific circumnavigation voyage. 
 
 Their observations were published in `Voyage de La Pérouse autour du monde <https://www.biodiversitylibrary.org/bibliography/15861#/summary>`_
 

@@ -1,0 +1,155 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Make 20CR comparators for an IMMA file &#8212; Weather observations from marine expeditions</title>
+    <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/The_Water_Bucket_by_Carroll_Jones_III.jpg" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../instructions.html">How to use this dataset</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Cook.html">James Cook’s Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Arctic.html">Arctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Antarctic.html">Antarctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Other.html">Other Expeditions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ToDo.html">Expeditions To Do</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Authors and acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../uses.html">Uses of this data</a></li>
+</ul>
+<h3><a href="https://github.com/oldweather/Expeditions">Get the data</a></h3>
+
+<ul>
+<li><a href="https://github.com/oldweather/Expeditions"
+           rel="nofollow">Github repository</a></li>
+<li><a href="https://github.com/oldweather/Expeditions/archive/master.zip"
+           rel="nofollow">Zip file</a></li>
+</ul>
+
+<h3>Found a bug, or have a suggestion?</h3>
+
+Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an issue</a>.
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="make-20cr-comparators-for-an-imma-file">
+<h1>Make 20CR comparators for an IMMA file<a class="headerlink" href="#make-20cr-comparators-for-an-imma-file" title="Permalink to this headline">¶</a></h1>
+<p>Script that extracts 20CRv3 ensemble values at the time and location of each record in an IMMA file. Uses the <a class="reference external" href="http://brohan.org/IRData/">IRData</a> package. It takes the IMMA file name and selected variable as options and saves the extracted data as a <a class="reference external" href="https://docs.python.org/2/library/pickle.html">pickle</a>.</p>
+<p>This takes a while for each observation, so it’s designed to be parallelised - run it only on the set of IMMA records numbered from <code class="docutils literal notranslate"><span class="pre">--start`</span></code> to <code class="docutils literal notranslate"><span class="pre">--end</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
+
+<span class="c1"># Extract data from 20CRv3 along the route of a ship.</span>
+<span class="c1"># For each IMMA record in the input file, get the </span>
+<span class="c1">#  selected variable at the same time and place.</span>
+
+<span class="kn">import</span> <span class="nn">IRData.twcr</span> <span class="k">as</span> <span class="nn">twcr</span>
+<span class="kn">import</span> <span class="nn">iris</span>
+<span class="kn">import</span> <span class="nn">iris.analysis</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">IMMA</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">()</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--imma&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Ship imma file&quot;</span><span class="p">,</span>
+                    <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--var&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Variable to extract&quot;</span><span class="p">,</span>
+                    <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--opdir&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Directory for output files&quot;</span><span class="p">,</span>
+                    <span class="n">default</span><span class="o">=</span><span class="s2">&quot;./pickles&quot;</span><span class="p">,</span>
+                    <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--start&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;No.of record to start with&quot;</span><span class="p">,</span>
+                    <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--end&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;No.of record to end with&quot;</span><span class="p">,</span>
+                    <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">opdir</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">opdir</span><span class="p">)</span>
+
+<span class="n">result</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">o_source</span><span class="o">=</span><span class="n">IMMA</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">imma</span><span class="p">)</span>
+<span class="n">startn</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">start</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span> <span class="n">startn</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">start</span>
+<span class="n">endn</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">o_source</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">end</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span> <span class="n">endn</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">endn</span><span class="p">,</span><span class="n">args</span><span class="o">.</span><span class="n">end</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">endn</span><span class="o">&lt;</span><span class="n">startn</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Start point exceeds end point&quot;</span><span class="p">)</span>
+<span class="n">o_source</span><span class="o">=</span><span class="n">o_source</span><span class="p">[</span><span class="n">startn</span><span class="p">:</span><span class="n">endn</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">o_source</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span>
+        <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span>
+        <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span>
+        <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span> <span class="k">continue</span>
+    <span class="n">dte</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">],</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">],</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">],</span><span class="nb">int</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]))</span>
+    <span class="n">rdata</span><span class="o">=</span><span class="n">twcr</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">var</span><span class="p">,</span><span class="n">dte</span><span class="p">,</span><span class="n">version</span><span class="o">=</span><span class="s1">&#39;4.5.1&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span>
+        <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span> <span class="k">continue</span>
+    <span class="n">interpolator</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">Linear</span><span class="p">()</span><span class="o">.</span><span class="n">interpolator</span><span class="p">(</span><span class="n">rdata</span><span class="p">,</span> 
+                                    <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">])</span>
+    <span class="n">ensemble</span> <span class="o">=</span> <span class="n">interpolator</span><span class="p">([</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]),</span>
+                             <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">])])</span><span class="o">.</span><span class="n">data</span>
+    <span class="n">point</span><span class="o">=</span><span class="p">[</span><span class="n">dte</span><span class="p">,</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">],</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">],</span><span class="n">ensemble</span><span class="p">]</span>
+    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">point</span><span class="p">)</span>
+
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span> <span class="n">result</span><span class="p">,</span> 
+             <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">/20CRv3_</span><span class="si">%s</span><span class="s2">.</span><span class="si">%05d</span><span class="s2">-</span><span class="si">%05d</span><span class="s2">.pkl&quot;</span> <span class="o">%</span> 
+                    <span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">opdir</span><span class="p">,</span><span class="n">args</span><span class="o">.</span><span class="n">var</span><span class="p">,</span><span class="n">startn</span><span class="p">,</span><span class="n">endn</span><span class="p">),</span>
+                    <span class="s2">&quot;wb&quot;</span> <span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>

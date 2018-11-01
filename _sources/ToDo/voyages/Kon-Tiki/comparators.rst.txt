@@ -1,3 +1,5 @@
+:orphan:
+
 Make 20CR comparators for an IMMA file
 ======================================
 
