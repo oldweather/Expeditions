@@ -1,0 +1,217 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Princesse Alice II 1898 Conversion script &#8212; Weather observations from marine expeditions</title>
+    <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Princesse Alice II Expedition (1898): Video summary" href="video.html" />
+    <link rel="prev" title="Princesse Alice II Spitzbergen expedition (1898)" href="Expedition.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="video.html" title="Princesse Alice II Expedition (1898): Video summary"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="Expedition.html" title="Princesse Alice II Spitzbergen expedition (1898)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../ToDo.html" >Expeditions To Do</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Expedition.html" accesskey="U">Princesse Alice II Spitzbergen expedition (1898)</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/The_Water_Bucket_by_Carroll_Jones_III.jpg" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table Of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../instructions.html">How to use this dataset</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Cook.html">James Cook’s Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Arctic.html">Arctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Antarctic.html">Antarctic Expeditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../voyages/Other.html">Other Expeditions</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../ToDo.html">Expeditions To Do</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Authors and acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../uses.html">Uses of this data</a></li>
+</ul>
+<h3><a href="https://github.com/oldweather/Expeditions">Get the data</a></h3>
+
+<ul>
+<li><a href="https://github.com/oldweather/Expeditions"
+           rel="nofollow">Github repository</a></li>
+<li><a href="https://github.com/oldweather/Expeditions/archive/master.zip"
+           rel="nofollow">Zip file</a></li>
+</ul>
+
+<h3>Found a bug, or have a suggestion?</h3>
+
+Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an issue</a>.
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="princesse-alice-ii-1898-conversion-script">
+<h1>Princesse Alice II 1898 Conversion script<a class="headerlink" href="#princesse-alice-ii-1898-conversion-script" title="Permalink to this headline">¶</a></h1>
+<p>Script to convert transcribed data to IMMA for the <a class="reference internal" href="Expedition.html"><span class="doc">Princesse Alice II expedition in 1898</span></a>. Uses the <a class="reference external" href="http://brohan.org/pyIMMA/">Python IMMA library</a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#!/usr/bin/perl
+
+# Process digitised logbook data from the Princesse Alice II into
+#  IMMA records.
+
+use strict;
+use warnings;
+use MarineOb::IMMA;
+use Date::Calc qw(Delta_Days);
+use MarineOb::lmrlib qw(rxltut ixdtnd rxnddt fxmmmb fwbptc fwbpgv
+                        fxtftc fxbfms ix32dd);
+
+my $Ship_name = &#39;PcsAlice2&#39;;
+my ( $Year,     $Month,    $Day );
+my ( $Last_lon, $Last_lat, $Last_T );
+my $Lat_flag = &#39;N&#39;;
+my $Lon_flag = &#39;W&#39;;
+$Last_lon = -2.99;
+$Last_lat = 53.40;
+
+for ( my $i = 0 ; $i &lt; 3 ; $i++ ) { &lt;&gt;; }    # Skip headers
+
+while (&lt;&gt;) {
+    my $Line = $_;
+    my $Ob   = new MarineOb::IMMA;
+    $Ob-&gt;clear();
+    push @{ $Ob-&gt;{attachments} }, 0;
+    my @Fields = split /,/, $_;
+
+    if ( defined( $Fields[0] ) &amp;&amp; $Fields[0] =~ /(\d\d\d\d)/ ) {
+        $Year = $1;
+    if ( defined( $Fields[1] ) &amp;&amp; $Fields[1] =~ /(\d+)/ ) {
+        $Month = $1;
+    }
+    if ( defined( $Fields[2] ) &amp;&amp; $Fields[2] =~ /(\d+)/ ) {
+        $Day = $1;
+    }
+    if ( defined( $Fields[3] ) &amp;&amp; $Fields[3] =~ /(\d+)/ ) {
+        $Hour = $1;
+    }
+    $Ob-&gt;{YR} = $Year;
+    $Ob-&gt;{MO} = $Month;
+    $Ob-&gt;{DY} = $Day;
+    $Ob-&gt;{HR} = $Hour;
+    if ( $Ob-&gt;{HR} == 24 ) { $Ob-&gt;{HR} = 23.99; }
+
+    if ( defined( $Fields[13] ) &amp;&amp; $Fields[13] =~ /(\d+)/ ) {
+        $Ob-&gt;{LAT} = $Fields[13];
+    }
+    if ( defined( $Fields[14] ) &amp;&amp; $Fields[14] =~ /(\d+)/ ) {
+        $Ob-&gt;{LON} = $Fields[14];
+    }
+
+    # Convert ob date and time to UTC
+    # Start by assuming at UTC
+    if (   defined($Last_lon)
+        &amp;&amp; defined( $Ob-&gt;{HR} )
+        &amp;&amp; defined( $Ob-&gt;{DY} )
+        &amp;&amp; defined( $Ob-&gt;{MO} )
+        &amp;&amp; defined( $Ob-&gt;{YR} ) )
+    {
+        my $elon = 0;   # $Last_lon;
+        if ( $elon &lt; 0 ) { $elon += 360; }
+        my ( $uhr, $udy ) = rxltut(
+            $Ob-&gt;{HR} * 100,
+            ixdtnd( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ),
+            $elon * 100
+        );
+        $Ob-&gt;{HR} = $uhr / 100;
+        ( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ) = rxnddt($udy);
+    }
+    else { $Ob-&gt;{HR} = undef; }
+
+
+    if ( defined( $Fields[10] ) &amp;&amp; $Fields[10] =~ /\d/ ) {
+        $Ob-&gt;{SLP} = $Fields[10];             # in hPa
+    }
+    # Currently think barometer is an aneroid -&gt; no corrections
+
+    # Fill in extra metadata
+    $Ob-&gt;{IM}   = 0;         # C
+    $Ob-&gt;{ATTC} = 0;         # No attachments - may have supplemental, see below
+    $Ob-&gt;{TI}   = 0;         # Nearest hour time precision
+    $Ob-&gt;{DS}   = undef;     # Unknown course
+    $Ob-&gt;{VS}   = undef;     # Unknown speed
+    $Ob-&gt;{NID}  = 3;         #
+    $Ob-&gt;{II}   = 10;        #
+    $Ob-&gt;{ID}   = $Ship_name;
+    $Ob-&gt;{C1}   = &#39;04&#39;;      #
+    if (   defined( $Ob-&gt;{AT} )
+        || defined( $Ob-&gt;{WBT} )
+        || defined( $Ob-&gt;{DPT} )
+        || defined( $Ob-&gt;{SST} ) )
+    {
+        $Ob-&gt;{IT} = 4;                          # Temps in degF and 10ths
+    }
+
+    # Add the original record as a supplemental attachment
+    if ( defined($Line) &amp;&amp; $Line =~ /\S/ ) {
+        chomp($Line);
+        push @{ $Ob-&gt;{attachments} }, 99;
+        $Ob-&gt;{ATTC}++;
+        $Ob-&gt;{ATTE} = undef;
+        $Ob-&gt;{SUPD} = $Line;
+    }
+
+    $Ob-&gt;write( \*STDOUT );
+
+}
+
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="video.html" title="Princesse Alice II Expedition (1898): Video summary"
+             >next</a></li>
+        <li class="right" >
+          <a href="Expedition.html" title="Princesse Alice II Spitzbergen expedition (1898)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Expeditions</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../ToDo.html" >Expeditions To Do</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="Expedition.html" >Princesse Alice II Spitzbergen expedition (1898)</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>

@@ -10,6 +10,7 @@ Occasionally one of these will be worked-on and released, but this does not happ
 
    voyages/Kon-Tiki/Kon-Tiki.rst
    voyages/Planet_1906-7/Planet.rst
+   voyages/Princesse_Alice_II_1898/Expedition.rst
    Princess Louise (1824-40) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/Princess_Louise>
    Baquedano (1918) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/baquedano>
    Bonite (1836-7) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/bonite_1836-7>
