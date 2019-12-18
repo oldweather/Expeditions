@@ -4,7 +4,7 @@
 
 # Requires 20CR data to have already been extracted with get_comparators.py
 
-obs_file='../../../../imma/Princesse_Alice_1898.imma'
+obs_file='../../../../imma/Princesse_Alice_II_1898.imma'
 pickled_20CRdata_file='20CRv3_PRMSL.pkl'
 
 import pickle

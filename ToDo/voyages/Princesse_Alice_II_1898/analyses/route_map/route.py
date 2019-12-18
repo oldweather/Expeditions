@@ -51,7 +51,7 @@ land_img=ax.background_img(name='GreyT', resolution='low')
 
 # Add the positions
 ob_source=IMMA.get(os.path.join(os.path.dirname(__file__),
-                       '../../../../imma/Princesse_Alice_1898.imma'))
+                       '../../../../imma/Princesse_Alice_II_1898.imma'))
 for ob in ob_source:
     if ob['LAT'] is None: continue
     if ob['LON'] is None: continue

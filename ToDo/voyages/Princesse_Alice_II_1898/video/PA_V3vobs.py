@@ -86,7 +86,7 @@ obs=twcr.load_observations_fortime(dte,version='3')
 mg.observations.plot(ax_map,obs,radius=0.25,edgecolor=(0.2,0.2,0.2),linewidth=0.01)
 # Plot the current position
 obs=IMMA.read(os.path.join(os.path.dirname(__file__),
-                       '../../../imma/Princesse_Alice_1898.imma'))
+                       '../../../imma/Princesse_Alice_II_1898.imma'))
 for ob in obs:
     if ob['LAT'] is None: continue
     if ob['LON'] is None: continue
