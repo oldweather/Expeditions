@@ -4,8 +4,8 @@
 
 # Requires 20CR data to have already been extracted with get_comparators.py
 
-obs_file='../../../../imma/Kon-Tiki_1947.imma'
-pickled_20CRdata_file='20CRv3_prmsl.pkl'
+obs_file='../../../../imma/Princesse_Alice_1898.imma'
+pickled_20CRdata_file='20CRv3_PRMSL.pkl'
 
 import pickle
 import IMMA
@@ -86,20 +86,20 @@ ob_values=([o['SLP']
                  o['HR'] is not None)])
 ax.scatter(ob_dates,ob_values,
                 100,
-                'black', # Color
-                marker='.',
-                edgecolors='black',
-                linewidths=0.0,
-                alpha=1.0,
-                zorder=100)
-ob_values_shifted=[value-12 for value in ob_values]
-ax.scatter(ob_dates,ob_values_shifted,
-                100,
                 'red', # Color
                 marker='.',
                 edgecolors='black',
                 linewidths=0.0,
                 alpha=1.0,
                 zorder=100)
+#ob_values_shifted=[value-12 for value in ob_values]
+#ax.scatter(ob_dates,ob_values_shifted,
+#                100,
+#                'red', # Color
+#                marker='.',
+#                edgecolors='black',
+#                linewidths=0.0,
+#                alpha=1.0,
+#                zorder=100)
 
 fig.savefig('pressure_comparison.png')
