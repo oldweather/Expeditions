@@ -1,19 +1,17 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Princesse Alice II 1898 Conversion script &#8212; Weather observations from marine expeditions</title>
     <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Princesse Alice II Expedition (1898): Video summary" href="video.html" />
     <link rel="prev" title="Princesse Alice II Spitzbergen expedition (1898)" href="Expedition.html" /> 
@@ -76,117 +74,169 @@ Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an i
             
   <div class="section" id="princesse-alice-ii-1898-conversion-script">
 <h1>Princesse Alice II 1898 Conversion script<a class="headerlink" href="#princesse-alice-ii-1898-conversion-script" title="Permalink to this headline">¶</a></h1>
-<p>Script to convert transcribed data to IMMA for the <a class="reference internal" href="Expedition.html"><span class="doc">Princesse Alice II expedition in 1898</span></a>. Uses the <a class="reference external" href="http://brohan.org/pyIMMA/">Python IMMA library</a>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#!/usr/bin/perl
+<p>Script to convert transcribed data to IMMA for the <a class="reference internal" href="Expedition.html"><span class="doc">Princesse Alice II expedition in 1898</span></a>. Uses the <a class="reference external" href="http://brohan.org/pyIMMA/">Python IMMA library</a>, and the <a class="reference external" href="https://github.com/chesleymccoll/CS3-DR-Unit_Conversions">Copernicus DRS marine data conversion tools</a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
 
-# Process digitised logbook data from the Princesse Alice II into
-#  IMMA records.
+<span class="c1"># Process digitised logbook data from the Princesse Alice II into</span>
+<span class="c1">#  IMMA records.</span>
 
-use strict;
-use warnings;
-use MarineOb::IMMA;
-use Date::Calc qw(Delta_Days);
-use MarineOb::lmrlib qw(rxltut ixdtnd rxnddt fxmmmb fwbptc fwbpgv
-                        fxtftc fxbfms ix32dd);
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">IMMA</span>
+<span class="kn">from</span> <span class="nn">lmrlib</span> <span class="kn">import</span> <span class="p">(</span><span class="n">baro_mm2mb</span><span class="p">,</span>
+                    <span class="n">time_local_hour_julianday2UTC</span><span class="p">,</span>
+                    <span class="n">time_date2julianday</span><span class="p">,</span>
+                    <span class="n">time_julianday2date</span><span class="p">)</span>
 
-my $Ship_name = &#39;PcsAlice2&#39;;
-my ( $Year,     $Month,    $Day );
-my ( $Last_lon, $Last_lat, $Last_T );
-my $Lat_flag = &#39;N&#39;;
-my $Lon_flag = &#39;W&#39;;
-$Last_lon = -2.99;
-$Last_lat = 53.40;
+<span class="n">Ship_name</span> <span class="o">=</span> <span class="s1">&#39;PcsAlice2&#39;</span>
+<span class="n">Lat_flag</span> <span class="o">=</span> <span class="s1">&#39;N&#39;</span><span class="p">;</span>
+<span class="n">Lon_flag</span> <span class="o">=</span> <span class="s1">&#39;W&#39;</span><span class="p">;</span>
+<span class="n">Last_lon</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.99</span><span class="p">;</span>
+<span class="n">Last_lat</span> <span class="o">=</span> <span class="mf">53.40</span><span class="p">;</span>
 
-for ( my $i = 0 ; $i &lt; 3 ; $i++ ) { &lt;&gt;; }    # Skip headers
+<span class="n">opfile</span><span class="o">=</span><span class="s1">&#39;../../../imma/Princesse_Alice_1898.imma&#39;</span>
+<span class="n">opfile</span><span class="o">=</span><span class="s1">&#39;./raw.imma&#39;</span>
+<span class="n">opw</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">opfile</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
 
-while (&lt;&gt;) {
-    my $Line = $_;
-    my $Ob   = new MarineOb::IMMA;
-    $Ob-&gt;clear();
-    push @{ $Ob-&gt;{attachments} }, 0;
-    my @Fields = split /,/, $_;
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">/../as_digitised/ALBERT_1_1898a.csv&#39;</span> <span class="o">%</span> 
+                  <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvr</span><span class="p">:</span>
+    <span class="n">rdr</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvr</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+    <span class="n">count</span><span class="o">=</span><span class="mi">0</span>
 
-    if ( defined( $Fields[0] ) &amp;&amp; $Fields[0] =~ /(\d\d\d\d)/ ) {
-        $Year = $1;
-    if ( defined( $Fields[1] ) &amp;&amp; $Fields[1] =~ /(\d+)/ ) {
-        $Month = $1;
-    }
-    if ( defined( $Fields[2] ) &amp;&amp; $Fields[2] =~ /(\d+)/ ) {
-        $Day = $1;
-    }
-    if ( defined( $Fields[3] ) &amp;&amp; $Fields[3] =~ /(\d+)/ ) {
-        $Hour = $1;
-    }
-    $Ob-&gt;{YR} = $Year;
-    $Ob-&gt;{MO} = $Month;
-    $Ob-&gt;{DY} = $Day;
-    $Ob-&gt;{HR} = $Hour;
-    if ( $Ob-&gt;{HR} == 24 ) { $Ob-&gt;{HR} = 23.99; }
+    <span class="k">for</span> <span class="n">Fields</span> <span class="ow">in</span> <span class="n">rdr</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">count</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span> <span class="k">continue</span>  <span class="c1"># Headers</span>
+        <span class="n">Ob</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;attachments&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;attachments&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;ATTC&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">IMMA</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="n">Ob</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">=</span><span class="kc">None</span>
 
-    if ( defined( $Fields[13] ) &amp;&amp; $Fields[13] =~ /(\d+)/ ) {
-        $Ob-&gt;{LAT} = $Fields[13];
-    }
-    if ( defined( $Fields[14] ) &amp;&amp; $Fields[14] =~ /(\d+)/ ) {
-        $Ob-&gt;{LON} = $Fields[14];
-    }
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="n">Year</span> <span class="o">=</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="n">Month</span> <span class="o">=</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="n">Day</span> <span class="o">=</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="n">Hour</span> <span class="o">=</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 
-    # Convert ob date and time to UTC
-    # Start by assuming at UTC
-    if (   defined($Last_lon)
-        &amp;&amp; defined( $Ob-&gt;{HR} )
-        &amp;&amp; defined( $Ob-&gt;{DY} )
-        &amp;&amp; defined( $Ob-&gt;{MO} )
-        &amp;&amp; defined( $Ob-&gt;{YR} ) )
-    {
-        my $elon = 0;   # $Last_lon;
-        if ( $elon &lt; 0 ) { $elon += 360; }
-        my ( $uhr, $udy ) = rxltut(
-            $Ob-&gt;{HR} * 100,
-            ixdtnd( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ),
-            $elon * 100
-        );
-        $Ob-&gt;{HR} = $uhr / 100;
-        ( $Ob-&gt;{DY}, $Ob-&gt;{MO}, $Ob-&gt;{YR} ) = rxnddt($udy);
-    }
-    else { $Ob-&gt;{HR} = undef; }
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">Year</span><span class="p">)</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">Month</span><span class="p">)</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">Day</span><span class="p">)</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">Hour</span><span class="p">)</span><span class="o">//</span><span class="mi">100</span><span class="o">+</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">Hour</span><span class="p">)</span><span class="o">%</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span>
+        <span class="k">if</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">24</span><span class="p">:</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span><span class="o">=</span><span class="mf">23.99</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">13</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">13</span><span class="p">])</span>
+            <span class="n">Last_lat</span> <span class="o">=</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">14</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">14</span><span class="p">]</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">14</span><span class="p">])</span>
+            <span class="n">Last_lon</span> <span class="o">=</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span>
+
+        <span class="c1"># Convert ob date and time to UTC</span>
+        <span class="c1"># Start by assuming at UTC</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="n">Last_lon</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+             <span class="ow">and</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+             <span class="ow">and</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+             <span class="ow">and</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+             <span class="ow">and</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="p">):</span>
+            <span class="n">elon</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>   <span class="c1"># Last_lon</span>
+            <span class="k">if</span> <span class="n">elon</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>   <span class="n">elon</span> <span class="o">+=</span> <span class="mi">360</span>
+            <span class="p">(</span> <span class="n">uhr</span><span class="p">,</span> <span class="n">udy</span> <span class="p">)</span> <span class="o">=</span> <span class="n">time_local_hour_julianday2UTC</span><span class="p">(</span>
+                <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span>
+                <span class="n">time_date2julianday</span><span class="p">(</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">],</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">],</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="p">),</span>
+                <span class="n">elon</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+            <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">uhr</span> <span class="o">/</span> <span class="mi">100</span>
+            <span class="p">(</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">],</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">],</span> <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">]</span> <span class="p">)</span> <span class="o">=</span> <span class="n">time_julianday2date</span><span class="p">(</span><span class="n">udy</span><span class="p">);</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">8</span><span class="p">])</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Fields</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;SLP&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">baro_mm2mb</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">Fields</span><span class="p">[</span><span class="mi">8</span><span class="p">]))</span>
+        <span class="c1"># Barometer is an aneroid -&gt; no corrections</span>
+
+        <span class="c1"># Fill in extra metadata</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;IM&#39;</span><span class="p">]</span>   <span class="o">=</span> <span class="mi">0</span>         <span class="c1"># C</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;ATTC&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>         <span class="c1"># No attachments - may have supplemental, see below</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;TI&#39;</span><span class="p">]</span>   <span class="o">=</span> <span class="mi">0</span>         <span class="c1"># Nearest hour time precision</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;DS&#39;</span><span class="p">]</span>   <span class="o">=</span> <span class="kc">None</span>      <span class="c1"># Unknown course</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;VS&#39;</span><span class="p">]</span>   <span class="o">=</span> <span class="kc">None</span>      <span class="c1"># Unknown speed</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;NID&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="mi">3</span>         <span class="c1">#</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;II&#39;</span><span class="p">]</span>   <span class="o">=</span> <span class="mi">10</span>        <span class="c1">#</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;ID&#39;</span><span class="p">]</span>   <span class="o">=</span> <span class="n">Ship_name</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;C1&#39;</span><span class="p">]</span>   <span class="o">=</span> <span class="s1">&#39;04&#39;</span>      <span class="c1">#</span>
+
+        <span class="c1"># Add the original record as a supplemental attachment</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;attachments&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">99</span><span class="p">)</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;ATTC&#39;</span><span class="p">]</span> <span class="o">+=</span><span class="mi">1</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;ATTE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">;</span>
+        <span class="n">Ob</span><span class="p">[</span><span class="s1">&#39;SUPD&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">Fields</span><span class="p">)</span>
+
+        <span class="n">IMMA</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">Ob</span><span class="p">,</span> <span class="n">opw</span><span class="p">)</span>
 
 
-    if ( defined( $Fields[10] ) &amp;&amp; $Fields[10] =~ /\d/ ) {
-        $Ob-&gt;{SLP} = $Fields[10];             # in hPa
-    }
-    # Currently think barometer is an aneroid -&gt; no corrections
+</pre></div>
+</div>
+<p>As usual with marine sources, we have fewer position records than weather observations. Use interpolation to estimate a position for all observations.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python</span>
 
-    # Fill in extra metadata
-    $Ob-&gt;{IM}   = 0;         # C
-    $Ob-&gt;{ATTC} = 0;         # No attachments - may have supplemental, see below
-    $Ob-&gt;{TI}   = 0;         # Nearest hour time precision
-    $Ob-&gt;{DS}   = undef;     # Unknown course
-    $Ob-&gt;{VS}   = undef;     # Unknown speed
-    $Ob-&gt;{NID}  = 3;         #
-    $Ob-&gt;{II}   = 10;        #
-    $Ob-&gt;{ID}   = $Ship_name;
-    $Ob-&gt;{C1}   = &#39;04&#39;;      #
-    if (   defined( $Ob-&gt;{AT} )
-        || defined( $Ob-&gt;{WBT} )
-        || defined( $Ob-&gt;{DPT} )
-        || defined( $Ob-&gt;{SST} ) )
-    {
-        $Ob-&gt;{IT} = 4;                          # Temps in degF and 10ths
-    }
+<span class="kn">import</span> <span class="nn">scipy.interpolate</span>
+<span class="kn">import</span> <span class="nn">IMMA</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
 
-    # Add the original record as a supplemental attachment
-    if ( defined($Line) &amp;&amp; $Line =~ /\S/ ) {
-        chomp($Line);
-        push @{ $Ob-&gt;{attachments} }, 99;
-        $Ob-&gt;{ATTC}++;
-        $Ob-&gt;{ATTE} = undef;
-        $Ob-&gt;{SUPD} = $Line;
-    }
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">()</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--input&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Input file name&quot;</span><span class="p">,</span>
+                    <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--output&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Output file name&quot;</span><span class="p">,</span>
+                    <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span><span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
 
-    $Ob-&gt;write( \*STDOUT );
+<span class="k">def</span> <span class="nf">get_ob_date</span><span class="p">(</span><span class="n">ob</span><span class="p">):</span>
+    <span class="n">obdate</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;YR&#39;</span><span class="p">],</span>
+                                <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;MO&#39;</span><span class="p">],</span>
+                                <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;DY&#39;</span><span class="p">],</span>
+                                <span class="nb">int</span><span class="p">(</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]),</span>
+                                <span class="nb">int</span><span class="p">((</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;HR&#39;</span><span class="p">]</span><span class="o">%</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">60</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">obdate</span>
 
-}
+<span class="n">obs</span><span class="o">=</span><span class="n">IMMA</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">input</span><span class="p">)</span>
+<span class="n">dates</span><span class="o">=</span><span class="p">[</span><span class="n">get_ob_date</span><span class="p">(</span><span class="n">ob</span><span class="p">)</span> <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">obs</span><span class="p">]</span>
+<span class="n">startdate</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">dates</span><span class="p">)</span>
+<span class="n">dates</span><span class="o">=</span><span class="p">[(</span><span class="n">get_ob_date</span><span class="p">(</span><span class="n">ob</span><span class="p">)</span><span class="o">-</span><span class="n">startdate</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">obs</span><span class="p">]</span>
 
+<span class="n">LATs</span><span class="o">=</span><span class="p">[</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">obs</span> <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+<span class="n">LATd</span><span class="o">=</span><span class="p">[(</span><span class="n">get_ob_date</span><span class="p">(</span><span class="n">ob</span><span class="p">)</span><span class="o">-</span><span class="n">startdate</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">obs</span> \
+                                       <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+<span class="n">LAT_if</span><span class="o">=</span><span class="n">scipy</span><span class="o">.</span><span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="n">LATd</span><span class="p">,</span><span class="n">LATs</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">obs</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">dates</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&gt;</span><span class="nb">max</span><span class="p">(</span><span class="n">LATd</span><span class="p">)</span> <span class="ow">or</span> <span class="n">dates</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;</span><span class="nb">min</span><span class="p">(</span><span class="n">LATd</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LAT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">LAT_if</span><span class="p">(</span><span class="n">dates</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">LONs</span><span class="o">=</span><span class="p">[</span><span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">obs</span> <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+<span class="n">LONd</span><span class="o">=</span><span class="p">[(</span><span class="n">get_ob_date</span><span class="p">(</span><span class="n">ob</span><span class="p">)</span><span class="o">-</span><span class="n">startdate</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span> <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">obs</span> \
+                                       <span class="k">if</span> <span class="n">ob</span><span class="p">[</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+<span class="n">LON_if</span><span class="o">=</span><span class="n">scipy</span><span class="o">.</span><span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="n">LONd</span><span class="p">,</span><span class="n">LONs</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">obs</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">dates</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&gt;</span><span class="nb">max</span><span class="p">(</span><span class="n">LONd</span><span class="p">)</span> <span class="ow">or</span> <span class="n">dates</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;</span><span class="nb">min</span><span class="p">(</span><span class="n">LONd</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LON&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">LON_if</span><span class="p">(</span><span class="n">dates</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">obs</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;LI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="n">opfile</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">obs</span><span class="p">:</span>
+    <span class="n">IMMA</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">ob</span><span class="p">,</span><span class="n">opfile</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

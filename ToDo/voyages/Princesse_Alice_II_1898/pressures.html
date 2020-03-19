@@ -1,19 +1,17 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Princesse Alice II Expedition (1898): Pressure observations &#8212; Weather observations from marine expeditions</title>
     <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Authors and acknowledgements" href="../../../credits.html" />
     <link rel="prev" title="Princesse Alice II Expedition (1898): Route" href="route.html" /> 
@@ -78,10 +76,10 @@ Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an i
 <h1>Princesse Alice II Expedition (1898): Pressure observations<a class="headerlink" href="#princesse-alice-ii-expedition-1898-pressure-observations" title="Permalink to this headline">¶</a></h1>
 <div class="figure align-center" id="id1" style="width: 95%">
 <a class="reference internal image-reference" href="../../../_images/pressure_comparison2.png"><img alt="../../../_images/pressure_comparison2.png" src="../../../_images/pressure_comparison2.png" style="width: 95%;" /></a>
-<p class="caption"><span class="caption-text">Atmospheric pressure observations made by the Princesse Alice II (red dots), compared with co-located MSLP in the 20CRv3 ensemble (blue dots).</span></p>
+<p class="caption"><span class="caption-text">Atmospheric pressure observations made by the Princesse Alice II (red dots), compared with co-located MSLP in the 20CRv3 ensemble (blue dots).</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>Get the 20CRv3 data for comparison:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">IRData.twcr</span> <span class="kn">as</span> <span class="nn">twcr</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">IRData.twcr</span> <span class="k">as</span> <span class="nn">twcr</span>
 <span class="kn">import</span> <span class="nn">datetime</span>
 
 <span class="n">dtn</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1898</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
@@ -99,7 +97,7 @@ Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an i
 
 <span class="c1"># Requires 20CR data to have already been extracted with get_comparators.py</span>
 
-<span class="n">obs_file</span><span class="o">=</span><span class="s1">&#39;../../../../imma/Princesse_Alice_1898.imma&#39;</span>
+<span class="n">obs_file</span><span class="o">=</span><span class="s1">&#39;../../../../imma/Princesse_Alice_II_1898.imma&#39;</span>
 <span class="n">pickled_20CRdata_file</span><span class="o">=</span><span class="s1">&#39;20CRv3_PRMSL.pkl&#39;</span>
 
 <span class="kn">import</span> <span class="nn">pickle</span>
@@ -108,9 +106,9 @@ Please <a href="https://github.com/oldweather/Expeditions/issues/new">raise an i
 <span class="kn">import</span> <span class="nn">numpy</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_agg</span> <span class="k">import</span> \
+<span class="kn">from</span> <span class="nn">matplotlib.backends.backend_agg</span> <span class="kn">import</span> \
                  <span class="n">FigureCanvasAgg</span> <span class="k">as</span> <span class="n">FigureCanvas</span>
-<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="k">import</span> <span class="n">Figure</span>
+<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="kn">import</span> <span class="n">Figure</span>
 
 <span class="c1"># Load the data to plot</span>
 <span class="n">obs</span><span class="o">=</span><span class="n">IMMA</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">obs_file</span><span class="p">)</span>
