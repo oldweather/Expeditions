@@ -23,5 +23,6 @@ Occasionally one of these will be worked-on and released, but this does not happ
    Ross (1840-2) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/ross_1840-2/as_digitised>
    Rurik (1815-8) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/rurik_1815-8/as_digitised>
    Sophia (1850-1) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/sophia_1850-1/as_digitised>
+   Tulla (1830-3) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/Tulla_1830-1833/as_digitised>
    Uranie (1818-20) <https://github.com/oldweather/Expeditions/tree/master/ToDo/voyages/uranie>
 
