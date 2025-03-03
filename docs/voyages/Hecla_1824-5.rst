@@ -3,7 +3,7 @@ HMS Hecla (1824-1825)
 
 For his third Northwest Passage expedition, `William Parry <https://en.wikipedia.org/wiki/William_Parry_(explorer)>`_  was in command of `HMS Hecla <https://en.wikipedia.org/wiki/HMS_Hecla_(1815)>`_, supported by `HMS Fury <https://en.wikipedia.org/wiki/HMS_Fury_(1814)>`_ under Henry Parkyns Hoppner. 
 
-The reported their observations in `Journal of a third voyage for the discovery of a northwest passage ... <https://www.biodiversitylibrary.org/bibliography/50423#/summary>`_. We also have some of the Fury's logbooks, `in the National Archives ADM55 collection <http://archive.ceda.ac.uk/corral/adm55/adm55_index.html>`_.
+The reported their observations in `Journal of a third voyage for the discovery of a northwest passage ... <https://www.biodiversitylibrary.org/bibliography/50423#/summary>`_. We also have some of the Fury's logbooks, `in the National Archives ADM55 collection <https://utils.ceda.ac.uk/corral/adm55/adm55_index.html>`_.
 
 Transcribed observations
 ------------------------
