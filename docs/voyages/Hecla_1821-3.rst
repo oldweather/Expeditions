@@ -3,7 +3,7 @@ HMS Hecla (1821-1823)
 
 `William Parry <https://en.wikipedia.org/wiki/William_Parry_(explorer)>`_ followed up his :doc:`successful 1919-20 voyage <Hecla_1819-20>` with another NorthWest Passage Expedition. Parry was in command of `HMS Fury <https://en.wikipedia.org/wiki/HMS_Fury_(1814)>`_, supported by `HMS Hecla <https://en.wikipedia.org/wiki/HMS_Hecla_(1815)>`_ under `George Francis Lyon <https://en.wikipedia.org/wiki/George_Francis_Lyon>`_. 
 
-The reported their observations in `Journal of a second voyage for the discovery of a northwest passage ... <https://www.biodiversitylibrary.org/bibliography/26937#/summary>`_. We also have some of the Hecla's logbooks, `in the National Archives ADM55 collection <http://archive.ceda.ac.uk/corral/adm55/adm55_index.html>`_.
+The reported their observations in `Journal of a second voyage for the discovery of a northwest passage ... <https://www.biodiversitylibrary.org/bibliography/26937#/summary>`_. We also have some of the Hecla's logbooks, `in the National Archives ADM55 collection <https://utils.ceda.ac.uk/corral/adm55/adm55_index.html>`_.
 
 Transcribed observations
 ------------------------
