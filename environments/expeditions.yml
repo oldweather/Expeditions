@@ -1,0 +1,16 @@
+name: expeditions
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - iris=2.4.*
+  - cartopy=0.17.*
+# Optional, code formatter
+  - black
+  - sphinx
+# Philip's libraries
+  - pip
+  - pip:
+    - git+https://github.com/philip-brohan/pyIMMA@a920a91a0324fd6e6cc8023473fe70e16490316f
+    - git+https://github.com/philip-brohan/IRData@9c420dc3e8d2b446b181132f1bac5fb7e8b49be6
+    - git+https://github.com/philip-brohan/Meteorographica@819cae3e6a543b9bff959fea8bcd1572363d9f36
